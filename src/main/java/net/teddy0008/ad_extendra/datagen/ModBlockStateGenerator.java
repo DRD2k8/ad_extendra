@@ -32,7 +32,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.JUPITER_COAL_ORE);
         blockWithItem(ModBlocks.JUPITER_DIAMOND_ORE);
         blockWithItem(ModBlocks.JUPITER_GOLD_ORE);
-        fallingBlockWithItem(ModBlocks.JUPITER_SAND);
+        sandBlockWithItem(ModBlocks.JUPITER_SAND);
         blockWithItem(ModBlocks.JUPITER_STONE);
         stairsBlock(((StairBlock) ModBlocks.JUPITER_STONE_STAIRS.get()), blockTexture(ModBlocks.JUPITER_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.JUPITER_STONE_SLAB.get()), blockTexture(ModBlocks.JUPITER_STONE.get()), blockTexture(ModBlocks.JUPITER_STONE.get()));
@@ -56,7 +56,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         // Ceres
         blockWithItem(ModBlocks.CERES_COPPER_ORE);
         blockWithItem(ModBlocks.CERES_IRON_ORE);
-        fallingBlockWithItem(ModBlocks.CERES_SAND);
+        sandBlockWithItem(ModBlocks.CERES_SAND);
         blockWithItem(ModBlocks.CERES_STONE);
         stairsBlock(((StairBlock) ModBlocks.CERES_STONE_STAIRS.get()), blockTexture(ModBlocks.CERES_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.CERES_STONE_SLAB.get()), blockTexture(ModBlocks.CERES_STONE.get()), blockTexture(ModBlocks.CERES_STONE.get()));
@@ -93,7 +93,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.SATURN_COAL_ORE);
         blockWithItem(ModBlocks.SATURN_DIAMOND_ORE);
         blockWithItem(ModBlocks.SATURN_GOLD_ORE);
-        fallingBlockWithItem(ModBlocks.SATURN_SAND);
+        sandBlockWithItem(ModBlocks.SATURN_SAND);
         iceBlockWithItem(ModBlocks.SATURN_ICE);
         blockWithItem(ModBlocks.SATURN_STONE);
         stairsBlock(((StairBlock) ModBlocks.SATURN_STONE_STAIRS.get()), blockTexture(ModBlocks.SATURN_STONE.get()));
@@ -170,6 +170,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.NEPTUNE_COAL_ORE);
         blockWithItem(ModBlocks.NEPTUNE_COPPER_ORE);
         blockWithItem(ModBlocks.NEPTUNE_IRON_ORE);
+        oreBlockWithItem(ModBlocks.NEPTUNE_ICE_SHARD_ORE);
         blockWithItem(ModBlocks.NEPTUNE_STONE);
         stairsBlock(((StairBlock) ModBlocks.NEPTUNE_STONE_STAIRS.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.NEPTUNE_STONE_SLAB.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()), blockTexture(ModBlocks.NEPTUNE_STONE.get()));
@@ -240,7 +241,8 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.PLUTO_PLUTONIUM_ORE);
         blockWithItem(ModBlocks.PLUTO_DIAMOND_ORE);
         blockWithItem(ModBlocks.PLUTO_GOLD_ORE);
-        fallingBlockWithItem(ModBlocks.PLUTO_SAND);
+        oreBlockWithItem(ModBlocks.PLUTO_ICE_SHARD_ORE);
+        sandBlockWithItem(ModBlocks.PLUTO_SAND);
         blockWithItem(ModBlocks.PLUTO_STONE);
         stairsBlock(((StairBlock) ModBlocks.PLUTO_STONE_STAIRS.get()), blockTexture(ModBlocks.PLUTO_STONE.get()));
         slabBlock(((SlabBlock) ModBlocks.PLUTO_STONE_SLAB.get()), blockTexture(ModBlocks.PLUTO_STONE.get()), blockTexture(ModBlocks.PLUTO_STONE.get()));
@@ -416,7 +418,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         blockWithItem(ModBlocks.B_EMERALD_ORE);
         blockWithItem(ModBlocks.B_IRON_ORE);
         redstoneOreBlockWithItem(ModBlocks.B_REDSTONE_ORE);
-        fallingBlockWithItem(ModBlocks.B_SAND);
+        sandBlockWithItem(ModBlocks.B_SAND);
         blockWithItem(ModBlocks.B_SANDSTONE);
         blockWithItem(ModBlocks.B_SANDSTONE_BRICKS);
         stairsBlock(((StairBlock) ModBlocks.B_SANDSTONE_BRICK_STAIRS.get()), blockTexture(ModBlocks.B_SANDSTONE_BRICKS.get()));
@@ -455,7 +457,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 
-    private void fallingBlockWithItem(RegistryObject<FallingBlock> blockRegistryObject) {
+    private void sandBlockWithItem(RegistryObject<SandBlock> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 

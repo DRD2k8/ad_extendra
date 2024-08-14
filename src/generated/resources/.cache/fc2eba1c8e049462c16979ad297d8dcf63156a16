@@ -1,4 +1,5 @@
-// 1.20.1	2024-08-13T10:03:17.8824349	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-08-14T12:48:20.3559474	Tags for minecraft:item mod id ad_extendra
+adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/items/glacian_logs.json
 06988cb4b138538ae3f1198aadff8d0060021fea data/ad_astra_platform/tags/items/electrolyte_blocks.json
 1678d0f61584aa3fd22fa5d2e6eb07002e675d46 data/ad_astra_platform/tags/items/electrolyte_ingots.json
 d4090807fce7c6d9ea39582345a195f85edb8131 data/ad_astra_platform/tags/items/electrolyte_plates.json
@@ -38,7 +39,7 @@ e15352de603edbb05a2418b1337c4eb86c4fb2b8 data/forge/tags/items/nuggets/saturlyte
 2e05f7034fc9c4b6a4d84880f8dcdbdbabf72d49 data/forge/tags/items/nuggets/uranium.json
 d90a0a5e0afc3a7307dac5ed0ac17706a46487b5 data/forge/tags/items/ores.json
 2baf1e673df33af2fadd3044af0e75c5952c195d data/forge/tags/items/ores/electrolyte.json
-db12318251a3bad06b759455f40c1dbdf26eb9a0 data/forge/tags/items/ores/ice_shard.json
+8e472a1f7c348126fcd3bb8b6b4af96e80d3e518 data/forge/tags/items/ores/ice_shard.json
 e448c069b0326bd9514f936719f20c5756a90d91 data/forge/tags/items/ores/juperium.json
 eee73a7e0629647b8d8996f67be6ed1d7478d6b7 data/forge/tags/items/ores/neptunium.json
 b9deb1ef0b899cf75ad8db84a07d75604acde093 data/forge/tags/items/ores/plutonium.json

@@ -76,7 +76,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> JUPITER_COAL_ORE = registerBlock("jupiter_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
     public static final RegistryObject<Block> JUPITER_DIAMOND_ORE = registerBlock("jupiter_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> JUPITER_GOLD_ORE = registerBlock("jupiter_gold_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE)));
-    public static final RegistryObject<FallingBlock> JUPITER_SAND = registerBlock("jupiter_sand", () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<SandBlock> JUPITER_SAND = registerBlock("jupiter_sand", () -> new SandBlock(12359294, BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> JUPITER_STONE = registerBlock("jupiter_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> JUPITER_STONE_STAIRS = registerBlock("jupiter_stone_stairs", () -> new StairBlock(((Block)JUPITER_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> JUPITER_STONE_SLAB = registerBlock("jupiter_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -101,7 +101,7 @@ public class ModBlocks {
     // Ceres
     public static final RegistryObject<Block> CERES_COPPER_ORE = registerBlock("ceres_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
     public static final RegistryObject<Block> CERES_IRON_ORE = registerBlock("ceres_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
-    public static final RegistryObject<FallingBlock> CERES_SAND = registerBlock("ceres_sand", () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<SandBlock> CERES_SAND = registerBlock("ceres_sand", () -> new SandBlock(6974058, BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> CERES_STONE = registerBlock("ceres_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> CERES_STONE_STAIRS = registerBlock("ceres_stone_stairs", () -> new StairBlock(((Block)CERES_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> CERES_STONE_SLAB = registerBlock("ceres_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -137,7 +137,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> SATURN_COAL_ORE = registerBlock("saturn_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
     public static final RegistryObject<Block> SATURN_DIAMOND_ORE = registerBlock("saturn_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> SATURN_GOLD_ORE = registerBlock("saturn_gold_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE)));
-    public static final RegistryObject<FallingBlock> SATURN_SAND = registerBlock("saturn_sand", () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<SandBlock> SATURN_SAND = registerBlock("saturn_sand", () -> new SandBlock(16640684, BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<IceBlock> SATURN_ICE = registerBlock("saturn_ice", () -> new IceBlock(BlockBehaviour.Properties.copy(Blocks.ICE).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> SATURN_STONE = registerBlock("saturn_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> SATURN_STONE_STAIRS = registerBlock("saturn_stone_stairs", () -> new StairBlock(((Block)SATURN_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -216,6 +216,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> NEPTUNE_COAL_ORE = registerBlock("neptune_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE)));
     public static final RegistryObject<Block> NEPTUNE_COPPER_ORE = registerBlock("neptune_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
     public static final RegistryObject<Block> NEPTUNE_IRON_ORE = registerBlock("neptune_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
+    public static final RegistryObject<DropExperienceBlock> NEPTUNE_ICE_SHARD_ORE = registerBlock("neptune_ice_shard_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE), UniformInt.of(2, 5)));
     public static final RegistryObject<Block> NEPTUNE_STONE = registerBlock("neptune_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> NEPTUNE_STONE_STAIRS = registerBlock("neptune_stone_stairs", () -> new StairBlock(((Block)NEPTUNE_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> NEPTUNE_STONE_SLAB = registerBlock("neptune_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -288,7 +289,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> PLUTO_PLUTONIUM_ORE = registerBlock("pluto_plutonium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> PLUTO_DIAMOND_ORE = registerBlock("pluto_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> PLUTO_GOLD_ORE = registerBlock("pluto_gold_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE)));
-    public static final RegistryObject<FallingBlock> PLUTO_SAND = registerBlock("pluto_sand", () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<DropExperienceBlock> PLUTO_ICE_SHARD_ORE = registerBlock("pluto_ice_shard_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE), UniformInt.of(2, 5)));
+    public static final RegistryObject<SandBlock> PLUTO_SAND = registerBlock("pluto_sand", () -> new SandBlock(16770711, BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> PLUTO_STONE = registerBlock("pluto_stone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<StairBlock> PLUTO_STONE_STAIRS = registerBlock("pluto_stone_stairs", () -> new StairBlock(((Block)PLUTO_STONE.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<SlabBlock> PLUTO_STONE_SLAB = registerBlock("pluto_stone_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -461,7 +463,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> B_EMERALD_ORE = registerBlock("b_emerald_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE)));
     public static final RegistryObject<Block> B_IRON_ORE = registerBlock("b_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
     public static final RegistryObject<RedStoneOreBlock> B_REDSTONE_ORE = registerBlock("b_redstone_ore", () -> new RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE)));
-    public static final RegistryObject<FallingBlock> B_SAND = registerBlock("b_sand", () -> new FallingBlock(BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryObject<SandBlock> B_SAND = registerBlock("b_sand", () -> new SandBlock(12945208, BlockBehaviour.Properties.copy(Blocks.SAND)));
     public static final RegistryObject<Block> B_SANDSTONE = registerBlock("b_sandstone", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
     public static final RegistryObject<Block> B_SANDSTONE_BRICKS = registerBlock("b_sandstone_bricks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
     public static final RegistryObject<StairBlock> B_SANDSTONE_BRICK_STAIRS = registerBlock("b_sandstone_brick_stairs", () -> new StairBlock(((Block)B_SANDSTONE_BRICKS.get()).defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.SANDSTONE)));
@@ -487,6 +489,10 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> B_PILLAR = registerBlock("b_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
 
     // Glacio
+    public static final RegistryObject<Block> GLACIAN_WOOD = registerBlock("glacian_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(MapColor.CLAY).friction(0.5F).mapColor(MapColor.COLOR_PINK)));
+    public static final RegistryObject<Block> STRIPPED_GLACIAN_WOOD = registerBlock("stripped_glacian_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(MapColor.CLAY).friction(0.5F).mapColor(MapColor.COLOR_PINK)));
     public static final RegistryObject<GlacianSaplingBlock> GLACIAN_SAPLING = registerBlock("glacian_sapling",
             () -> new GlacianSaplingBlock(new GlacianTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<FlowerPotBlock> POTTED_GLACIAN_SAPLING = BLOCKS.register("potted_glacian_sapling",

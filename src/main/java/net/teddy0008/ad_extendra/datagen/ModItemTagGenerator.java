@@ -505,7 +505,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         this.tag(ModItemTags.JUPERIUM_ORES)
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get().asItem());
         this.tag(ModItemTags.ICE_SHARD_ORES)
-                .add(ModBlocks.URANUS_ICE_SHARD_ORE.get().asItem());
+                .add(ModBlocks.URANUS_ICE_SHARD_ORE.get().asItem())
+                .add(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get().asItem())
+                .add(ModBlocks.PLUTO_ICE_SHARD_ORE.get().asItem());
         this.tag(ModItemTags.SATURLYTE_ORES)
                 .add(ModBlocks.SATURN_SATURLYTE_ORE.get().asItem());
         this.tag(ModItemTags.URANIUM_ORES)
@@ -561,5 +563,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.JUPITER_GOLD_ORE.get().asItem())
                 .add(ModBlocks.SATURN_GOLD_ORE.get().asItem())
                 .add(ModBlocks.PLUTO_GOLD_ORE.get().asItem());
+        this.tag(ModItemTags.GLACIAN_LOGS)
+                .add(ModBlocks.GLACIAN_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_GLACIAN_WOOD.get().asItem());
     }
 }

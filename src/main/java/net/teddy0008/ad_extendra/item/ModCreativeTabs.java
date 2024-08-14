@@ -202,6 +202,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.NEPTUNE_COAL_ORE.get());
                 output.accept(ModBlocks.NEPTUNE_COPPER_ORE.get());
                 output.accept(ModBlocks.NEPTUNE_IRON_ORE.get());
+                output.accept(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get());
                 output.accept(ModItems.RAW_NEPTUNIUM.get());
                 output.accept(ModBlocks.RAW_NEPTUNIUM_BLOCK.get());
                 output.accept(ModItems.NEPTUNIUM_INGOT.get());
@@ -281,6 +282,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.PLUTO_PLUTONIUM_ORE.get());
                 output.accept(ModBlocks.PLUTO_DIAMOND_ORE.get());
                 output.accept(ModBlocks.PLUTO_GOLD_ORE.get());
+                output.accept(ModBlocks.PLUTO_ICE_SHARD_ORE.get());
                 output.accept(ModItems.RAW_PLUTONIUM.get());
                 output.accept(ModBlocks.RAW_PLUTONIUM_BLOCK.get());
                 output.accept(ModItems.PLUTONIUM_INGOT.get());
@@ -478,6 +480,8 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.B_REDSTONE_ORE.get());
 
                 // Glacio
+                output.accept(ModBlocks.GLACIAN_WOOD.get());
+                output.accept(ModBlocks.STRIPPED_GLACIAN_WOOD.get());
                 output.accept(ModBlocks.GLACIAN_SAPLING.get());
                 output.accept(ModItems.GLACIAN_HANGING_SIGN.get());
                 output.accept(ModItems.GLACIAN_BOAT.get());

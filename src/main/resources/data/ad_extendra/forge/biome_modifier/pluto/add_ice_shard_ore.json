@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:plutonian_barrens",
+  "features": "ad_extendra:pluto/ice_shard_ore",
+  "step": "underground_ores"
+}

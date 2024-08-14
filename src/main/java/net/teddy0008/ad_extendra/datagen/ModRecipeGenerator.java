@@ -126,21 +126,25 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.RAW_NEPTUNIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.NEPTUNIUM_BLOCK.get(), 0.25f, 200, "item");
         oreBlasting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.RAW_NEPTUNIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.NEPTUNIUM_BLOCK.get(), 0.25f, 100, "item");
 
         // Pluto
         oreSmelting(consumer, PLUTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.PLUTO_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.PLUTO_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.PLUTO_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 200, "item");
         oreSmelting(consumer, List.of(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get(), 0.25f, 200, "item");
         oreBlasting(consumer, PLUTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.PLUTO_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.PLUTO_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.PLUTO_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.RAW_PLUTONIUM_BLOCK.get()), RecipeCategory.MISC, ModBlocks.PLUTONIUM_BLOCK.get(), 0.25f, 100, "item");
 
         // Orcus
@@ -204,6 +208,18 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.B_REDSTONE_ORE.get()), RecipeCategory.MISC, Items.REDSTONE, 0.25f, 100, "item");
 
         // Glacio
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.GLACIAN_WOOD.get(), 3)
+                .pattern("##")
+                .pattern("##")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.GLACIAN_LOG.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.GLACIAN_LOG.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.GLACIAN_LOG.get()))
+                .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.STRIPPED_GLACIAN_WOOD.get(), 3)
+                .pattern("##")
+                .pattern("##")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get()))
+                .save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.GLACIAN_HANGING_SIGN.get(), 6)
                 .pattern("X X")
                 .pattern("###")

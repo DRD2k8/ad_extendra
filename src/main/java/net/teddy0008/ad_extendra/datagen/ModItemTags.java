@@ -1,5 +1,6 @@
 package net.teddy0008.ad_extendra.datagen;
 
+import earth.terrarium.ad_astra.AdAstra;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -70,6 +71,7 @@ public class ModItemTags {
     public static final TagKey<Item> ELECTROLYTE_NUGGETS = tag("forge", "nuggets/electrolyte");
     public static final TagKey<Item> ELECTROLYTE_ORES = tag("forge", "ores/electrolyte");
     public static final TagKey<Item> ELECTROLYTE_RAW_MATERIALS = tag("forge", "raw_materials/electrolyte");
+    public static final TagKey<Item> GLACIAN_LOGS = tag(AdAstra.MOD_ID, "glacian_logs");
     public static final TagKey<Item> IRON_RODS = tag("ad_astra_platform", "iron_rods");
     public static final TagKey<Item> PLATES = tag("forge", "plates");
 

@@ -27,6 +27,7 @@
   },
   "features": [
     "ad_extendra:neptune/neptunium_ore",
+    "ad_extendra:neptune/ice_shard_ore",
     "ad_extendra:neptune/iron_ore",
     "ad_extendra:neptune/copper_ore",
     "ad_extendra:neptune/coal_ore"

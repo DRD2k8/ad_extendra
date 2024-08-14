@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:windy_wastelands",
+  "features": "ad_extendra:neptune/ice_shard_ore",
+  "step": "underground_ores"
+}

@@ -1,5 +1,6 @@
 package net.teddy0008.ad_extendra.datagen;
 
+import earth.terrarium.ad_astra.AdAstra;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
@@ -21,6 +22,7 @@ public class ModBlockTags {
     public static final TagKey<Block> PLUTONIUM_ORES = tag("forge", "ores/plutonium");
     public static final TagKey<Block> ELECTROLYTE_BLOCKS = tag("forge", "storage_blocks/electrolyte");
     public static final TagKey<Block> ELECTROLYTE_ORES = tag("forge", "ores/electrolyte");
+    public static final TagKey<Block> GLACIAN_LOGS = tag(AdAstra.MOD_ID, "glacian_logs");
 
     private static TagKey<Block> tag(String modid, String name) {
         return BlockTags.create(new ResourceLocation(modid, name));

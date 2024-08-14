@@ -223,6 +223,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NEPTUNE_COAL_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_COAL_ORE.get(), Items.COAL));
         this.add(ModBlocks.NEPTUNE_COPPER_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_COPPER_ORE.get(), Items.RAW_COPPER));
         this.add(ModBlocks.NEPTUNE_IRON_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_IRON_ORE.get(), Items.RAW_IRON));
+        this.add(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get(), earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()));
         this.add(ModBlocks.NEPTUNE_STONE.get(), createStoneLikeDrop(ModBlocks.NEPTUNE_STONE.get(), ModBlocks.NEPTUNE_COBBLESTONE.get()));
 
         // Orcus
@@ -294,6 +295,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.PLUTO_PLUTONIUM_ORE.get(), createOreDrop(ModBlocks.PLUTO_PLUTONIUM_ORE.get(), ModItems.RAW_PLUTONIUM.get()));
         this.add(ModBlocks.PLUTO_DIAMOND_ORE.get(), createOreDrop(ModBlocks.PLUTO_DIAMOND_ORE.get(), Items.DIAMOND));
         this.add(ModBlocks.PLUTO_GOLD_ORE.get(), createOreDrop(ModBlocks.PLUTO_GOLD_ORE.get(), Items.RAW_GOLD));
+        this.add(ModBlocks.PLUTO_ICE_SHARD_ORE.get(), createOreDrop(ModBlocks.PLUTO_ICE_SHARD_ORE.get(), earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()));
         this.add(ModBlocks.PLUTO_STONE.get(), createStoneLikeDrop(ModBlocks.PLUTO_STONE.get(), ModBlocks.PLUTO_COBBLESTONE.get()));
 
         // Haumea
@@ -478,6 +480,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.B_STONE.get(), createStoneLikeDrop(ModBlocks.B_STONE.get(), ModBlocks.B_COBBLESTONE.get()));
 
         // Glacio
+        this.dropSelf(ModBlocks.GLACIAN_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_GLACIAN_WOOD.get());
         this.dropSelf(ModBlocks.GLACIAN_SAPLING.get());
         this.add(ModBlocks.POTTED_GLACIAN_SAPLING.get(), createPotFlowerItemTable(ModBlocks.GLACIAN_SAPLING.get()));
         this.add(ModBlocks.GLACIAN_HANGING_SIGN.get(), block ->

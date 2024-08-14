@@ -11,6 +11,7 @@ import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -46,6 +47,7 @@ import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.loot.ModLootModifiers;
 import net.teddy0008.ad_extendra.painting.ModPaintings;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
+import net.teddy0008.ad_extendra.util.PlatformUtils;
 import org.slf4j.Logger;
 
 import java.util.function.Function;
@@ -79,6 +81,8 @@ public class Main {
             SpawnPlacements.register(ModEntities.FREEZE.get(),
                     SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Monster::checkMonsterSpawnRules);
+
+            PlatformUtils.registerStrippedLog((Block) ModBlocks.GLACIAN_WOOD.get(), (Block) ModBlocks.STRIPPED_GLACIAN_WOOD.get());
 
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.GLACIAN_SAPLING.getId(), ModBlocks.POTTED_GLACIAN_SAPLING);
             ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(ModBlocks.AERONOS_MUSHROOM.getId(), ModBlocks.POTTED_AERONOS_MUSHROOM);

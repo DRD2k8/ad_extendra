@@ -6,7 +6,7 @@
   "fixed_time": 1000,
   "has_ceiling": false,
   "has_raids": false,
-  "has_skylight": true,
+  "has_skylight": false,
   "height": 256,
   "infiniburn": "#minecraft:infiniburn_overworld",
   "logical_height": 256,
