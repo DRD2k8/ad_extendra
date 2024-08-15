@@ -237,6 +237,7 @@ public class ModBlocks {
     public static final RegistryObject<RotatedPillarBlock> NEPTUNE_PILLAR = registerBlock("neptune_pillar", () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<CustomSlidingDoorBlock> NEPTUNIUM_SLIDING_DOOR = registerBlock("neptunium_sliding_door",
             () -> new CustomSlidingDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_DOOR).mapColor(MapColor.COLOR_LIGHT_GREEN)));
+    public static final RegistryObject<Block> BLUE_SLUSHY_ICE = registerBlock("blue_slushy_ice", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.ICE).instrument(NoteBlockInstrument.CHIME).strength(0.5F).sound(SoundType.GLASS)));
 
     // Orcus
     public static final RegistryObject<Block> RADIUM_BLOCK = registerBlock("radium_block", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).mapColor(MapColor.COLOR_LIGHT_GREEN).sound(SoundType.AMETHYST)));

@@ -219,6 +219,7 @@ public class ModCreativeTabs {
                 output.accept(ModBlocks.NEPTUNIUM_SLIDING_DOOR.get());
                 output.accept(ModItems.NEPTUNIUM_ENGINE.get());
                 output.accept(ModItems.NEPTUNIUM_TANK.get());
+                output.accept(ModBlocks.BLUE_SLUSHY_ICE.get());
 
                 // Orcus
                 output.accept(ModBlocks.ORCUS_STONE.get());

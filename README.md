@@ -41,10 +41,6 @@ Ad Extendra is an add-on mod, that adds more content to <a href="https://www.cur
 <ul>
 <li>Dungeons for each planet (Similar to the Moon Dungeon where you can find a Moon Globe)</li>
 </ul>
-<h3>Fixes</h3>
-<ul>
-<li>Built-in Entity Item Models (Will be added once I figure out why the item models are invisible for the Rockets and Globes)</li>
-</ul>
 
 <h2>Mod Support</h3>
 The mod currently only supports <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html">Forge 1.20.1</a> and depends on <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra/files/4894852">Ad Astra v1.15.5</a> exactly (any older or newer version of Ad Astra <b>will not work!</b>). It also depends on all the mods that Ad Astra depends on, which are: <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-lib">Resourceful Lib</a>, <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-config">Resourceful Config</a>, and <a href="https://www.curseforge.com/minecraft/mc-mods/botarium">Botarium</a>

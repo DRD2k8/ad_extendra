@@ -219,6 +219,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS.get());
         this.dropSelf(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get());
         this.dropSelf(ModBlocks.NEPTUNE_PILLAR.get());
+        this.dropSelf(ModBlocks.BLUE_SLUSHY_ICE.get());
         this.add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get(), ModItems.RAW_NEPTUNIUM.get()));
         this.add(ModBlocks.NEPTUNE_COAL_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_COAL_ORE.get(), Items.COAL));
         this.add(ModBlocks.NEPTUNE_COPPER_ORE.get(), createOreDrop(ModBlocks.NEPTUNE_COPPER_ORE.get(), Items.RAW_COPPER));

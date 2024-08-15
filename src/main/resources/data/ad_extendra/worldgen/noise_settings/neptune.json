@@ -313,7 +313,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "ad_extendra:neptune_stone",
+            "Name": "ad_extendra:blue_slushy_ice",
             "Properties": {
               "axis": "y"
             }

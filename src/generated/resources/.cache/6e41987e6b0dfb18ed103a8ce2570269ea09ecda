@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-14T13:13:14.1143197	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-08-15T10:14:30.8301267	Tags for minecraft:block mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/blocks/glacian_logs.json
 a4f329db7cef4fd4e0a119507a4d3f5d4aa53fed data/forge/tags/blocks/needs_netherite_tool.json
 d90a0a5e0afc3a7307dac5ed0ac17706a46487b5 data/forge/tags/blocks/ores.json
@@ -32,7 +32,7 @@ d4e63d3b0fa4afbf161dcca0f8f86bc7f19e5ee6 data/minecraft/tags/blocks/gold_ores.js
 52cfbe3adbf598d304041048d29349474d173845 data/minecraft/tags/blocks/ice.json
 86f48a2e67eef3a62d0777658033cc0c46bfd386 data/minecraft/tags/blocks/iron_ores.json
 7dca2f4a87f510a0dd102ad606551e04a16ffd70 data/minecraft/tags/blocks/lapis_ores.json
-e28e0648d6e07ca4e6c1d0c5d55bd96e23ac394f data/minecraft/tags/blocks/mineable/pickaxe.json
+91b6ca6435eae7d68b3b665b1605ecd7dc240f7a data/minecraft/tags/blocks/mineable/pickaxe.json
 dbf543348d3124075adca3d8c09c39307aa8ccbc data/minecraft/tags/blocks/mineable/shovel.json
 1c9e45ec364bc55134942cb07871f8309e3e5927 data/minecraft/tags/blocks/mushroom_grow_block.json
 6e08bd1f71d73c03c30ade25b01a70995b293712 data/minecraft/tags/blocks/needs_diamond_tool.json
@@ -43,7 +43,7 @@ bb291689af04cce2a91224dd98c2dd91722a57a0 data/minecraft/tags/blocks/redstone_ore
 3732bd35105288a6ed9b5edde6f63b3f7b9e578c data/minecraft/tags/blocks/sand.json
 93c749cc1d256a06fa8759208638e42412b1b28c data/minecraft/tags/blocks/saplings.json
 d49297462c13744d86f92a35f6163690eae28366 data/minecraft/tags/blocks/slabs.json
-525acf9f2b9962d9081fae42632fe39f3abcbbed data/minecraft/tags/blocks/snaps_goat_horn.json
+bd6e1c387ecedeb147d87839de916c7530061e02 data/minecraft/tags/blocks/snaps_goat_horn.json
 8c56fc23aab5dc39d4aeffe7d081cd682d62a382 data/minecraft/tags/blocks/stairs.json
 d9a17678c6e071150acd1d39c4a2ebdcf901f9ed data/minecraft/tags/blocks/standing_signs.json
 62cb56d490c8aae462cf2e2700b6dbc185109958 data/minecraft/tags/blocks/walls.json

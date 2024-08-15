@@ -190,6 +190,7 @@ public class ModBlockStateGenerator extends BlockStateProvider {
         slabBlock(((SlabBlock) ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get()), blockTexture(ModBlocks.POLISHED_NEPTUNE_STONE.get()), blockTexture(ModBlocks.POLISHED_NEPTUNE_STONE.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.NEPTUNE_PILLAR.get()), blockTexture(ModBlocks.NEPTUNE_PILLAR.get()),
                 new ResourceLocation(Main.MOD_ID, "block/neptune_pillar_top"));
+        blockWithItem(ModBlocks.BLUE_SLUSHY_ICE);
 
         // Orcus
         blockWithItem(ModBlocks.RADIUM_BLOCK);

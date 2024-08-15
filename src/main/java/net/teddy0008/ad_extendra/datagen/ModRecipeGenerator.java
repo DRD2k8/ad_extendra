@@ -2544,6 +2544,14 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .define('#', ModBlocks.SLUSHY_ICE.get())
                 .unlockedBy(getHasName(ModBlocks.SLUSHY_ICE.get()), has(ModBlocks.SLUSHY_ICE.get()))
                 .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLUE_SLUSHY_ICE.get())
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModBlocks.PACKED_SLUSHY_ICE.get())
+                .unlockedBy(getHasName(ModBlocks.PACKED_SLUSHY_ICE.get()), has(ModBlocks.PACKED_SLUSHY_ICE.get()))
+                .save(consumer);
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

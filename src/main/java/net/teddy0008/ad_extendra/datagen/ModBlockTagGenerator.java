@@ -310,6 +310,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NEPTUNE_COPPER_ORE.get())
                 .add(ModBlocks.NEPTUNE_IRON_ORE.get())
                 .add(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get())
+                .add(ModBlocks.BLUE_SLUSHY_ICE.get())
 
                 // Orcus
                 .add(ModBlocks.RADIUM_BLOCK.get())
@@ -1097,6 +1098,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.NEPTUNE_COPPER_ORE.get())
                 .add(ModBlocks.NEPTUNE_IRON_ORE.get())
                 .add(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get())
+                .add(ModBlocks.BLUE_SLUSHY_ICE.get())
 
                 // Orcus
                 .add(ModBlocks.RADIUM_BLOCK.get())

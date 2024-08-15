@@ -1,4 +1,5 @@
-// 1.20.1	2024-08-14T12:48:20.3715738	Block States: ad_extendra
+// 1.20.1	2024-08-15T10:14:30.8301267	Block States: ad_extendra
+6e09ae4d12c0a83a0bfa47b7d2d879ad503ff2b5 assets/ad_extendra/blockstates/blue_slushy_ice.json
 08180bdc12a18e671329feb4a34b53e5abcac2bd assets/ad_extendra/blockstates/b_cobblestone.json
 2e1176034384f868613b4bf1e9aaa88f0072cd23 assets/ad_extendra/blockstates/b_cobblestone_slab.json
 67fecbe65be548d75d1031d7ed4f915676772fc0 assets/ad_extendra/blockstates/b_cobblestone_stairs.json
@@ -371,6 +372,7 @@ ad19965a22850db06afc8c517049666735041871 assets/ad_extendra/blockstates/uranus_s
 faa33636f48e4b505bb91ec50db44becf7eb2daa assets/ad_extendra/blockstates/uranus_stone_slab.json
 d8ce3a8821222a0e0ad11203b4aa367c949da236 assets/ad_extendra/blockstates/uranus_stone_stairs.json
 9478804fd6c4210a9ef645a8c402aa8422445739 assets/ad_extendra/blockstates/uranus_uranium_ore.json
+c7c92afd0f1644790ae3b70a9c0d89f572a3b07c assets/ad_extendra/models/block/blue_slushy_ice.json
 5664c35fa686e0332e8a447485aa04b32797823f assets/ad_extendra/models/block/b_cobblestone.json
 e3686260f63bbb6b5b5748be1ed3c843f6695180 assets/ad_extendra/models/block/b_cobblestone_slab.json
 8e369bdc88a520015958873a8de759c9320c1404 assets/ad_extendra/models/block/b_cobblestone_slab_top.json
@@ -1047,6 +1049,7 @@ f6813b74bd89a2dcc9eb68417bcde7276867feaf assets/ad_extendra/models/block/uranus_
 0a541c55f3fbbad17222c1ff0186def8e3a35e7d assets/ad_extendra/models/block/uranus_stone_stairs_inner.json
 85ed0804bd1a0f7555ff62ede0c7e9fe9ec9e317 assets/ad_extendra/models/block/uranus_stone_stairs_outer.json
 77cad4c252536b40a60af0b71545ca9fe5feffd1 assets/ad_extendra/models/block/uranus_uranium_ore.json
+bcf0119294a4baf494e9e77004d4b401eae0b048 assets/ad_extendra/models/item/blue_slushy_ice.json
 fcd93cd00ce25f1bcc141da22fe21031c1c9cbb7 assets/ad_extendra/models/item/b_cobblestone.json
 38d3173546a91e3bc03a240479716d5210b627a0 assets/ad_extendra/models/item/b_diamond_ore.json
 49e327cfc26e2c1b55ef4d2432ae8709c8ae80d4 assets/ad_extendra/models/item/b_emerald_ore.json

@@ -1,6 +1,5 @@
 package net.teddy0008.ad_extendra;
 
-import com.mojang.logging.LogUtils;
 import earth.terrarium.botarium.client.ClientHooks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -9,8 +8,6 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
@@ -21,9 +18,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -49,14 +44,10 @@ import net.teddy0008.ad_extendra.painting.ModPaintings;
 import net.teddy0008.ad_extendra.particle.ModParticles;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
 import net.teddy0008.ad_extendra.util.PlatformUtils;
-import org.slf4j.Logger;
-
-import java.util.function.Function;
 
 @Mod(Main.MOD_ID)
 public class Main {
     public static final String MOD_ID = "ad_extendra";
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public Main() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -74,8 +65,6 @@ public class Main {
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -124,8 +113,6 @@ public class Main {
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
-        private static final Function<ItemLike, ItemStack> FUNCTION = ItemStack::new;
-
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
