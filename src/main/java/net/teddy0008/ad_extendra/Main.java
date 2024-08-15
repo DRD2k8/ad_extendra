@@ -46,6 +46,7 @@ import net.teddy0008.ad_extendra.item.ModCreativeTabs;
 import net.teddy0008.ad_extendra.item.ModItems;
 import net.teddy0008.ad_extendra.loot.ModLootModifiers;
 import net.teddy0008.ad_extendra.painting.ModPaintings;
+import net.teddy0008.ad_extendra.particle.ModParticles;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
 import net.teddy0008.ad_extendra.util.PlatformUtils;
 import org.slf4j.Logger;
@@ -66,6 +67,7 @@ public class Main {
         ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModParticles.register(modEventBus);
 
         ModPaintings.PAINTING_VARIANTS.init();
 
