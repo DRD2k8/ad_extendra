@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "ad_extendra:neptune_coal_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:coal",
+      "count": 1
+    },
+    {
+      "item": "minecraft:coal",
+      "count": 1,
+      "chance": 0.75
+    },
+    {
+      "item": "create:experience_nugget",
+      "count": 1,
+      "chance": 0.75
+    },
+    {
+      "item": "ad_extendra:neptune_cobblestone",
+      "count": 1,
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 300
+}

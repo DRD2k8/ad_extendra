@@ -1,0 +1,20 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "ad_extendra:b_sandstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "ad_extendra:b_sand"
+    }
+  ],
+  "processingTime": 150
+}

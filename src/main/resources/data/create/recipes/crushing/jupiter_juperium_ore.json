@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "ad_extendra:jupiter_juperium_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "ad_extendra:raw_juperium",
+      "count": 1
+    },
+    {
+      "item": "ad_extendra:raw_juperium",
+      "count": 1,
+      "chance": 0.25
+    },
+    {
+      "item": "create:experience_nugget",
+      "count": 1,
+      "chance": 0.75
+    },
+    {
+      "item": "ad_extendra:jupiter_cobblestone",
+      "count": 1,
+      "chance": 0.125
+    }
+  ],
+  "processingTime": 300
+}
