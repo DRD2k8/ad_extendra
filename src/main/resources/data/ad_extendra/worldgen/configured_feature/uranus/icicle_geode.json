@@ -36,7 +36,16 @@
         {
           "Name": "ad_extendra:icicle",
           "Properties": {
-            "facing": "up",
+            "thickness": "tip",
+            "vertical_direction": "down",
+            "waterlogged": "false"
+          }
+        },
+        {
+          "Name": "ad_extendra:icicle",
+          "Properties": {
+            "thickness": "tip",
+            "vertical_direction": "up",
             "waterlogged": "false"
           }
         }
