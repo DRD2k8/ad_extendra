@@ -175,6 +175,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.URANIUM_TANK.get());
                 output.accept(ModBlocks.SLUSHY_ICE.get());
                 output.accept(ModBlocks.PACKED_SLUSHY_ICE.get());
+                output.accept(ModBlocks.ICICLE.get());
                 output.accept(ModItems.FREEZE_SHARD.get());
                 output.accept(ModItems.ICE_CHARGE.get());
 

@@ -181,6 +181,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.POLISHED_URANUS_STONE_SLAB.get());
         this.dropSelf(ModBlocks.URANUS_PILLAR.get());
         this.dropSelf(ModBlocks.PACKED_SLUSHY_ICE.get());
+        this.dropSelf(ModBlocks.ICICLE.get());
         this.add(ModBlocks.URANUS_URANIUM_ORE.get(), createOreDrop(ModBlocks.URANUS_URANIUM_ORE.get(), ModItems.RAW_URANIUM.get()));
         this.add(ModBlocks.URANUS_DIAMOND_ORE.get(), createOreDrop(ModBlocks.URANUS_DIAMOND_ORE.get(), Items.DIAMOND));
         this.add(ModBlocks.URANUS_ICE_SHARD_ORE.get(), createOreDrop(ModBlocks.URANUS_ICE_SHARD_ORE.get(), earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()));

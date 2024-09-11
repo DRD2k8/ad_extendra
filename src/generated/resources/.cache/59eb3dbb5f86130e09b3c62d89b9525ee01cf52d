@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-15T10:14:30.8145008	Loot Tables
+// 1.20.1	2024-09-10T20:53:31.5459851	Loot Tables
 827a8e20f0a391dbc067c686adf72b50c87915c1 data/ad_extendra/loot_tables/blocks/aeronos_hanging_sign.json
 8ee28f6da574b16d4d6b009c863541876c6f8ed2 data/ad_extendra/loot_tables/blocks/aeronos_mushroom.json
 6af4a5abd5e5d126e4f1aecabf1ec2d6c68c8668 data/ad_extendra/loot_tables/blocks/aeronos_sign.json
@@ -159,6 +159,7 @@ b6648af52e9ab5546f5a53f97ce72c0423b5944c data/ad_extendra/loot_tables/blocks/hau
 12413c8a7ce9f7bcedf8ec1099b1f7206f75abc5 data/ad_extendra/loot_tables/blocks/haumea_stone_brick_wall.json
 9c8d5bd1f27ee4914fb4ce9711a217a16df4400a data/ad_extendra/loot_tables/blocks/haumea_stone_slab.json
 0655b3a96bb89020ccf832ee6b22ab2fd4328e56 data/ad_extendra/loot_tables/blocks/haumea_stone_stairs.json
+ef7aa2b279a4414cee5005e5a140891312f90449 data/ad_extendra/loot_tables/blocks/icicle.json
 ff2a4909820412cc4d250cec87183ed98f237413 data/ad_extendra/loot_tables/blocks/juperium_block.json
 6e2b9636c20183eb4f242c4cbbd7a4660d5d0dee data/ad_extendra/loot_tables/blocks/juperium_pillar.json
 bb705d02e39baf09b67b47b083254617848a3ffd data/ad_extendra/loot_tables/blocks/juperium_plating.json
