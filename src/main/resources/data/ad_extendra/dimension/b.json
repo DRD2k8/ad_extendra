@@ -1,0 +1,36 @@
+{
+  "type": "ad_extendra:b_type",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "ad_extendra:centaurian_plains",
+          "parameters": {
+            "continentalness": 0.0,
+            "depth": 0.0,
+            "erosion": 0.0,
+            "humidity": 0.0,
+            "offset": 0.0,
+            "temperature": 0.1,
+            "weirdness": 0.0
+          }
+        },
+        {
+          "biome": "ad_extendra:centaurian_beach",
+          "parameters": {
+            "continentalness": 0.0,
+            "depth": 0.0,
+            "erosion": 0.0,
+            "humidity": 0.0,
+            "offset": 0.0,
+            "temperature": 0.2,
+            "weirdness": 0.0
+          }
+        }
+      ]
+    },
+    "settings": "ad_extendra:b"
+  }
+}

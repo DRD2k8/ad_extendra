@@ -1,0 +1,18 @@
+{
+  "name": "세드나",
+  "icon": "ad_extendra:/textures/planetscreen/sedna.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_dwarf_planets_2",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "전해질",
+      "item": "ad_extendra:electrolyte_ingot",
+      "text": "10티어 로켓을 제작할 만큼 충분한 플루토늄을 모으면 세드나로 여행할 수 있습니다. 귀하가 찾고 있는 최종 재료는 전해질입니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "전해질은 새로운 태양계로 이동할 수 있는 11티어 로켓을 제작하는 데 사용됩니다."
+    }
+  ]
+}

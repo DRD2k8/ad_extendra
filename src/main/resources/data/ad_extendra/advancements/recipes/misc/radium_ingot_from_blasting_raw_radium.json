@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_radium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:raw_radium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:radium_ingot_from_blasting_raw_radium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_radium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:radium_ingot_from_blasting_raw_radium"
+    ]
+  },
+  "sends_telemetry_event": false
+}

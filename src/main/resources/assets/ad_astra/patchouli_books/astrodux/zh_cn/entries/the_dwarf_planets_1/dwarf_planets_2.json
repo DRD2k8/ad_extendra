@@ -1,0 +1,18 @@
+{
+  "name": "冥王星、共工、厄里斯",
+  "icon": "ad_extendra:/textures/planetscreen/pluto.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_dwarf_planets_1",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "钚",
+      "item": "ad_extendra:plutonium_ingot",
+      "text": "一旦你收集了足够的镭来制造九级火箭，你就可以前往冥王星、共工和阋神星。您寻找的下一个材料是钚（元素九十四）。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "钚用于制造能够前往塞德娜的十级火箭。"
+    }
+  ]
+}

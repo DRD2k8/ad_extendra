@@ -1,0 +1,18 @@
+{
+  "name": "토성",
+  "icon": "ad_astra:/textures/sky/saturn.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_big_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "포화물질",
+      "item": "ad_extendra:saturlyte_ingot",
+      "text": "5단계 로켓을 제작할 수 있을 만큼 충분한 Juperium을 모으면 토성으로 여행할 수 있습니다. 당신이 찾는 다음 자료는 Saturlyte(위성처럼 말함)입니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Saturlyte는 가장 추운 행성으로 여행할 수 있는 6단계 로켓을 제작하는 데 사용됩니다."
+    }
+  ]
+}

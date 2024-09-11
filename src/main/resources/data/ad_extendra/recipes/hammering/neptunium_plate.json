@@ -1,0 +1,16 @@
+{
+  "group": "ad_astra",
+  "type": "ad_astra:hammering",
+  "ingredients": [
+    {
+      "item": "ad_astra:hammer"
+    },
+    {
+      "tag": "ad_astra_platform:neptunium_ingots"
+    }
+  ],
+  "result": {
+    "item": "ad_extendra:neptunium_plate",
+    "count": 1
+  }
+}

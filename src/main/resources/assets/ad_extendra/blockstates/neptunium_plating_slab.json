@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ad_extendra:block/neptunium_plating_slab"
+    },
+    "type=double": {
+      "model": "ad_extendra:block/neptunium_plating"
+    },
+    "type=top": {
+      "model": "ad_extendra:block/neptunium_plating_slab_top"
+    }
+  }
+}

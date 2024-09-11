@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "ad_extendra:block/polished_ceres_stone",
+    "side": "ad_extendra:block/polished_ceres_stone",
+    "top": "ad_extendra:block/polished_ceres_stone"
+  }
+}

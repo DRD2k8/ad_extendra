@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_juperium": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:raw_juperium"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:juperium_ingot_from_blasting_raw_juperium"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_juperium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:juperium_ingot_from_blasting_raw_juperium"
+    ]
+  },
+  "sends_telemetry_event": false
+}

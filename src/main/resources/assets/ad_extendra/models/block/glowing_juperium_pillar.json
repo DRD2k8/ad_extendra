@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ad_extendra:block/glowing_juperium_pillar_top",
+    "side": "ad_extendra:block/glowing_juperium_pillar"
+  }
+}

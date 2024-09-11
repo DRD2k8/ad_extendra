@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:b_stone"
+    }
+  },
+  "pattern": [
+    "JJ",
+    "JJ"
+  ],
+  "result": {
+    "count": 4,
+    "item": "ad_extendra:polished_b_stone"
+  },
+  "show_notification": true
+}

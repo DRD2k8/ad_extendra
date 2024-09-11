@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.2,
+  "group": "item",
+  "ingredient": {
+    "item": "ad_extendra:pluto_stone_bricks"
+  },
+  "result": "ad_extendra:cracked_pluto_stone_bricks"
+}

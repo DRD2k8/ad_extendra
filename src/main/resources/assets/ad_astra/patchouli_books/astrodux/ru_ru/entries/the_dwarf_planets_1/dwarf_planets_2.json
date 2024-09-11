@@ -1,0 +1,18 @@
+{
+  "name": "Плутон, Гонгонг и Эрида",
+  "icon": "ad_extendra:/textures/planetscreen/pluto.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_dwarf_planets_1",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Плутоний",
+      "item": "ad_extendra:plutonium_ingot",
+      "text": "Как только вы соберете достаточно радия для создания ракеты 9-го уровня, вы сможете отправиться на Плутон, Гонгонг и Эриду. Следующий материал, который вам нужен, — это плутоний (элемент № 94)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Плутоний используется для создания ракеты 10 уровня, способной долететь до Седны."
+    }
+  ]
+}

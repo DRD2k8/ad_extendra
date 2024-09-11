@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ad_extendra:quaoar_cobblestone"
+  },
+  "result": "ad_extendra:quaoar_cobblestone_stairs"
+}

@@ -1,0 +1,106 @@
+{
+  "world": "ad_extendra:saturn",
+  "stars": {
+    "fancy_count": 13000,
+    "fast_count": 6000,
+    "colored_stars": true,
+    "daylight_visible": true
+  },
+  "sunset_color": "vanilla",
+  "dimension_effects": {
+    "type": "simple"
+  },
+  "cloud_effects": "vanilla",
+  "weather_effects": "none",
+  "horizon_angle": 0,
+  "sky_objects": [
+    {
+      "texture": "ad_astra:textures/sky/blue_sun.png",
+      "blending": true,
+      "render_type": "dynamic",
+      "scale": 5.0,
+      "rotation": [
+        0.0,
+        -90.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/titan.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 10.3,
+      "rotation": [
+        10.0,
+        -60.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/enceladus.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 1.0,
+      "rotation": [
+        20.0,
+        -120.0,
+        1.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/mimas.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 0.8,
+      "rotation": [
+        15.0,
+        -100.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/dione.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 2.25,
+      "rotation": [
+        -15.0,
+        -80.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/iapetus.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 1.83,
+      "rotation": [
+        -17.0,
+        -100.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/tethys.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 2.15,
+      "rotation": [
+        -16.0,
+        -90.0,
+        2.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/rhea.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 4.58,
+      "rotation": [
+        10.0,
+        -70.0,
+        22.5
+      ]
+    }
+  ]
+}

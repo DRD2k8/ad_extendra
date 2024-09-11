@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "group": "item",
+  "ingredient": {
+    "item": "ad_extendra:haumea_cobblestone"
+  },
+  "result": "ad_extendra:haumea_stone"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "半人马座比邻星",
+  "icon": "ad_astra:/textures/painting/alpha_centauri.png",
+  "sortnum": 1,
+  "category": "ad_astra:the_distant_planet",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "半人马座比邻星",
+      "text": "一旦您找到足夠的電解質來製造十一級火箭，您將能夠離開這個太陽系並進入一個新的太陽系。您將前往比鄰星的第一顆行星是格拉西奧。格拉西奧氣候嚴寒。然而，它有氧氣，可以讓你在沒有太空衣的情況下生存。下一顆行星是比鄰星b，它是另一顆類地行星。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "這是 Ad Astra 進程的結束。感謝您玩 Ad Astra 和 Ad Extendra！"
+    }
+  ]
+}

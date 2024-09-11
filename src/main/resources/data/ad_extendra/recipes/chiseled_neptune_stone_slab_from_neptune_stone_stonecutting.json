@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "ad_extendra:neptune_stone"
+  },
+  "result": "ad_extendra:chiseled_neptune_stone_slab"
+}

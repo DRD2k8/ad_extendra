@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:electrolyte_plating"
+    }
+  },
+  "pattern": [
+    "JJ"
+  ],
+  "result": {
+    "item": "ad_extendra:electrolyte_plating_pressure_plate"
+  },
+  "show_notification": true
+}

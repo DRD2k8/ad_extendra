@@ -1,0 +1,16 @@
+{
+  "translation": "planet.ad_extendra.makemake",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "ad_extendra:makemake",
+  "orbit_world": "ad_extendra:makemake_orbit",
+  "rocket_tier": 8,
+  "gravity": 0.3,
+  "has_atmosphere": false,
+  "days_in_year": 112785,
+  "temperature": -240,
+  "solar_power": 11,
+  "orbit_solar_power": 13,
+  "has_oxygen": false,
+  "button_color": "red"
+}

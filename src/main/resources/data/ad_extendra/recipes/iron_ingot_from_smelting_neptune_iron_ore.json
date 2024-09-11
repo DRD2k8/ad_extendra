@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "item",
+  "ingredient": {
+    "item": "ad_extendra:neptune_iron_ore"
+  },
+  "result": "minecraft:iron_ingot"
+}

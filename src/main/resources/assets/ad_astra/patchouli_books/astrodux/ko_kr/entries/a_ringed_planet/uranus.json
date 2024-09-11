@@ -1,0 +1,18 @@
+{
+  "name": "천왕성",
+  "icon": "ad_astra:/textures/sky/uranus.png",
+  "sortnum": 0,
+  "category": "ad_astra:a_ringed_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "우라늄",
+      "item": "ad_extendra:uranium_ingot",
+      "text": "6티어 로켓을 제작하기에 충분한 Saturlyte를 모으면 천왕성으로 여행할 수 있습니다. 당신이 찾고 있는 다음 물질은 우라늄(원소 92)입니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "우라늄은 바람이 부는 행성으로 이동할 수 있는 7단계 로켓을 제작하는 데 사용됩니다."
+    }
+  ]
+}

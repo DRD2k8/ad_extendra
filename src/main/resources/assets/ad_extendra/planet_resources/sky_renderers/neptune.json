@@ -1,0 +1,40 @@
+{
+  "world": "ad_extendra:neptune",
+  "stars": {
+    "fancy_count": 13000,
+    "fast_count": 6000,
+    "colored_stars": true,
+    "daylight_visible": true
+  },
+  "sunset_color": "vanilla",
+  "dimension_effects": {
+    "type": "simple"
+  },
+  "cloud_effects": "vanilla",
+  "weather_effects": "none",
+  "horizon_angle": 0,
+  "sky_objects": [
+    {
+      "texture": "ad_astra:textures/sky/blue_sun.png",
+      "blending": true,
+      "render_type": "dynamic",
+      "scale": 1.5,
+      "rotation": [
+        0.0,
+        -90.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/triton.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 5.42,
+      "rotation": [
+        10.0,
+        -70.0,
+        10.0
+      ]
+    }
+  ]
+}

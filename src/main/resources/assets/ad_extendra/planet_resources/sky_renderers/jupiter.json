@@ -1,0 +1,95 @@
+{
+  "world": "ad_extendra:jupiter",
+  "stars": {
+    "fancy_count": 13000,
+    "fast_count": 6000,
+    "colored_stars": true,
+    "daylight_visible": true
+  },
+  "sunset_color": "vanilla",
+  "dimension_effects": {
+    "type": "simple"
+  },
+  "cloud_effects": "vanilla",
+  "weather_effects": "none",
+  "horizon_angle": 0,
+  "sky_objects": [
+    {
+      "texture": "ad_astra:textures/sky/blue_sun.png",
+      "blending": true,
+      "render_type": "dynamic",
+      "scale": 9.4,
+      "rotation": [
+        0.0,
+        -90.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_astra:textures/sky/mars.png",
+      "blending": true,
+      "render_type": "dynamic",
+      "scale": 0.5,
+      "rotation": [
+        -10.0,
+        -45.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/planetscreen/ceres.png",
+      "blending": true,
+      "render_type": "dynamic",
+      "scale": 0.8,
+      "rotation": [
+        -30.0,
+        -30.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/io.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 7.32,
+      "rotation": [
+        0,
+        -90.0,
+        60.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/europa.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 6.24,
+      "rotation": [
+        30,
+        -80.0,
+        120.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/ganymede.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 10.5,
+      "rotation": [
+        30,
+        -40.0,
+        40.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/callisto.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 9.64,
+      "rotation": [
+        0,
+        -140.0,
+        90.0
+      ]
+    }
+  ]
+}

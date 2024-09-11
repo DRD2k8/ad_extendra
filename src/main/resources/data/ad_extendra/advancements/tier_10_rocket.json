@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "ad_astra:tier_10_rocket"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.tier_10_rocket.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.tier_10_rocket.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tier_10_rocket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_astra:tier_10_rocket"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 750
+  },
+  "parent": "ad_extendra:pluto"
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ad_extendra:moon_mushroom_spot",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 951165700,
+    "spacing": 80,
+    "separation": 1
+  }
+}

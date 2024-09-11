@@ -1,0 +1,16 @@
+{
+  "translation": "planet.ad_extendra.neptune",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "ad_extendra:neptune",
+  "orbit_world": "ad_extendra:neptune_orbit",
+  "rocket_tier": 7,
+  "gravity": 11.15,
+  "has_atmosphere": true,
+  "days_in_year": 60225,
+  "temperature": -218,
+  "solar_power": 11,
+  "orbit_solar_power": 13,
+  "has_oxygen": false,
+  "button_color": "dark_blue"
+}

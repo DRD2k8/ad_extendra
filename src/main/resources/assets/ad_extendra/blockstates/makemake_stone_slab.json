@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ad_extendra:block/makemake_stone_slab"
+    },
+    "type=double": {
+      "model": "ad_extendra:block/makemake_stone"
+    },
+    "type=top": {
+      "model": "ad_extendra:block/makemake_stone_slab_top"
+    }
+  }
+}

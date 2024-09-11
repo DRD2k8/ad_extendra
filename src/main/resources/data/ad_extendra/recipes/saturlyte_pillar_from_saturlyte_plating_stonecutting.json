@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ad_extendra:saturlyte_plating"
+  },
+  "result": "ad_extendra:saturlyte_pillar"
+}

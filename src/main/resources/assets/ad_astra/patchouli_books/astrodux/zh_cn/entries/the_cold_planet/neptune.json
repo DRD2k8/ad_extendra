@@ -1,0 +1,18 @@
+{
+  "name": "海王星",
+  "icon": "ad_astra:/textures/sky/neptune.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_cold_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "镎",
+      "item": "ad_extendra:neptunium_ingot",
+      "text": "一旦你收集了足够的铀来制造第七级火箭，你就可以前往海王星。您寻找的下一个材料是镎（元素九十三）。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "镎用于制造能够前往矮行星的八级火箭。"
+    }
+  ]
+}

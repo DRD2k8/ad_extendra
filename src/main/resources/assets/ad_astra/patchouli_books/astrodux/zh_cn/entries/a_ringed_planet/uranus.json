@@ -1,0 +1,18 @@
+{
+  "name": "天王星",
+  "icon": "ad_astra:/textures/sky/uranus.png",
+  "sortnum": 0,
+  "category": "ad_astra:a_ringed_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "铀",
+      "item": "ad_extendra:uranium_ingot",
+      "text": "一旦你收集了足够的 Saturlyte 来制造第六级火箭，你就可以前往天王星。您寻找的下一个材料是铀（元素九十二）。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "铀用于制造能够前往多风星球的七级火箭。"
+    }
+  ]
+}

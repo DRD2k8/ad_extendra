@@ -1,0 +1,16 @@
+{
+  "translation": "planet.ad_extendra.sedna",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "ad_extendra:sedna",
+  "orbit_world": "ad_extendra:sedna_orbit",
+  "rocket_tier": 10,
+  "gravity": 0.19,
+  "has_atmosphere": false,
+  "days_in_year": 4161000,
+  "temperature": -240,
+  "solar_power": 11,
+  "orbit_solar_power": 13,
+  "has_oxygen": false,
+  "button_color": "red"
+}

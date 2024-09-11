@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ad_extendra:glacian_boat"
+    },
+    {
+      "tag": "c:wooden_chests"
+    }
+  ],
+  "result": {
+    "item": "ad_extendra:glacian_chest_boat"
+  }
+}

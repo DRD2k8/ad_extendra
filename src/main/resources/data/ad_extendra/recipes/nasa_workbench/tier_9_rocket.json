@@ -1,0 +1,76 @@
+{
+  "type": "ad_astra:nasa_workbench",
+  "ingredients": [
+    {
+      "ingredient": {
+        "item": "ad_astra:rocket_nose_cone"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "ad_astra_platform:radium_blocks"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "ad_astra_platform:radium_blocks"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "ad_astra_platform:radium_blocks"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "ad_astra_platform:radium_blocks"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "ad_astra_platform:radium_blocks"
+      }
+    },
+    {
+      "ingredient": {
+        "tag": "ad_astra_platform:radium_blocks"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ad_astra:rocket_fin"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ad_extendra:radium_tank"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ad_extendra:radium_tank"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ad_astra:rocket_fin"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ad_astra:rocket_fin"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ad_extendra:radium_engine"
+      }
+    },
+    {
+      "ingredient": {
+        "item": "ad_astra:rocket_fin"
+      }
+    }
+  ],
+  "output": "ad_astra:tier_9_rocket"
+}

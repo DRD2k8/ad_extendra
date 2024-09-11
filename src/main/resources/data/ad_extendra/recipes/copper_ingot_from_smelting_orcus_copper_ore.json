@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "item",
+  "ingredient": {
+    "item": "ad_extendra:orcus_copper_ore"
+  },
+  "result": "minecraft:copper_ingot"
+}

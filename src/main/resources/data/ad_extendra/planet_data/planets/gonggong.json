@@ -1,0 +1,16 @@
+{
+  "translation": "planet.ad_extendra.gonggong",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "ad_extendra:gonggong",
+  "orbit_world": "ad_extendra:gonggong_orbit",
+  "rocket_tier": 9,
+  "gravity": 0.2,
+  "has_atmosphere": false,
+  "days_in_year": 120450,
+  "temperature": -250,
+  "solar_power": 11,
+  "orbit_solar_power": 13,
+  "has_oxygen": false,
+  "button_color": "dark_red"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "item": "ad_astra:tier_9_rocket"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.tier_9_rocket.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.tier_9_rocket.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tier_9_rocket": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_astra:tier_9_rocket"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "ad_extendra:orcus"
+}

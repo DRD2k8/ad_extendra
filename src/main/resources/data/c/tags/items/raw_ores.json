@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#forge:raw_materials/juperium",
+    "#forge:raw_materials/saturlyte",
+    "#forge:raw_materials/uranium",
+    "#forge:raw_materials/neptunium",
+    "#forge:raw_materials/radium",
+    "#forge:raw_materials/plutonium",
+    "#forge:raw_materials/electrolyte"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "ad_extendra:template/door/sliding_door_flipped",
+  "textures": {
+    "door": "ad_extendra:block/door/saturlyte_sliding_door"
+  }
+}

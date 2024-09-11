@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:orcus_stone_brick_slab"
+    }
+  },
+  "pattern": [
+    "J",
+    "J"
+  ],
+  "result": {
+    "item": "ad_extendra:chiseled_orcus_stone_bricks"
+  },
+  "show_notification": true
+}

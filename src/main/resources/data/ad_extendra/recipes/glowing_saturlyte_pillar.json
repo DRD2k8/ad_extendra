@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:magenta_dye"
+    },
+    "G": {
+      "item": "minecraft:glowstone"
+    },
+    "J": {
+      "tag": "ad_astra_platform:saturlyte_plates"
+    }
+  },
+  "pattern": [
+    "JDJ",
+    "JGJ",
+    "JDJ"
+  ],
+  "result": {
+    "count": 6,
+    "item": "ad_extendra:glowing_saturlyte_pillar"
+  },
+  "show_notification": true
+}

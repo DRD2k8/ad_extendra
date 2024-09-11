@@ -1,0 +1,41 @@
+{
+  "temperature": 0.6,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 8666141,
+    "fog_color": 15120489,
+    "water_color": 16766720,
+    "water_fog_color": 14329120,
+    "grass_color": 16753920,
+    "foliage_color": 16753920,
+    "music": {
+      "sound": "minecraft:ambient.crimson_forest.loop",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.012
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon",
+      "minecraft:nether_cave"
+    ]
+  },
+  "features": [
+    "ad_extendra:jupiter/juperium_ore",
+    "ad_extendra:jupiter/coal_ore",
+    "ad_extendra:jupiter/gold_ore",
+    "ad_extendra:jupiter/diamond_ore"
+  ]
+}

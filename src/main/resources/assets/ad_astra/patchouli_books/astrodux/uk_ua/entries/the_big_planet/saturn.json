@@ -1,0 +1,18 @@
+{
+  "name": "Сатурн",
+  "icon": "ad_astra:/textures/sky/saturn.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_big_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Сатурліт",
+      "item": "ad_extendra:saturlyte_ingot",
+      "text": "Зібравши достатньо Juperium для створення ракети 5-го рівня, ви зможете відправитися на Сатурн. Наступний матеріал, який ви шукаєте, це Saturlyte (Сказано як супутник)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Saturlyte використовується для створення ракети 6 рівня, здатної подорожувати до найхолоднішої планети."
+    }
+  ]
+}

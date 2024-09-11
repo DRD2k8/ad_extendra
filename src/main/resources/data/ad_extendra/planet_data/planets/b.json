@@ -1,0 +1,16 @@
+{
+  "translation": "planet.ad_extendra.b",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:proxima_centauri",
+  "world": "ad_extendra:b",
+  "orbit_world": "ad_extendra:b_orbit",
+  "rocket_tier": 11,
+  "gravity": 9.78,
+  "has_atmosphere": true,
+  "days_in_year": 11,
+  "temperature": -39,
+  "solar_power": 11,
+  "orbit_solar_power": 13,
+  "has_oxygen": true,
+  "button_color": "orange"
+}

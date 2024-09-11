@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "ad_astra:tier_5_rocket",
+    "ad_astra:tier_6_rocket",
+    "ad_astra:tier_7_rocket",
+    "ad_astra:tier_8_rocket",
+    "ad_astra:tier_9_rocket",
+    "ad_astra:tier_10_rocket",
+    "ad_astra:tier_11_rocket",
+    "ad_extendra:ice_charge"
+  ]
+}

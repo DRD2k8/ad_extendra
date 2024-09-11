@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_iron_plating": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_astra:iron_plating"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_plutonium_plate": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "ad_astra_platform:plutonium_plates"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:plutonium_plating"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_plating",
+      "has_plutonium_plate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:plutonium_plating"
+    ]
+  },
+  "sends_telemetry_event": false
+}

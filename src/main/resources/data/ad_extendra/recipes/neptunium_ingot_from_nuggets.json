@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:neptunium_nugget"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    "JJJ",
+    "JJJ"
+  ],
+  "result": {
+    "item": "ad_extendra:neptunium_ingot"
+  },
+  "show_notification": true
+}

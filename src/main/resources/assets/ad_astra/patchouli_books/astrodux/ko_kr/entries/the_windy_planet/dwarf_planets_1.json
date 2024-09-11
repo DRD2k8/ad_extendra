@@ -1,0 +1,18 @@
+{
+  "name": "오르쿠스, 하우메아, 콰오아르, 마케마케",
+  "icon": "ad_extendra:/textures/planetscreen/orcus.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_windy_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "라듐",
+      "item": "ad_extendra:radium_ingot",
+      "text": "8티어 로켓을 제작할 수 있을 만큼 충분한 Neptunium을 모으면 Orcus, Haumea, Quaoar 및 Makemake로 여행할 수 있습니다. 다음으로 찾고 있는 물질은 라듐(88번 원소)입니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "라듐은 3개의 왜소행성을 더 여행할 수 있는 9단계 로켓을 제작하는 데 사용됩니다."
+    }
+  ]
+}

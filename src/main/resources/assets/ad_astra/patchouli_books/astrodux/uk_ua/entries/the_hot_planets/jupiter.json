@@ -1,0 +1,18 @@
+{
+  "name": "Юпітер",
+  "icon": "ad_astra:/textures/sky/jupiter.png",
+  "sortnum": 1,
+  "category": "ad_astra:the_hot_planets",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Юперій",
+      "item": "ad_extendra:juperium_ingot",
+      "text": "Коли у вас буде достатньо Calorite, щоб створити повний комплект реактивного костюма та всі компоненти ракети четвертого рівня, ви зможете відправитися на Юпітер. Наступний матеріал, який ви шукаєте, це Juperium (Сказаний як вищий)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Juperium використовується для створення ракети 5 рівня, здатної подорожувати до планети з кільцями."
+    }
+  ]
+}

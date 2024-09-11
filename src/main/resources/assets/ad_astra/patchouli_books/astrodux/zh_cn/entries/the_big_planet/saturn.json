@@ -1,0 +1,18 @@
+{
+  "name": "土星",
+  "icon": "ad_astra:/textures/sky/saturn.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_big_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "饱和电解质",
+      "item": "ad_extendra:saturlyte_ingot",
+      "text": "一旦你收集了足够的 Juperium 来建造第五级火箭，你就可以前往土星。您寻找的下一个材料是 Saturlyte（如卫星）。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Saturlyte 用于制造能够前往最冷行星的六级火箭。"
+    }
+  ]
+}

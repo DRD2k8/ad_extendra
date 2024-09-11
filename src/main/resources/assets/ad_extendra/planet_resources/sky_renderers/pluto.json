@@ -1,0 +1,62 @@
+{
+  "world": "ad_extendra:pluto",
+  "stars": {
+    "fancy_count": 13000,
+    "fast_count": 6000,
+    "colored_stars": true,
+    "daylight_visible": true
+  },
+  "sunset_color": "vanilla",
+  "dimension_effects": {
+    "type": "simple"
+  },
+  "cloud_effects": "vanilla",
+  "weather_effects": "none",
+  "horizon_angle": 0,
+  "sky_objects": [
+    {
+      "texture": "ad_astra:textures/sky/blue_sun.png",
+      "blending": true,
+      "render_type": "dynamic",
+      "scale": 0.9,
+      "rotation": [
+        0.0,
+        -90.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/charon.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 3.78,
+      "rotation": [
+        10.0,
+        -90.0,
+        0.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/nix.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 0.2,
+      "rotation": [
+        -10.0,
+        -90.0,
+        5.0
+      ]
+    },
+    {
+      "texture": "ad_extendra:textures/sky/hydra.png",
+      "blending": false,
+      "render_type": "dynamic",
+      "scale": 0.26,
+      "rotation": [
+        0.0,
+        -65.0,
+        0.0
+      ]
+    }
+  ]
+}

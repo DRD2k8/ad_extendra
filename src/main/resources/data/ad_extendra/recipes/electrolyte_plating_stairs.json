@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:electrolyte_plating"
+    }
+  },
+  "pattern": [
+    "J  ",
+    "JJ ",
+    "JJJ"
+  ],
+  "result": {
+    "count": 4,
+    "item": "ad_extendra:electrolyte_plating_stairs"
+  },
+  "show_notification": true
+}

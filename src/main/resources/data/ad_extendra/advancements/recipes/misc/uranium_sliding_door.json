@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:uranium_sliding_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uranium_plate": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "ad_astra_platform:uranium_plates"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uranium_plate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:uranium_sliding_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

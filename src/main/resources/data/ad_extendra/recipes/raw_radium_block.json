@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:raw_radium"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    "JJJ",
+    "JJJ"
+  ],
+  "result": {
+    "item": "ad_extendra:raw_radium_block"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,27 @@
+{
+  "values": [
+    "ad_extendra:jupiter_coal_ore",
+    "ad_extendra:ceres_iron_ore",
+    "ad_extendra:ceres_copper_ore",
+    "ad_extendra:saturn_coal_ore",
+    "ad_extendra:uranus_iron_ore",
+    "ad_extendra:neptune_coal_ore",
+    "ad_extendra:neptune_iron_ore",
+    "ad_extendra:neptune_copper_ore",
+    "ad_extendra:orcus_iron_ore",
+    "ad_extendra:orcus_copper_ore",
+    "ad_extendra:haumea_iron_ore",
+    "ad_extendra:haumea_copper_ore",
+    "ad_extendra:quaoar_iron_ore",
+    "ad_extendra:quaoar_copper_ore",
+    "ad_extendra:makemake_iron_ore",
+    "ad_extendra:makemake_copper_ore",
+    "ad_extendra:gonggong_iron_ore",
+    "ad_extendra:gonggong_copper_ore",
+    "ad_extendra:eris_iron_ore",
+    "ad_extendra:eris_copper_ore",
+    "ad_extendra:sedna_iron_ore",
+    "ad_extendra:sedna_copper_ore",
+    "ad_extendra:b_iron_ore"
+  ]
+}

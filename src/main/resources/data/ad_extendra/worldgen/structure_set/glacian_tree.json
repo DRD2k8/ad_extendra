@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "ad_extendra:glacian_tree",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 951165700,
+    "spacing": 7,
+    "separation": 1
+  }
+}

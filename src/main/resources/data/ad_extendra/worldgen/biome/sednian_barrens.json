@@ -1,0 +1,33 @@
+{
+  "temperature": 0.2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 10042664,
+    "fog_color": 8923665,
+    "water_color": 10044212,
+    "water_fog_color": 10044212,
+    "grass_color": 10044212,
+    "foliage_color": 10044212,
+    "music": {
+      "sound": "minecraft:ambient.crimson_forest.loop",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    "ad_extendra:sedna/electrolyte_ore",
+    "ad_extendra:sedna/copper_ore",
+    "ad_extendra:sedna/iron_ore"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:makemake_stone_bricks"
+    }
+  },
+  "pattern": [
+    "JJJ"
+  ],
+  "result": {
+    "count": 6,
+    "item": "ad_extendra:makemake_stone_brick_slab"
+  },
+  "show_notification": true
+}

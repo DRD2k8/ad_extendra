@@ -1,0 +1,7 @@
+{
+  "parent": "ad_extendra:item/globe",
+  "textures": {
+    "particle": "ad_astra:block/globe/uranus_globe",
+    "texture": "ad_astra:block/globe/uranus_globe"
+  }
+}

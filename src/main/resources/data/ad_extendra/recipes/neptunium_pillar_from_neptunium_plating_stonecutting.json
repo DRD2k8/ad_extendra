@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ad_extendra:neptunium_plating"
+  },
+  "result": "ad_extendra:neptunium_pillar"
+}

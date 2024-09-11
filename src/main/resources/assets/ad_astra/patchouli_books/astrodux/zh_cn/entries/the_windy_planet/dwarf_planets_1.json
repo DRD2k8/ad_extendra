@@ -1,0 +1,18 @@
+{
+  "name": "Orcus、Haumea、Quaoar 和 Makemake",
+  "icon": "ad_extendra:/textures/planetscreen/orcus.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_windy_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "镭",
+      "item": "ad_extendra:radium_ingot",
+      "text": "一旦你收集了足够的镎来制造一枚八级火箭，你就可以前往奥喀斯、豪美亚、夸奥尔和鸟神星。您寻找的下一个材料是镭（元素八十八）。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "镭用于制造能够前往另外三颗矮行星的九级火箭。"
+    }
+  ]
+}

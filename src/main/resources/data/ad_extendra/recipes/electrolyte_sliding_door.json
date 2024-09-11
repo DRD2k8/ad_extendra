@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "ad_astra_platform:electrolyte_blocks"
+    },
+    "J": {
+      "tag": "ad_astra_platform:electrolyte_plates"
+    },
+    "P": {
+      "item": "minecraft:glass_pane"
+    }
+  },
+  "pattern": [
+    "JJJ",
+    "P#P",
+    "JJJ"
+  ],
+  "result": {
+    "item": "ad_extendra:electrolyte_sliding_door"
+  },
+  "show_notification": true
+}

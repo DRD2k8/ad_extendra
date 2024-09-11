@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_saturlyte_plate": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "ad_astra_platform:saturlyte_plates"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:saturlyte_sliding_door"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_saturlyte_plate",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:saturlyte_sliding_door"
+    ]
+  },
+  "sends_telemetry_event": false
+}

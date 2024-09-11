@@ -1,0 +1,15 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "ad_astra:astrodux": {
+      "viewedEntries": [
+        "ad_astra:the_distant_planet/proxima_centauri",
+        "ad_astra:the_big_planet/saturn",
+        "ad_astra:the_hot_planets/jupiter"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}

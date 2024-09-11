@@ -1,0 +1,18 @@
+{
+  "name": "木星",
+  "icon": "ad_astra:/textures/sky/jupiter.png",
+  "sortnum": 1,
+  "category": "ad_astra:the_hot_planets",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "茱萸属",
+      "item": "ad_extendra:juperium_ingot",
+      "text": "一旦您拥有足够的卡路里来制作一套完整的喷气式飞机套装和第四级火箭的所有组件，您就可以前往木星。您寻找的下一个材料是 Juperium（如上级所说）。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Juperium 用于制造能够前往这颗环状行星的五级火箭。"
+    }
+  ]
+}

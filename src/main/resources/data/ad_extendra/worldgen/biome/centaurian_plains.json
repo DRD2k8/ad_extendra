@@ -1,0 +1,34 @@
+{
+  "temperature": 0.4,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 2960962,
+    "fog_color": 12542018,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "grass_color": 15126687,
+    "foliage_color": 14008723,
+    "music": {
+      "sound": "minecraft:music.overworld.cherry_grove",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    "ad_extendra:b/iron_ore",
+    "ad_extendra:b/redstone_ore",
+    "ad_extendra:b/emerald_ore",
+    "ad_extendra:b/diamond_ore"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_saturlyte_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:saturlyte_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:saturlyte_ingot_from_nuggets"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_saturlyte_nugget",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:saturlyte_ingot_from_nuggets"
+    ]
+  },
+  "sends_telemetry_event": false
+}

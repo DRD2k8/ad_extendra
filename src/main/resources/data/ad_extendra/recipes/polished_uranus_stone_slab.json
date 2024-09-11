@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:polished_uranus_stone"
+    }
+  },
+  "pattern": [
+    "JJJ"
+  ],
+  "result": {
+    "count": 6,
+    "item": "ad_extendra:polished_uranus_stone_slab"
+  },
+  "show_notification": true
+}

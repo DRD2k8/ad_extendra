@@ -1,0 +1,59 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_engine_fan": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_astra:engine_fan"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_engine_frame": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_astra:engine_frame"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_plutonium_plate": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "ad_astra_platform:plutonium_plates"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:plutonium_engine"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_plutonium_plate",
+      "has_engine_frame",
+      "has_engine_fan",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:plutonium_engine"
+    ]
+  },
+  "sends_telemetry_event": false
+}

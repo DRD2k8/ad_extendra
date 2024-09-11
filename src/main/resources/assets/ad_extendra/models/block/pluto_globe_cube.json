@@ -1,0 +1,7 @@
+{
+  "parent": "ad_extendra:block/globe_cube",
+  "textures": {
+    "particle": "ad_extendra:block/globe/pluto_globe",
+    "texture": "ad_extendra:block/globe/pluto_globe"
+  }
+}

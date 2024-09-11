@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ad_extendra:gonggong_globe"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.gonggong.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.gonggong.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "gonggong": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ad_extendra:gonggong"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  },
+  "parent": "ad_extendra:tier_9_rocket"
+}

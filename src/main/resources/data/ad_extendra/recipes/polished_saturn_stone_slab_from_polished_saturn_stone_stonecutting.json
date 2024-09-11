@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "ad_extendra:polished_saturn_stone"
+  },
+  "result": "ad_extendra:polished_saturn_stone_slab"
+}

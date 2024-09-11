@@ -1,0 +1,16 @@
+{
+  "translation": "planet.ad_extendra.uranus",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "ad_extendra:uranus",
+  "orbit_world": "ad_extendra:uranus_orbit",
+  "rocket_tier": 6,
+  "gravity": 8.69,
+  "has_atmosphere": true,
+  "days_in_year": 30660,
+  "temperature": -224,
+  "solar_power": 11,
+  "orbit_solar_power": 13,
+  "has_oxygen": false,
+  "button_color": "light_blue"
+}

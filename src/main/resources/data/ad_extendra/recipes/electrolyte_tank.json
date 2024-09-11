@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "ad_astra_platform:electrolyte_plates"
+    },
+    "U": {
+      "item": "minecraft:bucket"
+    },
+    "|": {
+      "tag": "ad_astra_platform:iron_rods"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#U|",
+    "## "
+  ],
+  "result": {
+    "item": "ad_extendra:electrolyte_tank"
+  },
+  "show_notification": true
+}

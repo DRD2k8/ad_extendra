@@ -1,0 +1,18 @@
+{
+  "name": "Уран",
+  "icon": "ad_astra:/textures/sky/uranus.png",
+  "sortnum": 0,
+  "category": "ad_astra:a_ringed_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Урановий",
+      "item": "ad_extendra:uranium_ingot",
+      "text": "Зібравши достатньо сатурліту для створення ракети 6-го рівня, ви можете відправитися на Уран. Наступний матеріал, який ви шукаєте, це урановий (елемент №92)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Урановий використовується для виготовлення ракети 7-го рівня, здатної долетіти до вітряної планети."
+    }
+  ]
+}

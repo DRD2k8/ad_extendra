@@ -1,0 +1,11 @@
+{
+  "values": [
+    "ad_extendra:juperium_block",
+    "ad_extendra:saturlyte_block",
+    "ad_extendra:uranium_block",
+    "ad_extendra:neptunium_block",
+    "ad_extendra:radium_block",
+    "ad_extendra:plutonium_block",
+    "ad_extendra:electrolyte_block"
+  ]
+}

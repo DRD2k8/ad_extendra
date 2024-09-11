@@ -1,0 +1,33 @@
+{
+  "temperature": 0.6,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 13487565,
+    "fog_color": 9671571,
+    "water_color": 14869218,
+    "water_fog_color": 14869218,
+    "grass_color": 14869218,
+    "foliage_color": 14869218,
+    "music": {
+      "sound": "minecraft:ambient.crimson_forest.loop",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon",
+      "minecraft:nether_cave"
+    ]
+  },
+  "features": [
+    "ad_extendra:haumea/copper_ore",
+    "ad_extendra:haumea/iron_ore"
+  ]
+}

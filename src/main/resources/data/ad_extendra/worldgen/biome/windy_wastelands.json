@@ -1,0 +1,41 @@
+{
+  "temperature": -0.4,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 5269954,
+    "fog_color": 4542399,
+    "water_color": 6979531,
+    "water_fog_color": 6979531,
+    "grass_color": 6979531,
+    "foliage_color": 6979531,
+    "music": {
+      "sound": "minecraft:ambient.crimson_forest.loop",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "ad_extendra:wind"
+      },
+      "probability": 0.04
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    "ad_extendra:neptune/neptunium_ore",
+    "ad_extendra:neptune/ice_shard_ore",
+    "ad_extendra:neptune/iron_ore",
+    "ad_extendra:neptune/copper_ore",
+    "ad_extendra:neptune/coal_ore"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ad_extendra:b_globe"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.b.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.b.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "b": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ad_extendra:b"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1000
+  },
+  "parent": "ad_extendra:tier_11_rocket"
+}

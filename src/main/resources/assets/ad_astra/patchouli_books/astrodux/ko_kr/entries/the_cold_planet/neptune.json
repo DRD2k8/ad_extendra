@@ -1,0 +1,18 @@
+{
+  "name": "해왕성",
+  "icon": "ad_astra:/textures/sky/neptune.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_cold_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "넵투늄",
+      "item": "ad_extendra:neptunium_ingot",
+      "text": "7단계 로켓을 제작할 만큼 충분한 우라늄을 모으면 해왕성으로 여행할 수 있습니다. 다음으로 찾고 있는 물질은 넵투늄(93번 원소)입니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "넵투늄은 왜소행성으로 여행할 수 있는 8티어 로켓을 제작하는 데 사용됩니다."
+    }
+  ]
+}

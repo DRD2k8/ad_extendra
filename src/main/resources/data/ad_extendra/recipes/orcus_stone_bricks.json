@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "J": {
+      "item": "ad_extendra:orcus_stone"
+    }
+  },
+  "pattern": [
+    "JJ",
+    "JJ"
+  ],
+  "result": {
+    "count": 4,
+    "item": "ad_extendra:orcus_stone_bricks"
+  },
+  "show_notification": true
+}

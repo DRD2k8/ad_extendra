@@ -1,0 +1,18 @@
+{
+  "name": "Нептун",
+  "icon": "ad_astra:/textures/sky/neptune.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_cold_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Нептуній",
+      "item": "ad_extendra:neptunium_ingot",
+      "text": "Зібравши достатньо урану для виготовлення ракети 7-го рівня, ви можете відправитися на Нептун. Наступний матеріал, який ви шукаєте, це нептуній (елемент №93)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Нептуній використовується для створення ракети рівня 8, здатної подорожувати до карликових планет."
+    }
+  ]
+}

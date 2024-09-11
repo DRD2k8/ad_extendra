@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ad_extendra:saturn_cobblestone"
+  },
+  "result": "ad_extendra:saturn_cobblestone_stairs"
+}

@@ -1,0 +1,26 @@
+{
+  "values": [
+    "ad_extendra:juperium_block",
+    "ad_extendra:jupiter_juperium_ore",
+    "ad_extendra:raw_juperium_block",
+    "ad_extendra:juperium_plating",
+    "ad_extendra:juperium_plating_stairs",
+    "ad_extendra:juperium_plating_slab",
+    "ad_extendra:juperium_pillar",
+    "ad_extendra:glowing_juperium_pillar",
+    "ad_extendra:juperium_plating_button",
+    "ad_extendra:juperium_plating_pressure_plate",
+    "ad_extendra:juperium_sliding_door",
+    "ad_extendra:saturlyte_block",
+    "ad_extendra:saturn_saturlyte_ore",
+    "ad_extendra:raw_saturlyte_block",
+    "ad_extendra:saturlyte_plating",
+    "ad_extendra:saturlyte_plating_stairs",
+    "ad_extendra:saturlyte_plating_slab",
+    "ad_extendra:saturlyte_pillar",
+    "ad_extendra:glowing_saturlyte_pillar",
+    "ad_extendra:saturlyte_plating_button",
+    "ad_extendra:saturlyte_plating_pressure_plate",
+    "ad_extendra:saturlyte_sliding_door"
+  ]
+}

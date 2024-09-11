@@ -1,0 +1,16 @@
+{
+  "translation": "planet.ad_extendra.jupiter",
+  "galaxy": "ad_astra:milky_way",
+  "solar_system": "ad_astra:solar_system",
+  "world": "ad_extendra:jupiter",
+  "orbit_world": "ad_extendra:jupiter_orbit",
+  "rocket_tier": 4,
+  "gravity": 24.79,
+  "has_atmosphere": true,
+  "days_in_year": 4329,
+  "temperature": -126,
+  "solar_power": 11,
+  "orbit_solar_power": 13,
+  "has_oxygen": false,
+  "button_color": "orange"
+}

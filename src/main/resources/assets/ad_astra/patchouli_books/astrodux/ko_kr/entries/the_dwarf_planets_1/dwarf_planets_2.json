@@ -1,0 +1,18 @@
+{
+  "name": "명왕성, 공공, 에리스",
+  "icon": "ad_extendra:/textures/planetscreen/pluto.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_dwarf_planets_1",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "플루토늄",
+      "item": "ad_extendra:plutonium_ingot",
+      "text": "9단계 로켓을 제작할 만큼 충분한 라듐을 모으면 명왕성, 공공, 에리스로 여행할 수 있습니다. 당신이 찾고 있는 다음 물질은 플루토늄(원소 94)입니다."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "플루토늄은 세드나로 이동할 수 있는 10티어 로켓을 제작하는 데 사용됩니다."
+    }
+  ]
+}

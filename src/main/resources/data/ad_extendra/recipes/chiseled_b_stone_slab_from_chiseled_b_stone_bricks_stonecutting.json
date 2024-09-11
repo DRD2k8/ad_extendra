@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "ad_extendra:chiseled_b_stone_bricks"
+  },
+  "result": "ad_extendra:chiseled_b_stone_slab"
+}

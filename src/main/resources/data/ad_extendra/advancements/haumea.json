@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ad_extendra:haumea_globe"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.haumea.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.haumea.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "haumea": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ad_extendra:haumea"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 400
+  },
+  "parent": "ad_extendra:tier_8_rocket"
+}
