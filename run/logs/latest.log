@@ -1,5 +1,5 @@
-[15:33:33] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.16.5
-[15:33:33] [main/INFO] (FabricLoader) Loading 70 mods:
+[16:45:55] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.20.1 with Fabric Loader 0.16.5
+[16:45:56] [main/INFO] (FabricLoader) Loading 70 mods:
 	- ad_astra 1.15.5
 	- ad_extendra 1.0.2
 	- botarium 2.3.4
@@ -70,14 +70,14 @@
 	   |-- com_teamresourceful_bytecodecs 1.0.2
 	   \-- com_teamresourceful_yabn 1.0.3
 	- terraform-wood-api-v1 7.0.1
-[15:33:36] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/dandi/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/51ee0a44ab05f6fddd66b09e66b3a16904f9c55d/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
-[15:33:36] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
-[15:33:37] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
-[15:33:38] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[15:33:38] [main/WARN] (PerfmonDisabled) Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
-[15:33:41] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 67 milliseconds
-[15:33:42] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[15:33:42] [Render thread/ERROR] (Minecraft) Failed to verify authentication
+[16:45:59] [main/INFO] (FabricLoader/Mixin) SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/C:/Users/dandi/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.3+mixin.0.8.7/51ee0a44ab05f6fddd66b09e66b3a16904f9c55d/sponge-mixin-0.15.3+mixin.0.8.7.jar Service=Knot/Fabric Env=CLIENT
+[16:45:59] [main/INFO] (FabricLoader/Mixin) Loaded Fabric development mappings for mixin remapper!
+[16:45:59] [main/INFO] (FabricLoader/Mixin) Compatibility level set to JAVA_17
+[16:46:00] [main/INFO] (FabricLoader/MixinExtras|Service) Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[16:46:00] [main/WARN] (PerfmonDisabled) Invalid registry value type detected for PerfOS counters. Should be REG_DWORD. Ignoring: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfOS\Performance\Disable Performance Counters.
+[16:46:03] [Datafixer Bootstrap/INFO] (Minecraft) 188 Datafixer optimizations took 76 milliseconds
+[16:46:04] [Render thread/INFO] (Minecraft) Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[16:46:05] [Render thread/ERROR] (Minecraft) Failed to verify authentication
 com.mojang.authlib.exceptions.InvalidCredentialsException: Status: 401
 	at com.mojang.authlib.exceptions.MinecraftClientHttpException.toAuthenticationException(MinecraftClientHttpException.java:56) ~[authlib-4.0.43.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:156) ~[authlib-4.0.43.jar:?]
@@ -95,344 +95,282 @@ Caused by: com.mojang.authlib.exceptions.MinecraftClientHttpException: Status: 4
 	at com.mojang.authlib.minecraft.client.MinecraftClient.get(MinecraftClient.java:48) ~[authlib-4.0.43.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilUserApiService.fetchProperties(YggdrasilUserApiService.java:129) ~[authlib-4.0.43.jar:?]
 	... 9 more
-[15:33:42] [Render thread/INFO] (Minecraft) Setting user: Player962
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for freeze
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for ice_charge
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_5_rocket
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_6_rocket
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_7_rocket
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_8_rocket
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_9_rocket
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_10_rocket
-[15:33:43] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_11_rocket
-[15:33:44] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
-[15:33:44] [Worker-Main-1/INFO] (Mod Menu/Update Checker) Checking mod updates...
-[15:33:44] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
-[15:33:45] [Worker-Main-1/INFO] (Mod Menu/Update Checker) Update available for 'ad_astra@1.15.5', (-> 1.15.18)
-[15:33:45] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-resource-conditions-api-v1, fabric-api-lookup-api-v1, fabric-keybindings-v0, fabric-screen-handler-api-v1, fabric-client-tags-api-v1, fabric-particles-v1, fabric-object-builder-api-v1, fabric-blockrenderlayer-v1, fabric-convention-tags-v1, fabric-containers-v0, fabric-renderer-registries-v1, ad_astra, fabric-rendering-v0, fabric-registry-sync-v0, fabric-transfer-api-v1, fabricloader, fabric-item-api-v1, fabric-networking-v0, fabric-models-v0, ad_extendra, fabric-model-loading-api-v1, fabric-resource-loader-v0, fabric-networking-api-v1, fabric-commands-v0, fabric-entity-events-v1, fabric-lifecycle-events-v1, fabric-recipe-api-v1, fabric-item-group-api-v1, team_reborn_energy, fabric-dimensions-v1, fabric-events-lifecycle-v0, fabric-loot-tables-v1, fabric-content-registries-v0, fabric-data-attachment-api-v1, fabric-renderer-api-v1, fabric-game-rule-api-v1, fabric-transitive-access-wideners-v1, fabric-message-api-v1, patchouli, fabric-screen-api-v1, fabric-biome-api-v1, fabric-sound-api-v1, fabric-mining-level-api-v1, fabric-rendering-fluids-v1, fabric-command-api-v2, fabric-renderer-indigo, fabric-block-view-api-v2, modmenu, fabric-crash-report-info-v1, fabric-gametest-api-v1, fabric-rendering-v1, fabric-events-interaction-v0, fabric-loot-api-v2, fabric-block-api-v1, fabric-api-base, fabric-rendering-data-attachment-v1, fabric-data-generation-api-v1, fabric-key-binding-api-v1, terraform-wood-api-v1, fabric-command-api-v1, fabric-api)
-[15:33:45] [Worker-Main-12/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
-[15:33:46] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:uranus_globe#inventory:
+[16:46:05] [Render thread/INFO] (Minecraft) Setting user: Player347
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for freeze
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for ice_charge
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_5_rocket
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_6_rocket
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_7_rocket
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_8_rocket
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_9_rocket
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_10_rocket
+[16:46:05] [Render thread/ERROR] (Minecraft) No data fixer registered for tier_11_rocket
+[16:46:06] [Worker-Main-1/INFO] (Mod Menu/Update Checker) Checking mod updates...
+[16:46:06] [Render thread/INFO] (Indigo) [Indigo] Registering Indigo renderer!
+[16:46:07] [Render thread/INFO] (Minecraft) Backend library: LWJGL version 3.3.1 SNAPSHOT
+[16:46:07] [Worker-Main-1/INFO] (Mod Menu/Update Checker) Update available for 'ad_astra@1.15.5', (-> 1.15.18)
+[16:46:07] [Render thread/INFO] (Minecraft) Reloading ResourceManager: vanilla, fabric (fabric-events-lifecycle-v0, patchouli, fabric-game-rule-api-v1, terraform-wood-api-v1, fabric-keybindings-v0, fabric-api-base, fabric-api-lookup-api-v1, fabric-commands-v0, fabric-models-v0, fabric-mining-level-api-v1, modmenu, fabric-networking-v0, fabric-dimensions-v1, fabric-sound-api-v1, fabric-screen-handler-api-v1, fabric-key-binding-api-v1, fabric-transfer-api-v1, fabric-command-api-v2, fabric-model-loading-api-v1, fabric-renderer-registries-v1, fabric-renderer-api-v1, fabric-content-registries-v0, fabric-lifecycle-events-v1, fabric-block-view-api-v2, fabric-transitive-access-wideners-v1, fabric-particles-v1, fabric-data-generation-api-v1, fabric-resource-loader-v0, fabric-networking-api-v1, fabric-biome-api-v1, fabric-renderer-indigo, fabric-recipe-api-v1, fabric-object-builder-api-v1, fabric-crash-report-info-v1, fabric-rendering-fluids-v1, fabric-blockrenderlayer-v1, fabric-resource-conditions-api-v1, fabric-rendering-data-attachment-v1, fabric-loot-api-v2, fabric-data-attachment-api-v1, fabric-item-group-api-v1, fabric-events-interaction-v0, team_reborn_energy, fabric-gametest-api-v1, fabric-screen-api-v1, fabric-rendering-v1, fabric-containers-v0, fabric-convention-tags-v1, fabric-api, fabric-item-api-v1, fabric-message-api-v1, ad_extendra, fabric-client-tags-api-v1, fabric-command-api-v1, fabric-registry-sync-v0, fabric-entity-events-v1, ad_astra, fabricloader, fabric-rendering-v0, fabric-loot-tables-v1, fabric-block-api-v1)
+[16:46:07] [Worker-Main-12/INFO] (Minecraft) Found unifont_all_no_pua-15.0.06.hex, loading
+[16:46:08] [Realms Notification Availability checker #1/INFO] (Minecraft) Could not authorize you against Realms server: Invalid session id
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:uranus_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/uranus_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:jupiter_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:jupiter_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/jupiter_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:ceres_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:ceres_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/ceres_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:saturn_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:saturn_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/saturn_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:haumea_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:haumea_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/haumea_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:b_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:b_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/b_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:makemake_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:makemake_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/makemake_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:gonggong_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:gonggong_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/gonggong_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:neptune_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:neptune_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/neptune_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:pluto_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:pluto_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/pluto_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:orcus_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:orcus_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/orcus_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:quaoar_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:quaoar_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/quaoar_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:eris_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:eris_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/eris_globe
-[15:33:47] [Worker-Main-5/WARN] (Minecraft) Missing textures in model ad_extendra:sedna_globe#inventory:
+[16:46:09] [Worker-Main-3/WARN] (Minecraft) Missing textures in model ad_extendra:sedna_globe#inventory:
     minecraft:textures/atlas/blocks.png:ad_astra:block/globe/sedna_globe
-[15:33:47] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
-[15:33:47] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[15:33:47] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Speakers (Realtek High Definition Audio)
-[15:33:47] [Render thread/INFO] (Minecraft) Sound engine started
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/chest.png-atlas
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[15:33:47] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[15:33:47] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[15:33:48] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[15:33:48] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[15:33:48] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[15:33:48] [Render thread/INFO] (patchouli) BookContentResourceListenerLoader preloaded 200 jsons
-[15:33:52] [Render thread/INFO] (Minecraft) Deleting level New World
-[15:33:52] [Render thread/INFO] (Minecraft) Attempt 1...
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:b/diamond_ore"; Not a json array: "ad_extendra:b/emerald_ore"; Not a json array: "ad_extendra:b/redstone_ore"; Not a json array: "ad_extendra:b/iron_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:b/diamond_ore"; Not a json array: "ad_extendra:b/emerald_ore"; Not a json array: "ad_extendra:b/redstone_ore"; Not a json array: "ad_extendra:b/iron_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:jupiter/diamond_ore"; Not a json array: "ad_extendra:jupiter/gold_ore"; Not a json array: "ad_extendra:jupiter/coal_ore"; Not a json array: "ad_extendra:jupiter/juperium_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:saturn/diamond_ore"; Not a json array: "ad_extendra:saturn/gold_ore"; Not a json array: "ad_extendra:saturn/coal_ore"; Not a json array: "ad_extendra:saturn/saturlyte_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:gonggong/iron_ore"; Not a json array: "ad_extendra:gonggong/copper_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:eris/iron_ore"; Not a json array: "ad_extendra:eris/copper_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:haumea/iron_ore"; Not a json array: "ad_extendra:haumea/copper_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:ceres/iron_ore"; Not a json array: "ad_extendra:ceres/copper_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:makemake/iron_ore"; Not a json array: "ad_extendra:makemake/copper_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:orcus/iron_ore"; Not a json array: "ad_extendra:orcus/copper_ore"; Not a json array: "ad_extendra:orcus/radium_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:pluto/diamond_ore"; Not a json array: "ad_extendra:pluto/gold_ore"; Not a json array: "ad_extendra:neptune/pluto_shard_ore"; Not a json array: "ad_extendra:pluto/plutonium_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:quaoar/iron_ore"; Not a json array: "ad_extendra:quaoar/copper_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:sedna/iron_ore"; Not a json array: "ad_extendra:sedna/copper_ore"; Not a json array: "ad_extendra:sedna/electrolyte_ore"
-[15:33:52] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:uranus/icicle_geode"; Not a json array: "ad_extendra:uranus/diamond_ore"; Not a json array: "ad_extendra:uranus/lapis_ore"; Not a json array: "ad_extendra:uranus/iron_ore"; Not a json array: "ad_extendra:uranus/ice_shard_ore"; Not a json array: "ad_extendra:uranus/uranium_ore"
-[15:33:53] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:neptune/coal_ore"; Not a json array: "ad_extendra:neptune/copper_ore"; Not a json array: "ad_extendra:neptune/iron_ore"; Not a json array: "ad_extendra:neptune/ice_shard_ore"; Not a json array: "ad_extendra:neptune/neptunium_ore"
-[15:33:53] [Worker-Main-14/ERROR] (Minecraft) Couldn't load tag c:ores as it is missing following references: #forge:ores/juperium (from fabric), #forge:ores/saturlyte (from fabric), #forge:ores/uranium (from fabric), #forge:ores/neptunium (from fabric), #forge:ores/radium (from fabric), #forge:ores/plutonium (from fabric), #forge:ores/electrolyte (from fabric)
-[15:33:53] [Worker-Main-1/ERROR] (Minecraft) Couldn't load tag c:plates as it is missing following references: #forge:plates/juperium (from fabric), #forge:plates/saturlyte (from fabric), #forge:plates/uranium (from fabric), #forge:plates/neptunium (from fabric), #forge:plates/radium (from fabric), #forge:plates/plutonium (from fabric), #forge:plates/electrolyte (from fabric)
-[15:33:53] [Worker-Main-1/ERROR] (Minecraft) Couldn't load tag c:nuggets as it is missing following references: #forge:nuggets/juperium (from fabric), #forge:nuggets/saturlyte (from fabric), #forge:nuggets/uranium (from fabric), #forge:nuggets/neptunium (from fabric), #forge:nuggets/radium (from fabric), #forge:nuggets/plutonium (from fabric), #forge:nuggets/electrolyte (from fabric)
-[15:33:53] [Worker-Main-1/ERROR] (Minecraft) Couldn't load tag c:ingots as it is missing following references: #forge:ingots/juperium (from fabric), #forge:ingots/saturlyte (from fabric), #forge:ingots/uranium (from fabric), #forge:ingots/neptunium (from fabric), #forge:ingots/radium (from fabric), #forge:ingots/plutonium (from fabric), #forge:ingots/electrolyte (from fabric)
-[15:33:53] [Worker-Main-1/ERROR] (Minecraft) Couldn't load tag c:raw_ores as it is missing following references: #forge:raw_materials/juperium (from fabric), #forge:raw_materials/saturlyte (from fabric), #forge:raw_materials/uranium (from fabric), #forge:raw_materials/neptunium (from fabric), #forge:raw_materials/radium (from fabric), #forge:raw_materials/plutonium (from fabric), #forge:raw_materials/electrolyte (from fabric)
-[15:33:53] [Worker-Main-1/ERROR] (Minecraft) Couldn't load tag c:ores as it is missing following references: #forge:ores/juperium (from fabric), #forge:ores/saturlyte (from fabric), #forge:ores/uranium (from fabric), #forge:ores/neptunium (from fabric), #forge:ores/radium (from fabric), #forge:ores/plutonium (from fabric), #forge:ores/electrolyte (from fabric)
-[15:33:53] [Render thread/INFO] (Minecraft) Loaded 13 recipes
-[15:33:53] [Render thread/INFO] (Minecraft) Loaded 2072 advancements
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:b/diamond_ore"; Not a json array: "ad_extendra:b/emerald_ore"; Not a json array: "ad_extendra:b/redstone_ore"; Not a json array: "ad_extendra:b/iron_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:b/diamond_ore"; Not a json array: "ad_extendra:b/emerald_ore"; Not a json array: "ad_extendra:b/redstone_ore"; Not a json array: "ad_extendra:b/iron_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:jupiter/diamond_ore"; Not a json array: "ad_extendra:jupiter/gold_ore"; Not a json array: "ad_extendra:jupiter/coal_ore"; Not a json array: "ad_extendra:jupiter/juperium_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:saturn/diamond_ore"; Not a json array: "ad_extendra:saturn/gold_ore"; Not a json array: "ad_extendra:saturn/coal_ore"; Not a json array: "ad_extendra:saturn/saturlyte_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:gonggong/iron_ore"; Not a json array: "ad_extendra:gonggong/copper_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:eris/iron_ore"; Not a json array: "ad_extendra:eris/copper_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:haumea/iron_ore"; Not a json array: "ad_extendra:haumea/copper_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:ceres/iron_ore"; Not a json array: "ad_extendra:ceres/copper_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:makemake/iron_ore"; Not a json array: "ad_extendra:makemake/copper_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:orcus/iron_ore"; Not a json array: "ad_extendra:orcus/copper_ore"; Not a json array: "ad_extendra:orcus/radium_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:pluto/diamond_ore"; Not a json array: "ad_extendra:pluto/gold_ore"; Not a json array: "ad_extendra:neptune/pluto_shard_ore"; Not a json array: "ad_extendra:pluto/plutonium_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:quaoar/iron_ore"; Not a json array: "ad_extendra:quaoar/copper_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:sedna/iron_ore"; Not a json array: "ad_extendra:sedna/copper_ore"; Not a json array: "ad_extendra:sedna/electrolyte_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:uranus/icicle_geode"; Not a json array: "ad_extendra:uranus/diamond_ore"; Not a json array: "ad_extendra:uranus/lapis_ore"; Not a json array: "ad_extendra:uranus/iron_ore"; Not a json array: "ad_extendra:uranus/ice_shard_ore"; Not a json array: "ad_extendra:uranus/uranium_ore"
-[15:33:55] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:neptune/coal_ore"; Not a json array: "ad_extendra:neptune/copper_ore"; Not a json array: "ad_extendra:neptune/iron_ore"; Not a json array: "ad_extendra:neptune/ice_shard_ore"; Not a json array: "ad_extendra:neptune/neptunium_ore"
-[15:33:55] [Worker-Main-13/ERROR] (Minecraft) Couldn't load tag c:ores as it is missing following references: #forge:ores/juperium (from fabric), #forge:ores/saturlyte (from fabric), #forge:ores/uranium (from fabric), #forge:ores/neptunium (from fabric), #forge:ores/radium (from fabric), #forge:ores/plutonium (from fabric), #forge:ores/electrolyte (from fabric)
-[15:33:55] [Worker-Main-9/ERROR] (Minecraft) Couldn't load tag c:plates as it is missing following references: #forge:plates/juperium (from fabric), #forge:plates/saturlyte (from fabric), #forge:plates/uranium (from fabric), #forge:plates/neptunium (from fabric), #forge:plates/radium (from fabric), #forge:plates/plutonium (from fabric), #forge:plates/electrolyte (from fabric)
-[15:33:55] [Worker-Main-9/ERROR] (Minecraft) Couldn't load tag c:nuggets as it is missing following references: #forge:nuggets/juperium (from fabric), #forge:nuggets/saturlyte (from fabric), #forge:nuggets/uranium (from fabric), #forge:nuggets/neptunium (from fabric), #forge:nuggets/radium (from fabric), #forge:nuggets/plutonium (from fabric), #forge:nuggets/electrolyte (from fabric)
-[15:33:55] [Worker-Main-9/ERROR] (Minecraft) Couldn't load tag c:ingots as it is missing following references: #forge:ingots/juperium (from fabric), #forge:ingots/saturlyte (from fabric), #forge:ingots/uranium (from fabric), #forge:ingots/neptunium (from fabric), #forge:ingots/radium (from fabric), #forge:ingots/plutonium (from fabric), #forge:ingots/electrolyte (from fabric)
-[15:33:55] [Worker-Main-9/ERROR] (Minecraft) Couldn't load tag c:raw_ores as it is missing following references: #forge:raw_materials/juperium (from fabric), #forge:raw_materials/saturlyte (from fabric), #forge:raw_materials/uranium (from fabric), #forge:raw_materials/neptunium (from fabric), #forge:raw_materials/radium (from fabric), #forge:raw_materials/plutonium (from fabric), #forge:raw_materials/electrolyte (from fabric)
-[15:33:55] [Worker-Main-9/ERROR] (Minecraft) Couldn't load tag c:ores as it is missing following references: #forge:ores/juperium (from fabric), #forge:ores/saturlyte (from fabric), #forge:ores/uranium (from fabric), #forge:ores/neptunium (from fabric), #forge:ores/radium (from fabric), #forge:ores/plutonium (from fabric), #forge:ores/electrolyte (from fabric)
-[15:33:56] [Render thread/INFO] (Minecraft) Loaded 13 recipes
-[15:33:56] [Render thread/INFO] (Minecraft) Loaded 2072 advancements
-[15:33:58] [Render thread/INFO] (BiomeModificationImpl) Applied 49 biome modifications to 15 of 89 new biomes in 7.941 ms
-[15:33:58] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
-[15:33:58] [Server thread/INFO] (Minecraft) Generating keypair
-[15:34:00] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
-[15:34:00] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[15:34:01] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[15:34:01] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
-[15:34:02] [Render thread/INFO] (Minecraft) Preparing spawn area: 3%
-[15:34:02] [Render thread/INFO] (Minecraft) Preparing spawn area: 4%
-[15:34:03] [Render thread/INFO] (Minecraft) Preparing spawn area: 7%
-[15:34:03] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
-[15:34:04] [Render thread/INFO] (Minecraft) Preparing spawn area: 19%
-[15:34:04] [Render thread/INFO] (Minecraft) Preparing spawn area: 24%
-[15:34:05] [Render thread/INFO] (Minecraft) Preparing spawn area: 32%
-[15:34:05] [Render thread/INFO] (Minecraft) Preparing spawn area: 37%
-[15:34:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 44%
-[15:34:06] [Render thread/INFO] (Minecraft) Preparing spawn area: 53%
-[15:34:07] [Render thread/INFO] (Minecraft) Preparing spawn area: 59%
-[15:34:07] [Render thread/INFO] (Minecraft) Preparing spawn area: 68%
-[15:34:08] [Render thread/INFO] (Minecraft) Preparing spawn area: 73%
-[15:34:08] [Render thread/INFO] (Minecraft) Preparing spawn area: 83%
-[15:34:09] [Render thread/INFO] (Minecraft) Preparing spawn area: 90%
-[15:34:09] [Render thread/INFO] (Minecraft) Preparing spawn area: 97%
-[15:34:09] [Render thread/INFO] (Minecraft) Time elapsed: 9083 ms
-[15:34:09] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
-[15:34:09] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
-[15:34:10] [Server thread/INFO] (Minecraft) Player962[local:E:68ce877d] logged in with entity id 334 at (-16.5, 72.0, 194.5)
-[15:34:10] [Server thread/INFO] (Minecraft) Player962 joined the game
-[15:34:10] [Render thread/INFO] (Minecraft) [STDOUT]: Finalizing fluid item registration
-[15:34:10] [Render thread/INFO] (Minecraft) [STDOUT]: Finalizing energy item registration
-[15:34:10] [Render thread/INFO] (Minecraft) Loaded 2 advancements
-[15:34:10] [Render thread/INFO] (patchouli) BookContentResourceListenerLoader: Files found in 419.6 μs
-[15:34:10] [Render thread/INFO] (patchouli) BookContentResourceListenerLoader: Files found in 222.1 μs
-[15:34:10] [Render thread/INFO] (patchouli) BookContentResourceListenerLoader: Files found in 185.2 μs
-[15:35:36] [Render thread/INFO] (Minecraft) Loaded 3 advancements
-[15:36:15] [Render thread/WARN] (Minecraft) Unable to play empty soundEvent: minecraft:entity.salmon.ambient
-[15:36:21] [Server thread/INFO] (Minecraft) Player962 has reached the goal [To infinity and beyond!]
-[15:36:21] [Render thread/INFO] (Minecraft) [System] [CHAT] Player962 has reached the goal [To infinity and beyond!]
-[15:36:21] [Render thread/INFO] (Minecraft) Loaded 27 advancements
-[15:37:03] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:earth_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus_orbit
-[15:37:03] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna
-[15:37:06] [Server thread/INFO] (Minecraft) Player962 has reached the goal [Another earth?]
-[15:37:06] [Render thread/INFO] (Minecraft) [System] [CHAT] §7Hold §cSpace!
-[15:37:06] [Render thread/INFO] (Minecraft) [System] [CHAT] Player962 has reached the goal [Another earth?]
-[15:37:07] [Render thread/INFO] (Minecraft) Loaded 27 advancements
-[15:37:07] [Render thread/INFO] (Minecraft) Loaded 27 advancements
-[15:38:13] [Server thread/INFO] (Minecraft) [Player962: Set own game mode to Spectator Mode]
-[15:38:13] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Spectator Mode
-[15:38:28] [Server thread/INFO] (Minecraft) [Player962: Set own game mode to Creative Mode]
-[15:38:28] [Render thread/INFO] (Minecraft) [System] [CHAT] Set own game mode to Creative Mode
-[15:38:31] [Render thread/INFO] (Minecraft) Loaded 29 advancements
-[15:38:36] [Render thread/INFO] (Minecraft) Loaded 31 advancements
-[15:39:39] [Render thread/INFO] (Minecraft) Loaded 46 advancements
-[15:42:26] [Render thread/INFO] (Minecraft) Loaded 55 advancements
-[15:44:22] [Server thread/INFO] (Minecraft) Saving and pausing game...
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:earth_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus_orbit
-[15:44:22] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna
-[15:44:22] [Server thread/INFO] (Minecraft) Player962 lost connection: Disconnected
-[15:44:22] [Server thread/INFO] (Minecraft) Player962 left the game
-[15:44:22] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
-[15:44:22] [Server thread/INFO] (Minecraft) Stopping server
-[15:44:22] [Server thread/INFO] (Minecraft) Saving players
-[15:44:22] [Server thread/INFO] (Minecraft) Saving worlds
-[15:44:23] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:earth_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus_orbit
-[15:44:25] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (pluto): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (gonggong): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (mercury_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (jupiter_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (moon): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (neptune_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (mercury): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (haumea_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (quaoar_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (haumea): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (moon_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (venus): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (pluto_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (uranus_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (saturn_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (gonggong_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (uranus): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (jupiter): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (orcus): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (b_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (venus_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (ceres_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (makemake): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (b): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (eris): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (eris_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (mars): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (ceres): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (sedna_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (earth_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (quaoar): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (makemake_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (glacio): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (neptune): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (saturn): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (mars_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (glacio_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (orcus_orbit): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (sedna): All chunks are saved
-[15:44:25] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
-[15:44:29] [Render thread/INFO] (Minecraft) Stopping!
+[16:46:09] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:item.goat_horn.play
+[16:46:09] [Render thread/WARN] (Minecraft) Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[16:46:09] [Render thread/INFO] (Minecraft) OpenAL initialized on device OpenAL Soft on Speakers (Realtek High Definition Audio)
+[16:46:09] [Render thread/INFO] (Minecraft) Sound engine started
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/chest.png-atlas
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[16:46:09] [Render thread/INFO] (Minecraft) Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[16:46:10] [Render thread/WARN] (Minecraft) Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[16:46:10] [Render thread/INFO] (Minecraft) Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[16:46:10] [Render thread/INFO] (Minecraft) Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[16:46:10] [Render thread/INFO] (Minecraft) Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[16:46:10] [Render thread/INFO] (patchouli) BookContentResourceListenerLoader preloaded 200 jsons
+[16:46:15] [Render thread/INFO] (Minecraft) Deleting level New World
+[16:46:15] [Render thread/INFO] (Minecraft) Attempt 1...
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:b/diamond_ore"; Not a json array: "ad_extendra:b/emerald_ore"; Not a json array: "ad_extendra:b/redstone_ore"; Not a json array: "ad_extendra:b/iron_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:b/diamond_ore"; Not a json array: "ad_extendra:b/emerald_ore"; Not a json array: "ad_extendra:b/redstone_ore"; Not a json array: "ad_extendra:b/iron_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:jupiter/diamond_ore"; Not a json array: "ad_extendra:jupiter/gold_ore"; Not a json array: "ad_extendra:jupiter/coal_ore"; Not a json array: "ad_extendra:jupiter/juperium_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:saturn/diamond_ore"; Not a json array: "ad_extendra:saturn/gold_ore"; Not a json array: "ad_extendra:saturn/coal_ore"; Not a json array: "ad_extendra:saturn/saturlyte_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:gonggong/iron_ore"; Not a json array: "ad_extendra:gonggong/copper_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:eris/iron_ore"; Not a json array: "ad_extendra:eris/copper_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:haumea/iron_ore"; Not a json array: "ad_extendra:haumea/copper_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:ceres/iron_ore"; Not a json array: "ad_extendra:ceres/copper_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:makemake/iron_ore"; Not a json array: "ad_extendra:makemake/copper_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:orcus/iron_ore"; Not a json array: "ad_extendra:orcus/copper_ore"; Not a json array: "ad_extendra:orcus/radium_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:pluto/diamond_ore"; Not a json array: "ad_extendra:pluto/gold_ore"; Not a json array: "ad_extendra:neptune/pluto_shard_ore"; Not a json array: "ad_extendra:pluto/plutonium_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:quaoar/iron_ore"; Not a json array: "ad_extendra:quaoar/copper_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:sedna/iron_ore"; Not a json array: "ad_extendra:sedna/copper_ore"; Not a json array: "ad_extendra:sedna/electrolyte_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:uranus/icicle_geode"; Not a json array: "ad_extendra:uranus/diamond_ore"; Not a json array: "ad_extendra:uranus/lapis_ore"; Not a json array: "ad_extendra:uranus/iron_ore"; Not a json array: "ad_extendra:uranus/ice_shard_ore"; Not a json array: "ad_extendra:uranus/uranium_ore"
+[16:46:15] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:neptune/coal_ore"; Not a json array: "ad_extendra:neptune/copper_ore"; Not a json array: "ad_extendra:neptune/iron_ore"; Not a json array: "ad_extendra:neptune/ice_shard_ore"; Not a json array: "ad_extendra:neptune/neptunium_ore"
+[16:46:16] [Worker-Main-8/ERROR] (Minecraft) Couldn't load tag c:ores as it is missing following references: #forge:ores/juperium (from fabric), #forge:ores/saturlyte (from fabric), #forge:ores/uranium (from fabric), #forge:ores/neptunium (from fabric), #forge:ores/radium (from fabric), #forge:ores/plutonium (from fabric), #forge:ores/electrolyte (from fabric)
+[16:46:16] [Worker-Main-4/ERROR] (Minecraft) Couldn't load tag c:plates as it is missing following references: #forge:plates/juperium (from fabric), #forge:plates/saturlyte (from fabric), #forge:plates/uranium (from fabric), #forge:plates/neptunium (from fabric), #forge:plates/radium (from fabric), #forge:plates/plutonium (from fabric), #forge:plates/electrolyte (from fabric)
+[16:46:16] [Worker-Main-4/ERROR] (Minecraft) Couldn't load tag c:nuggets as it is missing following references: #forge:nuggets/juperium (from fabric), #forge:nuggets/saturlyte (from fabric), #forge:nuggets/uranium (from fabric), #forge:nuggets/neptunium (from fabric), #forge:nuggets/radium (from fabric), #forge:nuggets/plutonium (from fabric), #forge:nuggets/electrolyte (from fabric)
+[16:46:16] [Worker-Main-4/ERROR] (Minecraft) Couldn't load tag c:ingots as it is missing following references: #forge:ingots/juperium (from fabric), #forge:ingots/saturlyte (from fabric), #forge:ingots/uranium (from fabric), #forge:ingots/neptunium (from fabric), #forge:ingots/radium (from fabric), #forge:ingots/plutonium (from fabric), #forge:ingots/electrolyte (from fabric)
+[16:46:16] [Worker-Main-4/ERROR] (Minecraft) Couldn't load tag c:raw_ores as it is missing following references: #forge:raw_materials/juperium (from fabric), #forge:raw_materials/saturlyte (from fabric), #forge:raw_materials/uranium (from fabric), #forge:raw_materials/neptunium (from fabric), #forge:raw_materials/radium (from fabric), #forge:raw_materials/plutonium (from fabric), #forge:raw_materials/electrolyte (from fabric)
+[16:46:16] [Worker-Main-4/ERROR] (Minecraft) Couldn't load tag c:ores as it is missing following references: #forge:ores/juperium (from fabric), #forge:ores/saturlyte (from fabric), #forge:ores/uranium (from fabric), #forge:ores/neptunium (from fabric), #forge:ores/radium (from fabric), #forge:ores/plutonium (from fabric), #forge:ores/electrolyte (from fabric)
+[16:46:16] [Render thread/INFO] (Minecraft) Loaded 13 recipes
+[16:46:16] [Render thread/INFO] (Minecraft) Loaded 2072 advancements
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:b/diamond_ore"; Not a json array: "ad_extendra:b/emerald_ore"; Not a json array: "ad_extendra:b/redstone_ore"; Not a json array: "ad_extendra:b/iron_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:b/diamond_ore"; Not a json array: "ad_extendra:b/emerald_ore"; Not a json array: "ad_extendra:b/redstone_ore"; Not a json array: "ad_extendra:b/iron_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:jupiter/diamond_ore"; Not a json array: "ad_extendra:jupiter/gold_ore"; Not a json array: "ad_extendra:jupiter/coal_ore"; Not a json array: "ad_extendra:jupiter/juperium_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:saturn/diamond_ore"; Not a json array: "ad_extendra:saturn/gold_ore"; Not a json array: "ad_extendra:saturn/coal_ore"; Not a json array: "ad_extendra:saturn/saturlyte_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:gonggong/iron_ore"; Not a json array: "ad_extendra:gonggong/copper_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:eris/iron_ore"; Not a json array: "ad_extendra:eris/copper_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:haumea/iron_ore"; Not a json array: "ad_extendra:haumea/copper_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:ceres/iron_ore"; Not a json array: "ad_extendra:ceres/copper_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:makemake/iron_ore"; Not a json array: "ad_extendra:makemake/copper_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:orcus/iron_ore"; Not a json array: "ad_extendra:orcus/copper_ore"; Not a json array: "ad_extendra:orcus/radium_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:pluto/diamond_ore"; Not a json array: "ad_extendra:pluto/gold_ore"; Not a json array: "ad_extendra:neptune/pluto_shard_ore"; Not a json array: "ad_extendra:pluto/plutonium_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:quaoar/iron_ore"; Not a json array: "ad_extendra:quaoar/copper_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:sedna/iron_ore"; Not a json array: "ad_extendra:sedna/copper_ore"; Not a json array: "ad_extendra:sedna/electrolyte_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:uranus/icicle_geode"; Not a json array: "ad_extendra:uranus/diamond_ore"; Not a json array: "ad_extendra:uranus/lapis_ore"; Not a json array: "ad_extendra:uranus/iron_ore"; Not a json array: "ad_extendra:uranus/ice_shard_ore"; Not a json array: "ad_extendra:uranus/uranium_ore"
+[16:46:18] [Render thread/ERROR] (Minecraft) Features: Not a json array: "ad_extendra:neptune/coal_ore"; Not a json array: "ad_extendra:neptune/copper_ore"; Not a json array: "ad_extendra:neptune/iron_ore"; Not a json array: "ad_extendra:neptune/ice_shard_ore"; Not a json array: "ad_extendra:neptune/neptunium_ore"
+[16:46:18] [Worker-Main-10/ERROR] (Minecraft) Couldn't load tag c:ores as it is missing following references: #forge:ores/juperium (from fabric), #forge:ores/saturlyte (from fabric), #forge:ores/uranium (from fabric), #forge:ores/neptunium (from fabric), #forge:ores/radium (from fabric), #forge:ores/plutonium (from fabric), #forge:ores/electrolyte (from fabric)
+[16:46:18] [Worker-Main-12/ERROR] (Minecraft) Couldn't load tag c:plates as it is missing following references: #forge:plates/juperium (from fabric), #forge:plates/saturlyte (from fabric), #forge:plates/uranium (from fabric), #forge:plates/neptunium (from fabric), #forge:plates/radium (from fabric), #forge:plates/plutonium (from fabric), #forge:plates/electrolyte (from fabric)
+[16:46:18] [Worker-Main-12/ERROR] (Minecraft) Couldn't load tag c:nuggets as it is missing following references: #forge:nuggets/juperium (from fabric), #forge:nuggets/saturlyte (from fabric), #forge:nuggets/uranium (from fabric), #forge:nuggets/neptunium (from fabric), #forge:nuggets/radium (from fabric), #forge:nuggets/plutonium (from fabric), #forge:nuggets/electrolyte (from fabric)
+[16:46:18] [Worker-Main-12/ERROR] (Minecraft) Couldn't load tag c:ingots as it is missing following references: #forge:ingots/juperium (from fabric), #forge:ingots/saturlyte (from fabric), #forge:ingots/uranium (from fabric), #forge:ingots/neptunium (from fabric), #forge:ingots/radium (from fabric), #forge:ingots/plutonium (from fabric), #forge:ingots/electrolyte (from fabric)
+[16:46:18] [Worker-Main-12/ERROR] (Minecraft) Couldn't load tag c:raw_ores as it is missing following references: #forge:raw_materials/juperium (from fabric), #forge:raw_materials/saturlyte (from fabric), #forge:raw_materials/uranium (from fabric), #forge:raw_materials/neptunium (from fabric), #forge:raw_materials/radium (from fabric), #forge:raw_materials/plutonium (from fabric), #forge:raw_materials/electrolyte (from fabric)
+[16:46:18] [Worker-Main-12/ERROR] (Minecraft) Couldn't load tag c:ores as it is missing following references: #forge:ores/juperium (from fabric), #forge:ores/saturlyte (from fabric), #forge:ores/uranium (from fabric), #forge:ores/neptunium (from fabric), #forge:ores/radium (from fabric), #forge:ores/plutonium (from fabric), #forge:ores/electrolyte (from fabric)
+[16:46:18] [Render thread/INFO] (Minecraft) Loaded 13 recipes
+[16:46:18] [Render thread/INFO] (Minecraft) Loaded 2072 advancements
+[16:46:20] [Render thread/INFO] (BiomeModificationImpl) Applied 49 biome modifications to 15 of 89 new biomes in 6.609 ms
+[16:46:20] [Server thread/INFO] (Minecraft) Starting integrated minecraft server version 1.20.1
+[16:46:20] [Server thread/INFO] (Minecraft) Generating keypair
+[16:46:22] [Server thread/INFO] (Minecraft) Preparing start region for dimension minecraft:overworld
+[16:46:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 0%
+[16:46:23] [Render thread/INFO] (Minecraft) Preparing spawn area: 1%
+[16:46:24] [Render thread/INFO] (Minecraft) Preparing spawn area: 4%
+[16:46:24] [Render thread/INFO] (Minecraft) Preparing spawn area: 8%
+[16:46:25] [Render thread/INFO] (Minecraft) Preparing spawn area: 13%
+[16:46:25] [Render thread/INFO] (Minecraft) Preparing spawn area: 19%
+[16:46:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 27%
+[16:46:26] [Render thread/INFO] (Minecraft) Preparing spawn area: 33%
+[16:46:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 41%
+[16:46:27] [Render thread/INFO] (Minecraft) Preparing spawn area: 45%
+[16:46:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 55%
+[16:46:28] [Render thread/INFO] (Minecraft) Preparing spawn area: 61%
+[16:46:29] [Render thread/INFO] (Minecraft) Preparing spawn area: 69%
+[16:46:29] [Render thread/INFO] (Minecraft) Preparing spawn area: 78%
+[16:46:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 84%
+[16:46:30] [Render thread/INFO] (Minecraft) Preparing spawn area: 91%
+[16:46:31] [Render thread/INFO] (Minecraft) Time elapsed: 8399 ms
+[16:46:31] [Server thread/INFO] (Minecraft) Changing view distance to 12, from 10
+[16:46:31] [Server thread/INFO] (Minecraft) Changing simulation distance to 12, from 0
+[16:46:31] [Server thread/INFO] (Minecraft) Player347[local:E:be725e0b] logged in with entity id 133 at (-67.5, 76.0, 132.5)
+[16:46:31] [Server thread/INFO] (Minecraft) Player347 joined the game
+[16:46:32] [Render thread/INFO] (Minecraft) [STDOUT]: Finalizing fluid item registration
+[16:46:32] [Render thread/INFO] (Minecraft) [STDOUT]: Finalizing energy item registration
+[16:46:32] [Render thread/INFO] (Minecraft) Loaded 2 advancements
+[16:46:32] [Render thread/INFO] (patchouli) BookContentResourceListenerLoader: Files found in 351.9 μs
+[16:46:32] [Render thread/INFO] (patchouli) BookContentResourceListenerLoader: Files found in 365.0 μs
+[16:46:32] [Render thread/INFO] (patchouli) BookContentResourceListenerLoader: Files found in 198.4 μs
+[16:48:53] [Render thread/INFO] (Minecraft) Loaded 17 advancements
+[16:49:05] [Server thread/INFO] (Minecraft) Saving and pausing game...
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:earth_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter_orbit
+[16:49:05] [Server thread/INFO] (Minecraft) Player347 lost connection: Disconnected
+[16:49:05] [Server thread/INFO] (Minecraft) Player347 left the game
+[16:49:05] [Server thread/INFO] (Minecraft) Stopping singleplayer server as player logged out
+[16:49:05] [Server thread/INFO] (Minecraft) Stopping server
+[16:49:05] [Server thread/INFO] (Minecraft) Saving players
+[16:49:05] [Server thread/INFO] (Minecraft) Saving worlds
+[16:49:06] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:saturn
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:venus
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mars
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:gonggong
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:makemake_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:ceres_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:uranus_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:sedna_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:haumea_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:mercury
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:orcus_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:moon_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:neptune
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:pluto
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:b
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:quaoar
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:earth_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_astra:glacio
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:eris_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) Saving chunks for level 'ServerLevel[New World]'/ad_extendra:jupiter_orbit
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (New World): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (saturn_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (gonggong_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (ceres): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (mars_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (makemake): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (venus_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (saturn): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (venus): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (mercury_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (neptune_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (pluto_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (moon): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (mars): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (jupiter): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (uranus): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (gonggong): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (makemake_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (orcus): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (ceres_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (quaoar_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (uranus_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (haumea): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (b_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (sedna): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (sedna_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (haumea_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (mercury): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (orcus_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (moon_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (neptune): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (pluto): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (glacio_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (b): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (quaoar): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (earth_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (eris): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (glacio): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (eris_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage (jupiter_orbit): All chunks are saved
+[16:49:11] [Server thread/INFO] (Minecraft) ThreadedAnvilChunkStorage: All dimensions are saved
+[16:49:13] [Render thread/INFO] (Minecraft) Stopping!
