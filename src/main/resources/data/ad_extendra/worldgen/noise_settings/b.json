@@ -2516,7 +2516,7 @@
           "false_at_and_above": {
             "absolute": 8
           },
-          "random_name": "minecraft:deepslate",
+          "random_name": "ad_extendra:b_stone",
           "true_at_and_below": {
             "absolute": 0
           }
@@ -2524,7 +2524,7 @@
         "then_run": {
           "type": "minecraft:block",
           "result_state": {
-            "Name": "minecraft:deepslate",
+            "Name": "ad_extendra:b_stone",
             "Properties": {
               "axis": "y"
             }
