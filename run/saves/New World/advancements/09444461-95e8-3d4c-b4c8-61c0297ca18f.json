@@ -1,0 +1,34 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-09-11 14:10:32 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:uranus": {
+    "criteria": {
+      "uranus": "2024-09-11 14:11:52 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:all_planets": {
+    "criteria": {
+      "ad_extendra:uranus": "2024-09-11 14:11:53 -0700"
+    },
+    "done": false
+  },
+  "ad_extendra:tier_11_rocket": {
+    "criteria": {
+      "tier_11_rocket": "2024-09-11 14:10:54 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:desert": "2024-09-11 14:10:33 -0700",
+      "minecraft:savanna": "2024-09-11 14:10:37 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}

@@ -29,6 +29,7 @@ public class ModOrePlacedFeatures {
     public static final ResourceKey<PlacedFeature> URANUS_IRON_ORE = registerKey("uranus/iron_ore");
     public static final ResourceKey<PlacedFeature> URANUS_LAPIS_ORE = registerKey("uranus/lapis_ore");
     public static final ResourceKey<PlacedFeature> URANUS_URANIUM_ORE = registerKey("uranus/uranium_ore");
+    public static final ResourceKey<PlacedFeature> URANUS_ICICLE_GEODE = registerKey("uranus/icicle_geode");
 
     // Neptune
     public static final ResourceKey<PlacedFeature> NEPTUNE_COAL_ORE = registerKey("neptune/coal_ore");

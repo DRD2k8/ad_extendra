@@ -44,6 +44,8 @@ public class ModOrePlacement {
                 GenerationStep.Decoration.UNDERGROUND_ORES, ModOrePlacedFeatures.URANUS_LAPIS_ORE);
         BiomeModifications.addFeature(ModBiomeSelectors.foundInUranus(),
                 GenerationStep.Decoration.UNDERGROUND_ORES, ModOrePlacedFeatures.URANUS_URANIUM_ORE);
+        BiomeModifications.addFeature(ModBiomeSelectors.foundInUranus(),
+                GenerationStep.Decoration.UNDERGROUND_ORES, ModOrePlacedFeatures.URANUS_ICICLE_GEODE);
 
         // Neptune
         BiomeModifications.addFeature(ModBiomeSelectors.foundInNeptune(),
