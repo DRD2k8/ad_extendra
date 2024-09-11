@@ -191,7 +191,7 @@
   "block.ad_extendra.uranus_pillar": "Uranus Pillar",
   "block.ad_extendra.slushy_ice": "Slushy Ice",
   "block.ad_extendra.packed_slushy_ice": "Packed Slushy Ice",
-  "block.ad_extendra.blue_slushy_ice": "Blue Slushy Ice",
+  "block.ad_extendra.icicle": "Icicle",
 
   "block.ad_extendra.neptunium_block": "Block of Neptunium",
   "block.ad_extendra.raw_neptunium_block": "Block of Raw Neptunium",
@@ -226,6 +226,7 @@
   "block.ad_extendra.polished_neptune_stone_stairs": "Polished Neptune Stone Stairs",
   "block.ad_extendra.polished_neptune_stone_slab": "Polished Neptune Stone Slab",
   "block.ad_extendra.neptune_pillar": "Neptune Pillar",
+  "block.ad_extendra.blue_slushy_ice": "Blue Slushy Ice",
 
   "block.ad_extendra.radium_block": "Block of Radium",
   "block.ad_extendra.raw_radium_block": "Block of Raw Radium",

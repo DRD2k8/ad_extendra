@@ -74,6 +74,7 @@ public class RendererRegistry {
     }
 
     public static void onRegisterBlockRenderTypes(BiConsumer<RenderType, List<Block>> register) {
+        ClientHooks.setRenderLayer((Block)ModBlocks.ICICLE.get(), RenderType.cutoutMipped());
         ClientHooks.setRenderLayer((Block)ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
         ClientHooks.setRenderLayer((Block)ModBlocks.POTTED_GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
         ModBlocks.GLOBES.stream().forEach((block) -> {
