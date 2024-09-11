@@ -1,6 +1,5 @@
 package net.teddy0008.ad_extendra.datagen;
 
-import earth.terrarium.ad_astra.common.registry.ModTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
@@ -13,6 +12,7 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.ModItems;
+import net.teddy0008.ad_extendra.util.tag.ModItemTags;
 
 import java.util.Iterator;
 import java.util.List;

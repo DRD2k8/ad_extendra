@@ -1,4 +1,4 @@
-// 1.20.1	2024-08-14T12:48:20.3559474	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-09-07T19:51:04.2163119	Tags for minecraft:item mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/items/glacian_logs.json
 06988cb4b138538ae3f1198aadff8d0060021fea data/ad_astra_platform/tags/items/electrolyte_blocks.json
 1678d0f61584aa3fd22fa5d2e6eb07002e675d46 data/ad_astra_platform/tags/items/electrolyte_ingots.json
@@ -64,12 +64,19 @@ a99753a2f907da6f1b823886f66006c25380e773 data/forge/tags/items/raw_materials/sat
 327d1b8e6e0dafd35d36c375f8d434c4ea39903b data/forge/tags/items/raw_materials/uranium.json
 ac3997bf97bc9dfce9342aa80b655edbf399c581 data/forge/tags/items/sandstone.json
 153f3bfb4649399bc36fc4384109c6f27a602aaa data/forge/tags/items/stone.json
-0a96351790c855b17eb1de2f3741a9c047b9d0ed data/forge/tags/items/storage_blocks.json
+065ce5f9753b8d516af2196245cacc7926cac750 data/forge/tags/items/storage_blocks.json
 5eb7266cee46a904ae693a53ab503d5331de918d data/forge/tags/items/storage_blocks/electrolyte.json
 b5c5e031ffc0a8dcf02e447b4177af5915988326 data/forge/tags/items/storage_blocks/juperium.json
 2e1b42216cee89b02e74cac27e216f76d16fce18 data/forge/tags/items/storage_blocks/neptunium.json
 251c099b72b5a350a862f6db5adef5e01de93ed1 data/forge/tags/items/storage_blocks/plutonium.json
 3c863c70b4000170128206fb7f2388eb4640292c data/forge/tags/items/storage_blocks/radium.json
+be5846f08372952fa4ba13fcee395b2d8950f8e0 data/forge/tags/items/storage_blocks/raw_electrolyte.json
+20134eccda7658ffc12ec49502460b5d6896ad1f data/forge/tags/items/storage_blocks/raw_juperium.json
+db3dd13b36c86559acef0be69c3bf3344567be78 data/forge/tags/items/storage_blocks/raw_neptunium.json
+7cf9cea45319e6951bc069d281014c8e20874b33 data/forge/tags/items/storage_blocks/raw_plutonium.json
+80018770128e32634e39ff6035f467290278eca6 data/forge/tags/items/storage_blocks/raw_radium.json
+6e64f225f730153700f15424274bedbd8313a79d data/forge/tags/items/storage_blocks/raw_saturlyte.json
+f55e56aa9cc7c6f3eedbe4be52d0951b40ba9dfc data/forge/tags/items/storage_blocks/raw_uranium.json
 b1275e98a819ae4dbe5e2c8f3893aae53c5bf678 data/forge/tags/items/storage_blocks/saturlyte.json
 571f94cea259742345d038bf0ebb818a08aa111e data/forge/tags/items/storage_blocks/uranium.json
 717d1edecbaba36029653080236e7364d0795c4b data/minecraft/tags/items/beacon_payment_items.json

@@ -13,22 +13,22 @@ import net.teddy0008.ad_extendra.entity.projectile.IceCharge;
 import net.teddy0008.ad_extendra.entity.vehicle.*;
 
 public class ModEntities {
-    public static final DeferredRegister<EntityType<?>> ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Main.MOD_ID);
+    public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, Main.MOD_ID);
     public static final DeferredRegister<EntityType<?>> ROCKETS = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, AdAstra.MOD_ID);
 
     public static final RegistryObject<EntityType<Freeze>> FREEZE =
-            ENTITY_TYPES.register("freeze", () -> EntityType.Builder.of(Freeze::new, MobCategory.MONSTER)
+            ENTITIES.register("freeze", () -> EntityType.Builder.of(Freeze::new, MobCategory.MONSTER)
                     .sized(1.125f, 1.8125f).build("freeze"));
 
     public static final RegistryObject<EntityType<IceCharge>> ICE_CHARGE =
-            ENTITY_TYPES.register("ice_charge", () -> EntityType.Builder.<IceCharge>of(IceCharge::new, MobCategory.MISC)
+            ENTITIES.register("ice_charge", () -> EntityType.Builder.<IceCharge>of(IceCharge::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("ice_charge"));
 
     public static final RegistryObject<EntityType<CustomBoat>> BOAT =
-            ENTITY_TYPES.register("boat", () -> EntityType.Builder.<CustomBoat>of(CustomBoat::new, MobCategory.MISC)
+            ENTITIES.register("boat", () -> EntityType.Builder.<CustomBoat>of(CustomBoat::new, MobCategory.MISC)
                     .sized(1.375f, 0.5625f).build("boat"));
     public static final RegistryObject<EntityType<CustomChestBoat>> CHEST_BOAT =
-            ENTITY_TYPES.register("chest_boat", () -> EntityType.Builder.<CustomChestBoat>of(CustomChestBoat::new, MobCategory.MISC)
+            ENTITIES.register("chest_boat", () -> EntityType.Builder.<CustomChestBoat>of(CustomChestBoat::new, MobCategory.MISC)
                     .sized(1.375f, 0.5625f).build("chest_boat"));
 
     public static final RegistryObject<EntityType<RocketTier5>> TIER_5_ROCKET = ROCKETS.register("tier_5_rocket", () ->
@@ -81,7 +81,7 @@ public class ModEntities {
                     .build("tier_11_rocket"));
 
     public static void register(IEventBus eventBus) {
-        ENTITY_TYPES.register(eventBus);
+        ENTITIES.register(eventBus);
         ROCKETS.register(eventBus);
     }
 }

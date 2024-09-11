@@ -29,30 +29,10 @@ public class ModBlockEntities {
                     BlockEntityType.Builder.of(CustomSlidingDoorBlockEntity::new,
                             ModBlocks.JUPERIUM_SLIDING_DOOR.get(), ModBlocks.SATURLYTE_SLIDING_DOOR.get(), ModBlocks.URANIUM_SLIDING_DOOR.get(), ModBlocks.NEPTUNIUM_SLIDING_DOOR.get(), ModBlocks.RADIUM_SLIDING_DOOR.get(), ModBlocks.PLUTONIUM_SLIDING_DOOR.get(), ModBlocks.ELECTROLYTE_SLIDING_DOOR.get()).build(null));
 
-    public static final RegistryObject<BlockEntityType<StandardGlobeBlockEntity>> STANDARD_GLOBE =
-            BLOCK_ENTITIES.register("standard_globe", () ->
-                    BlockEntityType.Builder.of(StandardGlobeBlockEntity::new,
-                            ModBlocks.CERES_GLOBE.get(), ModBlocks.JUPITER_GLOBE.get(), ModBlocks.NEPTUNE_GLOBE.get(), ModBlocks.ORCUS_GLOBE.get(), ModBlocks.PLUTO_GLOBE.get(), ModBlocks.QUAOAR_GLOBE.get(), ModBlocks.MAKEMAKE_GLOBE.get(), ModBlocks.GONGGONG_GLOBE.get(), ModBlocks.ERIS_GLOBE.get(), ModBlocks.B_GLOBE.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<RingedGlobeBlockEntity>> RINGED_GLOBE =
-            BLOCK_ENTITIES.register("ringed_globe", () ->
-                    BlockEntityType.Builder.of(RingedGlobeBlockEntity::new,
-                            ModBlocks.SATURN_GLOBE.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<SidewaysRingedGlobeBlockEntity>> SIDEWAYS_RINGED_GLOBE =
-            BLOCK_ENTITIES.register("sideways_ringed_globe", () ->
-                    BlockEntityType.Builder.of(SidewaysRingedGlobeBlockEntity::new,
-                            ModBlocks.URANUS_GLOBE.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<OvalGlobeBlockEntity>> OVAL_GLOBE =
-            BLOCK_ENTITIES.register("oval_globe", () ->
-                    BlockEntityType.Builder.of(OvalGlobeBlockEntity::new,
-                            ModBlocks.HAUMEA_GLOBE.get()).build(null));
-
-    public static final RegistryObject<BlockEntityType<EllipseGlobeBlockEntity>> ELLIPSE_GLOBE =
-            BLOCK_ENTITIES.register("ellipse_globe", () ->
-                    BlockEntityType.Builder.of(EllipseGlobeBlockEntity::new,
-                            ModBlocks.SEDNA_GLOBE.get()).build(null));
+    public static final RegistryObject<BlockEntityType<CustomGlobeBlockEntity>> GLOBE =
+            BLOCK_ENTITIES.register("globe", () ->
+                    BlockEntityType.Builder.of(CustomGlobeBlockEntity::new,
+                            ModBlocks.CERES_GLOBE.get(), ModBlocks.JUPITER_GLOBE.get(), ModBlocks.SATURN_GLOBE.get(), ModBlocks.URANUS_GLOBE.get(), ModBlocks.NEPTUNE_GLOBE.get(), ModBlocks.ORCUS_GLOBE.get(), ModBlocks.PLUTO_GLOBE.get(), ModBlocks.HAUMEA_GLOBE.get(), ModBlocks.QUAOAR_GLOBE.get(), ModBlocks.MAKEMAKE_GLOBE.get(), ModBlocks.GONGGONG_GLOBE.get(), ModBlocks.ERIS_GLOBE.get(), ModBlocks.SEDNA_GLOBE.get(), ModBlocks.B_GLOBE.get()).build(null));
 
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);

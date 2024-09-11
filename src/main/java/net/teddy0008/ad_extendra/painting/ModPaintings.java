@@ -7,32 +7,32 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.decoration.PaintingVariant;
 
 public class ModPaintings {
-    public static final ResourcefulRegistry<PaintingVariant> PAINTING_VARIANTS = ResourcefulRegistries.create(BuiltInRegistries.PAINTING_VARIANT, "ad_astra");
-    public static final RegistryEntry<PaintingVariant> CERES = PAINTING_VARIANTS.register("ceres", () -> {
+    public static final ResourcefulRegistry<PaintingVariant> PAINTINGS = ResourcefulRegistries.create(BuiltInRegistries.PAINTING_VARIANT, "ad_astra");
+    public static final RegistryEntry<PaintingVariant> CERES = PAINTINGS.register("ceres", () -> {
         return new PaintingVariant(16, 16);
     });
-    public static final RegistryEntry<PaintingVariant> ORCUS = PAINTING_VARIANTS.register("orcus", () -> {
+    public static final RegistryEntry<PaintingVariant> ORCUS = PAINTINGS.register("orcus", () -> {
         return new PaintingVariant(16, 16);
     });
-    public static final RegistryEntry<PaintingVariant> HAUMEA = PAINTING_VARIANTS.register("haumea", () -> {
+    public static final RegistryEntry<PaintingVariant> HAUMEA = PAINTINGS.register("haumea", () -> {
         return new PaintingVariant(16, 16);
     });
-    public static final RegistryEntry<PaintingVariant> QUAOAR = PAINTING_VARIANTS.register("quaoar", () -> {
+    public static final RegistryEntry<PaintingVariant> QUAOAR = PAINTINGS.register("quaoar", () -> {
         return new PaintingVariant(16, 16);
     });
-    public static final RegistryEntry<PaintingVariant> MAKEMAKE = PAINTING_VARIANTS.register("makemake", () -> {
+    public static final RegistryEntry<PaintingVariant> MAKEMAKE = PAINTINGS.register("makemake", () -> {
         return new PaintingVariant(16, 16);
     });
-    public static final RegistryEntry<PaintingVariant> GONGGONG = PAINTING_VARIANTS.register("gonggong", () -> {
+    public static final RegistryEntry<PaintingVariant> GONGGONG = PAINTINGS.register("gonggong", () -> {
         return new PaintingVariant(16, 16);
     });
-    public static final RegistryEntry<PaintingVariant> ERIS = PAINTING_VARIANTS.register("eris", () -> {
+    public static final RegistryEntry<PaintingVariant> ERIS = PAINTINGS.register("eris", () -> {
         return new PaintingVariant(16, 16);
     });
-    public static final RegistryEntry<PaintingVariant> SEDNA = PAINTING_VARIANTS.register("sedna", () -> {
+    public static final RegistryEntry<PaintingVariant> SEDNA = PAINTINGS.register("sedna", () -> {
         return new PaintingVariant(16, 16);
     });
-    public static final RegistryEntry<PaintingVariant> B = PAINTING_VARIANTS.register("b", () -> {
+    public static final RegistryEntry<PaintingVariant> B = PAINTINGS.register("b", () -> {
         return new PaintingVariant(32, 32);
     });
 

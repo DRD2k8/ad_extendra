@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -28,19 +29,19 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.teddy0008.ad_extendra.block.ModBasicEntityBlock;
 
-public class OvalGlobeBlock extends ModBasicEntityBlock implements SimpleWaterloggedBlock {
+public class CustomGlobeBlock extends ModBasicEntityBlock implements SimpleWaterloggedBlock {
     public static final VoxelShape SHAPE = Shapes.box(0.2, 0.0, 0.2, 0.8, 1.0, 0.8);
     public static final BooleanProperty WATERLOGGED;
     public static final BooleanProperty POWERED;
 
-    public OvalGlobeBlock(Properties properties) {
+    public CustomGlobeBlock(BlockBehaviour.Properties properties) {
         super(properties);
         this.registerDefaultState((BlockState)((BlockState)((BlockState)this.stateDefinition.any()).setValue(WATERLOGGED, false)).setValue(POWERED, false));
     }
 
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         BlockEntity var8 = level.getBlockEntity(pos);
-        if (var8 instanceof OvalGlobeBlockEntity entity) {
+        if (var8 instanceof CustomGlobeBlockEntity entity) {
             entity.rotateGlobe();
         }
 
@@ -49,7 +50,7 @@ public class OvalGlobeBlock extends ModBasicEntityBlock implements SimpleWaterlo
 
     public void onProjectileHit(Level level, BlockState state, BlockHitResult hit, Projectile projectile) {
         BlockEntity var6 = level.getBlockEntity(hit.getBlockPos());
-        if (var6 instanceof OvalGlobeBlockEntity entity) {
+        if (var6 instanceof CustomGlobeBlockEntity entity) {
             entity.rotateGlobe();
         }
 
@@ -58,7 +59,7 @@ public class OvalGlobeBlock extends ModBasicEntityBlock implements SimpleWaterlo
 
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> blockEntityType) {
         return (entityLevel, blockPos, blockState, blockEntity) -> {
-            if (blockEntity instanceof OvalGlobeBlockEntity entity) {
+            if (blockEntity instanceof CustomGlobeBlockEntity entity) {
                 entity.serverTick();
             }
         };

@@ -81,46 +81,46 @@ public class RendererRegistry {
 
     public static void onRegisterItemRenderers(BiConsumer<ItemLike, BlockEntityWithoutLevelRenderer> register) {
         ModItems.CERES_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.CERES_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.CERES_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.JUPITER_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.JUPITER_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.JUPITER_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.SATURN_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.SATURN_GLOBE.get(), new RingedGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.SATURN_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.URANUS_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.URANUS_GLOBE.get(), new SidewaysRingedGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.URANUS_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.NEPTUNE_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.NEPTUNE_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.NEPTUNE_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.ORCUS_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.ORCUS_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.ORCUS_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.PLUTO_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.PLUTO_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.PLUTO_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.HAUMEA_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.HAUMEA_GLOBE.get(), new OvalGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.HAUMEA_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.QUAOAR_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.QUAOAR_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.QUAOAR_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.MAKEMAKE_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.MAKEMAKE_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.MAKEMAKE_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.GONGGONG_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.GONGGONG_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.GONGGONG_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.ERIS_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.ERIS_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.ERIS_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.SEDNA_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.SEDNA_GLOBE.get(), new EllipseGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.SEDNA_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         ModItems.B_GLOBE.stream().forEach((item) -> {
-            register.accept((ItemLike)ModItems.B_GLOBE.get(), new StandardGlobeRenderer.ItemRenderer());
+            register.accept((ItemLike)ModItems.B_GLOBE.get(), new CustomGlobeRenderer.ItemRenderer());
         });
         register.accept((ItemLike)ModItems.TIER_5_ROCKET.get(), new RocketItemRendererTier5());
         register.accept((ItemLike)ModItems.TIER_6_ROCKET.get(), new RocketItemRendererTier6());

@@ -8,6 +8,7 @@ import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
+import net.teddy0008.ad_extendra.util.tag.ModBlockTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -858,7 +859,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModBlockTags.NEPTUNIUM_BLOCKS)
                 .addTag(ModBlockTags.RADIUM_BLOCKS)
                 .addTag(ModBlockTags.PLUTONIUM_BLOCKS)
-                .addTag(ModBlockTags.ELECTROLYTE_BLOCKS);
+                .addTag(ModBlockTags.ELECTROLYTE_BLOCKS)
+                .addTag(ModBlockTags.RAW_JUPERIUM_BLOCKS)
+                .addTag(ModBlockTags.RAW_SATURLYTE_BLOCKS)
+                .addTag(ModBlockTags.RAW_URANIUM_BLOCKS)
+                .addTag(ModBlockTags.RAW_NEPTUNIUM_BLOCKS)
+                .addTag(ModBlockTags.RAW_RADIUM_BLOCKS)
+                .addTag(ModBlockTags.RAW_PLUTONIUM_BLOCKS)
+                .addTag(ModBlockTags.RAW_ELECTROLYTE_BLOCKS);
         this.tag(BlockTags.STANDING_SIGNS)
                 .add(ModBlocks.AERONOS_SIGN.get())
                 .add(ModBlocks.STROPHAR_SIGN.get());
@@ -883,6 +891,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .addTag(ModBlockTags.ELECTROLYTE_ORES);
         this.tag(ModBlockTags.JUPERIUM_BLOCKS)
                 .add(ModBlocks.JUPERIUM_BLOCK.get());
+        this.tag(ModBlockTags.RAW_JUPERIUM_BLOCKS)
+                .add(ModBlocks.RAW_JUPERIUM_BLOCK.get());
         this.tag(ModBlockTags.JUPERIUM_ORES)
                 .add(ModBlocks.JUPITER_JUPERIUM_ORE.get());
         this.tag(ModBlockTags.ICE_SHARD_ORES)
@@ -891,26 +901,38 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.PLUTO_ICE_SHARD_ORE.get());
         this.tag(ModBlockTags.SATURLYTE_BLOCKS)
                 .add(ModBlocks.SATURLYTE_BLOCK.get());
+        this.tag(ModBlockTags.RAW_SATURLYTE_BLOCKS)
+                .add(ModBlocks.RAW_SATURLYTE_BLOCK.get());
         this.tag(ModBlockTags.SATURLYTE_ORES)
                 .add(ModBlocks.SATURN_SATURLYTE_ORE.get());
         this.tag(ModBlockTags.URANIUM_BLOCKS)
                 .add(ModBlocks.URANIUM_BLOCK.get());
+        this.tag(ModBlockTags.RAW_URANIUM_BLOCKS)
+                .add(ModBlocks.RAW_URANIUM_BLOCK.get());
         this.tag(ModBlockTags.URANIUM_ORES)
                 .add(ModBlocks.URANUS_URANIUM_ORE.get());
         this.tag(ModBlockTags.NEPTUNIUM_BLOCKS)
                 .add(ModBlocks.NEPTUNIUM_BLOCK.get());
+        this.tag(ModBlockTags.RAW_NEPTUNIUM_BLOCKS)
+                .add(ModBlocks.RAW_NEPTUNIUM_BLOCK.get());
         this.tag(ModBlockTags.NEPTUNIUM_ORES)
                 .add(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get());
         this.tag(ModBlockTags.RADIUM_BLOCKS)
                 .add(ModBlocks.RADIUM_BLOCK.get());
+        this.tag(ModBlockTags.RAW_RADIUM_BLOCKS)
+                .add(ModBlocks.RAW_RADIUM_BLOCK.get());
         this.tag(ModBlockTags.RADIUM_ORES)
                 .add(ModBlocks.ORCUS_RADIUM_ORE.get());
         this.tag(ModBlockTags.PLUTONIUM_BLOCKS)
                 .add(ModBlocks.PLUTONIUM_BLOCK.get());
+        this.tag(ModBlockTags.RAW_PLUTONIUM_BLOCKS)
+                .add(ModBlocks.RAW_PLUTONIUM_BLOCK.get());
         this.tag(ModBlockTags.PLUTONIUM_ORES)
                 .add(ModBlocks.PLUTO_PLUTONIUM_ORE.get());
         this.tag(ModBlockTags.ELECTROLYTE_BLOCKS)
                 .add(ModBlocks.ELECTROLYTE_BLOCK.get());
+        this.tag(ModBlockTags.RAW_ELECTROLYTE_BLOCKS)
+                .add(ModBlocks.RAW_ELECTROLYTE_BLOCK.get());
         this.tag(ModBlockTags.ELECTROLYTE_ORES)
                 .add(ModBlocks.SEDNA_ELECTROLYTE_ORE.get());
         this.tag(BlockTags.BEACON_BASE_BLOCKS)

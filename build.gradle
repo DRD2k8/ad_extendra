@@ -10,7 +10,7 @@ version = mod_version
 group = mod_group_id
 
 base {
-    archivesName = mod_id
+    archivesName = archives_base_name
 }
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
@@ -184,6 +184,8 @@ tasks.named('processResources', ProcessResources).configure {
             loader_version_range: loader_version_range,
             mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
             mod_authors: mod_authors, mod_description: mod_description,
+            ad_astra_version_range: ad_astra_version_range, botarium_version_range: botarium_version_range,
+            resourcefullib_version_range: resourcefullib_version_range, resourcefulconfig_version_range: resourcefulconfig_version_range
     ]
     inputs.properties replaceProperties
 

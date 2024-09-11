@@ -3,7 +3,6 @@ package net.teddy0008.ad_extendra.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
@@ -11,6 +10,7 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.teddy0008.ad_extendra.Main;
 import net.teddy0008.ad_extendra.block.ModBlocks;
 import net.teddy0008.ad_extendra.item.ModItems;
+import net.teddy0008.ad_extendra.util.tag.ModItemTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -87,35 +87,56 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .addTag(ModItemTags.FORGE_NEPTUNIUM_BLOCKS)
                 .addTag(ModItemTags.FORGE_RADIUM_BLOCKS)
                 .addTag(ModItemTags.FORGE_PLUTONIUM_BLOCKS)
-                .addTag(ModItemTags.FORGE_ELECTROLYTE_BLOCKS);
+                .addTag(ModItemTags.FORGE_ELECTROLYTE_BLOCKS)
+                .addTag(ModItemTags.RAW_JUPERIUM_BLOCKS)
+                .addTag(ModItemTags.RAW_SATURLYTE_BLOCKS)
+                .addTag(ModItemTags.RAW_URANIUM_BLOCKS)
+                .addTag(ModItemTags.RAW_NEPTUNIUM_BLOCKS)
+                .addTag(ModItemTags.RAW_RADIUM_BLOCKS)
+                .addTag(ModItemTags.RAW_PLUTONIUM_BLOCKS)
+                .addTag(ModItemTags.RAW_ELECTROLYTE_BLOCKS);
         this.tag(ModItemTags.FORGE_JUPERIUM_BLOCKS)
                 .add(ModBlocks.JUPERIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.JUPERIUM_BLOCKS)
                 .addTag(ModItemTags.FORGE_JUPERIUM_BLOCKS);
+        this.tag(ModItemTags.RAW_JUPERIUM_BLOCKS)
+                .add(ModBlocks.RAW_JUPERIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.FORGE_SATURLYTE_BLOCKS)
                 .add(ModBlocks.SATURLYTE_BLOCK.get().asItem());
         this.tag(ModItemTags.SATURLYTE_BLOCKS)
                 .addTag(ModItemTags.FORGE_SATURLYTE_BLOCKS);
+        this.tag(ModItemTags.RAW_SATURLYTE_BLOCKS)
+                .add(ModBlocks.RAW_SATURLYTE_BLOCK.get().asItem());
         this.tag(ModItemTags.FORGE_URANIUM_BLOCKS)
                 .add(ModBlocks.URANIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.URANIUM_BLOCKS)
                 .addTag(ModItemTags.FORGE_URANIUM_BLOCKS);
+        this.tag(ModItemTags.RAW_URANIUM_BLOCKS)
+                .add(ModBlocks.RAW_URANIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.FORGE_NEPTUNIUM_BLOCKS)
                 .add(ModBlocks.NEPTUNIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.NEPTUNIUM_BLOCKS)
                 .addTag(ModItemTags.FORGE_NEPTUNIUM_BLOCKS);
+        this.tag(ModItemTags.RAW_NEPTUNIUM_BLOCKS)
+                .add(ModBlocks.RAW_NEPTUNIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.FORGE_RADIUM_BLOCKS)
                 .add(ModBlocks.RADIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.RADIUM_BLOCKS)
                 .addTag(ModItemTags.FORGE_RADIUM_BLOCKS);
+        this.tag(ModItemTags.RAW_RADIUM_BLOCKS)
+                .add(ModBlocks.RAW_RADIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.FORGE_PLUTONIUM_BLOCKS)
                 .add(ModBlocks.PLUTONIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.PLUTONIUM_BLOCKS)
                 .addTag(ModItemTags.FORGE_PLUTONIUM_BLOCKS);
+        this.tag(ModItemTags.RAW_PLUTONIUM_BLOCKS)
+                .add(ModBlocks.RAW_PLUTONIUM_BLOCK.get().asItem());
         this.tag(ModItemTags.FORGE_ELECTROLYTE_BLOCKS)
                 .add(ModBlocks.ELECTROLYTE_BLOCK.get().asItem());
         this.tag(ModItemTags.ELECTROLYTE_BLOCKS)
                 .addTag(ModItemTags.FORGE_ELECTROLYTE_BLOCKS);
+        this.tag(ModItemTags.RAW_ELECTROLYTE_BLOCKS)
+                .add(ModBlocks.RAW_ELECTROLYTE_BLOCK.get().asItem());
         this.tag(ModItemTags.PLATES)
                 .addTag(ModItemTags.FORGE_JUPERIUM_PLATES)
                 .addTag(ModItemTags.FORGE_SATURLYTE_PLATES)

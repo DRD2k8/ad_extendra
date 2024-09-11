@@ -60,7 +60,7 @@ public class Main {
         ModLootModifiers.register(modEventBus);
         ModParticles.register(modEventBus);
 
-        ModPaintings.PAINTING_VARIANTS.init();
+        ModPaintings.PAINTINGS.init();
 
         modEventBus.addListener(this::commonSetup);
 
@@ -103,11 +103,7 @@ public class Main {
 
     public static void registerBlockEntityRenderers() {
         ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.SLIDING_DOOR.get(), CustomSlidingDoorRenderer::new);
-        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.STANDARD_GLOBE.get(), StandardGlobeRenderer::new);
-        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.RINGED_GLOBE.get(), RingedGlobeRenderer::new);
-        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.SIDEWAYS_RINGED_GLOBE.get(), SidewaysRingedGlobeRenderer::new);
-        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.OVAL_GLOBE.get(), OvalGlobeRenderer::new);
-        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.ELLIPSE_GLOBE.get(), EllipseGlobeRenderer::new);
+        ClientHooks.registerBlockEntityRenderers((BlockEntityType) ModBlockEntities.GLOBE.get(), CustomGlobeRenderer::new);
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent

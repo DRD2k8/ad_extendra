@@ -37,10 +37,75 @@ Ad Extendra is an add-on mod, that adds more content to <a href="https://www.cur
 </ul>
 
 <h2><span style="color:#ffff00">Planned Features</span></h2>
+<h3>Discoverable Moons</h3>
+<h4>Mars</h4>
+<ul>
+<li>Deimos</li>
+<li>Phobos</li>
+</ul>
+<h4>Jupiter</h4>
+<ul>
+<li>Europa</li>
+<li>Ganymede</li>
+<li>Io</li>
+<li>Callisto</li>
+</ul>
+<h4>Saturn</h4>
+<ul>
+<li>Titan</li>
+<li>Enceladus</li>
+<li>Mimas</li>
+<li>Dione</li>
+<li>Iapetus</li>
+<li>Tethys</li>
+</ul>
+<h4>Uranus</h4>
+<ul>
+<li>Titania</li>
+<li>Umbriel</li>
+<li>Miranda</li>
+<li>Ariel</li>
+<li>Oberon</li>
+</ul>
+<h4>Neptune</h4>
+<ul>
+<li>Triton</li>
+</ul>
+<h4>Orcus</h4>
+<ul>
+<li>Vanth</li>
+</ul>
+<h4>Pluto</h4>
+<ul>
+<li>Charon</li>
+<li>Nix</li>
+<li>Hydra</li>
+</ul>
+<h4>Haumea</h4>
+<ul>
+<li>Hi'iaka</li>
+<li>Namaka</li>
+</ul>
+<h4>Quaoar</h4>
+<ul>
+<li>Weywot</li>
+</ul>
+<h4>Makemake</h4>
+<ul>
+<li>MK2</li>
+</ul>
+<h4>Gonggong</h4>
+<ul>
+<li>Xiangliu</li>
+</ul>
+<h4>Eris</h4>
+<ul>
+<li>Dysnomia</li>
+</ul>
 <h3>Structures</h3>
 <ul>
 <li>Dungeons for each planet (Similar to the Moon Dungeon where you can find a Moon Globe)</li>
 </ul>
 
 <h2>Mod Support</h3>
-The mod currently only supports <a href="https://files.minecraftforge.net/net/minecraftforge/forge/index_1.20.1.html">Forge 1.20.1</a> and depends on <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra/files/4894852">Ad Astra v1.15.5</a> exactly (any older or newer version of Ad Astra <b>will not work!</b>). It also depends on all the mods that Ad Astra depends on, which are: <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-lib">Resourceful Lib</a>, <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-config">Resourceful Config</a>, and <a href="https://www.curseforge.com/minecraft/mc-mods/botarium">Botarium</a>
+The mod currently only supports 1.20.1 and depends on <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra/files/4894852">Ad Astra v1.15.5</a> exactly (any older or newer version of Ad Astra <b>will not work!</b>). It also depends on all the mods that Ad Astra depends on, which are: <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-lib">Resourceful Lib</a>, <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-config">Resourceful Config</a>, and <a href="https://www.curseforge.com/minecraft/mc-mods/botarium">Botarium</a>

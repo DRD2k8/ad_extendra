@@ -10,17 +10,17 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.teddy0008.ad_extendra.block.entity.ModBlockEntities;
 
-public class RingedGlobeBlockEntity extends BlockEntity {
+public class CustomGlobeBlockEntity extends BlockEntity {
     private float torque;
     private float yaw;
     public float prevYaw;
 
-    public RingedGlobeBlockEntity(BlockPos blockPos, BlockState blockState) {
-        super((BlockEntityType) ModBlockEntities.RINGED_GLOBE.get(), blockPos, blockState);
+    public CustomGlobeBlockEntity(BlockPos blockPos, BlockState blockState) {
+        super((BlockEntityType) ModBlockEntities.GLOBE.get(), blockPos, blockState);
     }
 
     public void serverTick() {
-        if ((Boolean)this.getBlockState().getValue(StandardGlobeBlock.POWERED) && this.torque <= 3.0F) {
+        if ((Boolean)this.getBlockState().getValue(CustomGlobeBlock.POWERED) && this.torque <= 3.0F) {
             this.torque = 3.0F;
         }
 

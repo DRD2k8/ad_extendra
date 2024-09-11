@@ -12,11 +12,11 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.teddy0008.ad_extendra.Main;
 
-public class OvalGlobeModel extends Model {
-    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(Main.MOD_ID, "oval_globe"), "main");
+public class CustomGlobeModel extends Model {
+    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(Main.MOD_ID, "globe"), "main");
     private final ModelPart globe;
 
-    public OvalGlobeModel(ModelPart root) {
+    public CustomGlobeModel(ModelPart root) {
         super(RenderType::entityCutout);
         this.globe = root.getChild("globe");
     }
@@ -30,8 +30,8 @@ public class OvalGlobeModel extends Model {
         return LayerDefinition.create(modelData, 64, 64);
     }
 
-    public static OvalGlobeModel getModel() {
-        return new OvalGlobeModel(Minecraft.getInstance().getEntityModels().bakeLayer(LAYER_LOCATION));
+    public static CustomGlobeModel getModel() {
+        return new CustomGlobeModel(Minecraft.getInstance().getEntityModels().bakeLayer(LAYER_LOCATION));
     }
 
     public void renderToBuffer(PoseStack poseStack, VertexConsumer vertices, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {

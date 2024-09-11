@@ -19,14 +19,14 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.teddy0008.ad_extendra.Main;
-import net.teddy0008.ad_extendra.block.globe.OvalGlobeBlockEntity;
+import net.teddy0008.ad_extendra.block.globe.CustomGlobeBlockEntity;
 import net.teddy0008.ad_extendra.client.ClientPlatformUtils;
 
-public class OvalGlobeRenderer implements BlockEntityRenderer<OvalGlobeBlockEntity> {
-    public OvalGlobeRenderer(BlockEntityRendererProvider.Context ctx) {
+public class CustomGlobeRenderer implements BlockEntityRenderer<CustomGlobeBlockEntity> {
+    public CustomGlobeRenderer(BlockEntityRendererProvider.Context ctx) {
     }
 
-    public void render(OvalGlobeBlockEntity entity, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
+    public void render(CustomGlobeBlockEntity entity, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int packedLight, int packedOverlay) {
         float yaw = Mth.lerp(partialTicks, entity.prevYaw, entity.getYaw());
         render(entity.getBlockState(), yaw, poseStack, buffer, packedLight, packedOverlay);
     }
@@ -74,7 +74,7 @@ public class OvalGlobeRenderer implements BlockEntityRenderer<OvalGlobeBlockEnti
                 try {
                     BakedModel blockModel = Minecraft.getInstance().getBlockRenderer().getBlockModel(state);
                     Minecraft.getInstance().getBlockRenderer().getModelRenderer().renderModel(poseStack.last(), buffer.getBuffer(Sheets.cutoutBlockSheet()), state, blockModel, 1.0F, 1.0F, 1.0F, packedLight, packedOverlay);
-                    OvalGlobeRenderer.render(state, yaw, poseStack, buffer, packedLight, packedOverlay);
+                    CustomGlobeRenderer.render(state, yaw, poseStack, buffer, packedLight, packedOverlay);
                 } catch (Throwable var15) {
                     try {
                         ignored.close();

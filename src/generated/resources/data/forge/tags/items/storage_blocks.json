@@ -6,6 +6,13 @@
     "#forge:storage_blocks/neptunium",
     "#forge:storage_blocks/radium",
     "#forge:storage_blocks/plutonium",
-    "#forge:storage_blocks/electrolyte"
+    "#forge:storage_blocks/electrolyte",
+    "#forge:storage_blocks/raw_juperium",
+    "#forge:storage_blocks/raw_saturlyte",
+    "#forge:storage_blocks/raw_uranium",
+    "#forge:storage_blocks/raw_neptunium",
+    "#forge:storage_blocks/raw_radium",
+    "#forge:storage_blocks/raw_plutonium",
+    "#forge:storage_blocks/raw_electrolyte"
   ]
 }
