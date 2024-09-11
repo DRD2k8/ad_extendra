@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "ad_astra_platform:electrolyte_ingots"
+    }
+  ],
+  "results": [
+    {
+      "item": "ad_extendra:electrolyte_plate",
+      "count": 1
+    }
+  ]
+}

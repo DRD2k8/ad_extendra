@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "ad_extendra:b_sandstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "ad_extendra:b_sand"
+    }
+  ],
+  "processingTime": 150
+}

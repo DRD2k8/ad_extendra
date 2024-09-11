@@ -1,0 +1,69 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-09-11 11:39:37 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/slushy_ice": {
+    "criteria": {
+      "has_ice": "2024-09-11 11:41:49 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/iron_ingot_from_blasting_uranus_iron_ore": {
+    "criteria": {
+      "has_uranus_iron_ore": "2024-09-11 11:45:05 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/packed_ice": {
+    "criteria": {
+      "has_ice": "2024-09-11 11:41:49 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:uranus": {
+    "criteria": {
+      "uranus": "2024-09-11 11:40:58 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:all_planets": {
+    "criteria": {
+      "ad_extendra:uranus": "2024-09-11 11:41:00 -0700"
+    },
+    "done": false
+  },
+  "ad_extendra:recipes/misc/iron_ingot_from_smelting_uranus_iron_ore": {
+    "criteria": {
+      "has_uranus_iron_ore": "2024-09-11 11:45:05 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/uranium_ingot_from_blasting_uranus_uranium_ore": {
+    "criteria": {
+      "has_uranus_uranium_ore": "2024-09-11 11:44:13 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:tier_11_rocket": {
+    "criteria": {
+      "tier_11_rocket": "2024-09-11 11:39:41 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/uranium_ingot_from_smelting_uranus_uranium_ore": {
+    "criteria": {
+      "has_uranus_uranium_ore": "2024-09-11 11:44:13 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:wooded_badlands": "2024-09-11 11:39:38 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}
