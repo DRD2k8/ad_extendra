@@ -79,6 +79,6 @@ public class ModEntities {
                     .build("tier_11_rocket"));
 
     public static void registerAttributes(BiConsumer<Supplier<? extends EntityType<? extends LivingEntity>>, Supplier<AttributeSupplier.Builder>> attributes) {
-        attributes.accept(FREEZE, Monster::createMonsterAttributes);
+        attributes.accept(FREEZE, Freeze::createAttributes);
     }
 }

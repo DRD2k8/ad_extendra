@@ -6,7 +6,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
-public class ModOrePlacedFeatures {
+public class ModPlacedFeatures {
     // Ceres
     public static final ResourceKey<PlacedFeature> CERES_COPPER_ORE = registerKey("ceres/copper_ore");
     public static final ResourceKey<PlacedFeature> CERES_IRON_ORE = registerKey("ceres/iron_ore");
@@ -30,6 +30,7 @@ public class ModOrePlacedFeatures {
     public static final ResourceKey<PlacedFeature> URANUS_LAPIS_ORE = registerKey("uranus/lapis_ore");
     public static final ResourceKey<PlacedFeature> URANUS_URANIUM_ORE = registerKey("uranus/uranium_ore");
     public static final ResourceKey<PlacedFeature> URANUS_ICICLE_GEODE = registerKey("uranus/icicle_geode");
+    public static final ResourceKey<PlacedFeature> URANUS_ICICLE = registerKey("uranus/icicle");
 
     // Neptune
     public static final ResourceKey<PlacedFeature> NEPTUNE_COAL_ORE = registerKey("neptune/coal_ore");

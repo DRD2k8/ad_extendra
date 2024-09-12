@@ -34,20 +34,7 @@
       },
       "inner_placements": [
         {
-          "Name": "ad_extendra:icicle",
-          "Properties": {
-            "thickness": "tip",
-            "vertical_direction": "down",
-            "waterlogged": "false"
-          }
-        },
-        {
-          "Name": "ad_extendra:icicle",
-          "Properties": {
-            "thickness": "tip",
-            "vertical_direction": "up",
-            "waterlogged": "false"
-          }
+          "Name": "minecraft:air"
         }
       ],
       "cannot_replace": "#minecraft:features_cannot_replace",
