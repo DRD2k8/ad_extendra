@@ -27,8 +27,12 @@ public class ModItemModelGenerator extends ItemModelProvider {
     @Override
     protected void registerModels() {
         // Moon
+        pressurePlateItem(ModBlocks.AERONOS_PRESSURE_PLATE);
+        buttonItem(ModBlocks.AERONOS_BUTTON);
         simpleSignItem(ModItems.AERONOS_SIGN);
         simpleHangingSignItem(ModItems.AERONOS_HANGING_SIGN);
+        pressurePlateItem(ModBlocks.STROPHAR_PRESSURE_PLATE);
+        buttonItem(ModBlocks.STROPHAR_BUTTON);
         simpleSignItem(ModItems.STROPHAR_SIGN);
         simpleHangingSignItem(ModItems.STROPHAR_HANGING_SIGN);
 

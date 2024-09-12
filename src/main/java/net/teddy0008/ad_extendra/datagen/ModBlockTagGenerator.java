@@ -844,6 +844,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RADIUM_PLATING_BUTTON.get())
                 .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get())
                 .add(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get());
+        this.tag(BlockTags.WOODEN_BUTTONS)
+                .add(ModBlocks.AERONOS_BUTTON.get())
+                .add(ModBlocks.STROPHAR_BUTTON.get());
         this.tag(BlockTags.PRESSURE_PLATES)
                 .add(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get())
@@ -852,6 +855,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.RADIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.PLUTONIUM_PLATING_PRESSURE_PLATE.get())
                 .add(ModBlocks.ELECTROLYTE_PLATING_PRESSURE_PLATE.get());
+        this.tag(BlockTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.AERONOS_PRESSURE_PLATE.get())
+                .add(ModBlocks.STROPHAR_PRESSURE_PLATE.get());
         this.tag(Tags.Blocks.STORAGE_BLOCKS)
                 .addTag(ModBlockTags.JUPERIUM_BLOCKS)
                 .addTag(ModBlockTags.SATURLYTE_BLOCKS)

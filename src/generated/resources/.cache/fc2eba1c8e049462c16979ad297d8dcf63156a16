@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-07T19:51:04.2163119	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-09-11T18:00:50.3318177	Tags for minecraft:item mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/items/glacian_logs.json
 06988cb4b138538ae3f1198aadff8d0060021fea data/ad_astra_platform/tags/items/electrolyte_blocks.json
 1678d0f61584aa3fd22fa5d2e6eb07002e675d46 data/ad_astra_platform/tags/items/electrolyte_ingots.json
@@ -102,3 +102,5 @@ d49297462c13744d86f92a35f6163690eae28366 data/minecraft/tags/items/slabs.json
 03fa7a62607b5b0cb3ec7b94c38507054885bf09 data/minecraft/tags/items/stone_crafting_materials.json
 03fa7a62607b5b0cb3ec7b94c38507054885bf09 data/minecraft/tags/items/stone_tool_materials.json
 62cb56d490c8aae462cf2e2700b6dbc185109958 data/minecraft/tags/items/walls.json
+6952c62ba7a1ef17d2f3a3fdf7e2941605df9338 data/minecraft/tags/items/wooden_buttons.json
+f8e323a287cc263c3fbcc81926c14c72854449e2 data/minecraft/tags/items/wooden_pressure_plates.json

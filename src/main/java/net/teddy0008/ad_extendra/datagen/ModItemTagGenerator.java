@@ -3,6 +3,7 @@ package net.teddy0008.ad_extendra.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
@@ -436,6 +437,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(ModBlocks.RADIUM_PLATING_BUTTON.get().asItem())
                 .add(ModBlocks.PLUTONIUM_PLATING_BUTTON.get().asItem())
                 .add(ModBlocks.ELECTROLYTE_PLATING_BUTTON.get().asItem());
+        this.tag(ItemTags.WOODEN_BUTTONS)
+                .add(ModBlocks.AERONOS_BUTTON.get().asItem())
+                .add(ModBlocks.STROPHAR_BUTTON.get().asItem());
+        this.tag(ItemTags.WOODEN_PRESSURE_PLATES)
+                .add(ModBlocks.AERONOS_PRESSURE_PLATE.get().asItem())
+                .add(ModBlocks.STROPHAR_PRESSURE_PLATE.get().asItem());
         this.tag(ItemTags.SIGNS)
                 .add(ModItems.AERONOS_SIGN.get())
                 .add(ModItems.STROPHAR_SIGN.get());

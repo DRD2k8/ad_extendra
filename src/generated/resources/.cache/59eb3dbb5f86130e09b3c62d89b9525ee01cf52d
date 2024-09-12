@@ -1,6 +1,8 @@
-// 1.20.1	2024-09-10T20:53:31.5459851	Loot Tables
+// 1.20.1	2024-09-11T18:00:50.3318177	Loot Tables
+23cacbdef9dbfc6a510a2bdc8a9105434e5049e1 data/ad_extendra/loot_tables/blocks/aeronos_button.json
 827a8e20f0a391dbc067c686adf72b50c87915c1 data/ad_extendra/loot_tables/blocks/aeronos_hanging_sign.json
 8ee28f6da574b16d4d6b009c863541876c6f8ed2 data/ad_extendra/loot_tables/blocks/aeronos_mushroom.json
+774a2af6c9be888f52d9386c2992c1fae5a89c15 data/ad_extendra/loot_tables/blocks/aeronos_pressure_plate.json
 6af4a5abd5e5d126e4f1aecabf1ec2d6c68c8668 data/ad_extendra/loot_tables/blocks/aeronos_sign.json
 b08c6fd51e7b88137c1312bf4e7d49928a2e2b4c data/ad_extendra/loot_tables/blocks/aeronos_wall_hanging_sign.json
 b9de0931853eec1d5f1983fa826bf5db27cd0710 data/ad_extendra/loot_tables/blocks/aeronos_wall_sign.json
@@ -383,8 +385,10 @@ b63e25a71c95e29c5c47796e7c17ea382acb718f data/ad_extendra/loot_tables/blocks/sed
 4fb645440d2e2a119f557a9e753eb87d81309b6c data/ad_extendra/loot_tables/blocks/sedna_stone_stairs.json
 dac8d44f5385e36c82387de6a49ec8200f5b802a data/ad_extendra/loot_tables/blocks/slushy_ice.json
 7140c6295ec4657f2db6e7294c0083af3f7af34b data/ad_extendra/loot_tables/blocks/stripped_glacian_wood.json
+e1dee27cdbce72694e5d1082ed87375ea19b8525 data/ad_extendra/loot_tables/blocks/strophar_button.json
 9c6bf9fbb1138a868f3233e28a92975f94be35a9 data/ad_extendra/loot_tables/blocks/strophar_hanging_sign.json
 3eb0d2e98cb491ed0ab670470fc3a5a3fe994402 data/ad_extendra/loot_tables/blocks/strophar_mushroom.json
+b4df24da69090abaf641ef03dc88f5ff3424c8a1 data/ad_extendra/loot_tables/blocks/strophar_pressure_plate.json
 f960c12be531a4796cc8c1e761cad15dd5c20231 data/ad_extendra/loot_tables/blocks/strophar_sign.json
 8e0928f42c3f38dfdaec042903ca4b5fa78e198f data/ad_extendra/loot_tables/blocks/strophar_wall_hanging_sign.json
 b31c37013c5d7bdc9c5d3240d8721ffabc55661f data/ad_extendra/loot_tables/blocks/strophar_wall_sign.json

@@ -1,4 +1,4 @@
-// 1.20.1	2024-09-07T19:51:04.2163119	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-09-11T18:00:50.3474433	Tags for minecraft:block mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/blocks/glacian_logs.json
 a4f329db7cef4fd4e0a119507a4d3f5d4aa53fed data/forge/tags/blocks/needs_netherite_tool.json
 d90a0a5e0afc3a7307dac5ed0ac17706a46487b5 data/forge/tags/blocks/ores.json
@@ -56,3 +56,5 @@ d9a17678c6e071150acd1d39c4a2ebdcf901f9ed data/minecraft/tags/blocks/standing_sig
 62cb56d490c8aae462cf2e2700b6dbc185109958 data/minecraft/tags/blocks/walls.json
 cc1c13e4944c0d6141955af9a636d47dbfbc2362 data/minecraft/tags/blocks/wall_hanging_signs.json
 87d7623bd5f624098c53bab4cd62db1b3210bbf3 data/minecraft/tags/blocks/wall_signs.json
+6952c62ba7a1ef17d2f3a3fdf7e2941605df9338 data/minecraft/tags/blocks/wooden_buttons.json
+f8e323a287cc263c3fbcc81926c14c72854449e2 data/minecraft/tags/blocks/wooden_pressure_plates.json

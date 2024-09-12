@@ -34,6 +34,15 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
         // Moon
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.AERONOS_PRESSURE_PLATE.get())
+                .pattern("##")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.AERONOS_BUTTON.get())
+                .requires(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get()),
+                        has(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_PLANKS.get())).save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.AERONOS_SIGN.get(), 3)
                 .pattern("###")
                 .pattern("###")
@@ -52,6 +61,15 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
                 .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_STEM.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.AERONOS_STEM.get()))
                 .unlockedBy(getHasName(Items.CHAIN), has(Items.CHAIN))
                 .save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STROPHAR_PRESSURE_PLATE.get())
+                .pattern("##")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.STROPHAR_BUTTON.get())
+                .requires(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get()),
+                        has(earth.terrarium.ad_astra.common.registry.ModItems.STROPHAR_PLANKS.get())).save(consumer);
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.STROPHAR_SIGN.get(), 3)
                 .pattern("###")
                 .pattern("###")

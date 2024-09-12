@@ -1,5 +1,7 @@
-// 1.20.1	2024-07-31T10:48:06.5446464	Item Models: ad_extendra
+// 1.20.1	2024-09-11T18:00:50.3318177	Item Models: ad_extendra
+13f8880269d8ab579906fe74f0b20b7067c065b5 assets/ad_extendra/models/item/aeronos_button.json
 2d057b69f12ac3f4fdecf485879ca972a1b0cee1 assets/ad_extendra/models/item/aeronos_hanging_sign.json
+5c765d8479d12229433bbadb62a32ee5d26ae761 assets/ad_extendra/models/item/aeronos_pressure_plate.json
 c6609915398fcb30200e6e467f190967c6eb1551 assets/ad_extendra/models/item/aeronos_sign.json
 d027a60d8baa3fd7304a40d496958ad6d47365bb assets/ad_extendra/models/item/b_cobblestone_slab.json
 de3f1b7c6b3e101457feb6c0129e7cc272aeb1aa assets/ad_extendra/models/item/b_cobblestone_stairs.json
@@ -244,7 +246,9 @@ a8977373f1c3b27abf8dd3b66b182bda6c506630 assets/ad_extendra/models/item/sedna_st
 3ed57cb0bfc5b722b9856ae2d5e780b0a7a1ad60 assets/ad_extendra/models/item/sedna_stone_brick_wall.json
 96d56040e6294193afe4bb4b84f256627d99e155 assets/ad_extendra/models/item/sedna_stone_slab.json
 25f26e2f160c5e0d858438bc319889fa9f7ad0f5 assets/ad_extendra/models/item/sedna_stone_stairs.json
+64b357b45a8bf2d97484a210be62053bb36df511 assets/ad_extendra/models/item/strophar_button.json
 8fad51549f244aaf096d0b3e1b6519c21dde1007 assets/ad_extendra/models/item/strophar_hanging_sign.json
+a4449d5a57f639f49be95ed24fea4f1d4496a726 assets/ad_extendra/models/item/strophar_pressure_plate.json
 be304033bc31f18456ee236f0b7e2165cff44e19 assets/ad_extendra/models/item/strophar_sign.json
 ac582d3a3ac35c9f9762334c0476eff465efc7dc assets/ad_extendra/models/item/uranium_engine.json
 8c8d34d428bcd66b73794165399454a8b9156ab1 assets/ad_extendra/models/item/uranium_ingot.json

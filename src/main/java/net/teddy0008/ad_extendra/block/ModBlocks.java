@@ -41,6 +41,10 @@ public class ModBlocks {
             }), ModTreeConfiguredFeatures.AERONOS_KEY));
     public static final RegistryObject<FlowerPotBlock> POTTED_AERONOS_MUSHROOM = BLOCKS.register("potted_aeronos_mushroom",
             () -> new FlowerPotBlock(AERONOS_MUSHROOM.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<ButtonBlock> AERONOS_BUTTON = registerBlock("aeronos_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_BUTTON), BlockSetType.CRIMSON, 30, true));
+    public static final RegistryObject<PressurePlateBlock> AERONOS_PRESSURE_PLATE = registerBlock("aeronos_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.CRIMSON_PRESSURE_PLATE).friction(0.5f), BlockSetType.CRIMSON));
     public static final RegistryObject<CustomStandingSignBlock> AERONOS_SIGN = BLOCKS.register("aeronos_sign",
             () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SIGN), ModWoodTypes.AERONOS));
     public static final RegistryObject<CustomWallSignBlock> AERONOS_WALL_SIGN = BLOCKS.register("aeronos_wall_sign",
@@ -55,6 +59,10 @@ public class ModBlocks {
             }), ModTreeConfiguredFeatures.STROPHAR_KEY));
     public static final RegistryObject<FlowerPotBlock> POTTED_STROPHAR_MUSHROOM = BLOCKS.register("potted_strophar_mushroom",
             () -> new FlowerPotBlock(STROPHAR_MUSHROOM.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<ButtonBlock> STROPHAR_BUTTON = registerBlock("strophar_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_BUTTON), BlockSetType.CRIMSON, 30, true));
+    public static final RegistryObject<PressurePlateBlock> STROPHAR_PRESSURE_PLATE = registerBlock("strophar_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.CRIMSON_PRESSURE_PLATE).friction(0.5f), BlockSetType.CRIMSON));
     public static final RegistryObject<CustomStandingSignBlock> STROPHAR_SIGN = BLOCKS.register("strophar_sign",
             () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_SIGN), ModWoodTypes.STROPHAR));
     public static final RegistryObject<CustomWallSignBlock> STROPHAR_WALL_SIGN = BLOCKS.register("strophar_wall_sign",
