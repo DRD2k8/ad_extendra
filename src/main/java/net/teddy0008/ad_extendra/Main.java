@@ -44,6 +44,7 @@ import net.teddy0008.ad_extendra.painting.ModPaintings;
 import net.teddy0008.ad_extendra.particle.ModParticles;
 import net.teddy0008.ad_extendra.util.ModWoodTypes;
 import net.teddy0008.ad_extendra.util.PlatformUtils;
+import net.teddy0008.ad_extendra.world.gen.feature.ModFeatures;
 
 @Mod(Main.MOD_ID)
 public class Main {
@@ -57,6 +58,7 @@ public class Main {
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModFeatures.register(modEventBus);
         ModLootModifiers.register(modEventBus);
         ModParticles.register(modEventBus);
 

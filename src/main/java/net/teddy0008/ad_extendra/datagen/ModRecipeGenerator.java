@@ -138,6 +138,16 @@ public class ModRecipeGenerator extends RecipeProvider implements IConditionBuil
         oreBlasting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ICE_CHARGE.get(), 4)
                 .requires(ModItems.FREEZE_SHARD.get()).unlockedBy(getHasName(ModItems.FREEZE_SHARD.get()), has(ModItems.FREEZE_SHARD.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICICLE.get())
+                .pattern("#")
+                .pattern("#")
+                .define('#', earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get())
+                .unlockedBy(getHasName(earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()), has(earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, earth.terrarium.ad_astra.common.registry.ModItems.ICE_SHARD.get(), 2)
+                .requires(ModBlocks.ICICLE.get())
+                .unlockedBy(getHasName(ModBlocks.ICICLE.get()), has(ModBlocks.ICICLE.get()))
+                .save(consumer, Main.MOD_ID + ":ice_shards_from_icicle");
 
         // Neptune
         oreSmelting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 200, "item");

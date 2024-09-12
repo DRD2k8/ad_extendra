@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "ad_extendra:uranus_ice_peaks",
+  "features": "ad_extendra:uranus/icicle",
+  "step": "underground_decoration"
+}
