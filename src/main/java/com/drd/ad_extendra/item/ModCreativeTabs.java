@@ -21,9 +21,13 @@ public class ModCreativeTabs {
                 // Moon
                 output.accept(ModBlocks.MOON_MYCELIUM.get());
                 output.accept(ModBlocks.AERONOS_MUSHROOM.get());
+                output.accept(ModBlocks.AERONOS_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.AERONOS_BUTTON.get());
                 output.accept(ModItems.AERONOS_SIGN.get());
                 output.accept(ModItems.AERONOS_HANGING_SIGN.get());
                 output.accept(ModBlocks.STROPHAR_MUSHROOM.get());
+                output.accept(ModBlocks.STROPHAR_PRESSURE_PLATE.get());
+                output.accept(ModBlocks.STROPHAR_BUTTON.get());
                 output.accept(ModItems.STROPHAR_SIGN.get());
                 output.accept(ModItems.STROPHAR_HANGING_SIGN.get());
 

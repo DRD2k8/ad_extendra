@@ -89,12 +89,20 @@ public class ModBlocks {
             }), ModTreeConfiguredFeatures.AERONOS_KEY));
     public static final RegistryEntry<FlowerPotBlock> POTTED_AERONOS_MUSHROOM = POTTED_BLOCKS.register("potted_aeronos_mushroom",
             () -> new FlowerPotBlock(AERONOS_MUSHROOM.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryEntry<ButtonBlock> AERONOS_BUTTON = registerBlock("aeronos_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_BUTTON), BlockSetType.CRIMSON, 30, true));
+    public static final RegistryEntry<PressurePlateBlock> AERONOS_PRESSURE_PLATE = registerBlock("aeronos_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.CRIMSON_PRESSURE_PLATE).friction(0.5f), BlockSetType.CRIMSON));
     public static final RegistryEntry<MushroomBlock> STROPHAR_MUSHROOM = registerBlock("strophar_mushroom",
             () -> new MushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).sound(SoundType.STEM).lightLevel((state) -> {
                 return 6;
             }), ModTreeConfiguredFeatures.STROPHAR_KEY));
     public static final RegistryEntry<FlowerPotBlock> POTTED_STROPHAR_MUSHROOM = BLOCKS.register("potted_strophar_mushroom",
             () -> new FlowerPotBlock(STROPHAR_MUSHROOM.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryEntry<ButtonBlock> STROPHAR_BUTTON = registerBlock("strophar_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_BUTTON), BlockSetType.CRIMSON, 30, true));
+    public static final RegistryEntry<PressurePlateBlock> STROPHAR_PRESSURE_PLATE = registerBlock("strophar_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.CRIMSON_PRESSURE_PLATE).friction(0.5f), BlockSetType.CRIMSON));
 
     // Ceres
     public static final RegistryEntry<Block> CERES_COPPER_ORE = registerBlock("ceres_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
