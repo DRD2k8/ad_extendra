@@ -15,7 +15,7 @@
       "b": 105
     }
   },
-  "cloud_effects": "vanilla",
+  "cloud_effects": "none",
   "weather_effects": "none",
   "horizon_angle": 0,
   "sky_objects": [

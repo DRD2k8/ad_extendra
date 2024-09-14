@@ -22,7 +22,7 @@ public class WindParticle extends TextureSheetParticle {
         if (this.lifetime-- <= 0) {
             this.remove();
         } else {
-            this.xd -= 0.01;
+            this.xd -= 0.05;
             if (this.level != null) {
                 this.move(this.xd, this.yd, this.zd);
             }

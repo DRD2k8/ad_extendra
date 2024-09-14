@@ -10,7 +10,7 @@
   "dimension_effects": {
     "type": "simple"
   },
-  "cloud_effects": "vanilla",
+  "cloud_effects": "none",
   "weather_effects": "none",
   "horizon_angle": 0,
   "sky_objects": [
