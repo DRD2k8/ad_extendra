@@ -30,12 +30,6 @@ Ad Extendra is an add-on mod, that adds more content to <a href="https://www.cur
   <li>b</li>
 </ul>
 
-<h2><span style="color:#00ff00">WIP Features</span></h2>
-<h3>Mobs</h3>
-<ul>
-<li>Freeze (Like the Blaze, but opposite. It's planned to spawn in Uranus, but I'll add the generation when I figure out why the mob spawning doesn't work)</li>
-</ul>
-
 <h2><span style="color:#ffff00">Planned Features</span></h2>
 <h3>Discoverable Moons</h3>
 <h4>Mars</h4>
@@ -101,10 +95,6 @@ Ad Extendra is an add-on mod, that adds more content to <a href="https://www.cur
 <h4>Eris</h4>
 <ul>
 <li>Dysnomia</li>
-</ul>
-<h3>Structures</h3>
-<ul>
-<li>Dungeons for each planet (Similar to the Moon Dungeon where you can find a Moon Globe)</li>
 </ul>
 
 <h2>Mod Support</h3>
