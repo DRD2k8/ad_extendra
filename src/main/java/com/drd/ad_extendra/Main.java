@@ -38,6 +38,7 @@ public class Main implements ModInitializer {
         StrippableBlockRegistry.register(ModBlocks.GLACIAN_WOOD.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get());
 
         ModLootModifiers.modifyLootTables();
+        ModPlacements.addSpawns();
         ModPlacements.generateOres();
         ModPlacements.generateUndergroundDecorations();
     }

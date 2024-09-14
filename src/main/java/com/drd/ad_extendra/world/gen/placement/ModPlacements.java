@@ -1,9 +1,13 @@
 package com.drd.ad_extendra.world.gen.placement;
 
+import com.drd.ad_extendra.entity.ModEntities;
 import com.drd.ad_extendra.world.gen.ModPlacedFeatures;
 import com.drd.ad_extendra.world.gen.biome.ModBiomeSelectors;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.level.levelgen.GenerationStep;
+import net.minecraft.world.level.levelgen.Heightmap;
 
 public class ModPlacements {
     public static void generateOres() {
@@ -129,5 +133,11 @@ public class ModPlacements {
     public static void generateUndergroundDecorations() {
         BiomeModifications.addFeature(ModBiomeSelectors.foundInUranus(),
                 GenerationStep.Decoration.UNDERGROUND_DECORATION, ModPlacedFeatures.URANUS_ICICLE);
+    }
+
+    public static void addSpawns() {
+        SpawnPlacements.register(ModEntities.FREEZE.get(),
+                SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                Monster::checkMonsterSpawnRules);
     }
 }

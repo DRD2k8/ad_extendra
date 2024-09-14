@@ -1,0 +1,58 @@
+{
+  "ad_extendra:recipes/misc/ice_shard_from_smelting_uranus_ice_shard_ore": {
+    "criteria": {
+      "has_uranus_ice_shard_ore": "2024-09-12 10:55:08 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/ice_shards_from_icicle": {
+    "criteria": {
+      "has_icicle": "2024-09-12 10:54:32 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-09-12 10:50:17 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:uranus": {
+    "criteria": {
+      "uranus": "2024-09-12 10:51:25 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/ice_shard_from_blasting_uranus_ice_shard_ore": {
+    "criteria": {
+      "has_uranus_ice_shard_ore": "2024-09-12 10:55:08 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:all_planets": {
+    "criteria": {
+      "ad_extendra:uranus": "2024-09-12 10:51:26 -0700"
+    },
+    "done": false
+  },
+  "ad_extendra:recipes/building_blocks/icicle": {
+    "criteria": {
+      "has_ice_shard": "2024-09-12 10:54:40 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:tier_11_rocket": {
+    "criteria": {
+      "tier_11_rocket": "2024-09-12 10:50:38 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sunflower_plains": "2024-09-12 10:50:18 -0700",
+      "minecraft:savanna": "2024-09-12 10:50:23 -0700"
+    },
+    "done": false
+  },
+  "DataVersion": 3465
+}
