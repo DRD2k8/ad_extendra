@@ -34,17 +34,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "ad_extendra:uranus_globe",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
           "name": "ad_astra:ice_shard",
           "weight": 40,
           "functions": [
