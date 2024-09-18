@@ -9,6 +9,7 @@ import com.drd.ad_extendra.item.ModItems;
 import com.drd.ad_extendra.painting.ModPaintings;
 import com.drd.ad_extendra.particle.ModParticles;
 import com.drd.ad_extendra.util.ModLootModifiers;
+import com.drd.ad_extendra.util.ModVillagerTrades;
 import com.drd.ad_extendra.world.gen.feature.ModFeatures;
 import com.drd.ad_extendra.world.gen.placement.ModPlacements;
 import net.fabricmc.api.ModInitializer;
@@ -41,5 +42,6 @@ public class Main implements ModInitializer {
         ModPlacements.addSpawns();
         ModPlacements.generateOres();
         ModPlacements.generateUndergroundDecorations();
+        ModVillagerTrades.registerTrades();
     }
 }

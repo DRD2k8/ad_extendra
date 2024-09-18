@@ -1,0 +1,93 @@
+{
+  "minecraft:recipes/combat/stone_sword": {
+    "criteria": {
+      "has_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_axe": {
+    "criteria": {
+      "has_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/furnace": {
+    "criteria": {
+      "has_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_lantern": {
+    "criteria": {
+      "has_soul_torch": "2024-09-17 21:59:24 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/gonggong_cobblestone_slab_from_gonggong_cobblestone_stonecutting": {
+    "criteria": {
+      "has_gonggong_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-09-17 21:58:58 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/gonggong_cobblestone_stairs_from_gonggong_cobblestone_stonecutting": {
+    "criteria": {
+      "has_gonggong_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/gonggong_cobblestone_stairs": {
+    "criteria": {
+      "has_gonggong_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "ad_extendra:recipes/misc/gonggong_stone_from_smelting_gonggong_cobblestone": {
+    "criteria": {
+      "has_gonggong_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_pickaxe": {
+    "criteria": {
+      "has_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2024-09-17 21:58:59 -0700"
+    },
+    "done": false
+  },
+  "ad_extendra:recipes/misc/gonggong_cobblestone_slab": {
+    "criteria": {
+      "has_gonggong_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2024-09-17 21:59:23 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

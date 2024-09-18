@@ -74,6 +74,8 @@ public class RendererRegistry {
     }
 
     public static void onRegisterBlockRenderTypes(BiConsumer<RenderType, List<Block>> register) {
+        ClientHooks.setRenderLayer((Block)ModBlocks.SATURN_ICE.get(), RenderType.translucent());
+        ClientHooks.setRenderLayer((Block)ModBlocks.SLUSHY_ICE.get(), RenderType.translucent());
         ClientHooks.setRenderLayer((Block)ModBlocks.ICICLE.get(), RenderType.cutoutMipped());
         ClientHooks.setRenderLayer((Block)ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
         ClientHooks.setRenderLayer((Block)ModBlocks.POTTED_GLACIAN_SAPLING.get(), RenderType.cutoutMipped());

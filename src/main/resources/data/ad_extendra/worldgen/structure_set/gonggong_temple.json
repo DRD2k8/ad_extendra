@@ -1,0 +1,17 @@
+{
+  "structures": [
+    {
+      "structure": "ad_extendra:gonggong_temple",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1471040600,
+
+    "spacing": 40,
+
+    "separation": 5,
+
+    "type": "minecraft:random_spread"
+  }
+}

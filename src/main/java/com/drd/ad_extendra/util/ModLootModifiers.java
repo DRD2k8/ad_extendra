@@ -1,6 +1,7 @@
 package com.drd.ad_extendra.util;
 
 import com.drd.ad_extendra.block.ModBlocks;
+import earth.terrarium.ad_astra.common.registry.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -22,6 +23,9 @@ public class ModLootModifiers {
 
     private static final ResourceLocation MOON_VILLAGE_BLACKSMITH_ID =
             new ResourceLocation("ad_astra", "chests/village/moon/blacksmith");
+
+    private static final ResourceLocation MARS_TEMPLE_ID =
+            new ResourceLocation("ad_astra", "chests/temple/mars/temple");
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -52,7 +56,7 @@ public class ModLootModifiers {
                         .add(LootItem.lootTableItem(ModBlocks.AERONOS_MUSHROOM.get()));
 
                 LootPool.Builder stropharPoolBuilder = LootPool.lootPool()
-                        .conditionally(LootItemRandomChanceCondition.randomChance(0.75f).build())
+                        .conditionally(LootItemRandomChanceCondition.randomChance(0.625f).build())
                         .add(LootItem.lootTableItem(ModBlocks.STROPHAR_MUSHROOM.get()));
 
                 tableBuilder.pool(aeronosPoolBuilder.build());
@@ -64,11 +68,18 @@ public class ModLootModifiers {
                         .add(LootItem.lootTableItem(ModBlocks.AERONOS_MUSHROOM.get()));
 
                 LootPool.Builder stropharPoolBuilder = LootPool.lootPool()
-                        .conditionally(LootItemRandomChanceCondition.randomChance(0.75f).build())
+                        .conditionally(LootItemRandomChanceCondition.randomChance(0.625f).build())
                         .add(LootItem.lootTableItem(ModBlocks.STROPHAR_MUSHROOM.get()));
 
                 tableBuilder.pool(aeronosPoolBuilder.build());
                 tableBuilder.pool(stropharPoolBuilder.build());
+            }
+            if(MARS_TEMPLE_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.lootPool()
+                        .conditionally(LootItemRandomChanceCondition.randomChance(0.1f).build())
+                        .add(LootItem.lootTableItem(ModItems.MARS_GLOBE.get()));
+
+                tableBuilder.pool(poolBuilder.build());
             }
         });
     }
