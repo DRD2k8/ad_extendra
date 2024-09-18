@@ -1,9 +1,10 @@
-// 1.20.1	2024-07-30T14:02:59.9299449	Global Loot Modifiers : ad_extendra
+// 1.20.1	2024-09-16T10:59:52.2666241	Global Loot Modifiers : ad_extendra
 86d0469421b781adbae0254430c56ee5bb58a549 data/ad_extendra/loot_modifiers/aeronos_mushroom_from_cap.json
+e2a5581c3c7d089fcd17b89d68ec32e6a713c962 data/ad_extendra/loot_modifiers/chests/temple/mars/temple/mars_globe.json
 6807283f70c7f68049f1df40d2bd3f29b54e251b data/ad_extendra/loot_modifiers/chests/village/moon/blacksmith/aeronos_mushroom.json
 e0cdd1d97725fb7c56e83e1810cb5c3c4a5a4344 data/ad_extendra/loot_modifiers/chests/village/moon/blacksmith/strophar_mushroom.json
 c6adf953b6e6a4e502f5942b7fe6cdb5eecffa2b data/ad_extendra/loot_modifiers/chests/village/moon/house/aeronos_mushroom.json
 1366f37caad60efc39e9ffe8c43097700ef2f626 data/ad_extendra/loot_modifiers/chests/village/moon/house/strophar_mushroom.json
 962cd4058ff00272318d45b22c14565ec7025804 data/ad_extendra/loot_modifiers/glacian_sapling_from_leaves.json
 22b50414d6fb1fcdafebded5a2fe842d4f9f9e74 data/ad_extendra/loot_modifiers/strophar_mushroom_from_cap.json
-df5e097c090332b3a320dc58d303f57bfe2f492d data/forge/loot_modifiers/global_loot_modifiers.json
+edcd857485b5e56eb65b72c6d20ab94f09166e9d data/forge/loot_modifiers/global_loot_modifiers.json

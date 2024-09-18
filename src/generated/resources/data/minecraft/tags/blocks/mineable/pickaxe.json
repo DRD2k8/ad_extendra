@@ -374,6 +374,20 @@
     "ad_extendra:b_diamond_ore",
     "ad_extendra:b_emerald_ore",
     "ad_extendra:b_iron_ore",
-    "ad_extendra:b_redstone_ore"
+    "ad_extendra:b_redstone_ore",
+    "ad_extendra:ceres_globe",
+    "ad_extendra:jupiter_globe",
+    "ad_extendra:saturn_globe",
+    "ad_extendra:uranus_globe",
+    "ad_extendra:neptune_globe",
+    "ad_extendra:orcus_globe",
+    "ad_extendra:pluto_globe",
+    "ad_extendra:haumea_globe",
+    "ad_extendra:quaoar_globe",
+    "ad_extendra:makemake_globe",
+    "ad_extendra:gonggong_globe",
+    "ad_extendra:eris_globe",
+    "ad_extendra:sedna_globe",
+    "ad_extendra:b_globe"
   ]
 }

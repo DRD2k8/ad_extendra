@@ -6,7 +6,8 @@
     "ad_extendra:aeronos_mushroom_from_cap",
     "ad_extendra:chests/village/moon/house/aeronos_mushroom",
     "ad_extendra:strophar_mushroom_from_cap",
-    "ad_extendra:chests/village/moon/blacksmith/aeronos_mushroom"
+    "ad_extendra:chests/village/moon/blacksmith/aeronos_mushroom",
+    "ad_extendra:chests/temple/mars/temple/mars_globe"
   ],
   "replace": false
 }

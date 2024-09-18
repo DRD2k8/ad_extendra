@@ -550,7 +550,23 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.B_DIAMOND_ORE.get())
                 .add(ModBlocks.B_EMERALD_ORE.get())
                 .add(ModBlocks.B_IRON_ORE.get())
-                .add(ModBlocks.B_REDSTONE_ORE.get());
+                .add(ModBlocks.B_REDSTONE_ORE.get())
+
+                // Globes
+                .add(ModBlocks.CERES_GLOBE.get())
+                .add(ModBlocks.JUPITER_GLOBE.get())
+                .add(ModBlocks.SATURN_GLOBE.get())
+                .add(ModBlocks.URANUS_GLOBE.get())
+                .add(ModBlocks.NEPTUNE_GLOBE.get())
+                .add(ModBlocks.ORCUS_GLOBE.get())
+                .add(ModBlocks.PLUTO_GLOBE.get())
+                .add(ModBlocks.HAUMEA_GLOBE.get())
+                .add(ModBlocks.QUAOAR_GLOBE.get())
+                .add(ModBlocks.MAKEMAKE_GLOBE.get())
+                .add(ModBlocks.GONGGONG_GLOBE.get())
+                .add(ModBlocks.ERIS_GLOBE.get())
+                .add(ModBlocks.SEDNA_GLOBE.get())
+                .add(ModBlocks.B_GLOBE.get());
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
                 .add(ModBlocks.JUPITER_SAND.get())
                 .add(ModBlocks.CERES_SAND.get())

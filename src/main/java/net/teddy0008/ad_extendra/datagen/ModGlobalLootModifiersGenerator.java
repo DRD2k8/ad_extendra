@@ -1,6 +1,7 @@
 package net.teddy0008.ad_extendra.datagen;
 
 import earth.terrarium.ad_astra.AdAstra;
+import earth.terrarium.ad_astra.common.registry.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
@@ -46,5 +47,9 @@ public class ModGlobalLootModifiersGenerator extends GlobalLootModifierProvider 
         add("chests/village/moon/blacksmith/strophar_mushroom", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation(AdAstra.MOD_ID, "chests/village/moon/blacksmith")).build(),
                 LootItemRandomChanceCondition.randomChance(0.625f).build()}, ModBlocks.STROPHAR_MUSHROOM.get().asItem()));
+
+        add("chests/temple/mars/temple/mars_globe", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation(AdAstra.MOD_ID, "chests/temple/mars/temple")).build(),
+                LootItemRandomChanceCondition.randomChance(0.1f).build()}, ModItems.MARS_GLOBE.get().asItem()));
     }
 }
