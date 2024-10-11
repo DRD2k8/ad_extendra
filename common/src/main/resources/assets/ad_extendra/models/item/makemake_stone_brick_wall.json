@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "ad_extendra:block/makemake_stone_bricks"
+  }
+}

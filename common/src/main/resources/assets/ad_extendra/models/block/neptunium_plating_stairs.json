@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ad_extendra:block/neptunium_plating",
+    "side": "ad_extendra:block/neptunium_plating",
+    "top": "ad_extendra:block/neptunium_plating"
+  }
+}

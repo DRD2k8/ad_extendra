@@ -1,0 +1,6 @@
+{
+  "parent": "ad_extendra:block/icicle",
+  "textures": {
+    "cross": "ad_extendra:block/icicle_down_middle"
+  }
+}

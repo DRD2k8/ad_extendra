@@ -1,0 +1,7 @@
+{
+  "parent": "ad_extendra:block/ellipse_globe_cube",
+  "textures": {
+    "particle": "ad_extendra:block/globe/sedna_globe",
+    "texture": "ad_extendra:block/globe/sedna_globe"
+  }
+}

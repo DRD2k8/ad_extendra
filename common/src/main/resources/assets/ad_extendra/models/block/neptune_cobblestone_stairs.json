@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "ad_extendra:block/neptune_cobblestone",
+    "side": "ad_extendra:block/neptune_cobblestone",
+    "top": "ad_extendra:block/neptune_cobblestone"
+  }
+}

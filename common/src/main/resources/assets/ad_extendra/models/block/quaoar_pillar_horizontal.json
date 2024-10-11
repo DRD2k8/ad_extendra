@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "ad_extendra:block/quaoar_pillar_top",
+    "side": "ad_extendra:block/quaoar_pillar"
+  }
+}

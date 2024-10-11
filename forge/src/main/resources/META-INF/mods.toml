@@ -1,0 +1,55 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+displayURL = "https://modrinth.com/mod/ad_extendra-continuation"
+issueTrackerURL = "https://github.com/DRD2k8/ad_extendra/issues"
+license = "MIT"
+
+[[mods]]
+modId = "ad_extendra"
+version = "${version}"
+displayName = "Ad Extendra"
+authors = "Teddy0008 (Real owner), Dandi2k8 (Co-owner)"
+description = "A mod to extend Ad Astra with new planets, rocket tiers, and more!"
+logoFile = "logo.png"
+
+[[dependencies.ad_extendra]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ad_extendra]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ad_extendra]]
+modId = "ad_astra"
+mandatory = true
+versionRange = "[1.15.18,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ad_extendra]]
+modId = "botarium"
+mandatory = true
+versionRange = "[2.3.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ad_extendra]]
+modId = "resourcefullib"
+mandatory = true
+versionRange = "[2.1.23,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ad_extendra]]
+modId = "resourcefulconfig"
+mandatory = true
+versionRange = "[2.1.0,)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "ad_extendra:block/uranium_plating",
+    "side": "ad_extendra:block/uranium_plating",
+    "top": "ad_extendra:block/uranium_plating"
+  }
+}
