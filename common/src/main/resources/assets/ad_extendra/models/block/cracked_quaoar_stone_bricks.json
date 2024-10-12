@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "ad_extendra:block/cracked_quaoar_stone_bricks"
-  }
-}

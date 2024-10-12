@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:juperium_nugget",
+    {
+      "id": "#c:juperium_nuggets",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/juperium",
+      "required": false
+    }
+  ]
+}

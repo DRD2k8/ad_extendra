@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/template_wall_post",
-  "textures": {
-    "wall": "ad_extendra:block/b_stone_bricks"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "ad_extendra:block/polished_saturn_stone",
-    "side": "ad_extendra:block/polished_saturn_stone",
-    "top": "ad_extendra:block/polished_saturn_stone"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "ad_extendra:block/chiseled_sedna_stone_bricks"
-  }
-}

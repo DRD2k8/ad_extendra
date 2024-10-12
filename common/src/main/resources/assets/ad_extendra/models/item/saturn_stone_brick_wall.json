@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/wall_inventory",
-  "textures": {
-    "wall": "ad_extendra:block/saturn_stone_bricks"
-  }
-}

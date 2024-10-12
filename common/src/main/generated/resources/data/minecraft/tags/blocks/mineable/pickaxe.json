@@ -1,0 +1,18 @@
+{
+  "values": [
+    "ad_extendra:juperium_block",
+    "ad_extendra:raw_juperium_block",
+    "ad_extendra:juperium_factory_block",
+    "ad_extendra:encased_juperium_block",
+    "ad_extendra:juperium_plateblock",
+    "ad_extendra:juperium_panel",
+    "ad_extendra:juperium_plating",
+    "ad_extendra:juperium_plating_stairs",
+    "ad_extendra:juperium_plating_slab",
+    "ad_extendra:juperium_pillar",
+    "ad_extendra:glowing_juperium_pillar",
+    "ad_extendra:juperium_plating_button",
+    "ad_extendra:juperium_plating_pressure_plate",
+    "ad_extendra:juperium_sliding_door"
+  ]
+}

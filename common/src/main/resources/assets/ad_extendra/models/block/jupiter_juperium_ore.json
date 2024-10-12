@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "ad_extendra:block/jupiter_juperium_ore"
-  }
-}

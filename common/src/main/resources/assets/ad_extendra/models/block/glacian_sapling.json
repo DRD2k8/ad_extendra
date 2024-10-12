@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "ad_extendra:block/glacian_sapling"
-  }
-}

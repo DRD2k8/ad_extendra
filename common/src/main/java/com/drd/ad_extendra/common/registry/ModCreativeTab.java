@@ -39,6 +39,29 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModItems.TIER_10_ROCKET.get()));
         list.add(new ItemStack(ModItems.TIER_11_ROCKET.get()));
 
+        // Jupiter
+        list.add(new ItemStack(ModItems.JUPERIUM_INGOT.get()));
+        list.add(new ItemStack(ModItems.JUPERIUM_NUGGET.get()));
+        list.add(new ItemStack(ModItems.JUPERIUM_PLATE.get()));
+        list.add(new ItemStack(ModItems.RAW_JUPERIUM.get()));
+        list.add(new ItemStack(ModItems.JUPERIUM_ENGINE.get()));
+        list.add(new ItemStack(ModItems.JUPERIUM_TANK.get()));
+
+        list.add(new ItemStack(ModBlocks.JUPERIUM_BLOCK.get()));
+        list.add(new ItemStack(ModBlocks.RAW_JUPERIUM_BLOCK.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_FACTORY_BLOCK.get()));
+        list.add(new ItemStack(ModBlocks.ENCASED_JUPERIUM_BLOCK.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_PLATEBLOCK.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_PANEL.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_PLATING.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_PLATING_STAIRS.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_PLATING_SLAB.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.GLOWING_JUPERIUM_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_PLATING_BUTTON.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_PLATING_PRESSURE_PLATE.get()));
+        list.add(new ItemStack(ModBlocks.JUPERIUM_SLIDING_DOOR.get()));
+
         return list.stream();
     }
 

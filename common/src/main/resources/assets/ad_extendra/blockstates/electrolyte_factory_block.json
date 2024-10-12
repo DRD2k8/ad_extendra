@@ -1,0 +1,15 @@
+{
+  "athena:loader": "athena:ctm",
+  "ctm_textures": {
+    "center": "ad_extendra:block/ctm/electrolyte_factory_block/3",
+    "empty": "ad_astra:block/ctm/empty",
+    "horizontal": "ad_extendra:block/ctm/electrolyte_factory_block/2",
+    "particle": "ad_extendra:block/electrolyte_factory_block",
+    "vertical": "ad_extendra:block/ctm/electrolyte_factory_block/1"
+  },
+  "variants": {
+    "": {
+      "model": "ad_extendra:block/electrolyte_factory_block"
+    }
+  }
+}

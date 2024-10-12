@@ -2,7 +2,7 @@ package com.drd.ad_extendra.common.entities.vehicles;
 
 import com.drd.ad_extendra.common.registry.ModEntityTypes;
 import com.drd.ad_extendra.common.registry.ModItems;
-import com.drd.ad_extendra.common.util.tags.ModFluidTags;
+import com.drd.ad_extendra.common.utils.tags.ModFluidTags;
 import earth.terrarium.adastra.common.entities.vehicles.Rocket;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.Level;

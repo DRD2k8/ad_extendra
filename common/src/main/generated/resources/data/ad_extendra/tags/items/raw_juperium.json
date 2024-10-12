@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_juperium",
+    {
+      "id": "#c:raw_juperium_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_materials/juperium",
+      "required": false
+    }
+  ]
+}

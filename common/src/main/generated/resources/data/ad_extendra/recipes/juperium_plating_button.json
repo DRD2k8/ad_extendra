@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ad_extendra:juperium_plating"
+    }
+  ],
+  "result": {
+    "item": "ad_extendra:juperium_plating_button"
+  }
+}

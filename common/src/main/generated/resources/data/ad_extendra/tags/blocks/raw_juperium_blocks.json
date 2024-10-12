@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_juperium_block",
+    {
+      "id": "#c:raw_juperium_blocks",
+      "required": false
+    },
+    {
+      "id": "#forge:storage_blocks/raw_juperium",
+      "required": false
+    }
+  ]
+}

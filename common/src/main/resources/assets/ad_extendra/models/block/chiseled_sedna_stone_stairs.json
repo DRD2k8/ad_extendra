@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "ad_extendra:block/chiseled_sedna_stone_bricks",
-    "side": "ad_extendra:block/chiseled_sedna_stone_bricks",
-    "top": "ad_extendra:block/chiseled_sedna_stone_bricks"
-  }
-}

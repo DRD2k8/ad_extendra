@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "ad_extendra:block/orcus_cobblestone",
-    "side": "ad_extendra:block/orcus_cobblestone",
-    "top": "ad_extendra:block/orcus_cobblestone"
-  }
-}

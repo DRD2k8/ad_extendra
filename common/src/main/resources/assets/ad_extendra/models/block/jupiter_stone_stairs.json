@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "ad_extendra:block/jupiter_stone",
-    "side": "ad_extendra:block/jupiter_stone",
-    "top": "ad_extendra:block/jupiter_stone"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "ad_astra:block/moon_stone",
-    "side": "ad_extendra:block/moon_mycelium_side",
-    "top": "ad_extendra:block/moon_mycelium_top"
-  }
-}

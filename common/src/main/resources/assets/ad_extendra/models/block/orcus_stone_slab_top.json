@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "ad_extendra:block/orcus_stone",
-    "side": "ad_extendra:block/orcus_stone",
-    "top": "ad_extendra:block/orcus_stone"
-  }
-}

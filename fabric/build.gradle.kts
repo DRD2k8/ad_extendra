@@ -18,6 +18,7 @@ dependencies {
     val fabricApiVersion: String by project
     val modMenuVersion: String by project
     val reiVersion: String by project
+    val adAstraFabricId: String by project
 
     modImplementation(group = "net.fabricmc", name = "fabric-loader", version = fabricLoaderVersion)
     modApi(group = "net.fabricmc.fabric-api", name = "fabric-api", version = "$fabricApiVersion+$minecraftVersion")
@@ -28,6 +29,8 @@ dependencies {
 
     modLocalRuntime(group = "maven.modrinth", name = "jade", version = "11.5.1")
     modLocalRuntime(group = "maven.modrinth", name = "dcwa", version = "4.1") // Disable custom world advice
+
+    modLocalRuntime(group = "maven.modrinth", name = "ad-astra", version = adAstraFabricId)
 
     "annotationProcessor"(group = "io.github.llamalad7", name = "mixinextras-fabric", version = mixinExtrasVersion).apply { implementation(this) }
 }

@@ -32,10 +32,14 @@ dependencies {
     val mixinExtrasVersion: String by project
     val forgeVersion: String by project
     val jeiVersion: String by project
+    val adAstraForgeId: String by project
 
     forge(group = "net.minecraftforge", name = "forge", version = "$minecraftVersion-$forgeVersion")
 
     modLocalRuntime(group = "mezz.jei", name = "jei-$minecraftVersion-forge", version = jeiVersion) { isTransitive = false }
+
+    // From modrinth maven to avoid annoying crashes from flywheel
+    modLocalRuntime(group = "maven.modrinth", name = "ad-astra", version = adAstraForgeId)
 
     forgeRuntimeLibrary("com.teamresourceful:yabn:1.0.3")
     forgeRuntimeLibrary("com.teamresourceful:bytecodecs:1.0.2")

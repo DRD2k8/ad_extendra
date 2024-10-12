@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:juperium_ingot",
+    {
+      "id": "#c:juperium_ingots",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/juperium",
+      "required": false
+    }
+  ]
+}

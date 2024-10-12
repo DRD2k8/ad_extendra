@@ -1,7 +1,9 @@
 package com.drd.ad_extendra.client;
 
 import com.drd.ad_extendra.client.models.entities.vehicles.CustomRocketModel;
+import com.drd.ad_extendra.client.renderers.blocks.CustomSlidingDoorBlockEntityRenderer;
 import com.drd.ad_extendra.client.renderers.entities.vehicles.CustomRocketRenderer;
+import com.drd.ad_extendra.common.registry.ModBlockEntityTypes;
 import com.drd.ad_extendra.common.registry.ModEntityTypes;
 import com.drd.ad_extendra.common.registry.ModItems;
 import earth.terrarium.adastra.client.ClientPlatformUtils;
@@ -15,6 +17,7 @@ import java.util.function.BiConsumer;
 public class AdExtendraClient {
     public static void init() {
         registerEntityRenderers();
+        registerBlockEntityRenderers();
     }
 
     private static void registerEntityRenderers() {
@@ -25,6 +28,10 @@ public class AdExtendraClient {
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_9_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_9_LAYER, CustomRocketRenderer.TIER_9_TEXTURE));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_10_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_10_LAYER, CustomRocketRenderer.TIER_10_TEXTURE));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_11_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_11_LAYER, CustomRocketRenderer.TIER_11_TEXTURE));
+    }
+
+    private static void registerBlockEntityRenderers() {
+        ClientHooks.registerBlockEntityRenderers(ModBlockEntityTypes.SLIDING_DOOR.get(), c -> new CustomSlidingDoorBlockEntityRenderer());
     }
 
     public static void onRegisterEntityLayers(ClientPlatformUtils.LayerDefinitionRegistry consumer) {

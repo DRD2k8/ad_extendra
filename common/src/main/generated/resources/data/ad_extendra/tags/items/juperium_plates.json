@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:juperium_plate",
+    {
+      "id": "#c:juperium_plates",
+      "required": false
+    },
+    {
+      "id": "#forge:plates/juperium",
+      "required": false
+    }
+  ]
+}

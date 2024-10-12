@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "ad_extendra:block/uranus_stone",
-    "side": "ad_extendra:block/uranus_stone",
-    "top": "ad_extendra:block/uranus_stone"
-  }
-}

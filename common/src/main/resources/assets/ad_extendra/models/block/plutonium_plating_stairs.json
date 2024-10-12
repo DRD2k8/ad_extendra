@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "ad_extendra:block/plutonium_plating",
-    "side": "ad_extendra:block/plutonium_plating",
-    "top": "ad_extendra:block/plutonium_plating"
-  }
-}
