@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_electrolyte",
+    {
+      "id": "#c:raw_electrolyte_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_materials/electrolyte",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_quaoar_cobblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:quaoar_cobblestone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:quaoar_stone_from_smelting_quaoar_cobblestone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_quaoar_cobblestone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:quaoar_stone_from_smelting_quaoar_cobblestone"
+    ]
+  },
+  "sends_telemetry_event": false
+}

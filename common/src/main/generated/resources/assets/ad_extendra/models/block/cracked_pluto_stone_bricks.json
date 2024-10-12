@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ad_extendra:block/cracked_pluto_stone_bricks"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ad_extendra:sedna_stone_bricks"
+  },
+  "result": "ad_extendra:sedna_pillar"
+}

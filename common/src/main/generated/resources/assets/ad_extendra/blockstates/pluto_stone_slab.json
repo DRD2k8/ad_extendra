@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ad_extendra:block/pluto_stone_slab"
+    },
+    "type=double": {
+      "model": "ad_extendra:block/pluto_stone"
+    },
+    "type=top": {
+      "model": "ad_extendra:block/pluto_stone_slab_top"
+    }
+  }
+}

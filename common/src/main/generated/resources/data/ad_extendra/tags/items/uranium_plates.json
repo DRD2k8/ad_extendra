@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:uranium_plate",
+    {
+      "id": "#c:uranium_plates",
+      "required": false
+    },
+    {
+      "id": "#forge:plates/uranium",
+      "required": false
+    }
+  ]
+}
