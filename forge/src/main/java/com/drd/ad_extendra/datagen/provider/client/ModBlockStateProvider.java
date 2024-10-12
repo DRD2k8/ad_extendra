@@ -26,12 +26,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
         ModBlocks.PILLARS.stream().map(RegistryEntry::get).forEach(b -> logBlock((RotatedPillarBlock) b));
         ModBlocks.STAIRS.stream().map(RegistryEntry::get).forEach(b -> stairsBlock((StairBlock) b, findTexture(b, "_stairs")));
         ModBlocks.SLABS.stream().map(RegistryEntry::get).forEach(b -> slabBlock((SlabBlock) b, findTexture(b, "_slab"), findTexture(b, "_slab")));
+        ModBlocks.WALLS.stream().map(RegistryEntry::get).forEach(b -> wallBlock((WallBlock) b, findTexture(b, "_wall")));
         ModBlocks.METAL_PRESSURE_PLATES.stream().map(RegistryEntry::get).forEach(b -> pressurePlateBlock((PressurePlateBlock) b, findTexture(b, "_pressure_plate")));
         ModBlocks.METAL_BUTTONS.stream().map(RegistryEntry::get).forEach(b -> buttonBlock((ButtonBlock) b, findTexture(b, "_button")));
 
         ModBlocks.PILLARS.stream().map(RegistryEntry::get).forEach(b -> simpleBlockItem(b, models().getBuilder(name(b))));
         ModBlocks.STAIRS.stream().map(RegistryEntry::get).forEach(b -> simpleBlockItem(b, models().getBuilder(name(b))));
         ModBlocks.SLABS.stream().map(RegistryEntry::get).forEach(b -> simpleBlockItem(b, models().getBuilder(name(b))));
+        ModBlocks.WALLS.stream().map(RegistryEntry::get).forEach(b -> itemModels().wallInventory(name(b), findTexture(b, "_wall")));
         ModBlocks.METAL_PRESSURE_PLATES.stream().map(RegistryEntry::get).forEach(b -> simpleBlockItem(b, models().getBuilder(name(b))));
         ModBlocks.METAL_BUTTONS.stream().map(RegistryEntry::get).forEach(b -> itemModels().buttonInventory(name(b), findTexture(b, "_button")));
     }

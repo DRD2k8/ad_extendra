@@ -25,7 +25,22 @@ public class ModLootTableProvider extends LootTableProvider {
         ));
     }
 
-    private static final Set<Supplier<Block>> DOESNT_DROP_SELF = Set.of();
+    private static final Set<Supplier<Block>> DOESNT_DROP_SELF = Set.of(
+            ModBlocks.CERES_STONE,
+            ModBlocks.JUPITER_STONE,
+            ModBlocks.SATURN_STONE,
+            ModBlocks.URANUS_STONE,
+            ModBlocks.NEPTUNE_STONE,
+            ModBlocks.ORCUS_STONE,
+            ModBlocks.PLUTO_STONE,
+            ModBlocks.HAUMEA_STONE,
+            ModBlocks.QUAOAR_STONE,
+            ModBlocks.MAKEMAKE_STONE,
+            ModBlocks.GONGGONG_STONE,
+            ModBlocks.ERIS_STONE,
+            ModBlocks.SEDNA_STONE,
+            ModBlocks.B_STONE
+    );
 
     public static class BlockLootTables extends BlockLootSubProvider {
         public BlockLootTables() {
@@ -42,6 +57,21 @@ public class ModLootTableProvider extends LootTableProvider {
 
             ModBlocks.SLIDING_DOORS.stream().forEach(b -> add(b.get(), b2 ->
                     createSinglePropConditionTable(b2, CustomSlidingDoorBlock.PART, SlidingDoorPartProperty.BOTTOM)));
+
+            addStoneDrop(ModBlocks.CERES_STONE.get(), ModBlocks.CERES_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.JUPITER_STONE.get(), ModBlocks.JUPITER_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.SATURN_STONE.get(), ModBlocks.SATURN_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.URANUS_STONE.get(), ModBlocks.URANUS_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.NEPTUNE_STONE.get(), ModBlocks.NEPTUNE_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.ORCUS_STONE.get(), ModBlocks.ORCUS_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.PLUTO_STONE.get(), ModBlocks.PLUTO_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.HAUMEA_STONE.get(), ModBlocks.HAUMEA_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.QUAOAR_STONE.get(), ModBlocks.QUAOAR_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.MAKEMAKE_STONE.get(), ModBlocks.MAKEMAKE_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.GONGGONG_STONE.get(), ModBlocks.GONGGONG_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.ERIS_STONE.get(), ModBlocks.ERIS_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.SEDNA_STONE.get(), ModBlocks.SEDNA_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.B_STONE.get(), ModBlocks.B_COBBLESTONE.get());
         }
 
         @Override
@@ -49,8 +79,8 @@ public class ModLootTableProvider extends LootTableProvider {
             return ModBlocks.BLOCKS.getEntries().stream().map(RegistryEntry::get)::iterator;
         }
 
-        protected LootTable.Builder createStoneLikeDrop(Block pSilkBlock, Block pNonSilkBlock) {
-            return createSilkTouchDispatchTable(pSilkBlock, (LootPoolEntryContainer.Builder)this.applyExplosionDecay(pSilkBlock, LootItem.lootTableItem(pNonSilkBlock)));
+        private void addStoneDrop(Block silkBlock, Block nonSilkBlock) {
+            add(silkBlock, b -> createSingleItemTableWithSilkTouch(b, nonSilkBlock));
         }
     }
 }

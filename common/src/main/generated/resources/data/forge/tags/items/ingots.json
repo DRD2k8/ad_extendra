@@ -1,5 +1,11 @@
 {
   "values": [
-    "#forge:ingots/juperium"
+    "#forge:ingots/juperium",
+    "#forge:ingots/saturlyte",
+    "#forge:ingots/uranium",
+    "#forge:ingots/neptunium",
+    "#forge:ingots/radium",
+    "#forge:ingots/plutonium",
+    "#forge:ingots/electrolyte"
   ]
 }

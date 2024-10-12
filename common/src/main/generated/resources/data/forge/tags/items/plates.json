@@ -1,5 +1,11 @@
 {
   "values": [
-    "#forge:plates/juperium"
+    "#forge:plates/juperium",
+    "#forge:plates/saturlyte",
+    "#forge:plates/uranium",
+    "#forge:plates/neptunium",
+    "#forge:plates/radium",
+    "#forge:plates/plutonium",
+    "#forge:plates/electrolyte"
   ]
 }

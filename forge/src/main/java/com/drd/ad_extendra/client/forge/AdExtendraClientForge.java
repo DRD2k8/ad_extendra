@@ -4,6 +4,7 @@ import com.drd.ad_extendra.client.AdExtendraClient;
 import earth.terrarium.adastra.client.forge.AdAstraClientForge;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.client.event.ModelEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -21,5 +22,10 @@ public class AdExtendraClientForge {
     @SubscribeEvent
     public static void onRegisterLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
         AdExtendraClient.onRegisterEntityLayers(event::registerLayerDefinition);
+    }
+
+    @SubscribeEvent
+    public static void modelLoading(ModelEvent.RegisterAdditional event) {
+        AdExtendraClient.onRegisterModels(event::register);
     }
 }

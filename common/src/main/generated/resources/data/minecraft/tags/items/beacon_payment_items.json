@@ -1,5 +1,11 @@
 {
   "values": [
-    "ad_extendra:juperium_ingot"
+    "ad_extendra:juperium_ingot",
+    "ad_extendra:saturlyte_ingot",
+    "ad_extendra:uranium_ingot",
+    "ad_extendra:neptunium_ingot",
+    "ad_extendra:radium_ingot",
+    "ad_extendra:plutonium_ingot",
+    "ad_extendra:electrolyte_ingot"
   ]
 }
