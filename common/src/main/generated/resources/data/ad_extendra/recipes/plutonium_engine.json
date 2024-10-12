@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "ad_extendra:plutonium_plates"
+    },
+    "E": {
+      "item": "ad_extendra:radium_engine"
+    },
+    "F": {
+      "item": "ad_astra:fan"
+    }
+  },
+  "pattern": [
+    "###",
+    "#E#",
+    " F "
+  ],
+  "result": {
+    "item": "ad_extendra:plutonium_engine"
+  },
+  "show_notification": true
+}

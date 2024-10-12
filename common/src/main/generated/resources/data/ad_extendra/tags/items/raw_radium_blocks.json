@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_radium_block",
+    {
+      "id": "#c:raw_radium_blocks",
+      "required": false
+    },
+    {
+      "id": "#forge:storage_blocks/raw_radium",
+      "required": false
+    }
+  ]
+}

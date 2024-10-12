@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:radium_ingot",
+    {
+      "id": "#c:radium_ingots",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/radium",
+      "required": false
+    }
+  ]
+}

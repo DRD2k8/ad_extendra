@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_electrolyte_block",
+    {
+      "id": "#c:raw_electrolyte_blocks",
+      "required": false
+    },
+    {
+      "id": "#forge:storage_blocks/raw_electrolyte",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_saturlyte_block",
+    {
+      "id": "#c:raw_saturlyte_blocks",
+      "required": false
+    },
+    {
+      "id": "#forge:storage_blocks/raw_saturlyte",
+      "required": false
+    }
+  ]
+}

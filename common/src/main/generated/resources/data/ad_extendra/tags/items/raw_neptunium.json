@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_neptunium",
+    {
+      "id": "#c:raw_neptunium_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_materials/neptunium",
+      "required": false
+    }
+  ]
+}

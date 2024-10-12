@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:uranium_block",
+    {
+      "id": "#c:uranium_blocks",
+      "required": false
+    },
+    {
+      "id": "#forge:storage_blocks/uranium",
+      "required": false
+    }
+  ]
+}

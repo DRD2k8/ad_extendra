@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:neptunium_block",
+    {
+      "id": "#c:neptunium_blocks",
+      "required": false
+    },
+    {
+      "id": "#forge:storage_blocks/neptunium",
+      "required": false
+    }
+  ]
+}

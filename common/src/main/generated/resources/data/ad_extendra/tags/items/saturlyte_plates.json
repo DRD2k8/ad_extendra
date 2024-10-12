@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:saturlyte_plate",
+    {
+      "id": "#c:saturlyte_plates",
+      "required": false
+    },
+    {
+      "id": "#forge:plates/saturlyte",
+      "required": false
+    }
+  ]
+}

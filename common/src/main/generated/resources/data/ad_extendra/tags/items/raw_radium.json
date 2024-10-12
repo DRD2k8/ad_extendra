@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_radium",
+    {
+      "id": "#c:raw_radium_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_materials/radium",
+      "required": false
+    }
+  ]
+}

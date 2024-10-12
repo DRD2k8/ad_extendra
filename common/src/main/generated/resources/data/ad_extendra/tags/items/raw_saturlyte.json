@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_saturlyte",
+    {
+      "id": "#c:raw_saturlyte_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:raw_materials/saturlyte",
+      "required": false
+    }
+  ]
+}

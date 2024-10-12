@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "ad_extendra:saturlyte_plates"
+    },
+    "T": {
+      "item": "ad_extendra:juperium_tank"
+    },
+    "|": {
+      "item": "ad_astra:steel_rod"
+    }
+  },
+  "pattern": [
+    "## ",
+    "#T|",
+    "## "
+  ],
+  "result": {
+    "item": "ad_extendra:saturlyte_tank"
+  },
+  "show_notification": true
+}

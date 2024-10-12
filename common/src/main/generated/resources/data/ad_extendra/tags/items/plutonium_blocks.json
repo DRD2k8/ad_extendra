@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:plutonium_block",
+    {
+      "id": "#c:plutonium_blocks",
+      "required": false
+    },
+    {
+      "id": "#forge:storage_blocks/plutonium",
+      "required": false
+    }
+  ]
+}

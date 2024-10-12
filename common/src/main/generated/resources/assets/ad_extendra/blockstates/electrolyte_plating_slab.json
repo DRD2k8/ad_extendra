@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ad_extendra:block/electrolyte_plating_slab"
+    },
+    "type=double": {
+      "model": "ad_extendra:block/electrolyte_plating"
+    },
+    "type=top": {
+      "model": "ad_extendra:block/electrolyte_plating_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ad_extendra:b_stone"
+  },
+  "result": "ad_extendra:b_stone_stairs"
+}

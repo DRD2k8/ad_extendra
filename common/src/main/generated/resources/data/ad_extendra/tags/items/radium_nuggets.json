@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:radium_nugget",
+    {
+      "id": "#c:radium_nuggets",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/radium",
+      "required": false
+    }
+  ]
+}

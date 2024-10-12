@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:saturlyte_ingot",
+    {
+      "id": "#c:saturlyte_ingots",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/saturlyte",
+      "required": false
+    }
+  ]
+}

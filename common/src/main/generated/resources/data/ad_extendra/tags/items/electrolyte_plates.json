@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:electrolyte_plate",
+    {
+      "id": "#c:electrolyte_plates",
+      "required": false
+    },
+    {
+      "id": "#forge:plates/electrolyte",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:saturlyte_nugget",
+    {
+      "id": "#c:saturlyte_nuggets",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/saturlyte",
+      "required": false
+    }
+  ]
+}

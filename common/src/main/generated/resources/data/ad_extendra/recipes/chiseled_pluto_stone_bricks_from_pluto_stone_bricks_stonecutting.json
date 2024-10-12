@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ad_extendra:pluto_stone_bricks"
+  },
+  "result": "ad_extendra:chiseled_pluto_stone_bricks"
+}

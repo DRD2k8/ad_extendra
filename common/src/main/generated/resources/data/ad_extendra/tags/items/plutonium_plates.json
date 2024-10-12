@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:plutonium_plate",
+    {
+      "id": "#c:plutonium_plates",
+      "required": false
+    },
+    {
+      "id": "#forge:plates/plutonium",
+      "required": false
+    }
+  ]
+}

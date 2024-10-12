@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "ad_extendra:haumea_stone"
+  },
+  "result": "ad_extendra:chiseled_haumea_stone_slab"
+}

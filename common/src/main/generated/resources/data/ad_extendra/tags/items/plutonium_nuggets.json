@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:plutonium_nugget",
+    {
+      "id": "#c:plutonium_nuggets",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/plutonium",
+      "required": false
+    }
+  ]
+}

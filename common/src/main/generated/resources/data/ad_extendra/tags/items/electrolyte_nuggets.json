@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:electrolyte_nugget",
+    {
+      "id": "#c:electrolyte_nuggets",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/electrolyte",
+      "required": false
+    }
+  ]
+}

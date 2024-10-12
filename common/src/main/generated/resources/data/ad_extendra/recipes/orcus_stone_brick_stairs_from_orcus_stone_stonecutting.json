@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "ad_extendra:orcus_stone"
+  },
+  "result": "ad_extendra:orcus_stone_brick_stairs"
+}

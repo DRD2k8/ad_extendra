@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:uranium_nugget",
+    {
+      "id": "#c:uranium_nuggets",
+      "required": false
+    },
+    {
+      "id": "#forge:nuggets/uranium",
+      "required": false
+    }
+  ]
+}

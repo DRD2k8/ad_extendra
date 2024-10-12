@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:plutonium_ingot",
+    {
+      "id": "#c:plutonium_ingots",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/plutonium",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_makemake_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:makemake_stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:chiseled_makemake_stone_stairs_from_makemake_stone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_makemake_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:chiseled_makemake_stone_stairs_from_makemake_stone_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

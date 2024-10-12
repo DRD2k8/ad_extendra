@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ad_extendra:saturlyte_plating"
+    }
+  ],
+  "result": {
+    "item": "ad_extendra:saturlyte_plating_button"
+  }
+}

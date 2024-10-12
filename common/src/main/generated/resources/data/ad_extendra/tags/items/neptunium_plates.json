@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:neptunium_plate",
+    {
+      "id": "#c:neptunium_plates",
+      "required": false
+    },
+    {
+      "id": "#forge:plates/neptunium",
+      "required": false
+    }
+  ]
+}

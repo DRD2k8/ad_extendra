@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ad_extendra:block/polished_quaoar_stone_slab"
+    },
+    "type=double": {
+      "model": "ad_extendra:block/polished_quaoar_stone"
+    },
+    "type=top": {
+      "model": "ad_extendra:block/polished_quaoar_stone_slab_top"
+    }
+  }
+}

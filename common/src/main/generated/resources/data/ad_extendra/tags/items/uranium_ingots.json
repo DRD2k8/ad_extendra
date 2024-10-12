@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:uranium_ingot",
+    {
+      "id": "#c:uranium_ingots",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/uranium",
+      "required": false
+    }
+  ]
+}

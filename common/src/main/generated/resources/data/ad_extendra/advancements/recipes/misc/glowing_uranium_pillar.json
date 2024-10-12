@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:glowing_uranium_pillar"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uranium_pillar": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:uranium_pillar"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uranium_pillar",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:glowing_uranium_pillar"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "ad_extendra:block/saturlyte_plating",
+    "side": "ad_extendra:block/saturlyte_plating",
+    "top": "ad_extendra:block/saturlyte_plating"
+  }
+}

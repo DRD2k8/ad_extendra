@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "ad_extendra:eris_stone"
+  },
+  "result": "ad_extendra:eris_stone_brick_slab"
+}

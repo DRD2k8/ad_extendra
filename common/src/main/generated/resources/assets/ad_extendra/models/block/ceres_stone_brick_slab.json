@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "ad_extendra:block/ceres_stone_bricks",
+    "side": "ad_extendra:block/ceres_stone_bricks",
+    "top": "ad_extendra:block/ceres_stone_bricks"
+  }
+}

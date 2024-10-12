@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:uranus_stone_bricks_from_uranus_stone_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uranus_stone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:uranus_stone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uranus_stone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:uranus_stone_bricks_from_uranus_stone_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}
