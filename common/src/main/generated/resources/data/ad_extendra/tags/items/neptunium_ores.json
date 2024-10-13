@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:neptune_neptunium_ore",
+    {
+      "id": "#c:neptunium_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:ores/neptunium",
+      "required": false
+    }
+  ]
+}

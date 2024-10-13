@@ -1,21 +1,27 @@
 package com.drd.ad_extendra.common.registry;
 
 import com.drd.ad_extendra.common.AdExtendra;
-import com.drd.ad_extendra.common.blocks.CustomGlobeBlock;
-import com.drd.ad_extendra.common.blocks.CustomSlidingDoorBlock;
+import com.drd.ad_extendra.common.blocks.*;
+import com.drd.ad_extendra.worldgen.feature.ModConfiguredFeatures;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
 import earth.terrarium.adastra.common.items.rendered.RenderedBlockItem;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Supplier;
 
@@ -33,6 +39,8 @@ public class ModBlocks {
     public static final ResourcefulRegistry<Block> CTM_CUBES = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> SLIDING_DOORS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> GLOBES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> POTTED_BLOCKS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> OTHER = ResourcefulRegistries.create(BLOCKS);
 
     // Globes
     public static final RegistryEntry<CustomGlobeBlock> CERES_GLOBE = registerGlobe("ceres_globe");
@@ -49,6 +57,32 @@ public class ModBlocks {
     public static final RegistryEntry<CustomGlobeBlock> ERIS_GLOBE = registerGlobe("eris_globe");
     public static final RegistryEntry<CustomGlobeBlock> SEDNA_GLOBE = registerGlobe("sedna_globe");
     public static final RegistryEntry<CustomGlobeBlock> B_GLOBE = registerGlobe("b_globe");
+
+    // Moon
+    public static final RegistryEntry<Block> MOON_MYCELIUM = registerOther("moon_mycelium",
+            () -> new MoonMyceliumBlock(BlockBehaviour.Properties.copy(Blocks.WARPED_NYLIUM).lightLevel((state) -> {
+                return 6;
+            })));
+    public static final RegistryEntry<Block> AERONOS_MUSHROOM = registerOther("aeronos_mushroom",
+            () -> new MushroomBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM).sound(SoundType.STEM).lightLevel((state) -> {
+                return 6;
+            }), ModConfiguredFeatures.AERONOS_MUSHROOM));
+    public static final RegistryEntry<Block> POTTED_AERONOS_MUSHROOM = POTTED_BLOCKS.register("potted_aeronos_mushroom",
+            () -> new FlowerPotBlock(AERONOS_MUSHROOM.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryEntry<Block> AERONOS_BUTTON = registerOther("aeronos_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_BUTTON), BlockSetType.CRIMSON, 30, true));
+    public static final RegistryEntry<Block> AERONOS_PRESSURE_PLATE = registerOther("aeronos_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.CRIMSON_PRESSURE_PLATE).friction(0.5f), BlockSetType.CRIMSON));
+    public static final RegistryEntry<Block> STROPHAR_MUSHROOM = registerOther("strophar_mushroom",
+            () -> new MushroomBlock(BlockBehaviour.Properties.copy(Blocks.BROWN_MUSHROOM).sound(SoundType.STEM).lightLevel((state) -> {
+                return 6;
+            }), ModConfiguredFeatures.STROPHAR_MUSHROOM));
+    public static final RegistryEntry<Block> POTTED_STROPHAR_MUSHROOM = BLOCKS.register("potted_strophar_mushroom",
+            () -> new FlowerPotBlock(STROPHAR_MUSHROOM.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
+    public static final RegistryEntry<Block> STROPHAR_BUTTON = registerOther("strophar_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.CRIMSON_BUTTON), BlockSetType.CRIMSON, 30, true));
+    public static final RegistryEntry<Block> STROPHAR_PRESSURE_PLATE = registerOther("strophar_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.CRIMSON_PRESSURE_PLATE).friction(0.5f), BlockSetType.CRIMSON));
 
     // Ceres
     public static final RegistryEntry<Block> CERES_SAND = registerBlock("ceres_sand", () -> new SandBlock(6974058, BlockBehaviour.Properties.copy(Blocks.SAND).mapColor(MapColor.STONE)));
@@ -70,6 +104,8 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_CERES_STONE_STAIRS = registerStairs("polished_ceres_stone_stairs", POLISHED_CERES_STONE, ceresStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_CERES_STONE_SLAB = registerSlab("polished_ceres_stone_slab", ceresStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> CERES_PILLAR = registerPillar("ceres_pillar", ceresStoneProperties());
+    public static final RegistryEntry<Block> CERES_COPPER_ORE = registerBlock("ceres_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE)));
+    public static final RegistryEntry<Block> CERES_IRON_ORE = registerBlock("ceres_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
 
     // Jupiter
     public static final RegistryEntry<Block> JUPERIUM_BLOCK = registerBlock("juperium_block", () -> new Block(juperiumProperties()));
@@ -105,7 +141,11 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_JUPITER_STONE_STAIRS = registerStairs("polished_jupiter_stone_stairs", POLISHED_JUPITER_STONE, jupiterStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_JUPITER_STONE_SLAB = registerSlab("polished_jupiter_stone_slab", jupiterStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> JUPITER_PILLAR = registerPillar("jupiter_pillar", jupiterStoneProperties());
-    
+    public static final RegistryEntry<Block> JUPITER_JUPERIUM_ORE = registerBlock("jupiter_juperium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.RAW_IRON)));
+    public static final RegistryEntry<Block> JUPITER_COAL_ORE = registerBlock("jupiter_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).mapColor(MapColor.RAW_IRON)));
+    public static final RegistryEntry<Block> JUPITER_DIAMOND_ORE = registerBlock("jupiter_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.RAW_IRON)));
+    public static final RegistryEntry<Block> JUPITER_GOLD_ORE = registerBlock("jupiter_gold_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE).mapColor(MapColor.RAW_IRON)));
+
     // Saturn
     public static final RegistryEntry<Block> SATURLYTE_BLOCK = registerBlock("saturlyte_block", () -> new Block(saturlyteProperties()));
     public static final RegistryEntry<Block> RAW_SATURLYTE_BLOCK = registerBlock("raw_saturlyte_block", () -> new Block(saturlyteProperties()));
@@ -122,6 +162,7 @@ public class ModBlocks {
     public static final RegistryEntry<PressurePlateBlock> SATURLYTE_PLATING_PRESSURE_PLATE = registerMetalPressurePlate("saturlyte_plating_pressure_plate", MapColor.COLOR_PURPLE, 12, 40, SoundType.AMETHYST);
     public static final RegistryEntry<CustomSlidingDoorBlock> SATURLYTE_SLIDING_DOOR = registerSlidingDoor("saturlyte_sliding_door", MapColor.COLOR_PURPLE, 12, 40, SoundType.AMETHYST);
     public static final RegistryEntry<Block> SATURN_SAND = registerBlock("saturn_sand", () -> new SandBlock(16640684, BlockBehaviour.Properties.copy(Blocks.SAND)));
+    public static final RegistryEntry<IceBlock> SATURN_ICE = registerBlock("saturn_ice", () -> new IceBlock(BlockBehaviour.Properties.copy(Blocks.ICE).mapColor(MapColor.SAND).sound(SoundType.AMETHYST)));
     public static final RegistryEntry<Block> SATURN_STONE = registerBlock("saturn_stone", () -> new Block(saturnStoneProperties()));
     public static final RegistryEntry<StairBlock> SATURN_STONE_STAIRS = registerStairs("saturn_stone_stairs", SATURN_STONE, saturnStoneProperties());
     public static final RegistryEntry<SlabBlock> SATURN_STONE_SLAB = registerSlab("saturn_stone_slab", saturnStoneProperties());
@@ -140,8 +181,18 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_SATURN_STONE_STAIRS = registerStairs("polished_saturn_stone_stairs", POLISHED_SATURN_STONE, saturnStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_SATURN_STONE_SLAB = registerSlab("polished_saturn_stone_slab", saturnStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> SATURN_PILLAR = registerPillar("saturn_pillar", saturnStoneProperties());
+    public static final RegistryEntry<Block> SATURN_SATURLYTE_ORE = registerBlock("saturn_saturlyte_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.SAND)));
+    public static final RegistryEntry<Block> SATURN_COAL_ORE = registerBlock("saturn_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).mapColor(MapColor.SAND)));
+    public static final RegistryEntry<Block> SATURN_DIAMOND_ORE = registerBlock("saturn_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.SAND)));
+    public static final RegistryEntry<Block> SATURN_GOLD_ORE = registerBlock("saturn_gold_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE).mapColor(MapColor.SAND)));
     
     // Uranus
+    public static final RegistryEntry<IceBlock> SLUSHY_ICE = registerBlock("slushy_ice", () -> new IceBlock(BlockBehaviour.Properties.of().mapColor(MapColor.ICE).instrument(NoteBlockInstrument.CHIME).strength(0.5F).sound(SoundType.GLASS)));
+    public static final RegistryEntry<Block> PACKED_SLUSHY_ICE = registerBlock("packed_slushy_ice", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.ICE).instrument(NoteBlockInstrument.CHIME).strength(0.5F).sound(SoundType.GLASS)));
+    public static final RegistryEntry<Block> ICICLE = registerOther("icicle",
+            () -> new IcicleBlock(BlockBehaviour.Properties.of().mapColor(MapColor.ICE)
+                    .forceSolidOn().instrument(NoteBlockInstrument.BASEDRUM).noOcclusion().sound(SoundType.GLASS).randomTicks().strength(1.5F, 3.0F)
+                    .dynamicShape().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).isRedstoneConductor(ModBlocks::never)));
     public static final RegistryEntry<Block> URANIUM_BLOCK = registerBlock("uranium_block", () -> new Block(uraniumProperties()));
     public static final RegistryEntry<Block> RAW_URANIUM_BLOCK = registerBlock("raw_uranium_block", () -> new Block(uraniumProperties()));
     public static final RegistryEntry<Block> URANIUM_FACTORY_BLOCK = registerCtmCube("uranium_factory_block", () -> new Block(uraniumProperties()));
@@ -174,8 +225,14 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_URANUS_STONE_STAIRS = registerStairs("polished_uranus_stone_stairs", POLISHED_URANUS_STONE, uranusStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_URANUS_STONE_SLAB = registerSlab("polished_uranus_stone_slab", uranusStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> URANUS_PILLAR = registerPillar("uranus_pillar", uranusStoneProperties());
-    
+    public static final RegistryEntry<Block> URANUS_URANIUM_ORE = registerBlock("uranus_uranium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryEntry<Block> URANUS_DIAMOND_ORE = registerBlock("uranus_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryEntry<Block> URANUS_ICE_SHARD_ORE = registerBlock("uranus_ice_shard_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_LIGHT_BLUE), UniformInt.of(2, 5)));
+    public static final RegistryEntry<Block> URANUS_IRON_ORE = registerBlock("uranus_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_LIGHT_BLUE)));
+    public static final RegistryEntry<Block> URANUS_LAPIS_ORE = registerBlock("uranus_lapis_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE).mapColor(MapColor.COLOR_LIGHT_BLUE)));
+
     // Neptune
+    public static final RegistryEntry<Block> BLUE_SLUSHY_ICE = registerBlock("blue_slushy_ice", () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.ICE).instrument(NoteBlockInstrument.CHIME).strength(0.5F).sound(SoundType.GLASS)));
     public static final RegistryEntry<Block> NEPTUNIUM_BLOCK = registerBlock("neptunium_block", () -> new Block(neptuniumProperties()));
     public static final RegistryEntry<Block> RAW_NEPTUNIUM_BLOCK = registerBlock("raw_neptunium_block", () -> new Block(neptuniumProperties()));
     public static final RegistryEntry<Block> NEPTUNIUM_FACTORY_BLOCK = registerCtmCube("neptunium_factory_block", () -> new Block(neptuniumProperties()));
@@ -208,7 +265,12 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_NEPTUNE_STONE_STAIRS = registerStairs("polished_neptune_stone_stairs", POLISHED_NEPTUNE_STONE, neptuneStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_NEPTUNE_STONE_SLAB = registerSlab("polished_neptune_stone_slab", neptuneStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> NEPTUNE_PILLAR = registerPillar("neptune_pillar", neptuneStoneProperties());
-    
+    public static final RegistryEntry<Block> NEPTUNE_NEPTUNIUM_ORE = registerBlock("neptune_neptunium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryEntry<Block> NEPTUNE_COAL_ORE = registerBlock("neptune_coal_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryEntry<Block> NEPTUNE_COPPER_ORE = registerBlock("neptune_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryEntry<Block> NEPTUNE_IRON_ORE = registerBlock("neptune_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_BLUE)));
+    public static final RegistryEntry<Block> NEPTUNE_ICE_SHARD_ORE = registerBlock("neptune_ice_shard_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_BLUE), UniformInt.of(2, 5)));
+
     // Orcus
     public static final RegistryEntry<Block> RADIUM_BLOCK = registerBlock("radium_block", () -> new Block(radiumProperties()));
     public static final RegistryEntry<Block> RAW_RADIUM_BLOCK = registerBlock("raw_radium_block", () -> new Block(radiumProperties()));
@@ -242,7 +304,10 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_ORCUS_STONE_STAIRS = registerStairs("polished_orcus_stone_stairs", POLISHED_ORCUS_STONE, orcusStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_ORCUS_STONE_SLAB = registerSlab("polished_orcus_stone_slab", orcusStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> ORCUS_PILLAR = registerPillar("orcus_pillar", orcusStoneProperties());
-    
+    public static final RegistryEntry<Block> ORCUS_RADIUM_ORE = registerBlock("orcus_radium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.COLOR_CYAN)));
+    public static final RegistryEntry<Block> ORCUS_COPPER_ORE = registerBlock("orcus_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.COLOR_CYAN)));
+    public static final RegistryEntry<Block> ORCUS_IRON_ORE = registerBlock("orcus_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_CYAN)));
+
     // Pluto
     public static final RegistryEntry<Block> PLUTONIUM_BLOCK = registerBlock("plutonium_block", () -> new Block(plutoniumProperties()));
     public static final RegistryEntry<Block> RAW_PLUTONIUM_BLOCK = registerBlock("raw_plutonium_block", () -> new Block(plutoniumProperties()));
@@ -277,7 +342,11 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_PLUTO_STONE_STAIRS = registerStairs("polished_pluto_stone_stairs", POLISHED_PLUTO_STONE, plutoStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_PLUTO_STONE_SLAB = registerSlab("polished_pluto_stone_slab", plutoStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> PLUTO_PILLAR = registerPillar("pluto_pillar", plutoStoneProperties());
-    
+    public static final RegistryEntry<Block> PLUTO_PLUTONIUM_ORE = registerBlock("pluto_plutonium_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.COLOR_ORANGE)));
+    public static final RegistryEntry<Block> PLUTO_DIAMOND_ORE = registerBlock("pluto_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.COLOR_ORANGE)));
+    public static final RegistryEntry<Block> PLUTO_GOLD_ORE = registerBlock("pluto_gold_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE).mapColor(MapColor.COLOR_ORANGE)));
+    public static final RegistryEntry<Block> PLUTO_ICE_SHARD_ORE = registerBlock("pluto_ice_shard_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_ORANGE), UniformInt.of(2, 5)));
+
     // Haumea
     public static final RegistryEntry<Block> HAUMEA_STONE = registerBlock("haumea_stone", () -> new Block(haumeaStoneProperties()));
     public static final RegistryEntry<StairBlock> HAUMEA_STONE_STAIRS = registerStairs("haumea_stone_stairs", HAUMEA_STONE, haumeaStoneProperties());
@@ -297,6 +366,8 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_HAUMEA_STONE_STAIRS = registerStairs("polished_haumea_stone_stairs", POLISHED_HAUMEA_STONE, haumeaStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_HAUMEA_STONE_SLAB = registerSlab("polished_haumea_stone_slab", haumeaStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> HAUMEA_PILLAR = registerPillar("haumea_pillar", haumeaStoneProperties());
+    public static final RegistryEntry<Block> HAUMEA_COPPER_ORE = registerBlock("haumea_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.COLOR_LIGHT_GRAY)));
+    public static final RegistryEntry<Block> HAUMEA_IRON_ORE = registerBlock("haumea_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_LIGHT_GRAY)));
     
     // Quaoar
     public static final RegistryEntry<Block> QUAOAR_STONE = registerBlock("quaoar_stone", () -> new Block(quaoarStoneProperties()));
@@ -317,6 +388,8 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_QUAOAR_STONE_STAIRS = registerStairs("polished_quaoar_stone_stairs", POLISHED_QUAOAR_STONE, quaoarStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_QUAOAR_STONE_SLAB = registerSlab("polished_quaoar_stone_slab", quaoarStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> QUAOAR_PILLAR = registerPillar("quaoar_pillar", quaoarStoneProperties());
+    public static final RegistryEntry<Block> QUAOAR_COPPER_ORE = registerBlock("quaoar_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.PODZOL)));
+    public static final RegistryEntry<Block> QUAOAR_IRON_ORE = registerBlock("quaoar_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.PODZOL)));
     
     // Makemake
     public static final RegistryEntry<Block> MAKEMAKE_STONE = registerBlock("makemake_stone", () -> new Block(makemakeStoneProperties()));
@@ -337,6 +410,8 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_MAKEMAKE_STONE_STAIRS = registerStairs("polished_makemake_stone_stairs", POLISHED_MAKEMAKE_STONE, makemakeStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_MAKEMAKE_STONE_SLAB = registerSlab("polished_makemake_stone_slab", makemakeStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> MAKEMAKE_PILLAR = registerPillar("makemake_pillar", makemakeStoneProperties());
+    public static final RegistryEntry<Block> MAKEMAKE_COPPER_ORE = registerBlock("makemake_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.COLOR_RED)));
+    public static final RegistryEntry<Block> MAKEMAKE_IRON_ORE = registerBlock("makemake_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.COLOR_RED)));
     
     // Gonggong
     public static final RegistryEntry<Block> GONGGONG_STONE = registerBlock("gonggong_stone", () -> new Block(gonggongStoneProperties()));
@@ -357,6 +432,8 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_GONGGONG_STONE_STAIRS = registerStairs("polished_gonggong_stone_stairs", POLISHED_GONGGONG_STONE, gonggongStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_GONGGONG_STONE_SLAB = registerSlab("polished_gonggong_stone_slab", gonggongStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> GONGGONG_PILLAR = registerPillar("gonggong_pillar", gonggongStoneProperties());
+    public static final RegistryEntry<Block> GONGGONG_COPPER_ORE = registerBlock("gonggong_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.WARPED_HYPHAE)));
+    public static final RegistryEntry<Block> GONGGONG_IRON_ORE = registerBlock("gonggong_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.WARPED_HYPHAE)));
     
     // Eris
     public static final RegistryEntry<Block> ERIS_STONE = registerBlock("eris_stone", () -> new Block(erisStoneProperties()));
@@ -377,6 +454,8 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_ERIS_STONE_STAIRS = registerStairs("polished_eris_stone_stairs", POLISHED_ERIS_STONE, erisStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_ERIS_STONE_SLAB = registerSlab("polished_eris_stone_slab", erisStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> ERIS_PILLAR = registerPillar("eris_pillar", erisStoneProperties());
+    public static final RegistryEntry<Block> ERIS_COPPER_ORE = registerBlock("eris_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.SNOW)));
+    public static final RegistryEntry<Block> ERIS_IRON_ORE = registerBlock("eris_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.SNOW)));
     
     // Sedna
     public static final RegistryEntry<Block> ELECTROLYTE_BLOCK = registerBlock("electrolyte_block", () -> new Block(electrolyteProperties()));
@@ -411,6 +490,9 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_SEDNA_STONE_STAIRS = registerStairs("polished_sedna_stone_stairs", POLISHED_SEDNA_STONE, sednaStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_SEDNA_STONE_SLAB = registerSlab("polished_sedna_stone_slab", sednaStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> SEDNA_PILLAR = registerPillar("sedna_pillar", sednaStoneProperties());
+    public static final RegistryEntry<Block> SEDNA_ELECTROLYTE_ORE = registerBlock("sedna_electrolyte_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.NETHER)));
+    public static final RegistryEntry<Block> SEDNA_COPPER_ORE = registerBlock("sedna_copper_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE).mapColor(MapColor.NETHER)));
+    public static final RegistryEntry<Block> SEDNA_IRON_ORE = registerBlock("sedna_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.NETHER)));
 
     // Proxima Centauri b
     public static final RegistryEntry<Block> B_SAND = registerBlock("b_sand", () -> new SandBlock(12945208, BlockBehaviour.Properties.copy(Blocks.SAND).mapColor(MapColor.TERRACOTTA_ORANGE)));
@@ -437,6 +519,20 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_B_STONE_STAIRS = registerStairs("polished_b_stone_stairs", POLISHED_B_STONE, proximaCentauriBStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_B_STONE_SLAB = registerSlab("polished_b_stone_slab", proximaCentauriBStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> B_PILLAR = registerPillar("b_pillar", proximaCentauriBStoneProperties());
+    public static final RegistryEntry<Block> B_DIAMOND_ORE = registerBlock("b_diamond_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final RegistryEntry<Block> B_EMERALD_ORE = registerBlock("b_emerald_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE).mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final RegistryEntry<Block> B_IRON_ORE = registerBlock("b_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final RegistryEntry<Block> B_REDSTONE_ORE = registerBlock("b_redstone_ore", () -> new RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE).mapColor(MapColor.TERRACOTTA_ORANGE)));
+
+    // Glacio
+    public static final RegistryEntry<Block> GLACIAN_WOOD = registerOther("glacian_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor(MapColor.CLAY).friction(0.5F).mapColor(MapColor.COLOR_PINK)));
+    public static final RegistryEntry<Block> STRIPPED_GLACIAN_WOOD = registerOther("stripped_glacian_wood",
+            () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).mapColor(MapColor.CLAY).friction(0.5F).mapColor(MapColor.COLOR_PINK)));
+    public static final RegistryEntry<Block> GLACIAN_SAPLING = registerOther("glacian_sapling",
+            () -> new GlacianSaplingBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryEntry<Block> POTTED_GLACIAN_SAPLING = POTTED_BLOCKS.register("potted_glacian_sapling",
+            () -> new FlowerPotBlock(GLACIAN_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     private static <T extends Block> RegistryEntry<T> registerBlock(String name, Supplier<T> block) {
         RegistryEntry<T> toReturn = BASIC_BLOCKS.register(name, block);
@@ -526,6 +622,12 @@ public class ModBlocks {
         return toReturn;
     }
 
+    private static <T extends Block> RegistryEntry<T> registerOther(String name, Supplier<T> block) {
+        RegistryEntry<T> toReturn = OTHER.register(name, block);
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
     private static <T extends Block> RegistryEntry<Item> registerBlockItem(String name, RegistryEntry<T> block) {
         return ModItems.BLOCK_ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
@@ -536,6 +638,14 @@ public class ModBlocks {
 
     private static <T extends Block> RegistryEntry<Item> registerGlobeItem(String name, RegistryEntry<T> block) {
         return ModItems.GLOBES.register(name, () -> new RenderedBlockItem(block.get(), new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
+    }
+
+    private static Boolean never(BlockState p_50779_, BlockGetter p_50780_, BlockPos p_50781_, EntityType<?> p_50782_) {
+        return false;
+    }
+
+    private static boolean never(BlockState p_50806_, BlockGetter p_50807_, BlockPos p_50808_) {
+        return false;
     }
 
     private static BlockBehaviour.Properties ceresStoneProperties() {

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "item",
+  "ingredient": {
+    "item": "ad_extendra:b_redstone_ore"
+  },
+  "result": "minecraft:redstone"
+}

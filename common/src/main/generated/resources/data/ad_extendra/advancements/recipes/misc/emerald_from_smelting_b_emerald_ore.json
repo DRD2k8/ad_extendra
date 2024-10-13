@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_b_emerald_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:b_emerald_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:emerald_from_smelting_b_emerald_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_b_emerald_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:emerald_from_smelting_b_emerald_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

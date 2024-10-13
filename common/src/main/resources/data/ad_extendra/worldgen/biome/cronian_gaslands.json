@@ -1,0 +1,45 @@
+{
+  "temperature": 0.2,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 8542602,
+    "fog_color": 9923999,
+    "water_color": 16041344,
+    "water_fog_color": 16766105,
+    "grass_color": 9923999,
+    "foliage_color": 9923999,
+    "music": {
+      "sound": "minecraft:ambient.crimson_forest.loop",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:white_ash"
+      },
+      "probability": 0.01
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon",
+      "minecraft:nether_cave"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "ad_extendra:saturn/saturlyte_ore",
+      "ad_extendra:saturn/coal_ore",
+      "ad_extendra:saturn/gold_ore",
+      "ad_extendra:saturn/diamond_ore"
+    ]
+  ]
+}

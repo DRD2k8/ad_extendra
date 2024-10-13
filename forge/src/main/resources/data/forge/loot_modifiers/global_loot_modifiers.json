@@ -1,0 +1,13 @@
+{
+  "entries": [
+    "ad_extendra:chests/village/moon/house/strophar_mushroom",
+    "ad_extendra:chests/village/moon/blacksmith/strophar_mushroom",
+    "ad_extendra:glacian_sapling_from_leaves",
+    "ad_extendra:aeronos_mushroom_from_cap",
+    "ad_extendra:chests/village/moon/house/aeronos_mushroom",
+    "ad_extendra:strophar_mushroom_from_cap",
+    "ad_extendra:chests/village/moon/blacksmith/aeronos_mushroom",
+    "ad_extendra:chests/temple/mars/temple/mars_globe"
+  ],
+  "replace": false
+}

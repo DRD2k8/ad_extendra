@@ -1,6 +1,8 @@
 package com.drd.ad_extendra.common.registry;
 
 import com.drd.ad_extendra.common.AdExtendra;
+import com.drd.ad_extendra.common.items.IceChargeItem;
+import com.drd.ad_extendra.common.utils.PlatformUtils;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
@@ -17,6 +19,7 @@ public class ModItems {
     public static final ResourcefulRegistry<Item> BLOCK_ITEMS = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> SLIDING_DOORS = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> GLOBES = ResourcefulRegistries.create(ITEMS);
+    public static final ResourcefulRegistry<Item> SPAWN_EGGS = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> VEHICLES = ResourcefulRegistries.create(ITEMS);
 
     public static final RegistryEntry<Item> TIER_5_ROCKET = registerRocket(5, ModEntityTypes.TIER_5_ROCKET::get);
@@ -50,6 +53,8 @@ public class ModItems {
     public static final RegistryEntry<Item> RAW_URANIUM = registerBasicItem("raw_uranium");
     public static final RegistryEntry<Item> URANIUM_ENGINE = registerBasicItem("uranium_engine");
     public static final RegistryEntry<Item> URANIUM_TANK = registerBasicItem("uranium_tank");
+    public static final RegistryEntry<Item> FREEZE_SHARD = BASIC_ITEMS.register("freeze_shard", () -> new Item(new Item.Properties()));
+    public static final RegistryEntry<IceChargeItem> ICE_CHARGE = BASIC_ITEMS.register("ice_charge", () -> new IceChargeItem(new Item.Properties()));
 
     // Neptune
     public static final RegistryEntry<Item> NEPTUNIUM_INGOT = registerBasicItem("neptunium_ingot");
@@ -82,6 +87,9 @@ public class ModItems {
     public static final RegistryEntry<Item> RAW_ELECTROLYTE = registerBasicItem("raw_electrolyte");
     public static final RegistryEntry<Item> ELECTROLYTE_ENGINE = registerBasicItem("electrolyte_engine");
     public static final RegistryEntry<Item> ELECTROLYTE_TANK = registerBasicItem("electrolyte_tank");
+
+    // Spawn Eggs
+    public static final RegistryEntry<Item> FREEZE_SPAWN_EGG = SPAWN_EGGS.register("freeze_spawn_egg", PlatformUtils.createSpawnEggItem(ModEntityTypes.FREEZE, 13303807, 7979472, new Item.Properties()));
 
     private static RegistryEntry<Item> registerBasicItem(String name) {
         return BASIC_ITEMS.register(name, () -> new Item(new Item.Properties()));

@@ -1,0 +1,38 @@
+{
+  "temperature": -0.5,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 15640413,
+    "fog_color": 14522968,
+    "water_color": 16169838,
+    "water_fog_color": 16169838,
+    "grass_color": 16169838,
+    "foliage_color": 16169838,
+    "music": {
+      "sound": "minecraft:ambient.crimson_forest.loop",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "ad_extendra:pluto/plutonium_ore",
+      "ad_extendra:neptune/pluto_shard_ore",
+      "ad_extendra:pluto/gold_ore",
+      "ad_extendra:pluto/diamond_ore"
+    ]
+  ]
+}

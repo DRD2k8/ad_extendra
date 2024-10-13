@@ -1,18 +1,22 @@
 package com.drd.ad_extendra.client;
 
+import com.drd.ad_extendra.client.models.entities.mobs.FreezeModel;
 import com.drd.ad_extendra.client.models.entities.vehicles.CustomRocketModel;
+import com.drd.ad_extendra.client.particles.WindParticle;
 import com.drd.ad_extendra.client.renderers.blocks.CustomGlobeBlockEntityRenderer;
 import com.drd.ad_extendra.client.renderers.blocks.CustomSlidingDoorBlockEntityRenderer;
+import com.drd.ad_extendra.client.renderers.entities.mobs.FreezeRenderer;
 import com.drd.ad_extendra.client.renderers.entities.vehicles.CustomRocketRenderer;
 import com.drd.ad_extendra.common.AdExtendra;
-import com.drd.ad_extendra.common.registry.ModBlockEntityTypes;
-import com.drd.ad_extendra.common.registry.ModBlocks;
-import com.drd.ad_extendra.common.registry.ModEntityTypes;
-import com.drd.ad_extendra.common.registry.ModItems;
+import com.drd.ad_extendra.common.registry.*;
 import earth.terrarium.adastra.client.ClientPlatformUtils;
 import earth.terrarium.adastra.client.renderers.entities.vehicles.RocketRenderer;
 import earth.terrarium.botarium.client.ClientHooks;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.core.particles.ParticleType;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 
@@ -23,9 +27,12 @@ public class AdExtendraClient {
     public static void init() {
         registerEntityRenderers();
         registerBlockEntityRenderers();
+        registerRenderLayers();
     }
 
     private static void registerEntityRenderers() {
+        ClientHooks.registerEntityRenderer(ModEntityTypes.FREEZE, FreezeRenderer::new);
+        ClientHooks.registerEntityRenderer(ModEntityTypes.ICE_CHARGE, ThrownItemRenderer::new);
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_5_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_5_LAYER, CustomRocketRenderer.TIER_5_TEXTURE));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_6_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_6_LAYER, CustomRocketRenderer.TIER_6_TEXTURE));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_7_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_7_LAYER, CustomRocketRenderer.TIER_7_TEXTURE));
@@ -40,7 +47,19 @@ public class AdExtendraClient {
         ClientHooks.registerBlockEntityRenderers(ModBlockEntityTypes.GLOBE.get(), c -> new CustomGlobeBlockEntityRenderer());
     }
 
+    public static void registerRenderLayers() {
+        ClientHooks.setRenderLayer(ModBlocks.SATURN_ICE.get(), RenderType.translucent());
+        ClientHooks.setRenderLayer(ModBlocks.SLUSHY_ICE.get(), RenderType.translucent());
+        ClientHooks.setRenderLayer(ModBlocks.ICICLE.get(), RenderType.cutoutMipped());
+        ClientHooks.setRenderLayer(ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
+        ClientHooks.setRenderLayer(ModBlocks.POTTED_GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
+        ModBlocks.GLOBES.stream().forEach((block) -> {
+            ClientHooks.setRenderLayer(block.get(), RenderType.cutout());
+        });
+    }
+
     public static void onRegisterEntityLayers(ClientPlatformUtils.LayerDefinitionRegistry consumer) {
+        consumer.register(FreezeModel.LAYER_LOCATION, FreezeModel::createBodyLayer);
         CustomRocketModel.register(consumer);
     }
 
@@ -60,5 +79,9 @@ public class AdExtendraClient {
 
         // Globes
         ModItems.GLOBES.stream().forEach(item -> consumer.accept(item.get(), new CustomGlobeBlockEntityRenderer.ItemRenderer()));
+    }
+
+    public static void onRegisterParticles(BiConsumer<ParticleType<SimpleParticleType>, ClientPlatformUtils.SpriteParticleRegistration<SimpleParticleType>> consumer) {
+        consumer.accept(ModParticleTypes.WIND.get(), WindParticle.Provider::new);
     }
 }

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:uranus_uranium_ore",
+    {
+      "id": "#c:uranium_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:ores/uranium",
+      "required": false
+    }
+  ]
+}

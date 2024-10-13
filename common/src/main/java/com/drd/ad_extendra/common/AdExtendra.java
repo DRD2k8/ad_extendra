@@ -11,8 +11,10 @@ public class AdExtendra {
         ModCreativeTab.init();
         ModEntityTypes.ENTITY_TYPES.init();
         ModEntityTypes.ROCKETS.init();
+        ModFeatures.FEATURES.init();
         ModItems.ITEMS.init();
         ModPaintingVariants.PAINTING_VARIANTS.init();
+        ModParticleTypes.PARTICLE_TYPES.init();
     }
 
     public static void postInit() {

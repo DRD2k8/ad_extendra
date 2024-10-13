@@ -1,0 +1,128 @@
+{
+  "custom_clouds": true,
+  "custom_sky": true,
+  "custom_weather": false,
+  "dimension": "ad_extendra:uranus",
+  "has_fog": false,
+  "has_thick_fog": false,
+  "render_in_rain": true,
+  "sky_renderables": [
+    {
+      "back_light_color": -39,
+      "back_light_scale": 1.8,
+      "blend": false,
+      "global_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY",
+      "scale": 0.6,
+      "texture": "ad_astra:textures/environment/sun.png"
+    },
+    {
+      "back_light_color": 6901308,
+      "back_light_scale": 3.75,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        20.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 1.25,
+      "texture": "ad_extendra:textures/environment/titania.png"
+    },
+    {
+      "back_light_color": 7301218,
+      "back_light_scale": 3.6,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        40.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 1.2,
+      "texture": "ad_extendra:textures/environment/oberon.png"
+    },
+    {
+      "back_light_color": 4605510,
+      "back_light_scale": 1.125,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        30.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.375,
+      "texture": "ad_extendra:textures/environment/miranda.png"
+    },
+    {
+      "back_light_color": 9211020,
+      "back_light_scale": 2.796,
+      "blend": true,
+      "global_rotation": [
+        10.0,
+        30.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.932,
+      "texture": "ad_extendra:textures/environment/ariel.png"
+    },
+    {
+      "back_light_color": 1842204,
+      "back_light_scale": 2.88,
+      "blend": true,
+      "global_rotation": [
+        30.0,
+        30.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.96,
+      "texture": "ad_extendra:textures/environment/umbriel.png"
+    }
+  ],
+  "star_colors": [
+    {
+      "data": -1,
+      "weight": 1
+    }
+  ],
+  "stars": 1500,
+  "sunrise_angle": 0,
+  "sunrise_color": 7974362
+}

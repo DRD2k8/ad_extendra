@@ -1,0 +1,92 @@
+{
+  "custom_clouds": true,
+  "custom_sky": true,
+  "custom_weather": false,
+  "dimension": "ad_extendra:pluto",
+  "has_fog": false,
+  "has_thick_fog": false,
+  "render_in_rain": true,
+  "sky_renderables": [
+    {
+      "back_light_color": -39,
+      "back_light_scale": 0.63,
+      "blend": false,
+      "global_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY",
+      "scale": 0.21,
+      "texture": "ad_astra:textures/environment/sun.png"
+    },
+    {
+      "back_light_color": 7895673,
+      "back_light_scale": 4.5,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        20.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 1.5,
+      "texture": "ad_extendra:textures/environment/charon.png"
+    },
+    {
+      "back_light_color": 9996179,
+      "back_light_scale": 0.24,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        10.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.08,
+      "texture": "ad_extendra:textures/environment/nix.png"
+    },
+    {
+      "back_light_color": 7171922,
+      "back_light_scale": 0.3,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        30.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.1,
+      "texture": "ad_extendra:textures/environment/hydra.png"
+    }
+  ],
+  "star_colors": [
+    {
+      "data": -1,
+      "weight": 1
+    }
+  ],
+  "stars": 1500,
+  "sunrise_angle": 0,
+  "sunrise_color": 7493170
+}

@@ -1,9 +1,12 @@
-// 1.20.1	2024-10-12T14:29:28.7758971	Item Models: ad_extendra
+// 1.20.1	2024-10-12T18:46:53.9011722	Item Models: ad_extendra
 a0316529f0e440afd23aa315499ebe39b09e9809 assets/ad_extendra/models/item/electrolyte_engine.json
 fdc6d48f92d6c3297ff8c186a340538fa10406ab assets/ad_extendra/models/item/electrolyte_ingot.json
 5e0b63e490d0dbd138626bfc94bdb9646a9708e7 assets/ad_extendra/models/item/electrolyte_nugget.json
 c112383961105941f6991e24676d95fc08dbdc32 assets/ad_extendra/models/item/electrolyte_plate.json
 a307b7e973fde8a86a268708359a05f30a7ac164 assets/ad_extendra/models/item/electrolyte_tank.json
+0feb7b48bf8d13bdb275a3212ae8d6e81c4c9e8c assets/ad_extendra/models/item/freeze_shard.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/ad_extendra/models/item/freeze_spawn_egg.json
+6319a6c58754e6e582f2f68d11d839fcd8e87fad assets/ad_extendra/models/item/ice_charge.json
 2ebb681d0516a273cba92d695d144161b4e31afd assets/ad_extendra/models/item/juperium_engine.json
 84b5c2d2796434b7851067faf050d8f87b656f50 assets/ad_extendra/models/item/juperium_ingot.json
 e245f5e2d8215fdd66b30c75f8d06ade5d44da0e assets/ad_extendra/models/item/juperium_nugget.json

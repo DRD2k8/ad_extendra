@@ -1,0 +1,10 @@
+{
+  "dimension": "ad_extendra:gonggong",
+  "gravity": 0.2,
+  "orbit": "ad_extendra:gonggong_orbit",
+  "oxygen": false,
+  "solar_power": 11,
+  "solar_system": "ad_astra:solar_system",
+  "temperature": -250,
+  "tier": 9
+}

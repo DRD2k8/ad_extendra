@@ -1,0 +1,63 @@
+{
+  "temperature": -0.7,
+  "downfall": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 14152695,
+    "fog_color": 11531519,
+    "water_color": 14810111,
+    "water_fog_color": 14810111,
+    "grass_color": 14810111,
+    "foliage_color": 14810111,
+    "music": {
+      "sound": "minecraft:ambient.crimson_forest.loop",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:snowflake"
+      },
+      "probability": 0.02
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "ad_extendra:freeze",
+        "weight": 100,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ]
+  },
+  "spawn_costs": {
+    "ad_extendra:freeze": {
+      "energy_budget": 0.12,
+      "charge": 1
+    }
+  },
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [],
+    [
+      "ad_extendra:uranus/uranium_ore",
+      "ad_extendra:uranus/ice_shard_ore",
+      "ad_extendra:uranus/iron_ore",
+      "ad_extendra:uranus/lapis_ore",
+      "ad_extendra:uranus/diamond_ore"
+    ],
+    [
+      "ad_extendra:uranus/icicle_geode",
+      "ad_extendra:uranus/icicle"
+    ]
+  ]
+}

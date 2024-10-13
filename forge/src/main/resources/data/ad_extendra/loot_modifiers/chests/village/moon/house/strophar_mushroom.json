@@ -1,0 +1,14 @@
+{
+  "type": "ad_extendra:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "ad_astra:chests/village/moon/house"
+    },
+    {
+      "chance": 0.625,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "ad_extendra:strophar_mushroom"
+}

@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:orcus_radium_ore",
+    {
+      "id": "#c:radium_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:ores/radium",
+      "required": false
+    }
+  ]
+}

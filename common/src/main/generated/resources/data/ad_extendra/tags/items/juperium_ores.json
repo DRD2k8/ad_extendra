@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:jupiter_juperium_ore",
+    {
+      "id": "#c:juperium_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:ores/juperium",
+      "required": false
+    }
+  ]
+}

@@ -4,10 +4,8 @@ import com.drd.ad_extendra.common.AdExtendra;
 import com.drd.ad_extendra.common.registry.ModBlocks;
 import com.drd.ad_extendra.common.registry.ModItems;
 import com.drd.ad_extendra.common.utils.tags.ModItemTags;
-import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -20,16 +18,30 @@ import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.Function;
-import java.util.function.Supplier;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
+    private static final List<ItemLike> JUPERIUM_SMELTABLES = List.of(ModItems.RAW_JUPERIUM.get(), ModBlocks.JUPITER_JUPERIUM_ORE.get());
+    private static final List<ItemLike> SATURLYTE_SMELTABLES = List.of(ModItems.RAW_SATURLYTE.get(), ModBlocks.SATURN_SATURLYTE_ORE.get());
+    private static final List<ItemLike> URANIUM_SMELTABLES = List.of(ModItems.RAW_URANIUM.get(), ModBlocks.URANUS_URANIUM_ORE.get());
+    private static final List<ItemLike> NEPTUNIUM_SMELTABLES = List.of(ModItems.RAW_NEPTUNIUM.get(), ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get());
+    private static final List<ItemLike> RADIUM_SMELTABLES = List.of(ModItems.RAW_RADIUM.get(), ModBlocks.ORCUS_RADIUM_ORE.get());
+    private static final List<ItemLike> PLUTONIUM_SMELTABLES = List.of(ModItems.RAW_PLUTONIUM.get(), ModBlocks.PLUTO_PLUTONIUM_ORE.get());
+    private static final List<ItemLike> ELECTROLYTE_SMELTABLES = List.of(ModItems.RAW_ELECTROLYTE.get(), ModBlocks.SEDNA_ELECTROLYTE_ORE.get());
+
     public ModRecipeProvider(PackOutput output) {
         super(output);
     }
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
+        // Moon
+        metalPressurePlate(earth.terrarium.adastra.common.registry.ModItems.AERONOS_PLANKS.get(), ModBlocks.AERONOS_PRESSURE_PLATE.get(), consumer);
+        metalButton(earth.terrarium.adastra.common.registry.ModItems.AERONOS_PLANKS.get(), ModBlocks.AERONOS_BUTTON.get(), consumer);
+        metalPressurePlate(earth.terrarium.adastra.common.registry.ModItems.STROPHAR_PLANKS.get(), ModBlocks.STROPHAR_PRESSURE_PLATE.get(), consumer);
+        metalButton(earth.terrarium.adastra.common.registry.ModItems.STROPHAR_PLANKS.get(), ModBlocks.STROPHAR_BUTTON.get(), consumer);
+        bark(earth.terrarium.adastra.common.registry.ModItems.GLACIAN_LOG.get(), ModBlocks.GLACIAN_WOOD.get(), consumer);
+        bark(earth.terrarium.adastra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get(), consumer);
+
         // Ceres
         oreSmelting(consumer, List.of(ModBlocks.CERES_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), 0f, 200, "item");
         stairs(ModBlocks.CERES_STONE.get(), ModBlocks.CERES_STONE_STAIRS.get(), consumer);
@@ -68,6 +80,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_CERES_STONE_BRICKS.get(), ModBlocks.CHISELED_CERES_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_CERES_STONE.get(), ModBlocks.POLISHED_CERES_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_CERES_STONE.get(), ModBlocks.POLISHED_CERES_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, List.of(ModBlocks.CERES_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.CERES_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.CERES_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.CERES_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
 
         // Jupiter
         packing(ModItems.JUPERIUM_INGOT.get(), ModBlocks.JUPERIUM_BLOCK.get(), consumer);
@@ -127,6 +143,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_JUPITER_STONE_BRICKS.get(), ModBlocks.CHISELED_JUPITER_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_JUPITER_STONE.get(), ModBlocks.POLISHED_JUPITER_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_JUPITER_STONE.get(), ModBlocks.POLISHED_JUPITER_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, JUPERIUM_SMELTABLES, RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.JUPITER_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.JUPITER_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.JUPITER_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, JUPERIUM_SMELTABLES, RecipeCategory.MISC, ModItems.JUPERIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.JUPITER_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.JUPITER_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.JUPITER_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 100, "item");
 
         // Saturn
         packing(ModItems.SATURLYTE_INGOT.get(), ModBlocks.SATURLYTE_BLOCK.get(), consumer);
@@ -186,6 +210,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_SATURN_STONE_BRICKS.get(), ModBlocks.CHISELED_SATURN_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_SATURN_STONE.get(), ModBlocks.POLISHED_SATURN_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_SATURN_STONE.get(), ModBlocks.POLISHED_SATURN_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, SATURLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SATURN_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SATURN_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SATURN_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, SATURLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.SATURLYTE_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SATURN_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SATURN_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SATURN_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 100, "item");
 
         // Uranus
         packing(ModItems.URANIUM_INGOT.get(), ModBlocks.URANIUM_BLOCK.get(), consumer);
@@ -245,6 +277,37 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_URANUS_STONE_BRICKS.get(), ModBlocks.CHISELED_URANUS_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_URANUS_STONE.get(), ModBlocks.POLISHED_URANUS_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_URANUS_STONE.get(), ModBlocks.POLISHED_URANUS_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_LAPIS_ORE.get()), RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 200, "item");
+        oreBlasting(consumer, URANIUM_SMELTABLES, RecipeCategory.MISC, ModItems.URANIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.URANUS_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.URANUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.URANUS_LAPIS_ORE.get()), RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.URANUS_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ICE_CHARGE.get(), 4)
+                .requires(ModItems.FREEZE_SHARD.get()).unlockedBy(getHasName(ModItems.FREEZE_SHARD.get()), has(ModItems.FREEZE_SHARD.get())).save(consumer);
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ICICLE.get())
+                .pattern("#")
+                .pattern("#")
+                .define('#', earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get())
+                .unlockedBy(getHasName(earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get()), has(earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get()))
+                .save(consumer);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get(), 2)
+                .requires(ModBlocks.ICICLE.get())
+                .unlockedBy(getHasName(ModBlocks.ICICLE.get()), has(ModBlocks.ICICLE.get()))
+                .save(consumer, AdExtendra.MOD_ID + ":ice_shards_from_icicle");
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SLUSHY_ICE.get(), 4)
+                .pattern(" # ")
+                .pattern("#W#")
+                .pattern(" # ")
+                .define('#', Items.ICE)
+                .define('W', Items.WATER_BUCKET)
+                .unlockedBy(getHasName(Items.ICE), has(Items.ICE))
+                .save(consumer);
+        packing(ModBlocks.SLUSHY_ICE.get(), ModBlocks.PACKED_SLUSHY_ICE.get(), consumer);
 
         // Neptune
         packing(ModItems.NEPTUNIUM_INGOT.get(), ModBlocks.NEPTUNIUM_BLOCK.get(), consumer);
@@ -304,6 +367,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_NEPTUNE_STONE_BRICKS.get(), ModBlocks.CHISELED_NEPTUNE_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_NEPTUNE_STONE.get(), ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_NEPTUNE_STONE.get(), ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 200, "item");
+        oreBlasting(consumer, NEPTUNIUM_SMELTABLES, RecipeCategory.MISC, ModItems.NEPTUNIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_COAL_ORE.get()), RecipeCategory.MISC, Items.COAL, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
+        packing(ModBlocks.PACKED_SLUSHY_ICE.get(), ModBlocks.BLUE_SLUSHY_ICE.get(), consumer);
 
         // Orcus
         packing(ModItems.RADIUM_INGOT.get(), ModBlocks.RADIUM_BLOCK.get(), consumer);
@@ -363,6 +437,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_ORCUS_STONE_BRICKS.get(), ModBlocks.CHISELED_ORCUS_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_ORCUS_STONE.get(), ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_ORCUS_STONE.get(), ModBlocks.POLISHED_ORCUS_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, RADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.RADIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.ORCUS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.ORCUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, RADIUM_SMELTABLES, RecipeCategory.MISC, ModItems.RADIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.ORCUS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.ORCUS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
 
         // Pluto
         packing(ModItems.PLUTONIUM_INGOT.get(), ModBlocks.PLUTONIUM_BLOCK.get(), consumer);
@@ -422,6 +502,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_PLUTO_STONE_BRICKS.get(), ModBlocks.CHISELED_PLUTO_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_PLUTO_STONE.get(), ModBlocks.POLISHED_PLUTO_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_PLUTO_STONE.get(), ModBlocks.POLISHED_PLUTO_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, PLUTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.PLUTO_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.PLUTO_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.PLUTO_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 200, "item");
+        oreBlasting(consumer, PLUTONIUM_SMELTABLES, RecipeCategory.MISC, ModItems.PLUTONIUM_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.PLUTO_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.PLUTO_GOLD_ORE.get()), RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.PLUTO_ICE_SHARD_ORE.get()), RecipeCategory.MISC, earth.terrarium.adastra.common.registry.ModItems.ICE_SHARD.get(), 1.0f, 100, "item");
         
         // Haumea
         oreSmelting(consumer, List.of(ModBlocks.HAUMEA_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.HAUMEA_STONE.get(), 0f, 200, "item");
@@ -461,6 +549,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_HAUMEA_STONE_BRICKS.get(), ModBlocks.CHISELED_HAUMEA_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_HAUMEA_STONE.get(), ModBlocks.POLISHED_HAUMEA_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_HAUMEA_STONE.get(), ModBlocks.POLISHED_HAUMEA_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, List.of(ModBlocks.HAUMEA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.HAUMEA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.HAUMEA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.HAUMEA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         
         // Quaoar
         oreSmelting(consumer, List.of(ModBlocks.QUAOAR_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.QUAOAR_STONE.get(), 0f, 200, "item");
@@ -500,6 +592,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_QUAOAR_STONE_BRICKS.get(), ModBlocks.CHISELED_QUAOAR_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_QUAOAR_STONE.get(), ModBlocks.POLISHED_QUAOAR_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_QUAOAR_STONE.get(), ModBlocks.POLISHED_QUAOAR_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, List.of(ModBlocks.QUAOAR_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.QUAOAR_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.QUAOAR_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.QUAOAR_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         
         // Makemake
         oreSmelting(consumer, List.of(ModBlocks.MAKEMAKE_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.MAKEMAKE_STONE.get(), 0f, 200, "item");
@@ -539,6 +635,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_MAKEMAKE_STONE_BRICKS.get(), ModBlocks.CHISELED_MAKEMAKE_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_MAKEMAKE_STONE.get(), ModBlocks.POLISHED_MAKEMAKE_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_MAKEMAKE_STONE.get(), ModBlocks.POLISHED_MAKEMAKE_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, List.of(ModBlocks.MAKEMAKE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.MAKEMAKE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.MAKEMAKE_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.MAKEMAKE_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         
         // Gonggong
         oreSmelting(consumer, List.of(ModBlocks.GONGGONG_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.GONGGONG_STONE.get(), 0f, 200, "item");
@@ -578,6 +678,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_GONGGONG_STONE_BRICKS.get(), ModBlocks.CHISELED_GONGGONG_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_GONGGONG_STONE.get(), ModBlocks.POLISHED_GONGGONG_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_GONGGONG_STONE.get(), ModBlocks.POLISHED_GONGGONG_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, List.of(ModBlocks.GONGGONG_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.GONGGONG_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.GONGGONG_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.GONGGONG_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         
         // Eris
         oreSmelting(consumer, List.of(ModBlocks.ERIS_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.ERIS_STONE.get(), 0f, 200, "item");
@@ -617,6 +721,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_ERIS_STONE_BRICKS.get(), ModBlocks.CHISELED_ERIS_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_ERIS_STONE.get(), ModBlocks.POLISHED_ERIS_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_ERIS_STONE.get(), ModBlocks.POLISHED_ERIS_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, List.of(ModBlocks.ERIS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.ERIS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.ERIS_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.ERIS_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
 
         // Sedna
         packing(ModItems.ELECTROLYTE_INGOT.get(), ModBlocks.ELECTROLYTE_BLOCK.get(), consumer);
@@ -676,6 +784,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_SEDNA_STONE_BRICKS.get(), ModBlocks.CHISELED_SEDNA_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_SEDNA_STONE.get(), ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_SEDNA_STONE.get(), ModBlocks.POLISHED_SEDNA_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, ELECTROLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.ELECTROLYTE_INGOT.get(), 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SEDNA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.SEDNA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreBlasting(consumer, ELECTROLYTE_SMELTABLES, RecipeCategory.MISC, ModItems.ELECTROLYTE_INGOT.get(), 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SEDNA_COPPER_ORE.get()), RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.SEDNA_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         
         // Proxima Centauri b
         bricks(ModBlocks.B_SAND.get(), ModBlocks.B_SANDSTONE.get(), consumer);
@@ -724,41 +838,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_B_STONE_BRICKS.get(), ModBlocks.CHISELED_B_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_B_STONE.get(), ModBlocks.POLISHED_B_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_B_STONE.get(), ModBlocks.POLISHED_B_STONE_SLAB.get(), 2);
-    }
-
-    private void shaped(RegistryEntry<Item> result, int count, Supplier<Item> mainItem, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder, Consumer<FinishedRecipe> consumer) {
-        builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
-                        .define('#', mainItem.get())
-                        .unlockedBy("has_" + result.getId().getPath(), has(mainItem.get())))
-                .save(consumer);
-    }
-
-    private void shaped(RegistryEntry<Item> result, int count, TagKey<Item> mainItem, Function<ShapedRecipeBuilder, ShapedRecipeBuilder> builder, Consumer<FinishedRecipe> consumer) {
-        builder.apply(ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result.get(), count)
-                        .define('#', mainItem)
-                        .unlockedBy("has_" + result.getId().getPath(), has(mainItem)))
-                .save(consumer);
-    }
-
-    private void shapeless(RegistryEntry<Item> result, int count, Supplier<Item> mainItem, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> builder, Consumer<FinishedRecipe> consumer) {
-        builder.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result.get(), count)
-                        .requires(mainItem.get())
-                        .unlockedBy("has_" + result.getId().getPath(), has(mainItem.get())))
-                .save(consumer);
-    }
-
-    private void shapeless(RegistryEntry<Item> result, int count, Supplier<Item> mainItem, String file, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> builder, Consumer<FinishedRecipe> consumer) {
-        builder.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result.get(), count)
-                        .requires(mainItem.get())
-                        .unlockedBy("has_" + result.getId().getPath(), has(mainItem.get())))
-                .save(consumer, new ResourceLocation(AdExtendra.MOD_ID, file));
-    }
-
-    private void shapeless(RegistryEntry<Item> result, int count, TagKey<Item> mainItem, Function<ShapelessRecipeBuilder, ShapelessRecipeBuilder> builder, Consumer<FinishedRecipe> consumer) {
-        builder.apply(ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result.get(), count)
-                        .requires(mainItem)
-                        .unlockedBy("has_" + result.getId().getPath(), has(mainItem)))
-                .save(consumer);
+        oreSmelting(consumer, List.of(ModBlocks.B_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.B_EMERALD_ORE.get()), RecipeCategory.MISC, Items.EMERALD, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.B_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "item");
+        oreSmelting(consumer, List.of(ModBlocks.B_REDSTONE_ORE.get()), RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "item");
+        oreBlasting(consumer, List.of(ModBlocks.B_DIAMOND_ORE.get()), RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.B_EMERALD_ORE.get()), RecipeCategory.MISC, Items.EMERALD, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.B_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
+        oreBlasting(consumer, List.of(ModBlocks.B_REDSTONE_ORE.get()), RecipeCategory.MISC, Items.REDSTONE, 0.25f, 100, "item");
     }
 
     private void packing(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
@@ -802,6 +889,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###")
                 .pattern("###")
                 .pattern("###")
+                .define('#', ingredient)
+                .unlockedBy(getHasName(ingredient), has(ingredient))
+                .save(consumer);
+    }
+
+    private void bark(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 3)
+                .pattern("##")
+                .pattern("##")
                 .define('#', ingredient)
                 .unlockedBy(getHasName(ingredient), has(ingredient))
                 .save(consumer);

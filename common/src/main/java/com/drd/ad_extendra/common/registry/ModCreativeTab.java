@@ -55,6 +55,15 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.SEDNA_GLOBE.get()));
         list.add(new ItemStack(ModBlocks.B_GLOBE.get()));
 
+        // Moon
+        list.add(new ItemStack(ModBlocks.MOON_MYCELIUM.get()));
+        list.add(new ItemStack(ModBlocks.AERONOS_MUSHROOM.get()));
+        list.add(new ItemStack(ModBlocks.AERONOS_PRESSURE_PLATE.get()));
+        list.add(new ItemStack(ModBlocks.AERONOS_BUTTON.get()));
+        list.add(new ItemStack(ModBlocks.STROPHAR_MUSHROOM.get()));
+        list.add(new ItemStack(ModBlocks.STROPHAR_PRESSURE_PLATE.get()));
+        list.add(new ItemStack(ModBlocks.STROPHAR_BUTTON.get()));
+
         // Ceres
         list.add(new ItemStack(ModBlocks.CERES_SAND.get()));
         list.add(new ItemStack(ModBlocks.CERES_STONE.get()));
@@ -75,6 +84,8 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_CERES_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_CERES_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.CERES_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.CERES_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.CERES_IRON_ORE.get()));
 
         // Jupiter
         list.add(new ItemStack(ModItems.JUPERIUM_INGOT.get()));
@@ -116,6 +127,10 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_JUPITER_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_JUPITER_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.JUPITER_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.JUPITER_JUPERIUM_ORE.get()));
+        list.add(new ItemStack(ModBlocks.JUPITER_COAL_ORE.get()));
+        list.add(new ItemStack(ModBlocks.JUPITER_DIAMOND_ORE.get()));
+        list.add(new ItemStack(ModBlocks.JUPITER_GOLD_ORE.get()));
 
         // Saturn
         list.add(new ItemStack(ModItems.SATURLYTE_INGOT.get()));
@@ -139,6 +154,7 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.SATURLYTE_PLATING_PRESSURE_PLATE.get()));
         list.add(new ItemStack(ModBlocks.SATURLYTE_SLIDING_DOOR.get()));
         list.add(new ItemStack(ModBlocks.SATURN_SAND.get()));
+        list.add(new ItemStack(ModBlocks.SATURN_ICE.get()));
         list.add(new ItemStack(ModBlocks.SATURN_STONE.get()));
         list.add(new ItemStack(ModBlocks.SATURN_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.SATURN_STONE_SLAB.get()));
@@ -157,8 +173,17 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_SATURN_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_SATURN_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.SATURN_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.SATURN_SATURLYTE_ORE.get()));
+        list.add(new ItemStack(ModBlocks.SATURN_COAL_ORE.get()));
+        list.add(new ItemStack(ModBlocks.SATURN_DIAMOND_ORE.get()));
+        list.add(new ItemStack(ModBlocks.SATURN_GOLD_ORE.get()));
 
         // Uranus
+        list.add(new ItemStack(ModBlocks.SLUSHY_ICE.get()));
+        list.add(new ItemStack(ModBlocks.PACKED_SLUSHY_ICE.get()));
+        list.add(new ItemStack(ModBlocks.ICICLE.get()));
+        list.add(new ItemStack(ModItems.FREEZE_SHARD.get()));
+        list.add(new ItemStack(ModItems.ICE_CHARGE.get()));
         list.add(new ItemStack(ModItems.URANIUM_INGOT.get()));
         list.add(new ItemStack(ModItems.URANIUM_NUGGET.get()));
         list.add(new ItemStack(ModItems.URANIUM_PLATE.get()));
@@ -197,8 +222,14 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_URANUS_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_URANUS_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.URANUS_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.URANUS_URANIUM_ORE.get()));
+        list.add(new ItemStack(ModBlocks.URANUS_DIAMOND_ORE.get()));
+        list.add(new ItemStack(ModBlocks.URANUS_ICE_SHARD_ORE.get()));
+        list.add(new ItemStack(ModBlocks.URANUS_IRON_ORE.get()));
+        list.add(new ItemStack(ModBlocks.URANUS_LAPIS_ORE.get()));
 
         // Neptune
+        list.add(new ItemStack(ModBlocks.BLUE_SLUSHY_ICE.get()));
         list.add(new ItemStack(ModItems.NEPTUNIUM_INGOT.get()));
         list.add(new ItemStack(ModItems.NEPTUNIUM_NUGGET.get()));
         list.add(new ItemStack(ModItems.NEPTUNIUM_PLATE.get()));
@@ -237,6 +268,11 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_NEPTUNE_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_NEPTUNE_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.NEPTUNE_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.NEPTUNE_NEPTUNIUM_ORE.get()));
+        list.add(new ItemStack(ModBlocks.NEPTUNE_COAL_ORE.get()));
+        list.add(new ItemStack(ModBlocks.NEPTUNE_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.NEPTUNE_IRON_ORE.get()));
+        list.add(new ItemStack(ModBlocks.NEPTUNE_ICE_SHARD_ORE.get()));
 
         // Orcus
         list.add(new ItemStack(ModItems.RADIUM_INGOT.get()));
@@ -277,6 +313,9 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_ORCUS_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_ORCUS_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.ORCUS_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.ORCUS_RADIUM_ORE.get()));
+        list.add(new ItemStack(ModBlocks.ORCUS_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.ORCUS_IRON_ORE.get()));
 
         // Pluto
         list.add(new ItemStack(ModItems.PLUTONIUM_INGOT.get()));
@@ -318,6 +357,10 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_PLUTO_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_PLUTO_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.PLUTO_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.PLUTO_PLUTONIUM_ORE.get()));
+        list.add(new ItemStack(ModBlocks.PLUTO_DIAMOND_ORE.get()));
+        list.add(new ItemStack(ModBlocks.PLUTO_GOLD_ORE.get()));
+        list.add(new ItemStack(ModBlocks.PLUTO_ICE_SHARD_ORE.get()));
 
         // Haumea
         list.add(new ItemStack(ModBlocks.HAUMEA_STONE.get()));
@@ -338,6 +381,8 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_HAUMEA_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_HAUMEA_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.HAUMEA_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.HAUMEA_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.HAUMEA_IRON_ORE.get()));
 
         // Quaoar
         list.add(new ItemStack(ModBlocks.QUAOAR_STONE.get()));
@@ -358,6 +403,8 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_QUAOAR_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_QUAOAR_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.QUAOAR_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.QUAOAR_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.QUAOAR_IRON_ORE.get()));
 
         // Makemake
         list.add(new ItemStack(ModBlocks.MAKEMAKE_STONE.get()));
@@ -378,6 +425,8 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_MAKEMAKE_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_MAKEMAKE_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.MAKEMAKE_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.MAKEMAKE_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.MAKEMAKE_IRON_ORE.get()));
 
         // Gonggong
         list.add(new ItemStack(ModBlocks.GONGGONG_STONE.get()));
@@ -398,6 +447,8 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_GONGGONG_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_GONGGONG_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.GONGGONG_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.GONGGONG_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.GONGGONG_IRON_ORE.get()));
 
         // Eris
         list.add(new ItemStack(ModBlocks.ERIS_STONE.get()));
@@ -418,6 +469,8 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_ERIS_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_ERIS_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.ERIS_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.ERIS_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.ERIS_IRON_ORE.get()));
 
         // Sedna
         list.add(new ItemStack(ModItems.ELECTROLYTE_INGOT.get()));
@@ -458,6 +511,9 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_SEDNA_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_SEDNA_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.SEDNA_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.SEDNA_ELECTROLYTE_ORE.get()));
+        list.add(new ItemStack(ModBlocks.SEDNA_COPPER_ORE.get()));
+        list.add(new ItemStack(ModBlocks.SEDNA_IRON_ORE.get()));
 
         // Proxima Centauri b
         list.add(new ItemStack(ModBlocks.B_SAND.get()));
@@ -484,6 +540,18 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_B_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_B_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.B_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.B_DIAMOND_ORE.get()));
+        list.add(new ItemStack(ModBlocks.B_EMERALD_ORE.get()));
+        list.add(new ItemStack(ModBlocks.B_IRON_ORE.get()));
+        list.add(new ItemStack(ModBlocks.B_REDSTONE_ORE.get()));
+
+        // Glacio
+        list.add(new ItemStack(ModBlocks.GLACIAN_WOOD.get()));
+        list.add(new ItemStack(ModBlocks.STRIPPED_GLACIAN_WOOD.get()));
+        list.add(new ItemStack(ModBlocks.GLACIAN_SAPLING.get()));
+
+        // Spawn Eggs
+        list.add(new ItemStack(ModItems.FREEZE_SPAWN_EGG.get()));
 
         return list.stream();
     }

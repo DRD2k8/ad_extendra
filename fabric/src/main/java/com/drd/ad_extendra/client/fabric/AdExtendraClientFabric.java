@@ -3,6 +3,7 @@ package com.drd.ad_extendra.client.fabric;
 import com.drd.ad_extendra.client.AdExtendraClient;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 
@@ -14,6 +15,7 @@ public class AdExtendraClientFabric implements ClientModInitializer {
         AdExtendraClient.onRegisterItemRenderers(((item, renderer) -> BuiltinItemRendererRegistry.INSTANCE.register(item, renderer::renderByItem)));
         AdExtendraClient.onRegisterEntityLayers(((location, definition) -> EntityModelLayerRegistry.registerModelLayer(location, definition::get)));
 
+        AdExtendraClient.onRegisterParticles((particle, provider) -> ParticleFactoryRegistry.getInstance().register(particle, provider::create));
         ModelLoadingPlugin.register(ctx -> AdExtendraClient.onRegisterModels(ctx::addModels));
     }
 }

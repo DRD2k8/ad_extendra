@@ -1,0 +1,14 @@
+{
+  "type": "ad_extendra:add_item",
+  "conditions": [
+    {
+      "block": "ad_astra:strophar_cap",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.35,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "ad_extendra:strophar_mushroom"
+}

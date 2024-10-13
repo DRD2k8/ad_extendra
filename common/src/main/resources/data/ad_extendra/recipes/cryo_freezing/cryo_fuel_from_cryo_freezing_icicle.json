@@ -1,0 +1,12 @@
+{
+  "type": "ad_astra:cryo_freezing",
+  "cookingtime": 60,
+  "energy": 40,
+  "ingredient": {
+    "item": "ad_extendra:icicle"
+  },
+  "result": {
+    "fluid": "ad_astra:cryo_fuel",
+    "millibuckets": 25
+  }
+}

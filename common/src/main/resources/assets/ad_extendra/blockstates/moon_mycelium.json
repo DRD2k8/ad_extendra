@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ad_extendra:block/moon_mycelium"
+      },
+      {
+        "model": "ad_extendra:block/moon_mycelium",
+        "y": 90
+      },
+      {
+        "model": "ad_extendra:block/moon_mycelium",
+        "y": 180
+      },
+      {
+        "model": "ad_extendra:block/moon_mycelium",
+        "y": 270
+      }
+    ]
+  }
+}

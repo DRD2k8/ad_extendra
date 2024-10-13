@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:pluto_plutonium_ore",
+    {
+      "id": "#c:plutonium_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:ores/plutonium",
+      "required": false
+    }
+  ]
+}

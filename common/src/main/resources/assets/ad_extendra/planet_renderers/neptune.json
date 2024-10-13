@@ -1,0 +1,56 @@
+{
+  "custom_clouds": true,
+  "custom_sky": true,
+  "custom_weather": false,
+  "dimension": "ad_extendra:neptune",
+  "has_fog": false,
+  "has_thick_fog": false,
+  "render_in_rain": true,
+  "sky_renderables": [
+    {
+      "back_light_color": -39,
+      "back_light_scale": 1,
+      "blend": false,
+      "global_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY",
+      "scale": 0.33,
+      "texture": "ad_astra:textures/environment/sun.png"
+    },
+    {
+      "back_light_color": 5653847,
+      "back_light_scale": 6.51,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        20.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 2.17,
+      "texture": "ad_extendra:textures/environment/triton.png"
+    }
+  ],
+  "star_colors": [
+    {
+      "data": -1,
+      "weight": 1
+    }
+  ],
+  "stars": 1500,
+  "sunrise_angle": 0,
+  "sunrise_color": 3094682
+}

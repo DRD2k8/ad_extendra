@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sedna_electrolyte_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:sedna_electrolyte_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:electrolyte_ingot_from_smelting_sedna_electrolyte_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_sedna_electrolyte_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:electrolyte_ingot_from_smelting_sedna_electrolyte_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

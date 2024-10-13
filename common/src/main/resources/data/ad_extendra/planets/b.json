@@ -1,0 +1,10 @@
+{
+  "dimension": "ad_extendra:b",
+  "gravity": 9.78,
+  "orbit": "ad_extendra:b_orbit",
+  "oxygen": true,
+  "solar_power": 11,
+  "solar_system": "ad_astra:proxima_centauri",
+  "temperature": -39,
+  "tier": 11
+}

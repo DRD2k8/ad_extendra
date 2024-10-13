@@ -1,0 +1,182 @@
+{
+  "custom_clouds": true,
+  "custom_sky": true,
+  "custom_weather": false,
+  "dimension": "ad_extendra:saturn",
+  "has_fog": false,
+  "has_thick_fog": false,
+  "render_in_rain": true,
+  "sky_renderables": [
+    {
+      "back_light_color": -39,
+      "back_light_scale": 3.6,
+      "blend": false,
+      "global_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY",
+      "scale": 1.2,
+      "texture": "ad_astra:textures/environment/sun.png"
+    },
+    {
+      "back_light_color": 4991,
+      "back_light_scale": 12.3,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        20.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 4.1,
+      "texture": "ad_extendra:textures/environment/titan.png"
+    },
+    {
+      "back_light_color": 7372935,
+      "back_light_scale": 1.2,
+      "blend": true,
+      "global_rotation": [
+        0.0,
+        20.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.4,
+      "texture": "ad_extendra:textures/environment/enceladus.png"
+    },
+    {
+      "back_light_color": 5526612,
+      "back_light_scale": 0.96,
+      "blend": true,
+      "global_rotation": [
+        0.0,
+        30.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.32,
+      "texture": "ad_extendra:textures/environment/mimas.png"
+    },
+    {
+      "back_light_color": 8947848,
+      "back_light_scale": 2.7,
+      "blend": true,
+      "global_rotation": [
+        0.0,
+        50.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.9,
+      "texture": "ad_extendra:textures/environment/dione.png"
+    },
+    {
+      "back_light_color": 2301696,
+      "back_light_scale": 2.22,
+      "blend": true,
+      "global_rotation": [
+        20.0,
+        -20.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.74,
+      "texture": "ad_extendra:textures/environment/iapetus.png"
+    },
+    {
+      "back_light_color": 11776947,
+      "back_light_scale": 2.58,
+      "blend": true,
+      "global_rotation": [
+        0.0,
+        -20.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 0.86,
+      "texture": "ad_extendra:textures/environment/tethys.png"
+    },
+    {
+      "back_light_color": 5263440,
+      "back_light_scale": 3.6,
+      "blend": true,
+      "global_rotation": [
+        40.0,
+        -20.0,
+        180.0
+      ],
+      "local_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY_REVERSED",
+      "scale": 1.8,
+      "texture": "ad_extendra:textures/environment/rhea.png"
+    },
+    {
+      "back_light_color": -4827861,
+      "back_light_scale": 0.27,
+      "blend": true,
+      "global_rotation": [
+        -40.0,
+        0.0,
+        160.0
+      ],
+      "local_rotation": [
+        0.0,
+        100.0,
+        0.0
+      ],
+      "movement_type": "TIME_OF_DAY",
+      "scale": 0.09,
+      "texture": "ad_extendra:textures/environment/jupiter.png"
+    }
+  ],
+  "star_colors": [
+    {
+      "data": -1,
+      "weight": 1
+    }
+  ],
+  "stars": 1500,
+  "sunrise_angle": 0,
+  "sunrise_color": 5653594
+}
