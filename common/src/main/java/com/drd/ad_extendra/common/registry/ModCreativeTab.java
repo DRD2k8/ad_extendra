@@ -555,6 +555,8 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.GLACIAN_SAPLING.get()));
         list.add(new ItemStack(ModItems.GLACIAN_SIGN.get()));
         list.add(new ItemStack(ModItems.GLACIAN_HANGING_SIGN.get()));
+        list.add(new ItemStack(ModItems.GLACIAN_BOAT.get()));
+        list.add(new ItemStack(ModItems.GLACIAN_CHEST_BOAT.get()));
 
         // Spawn Eggs
         list.add(new ItemStack(ModItems.FREEZE_SPAWN_EGG.get()));

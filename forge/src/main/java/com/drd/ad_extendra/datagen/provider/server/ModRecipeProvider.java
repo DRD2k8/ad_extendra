@@ -854,6 +854,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         bark(earth.terrarium.adastra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get(), consumer);
         sign(earth.terrarium.adastra.common.registry.ModItems.GLACIAN_PLANKS.get(), ModItems.GLACIAN_SIGN.get(), consumer);
         hangingSign(earth.terrarium.adastra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get(), ModItems.GLACIAN_HANGING_SIGN.get(), consumer);
+        boat(earth.terrarium.adastra.common.registry.ModItems.GLACIAN_PLANKS.get(), ModItems.GLACIAN_BOAT.get(), consumer);
+        chestBoat(ModItems.GLACIAN_BOAT.get(), ModItems.GLACIAN_CHEST_BOAT.get(), consumer);
     }
 
     private void packing(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {

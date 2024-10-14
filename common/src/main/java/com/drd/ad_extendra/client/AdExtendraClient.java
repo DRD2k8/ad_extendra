@@ -6,13 +6,19 @@ import com.drd.ad_extendra.client.particles.WindParticle;
 import com.drd.ad_extendra.client.renderers.blocks.CustomGlobeBlockEntityRenderer;
 import com.drd.ad_extendra.client.renderers.blocks.CustomSlidingDoorBlockEntityRenderer;
 import com.drd.ad_extendra.client.renderers.entities.mobs.FreezeRenderer;
+import com.drd.ad_extendra.client.renderers.entities.vehicles.CustomBoatRenderer;
 import com.drd.ad_extendra.client.renderers.entities.vehicles.CustomRocketRenderer;
 import com.drd.ad_extendra.common.AdExtendra;
+import com.drd.ad_extendra.common.entities.vehicles.CustomBoat;
 import com.drd.ad_extendra.common.registry.*;
 import com.drd.ad_extendra.common.utils.ModWoodTypes;
 import earth.terrarium.adastra.client.ClientPlatformUtils;
 import earth.terrarium.adastra.client.renderers.entities.vehicles.RocketRenderer;
 import earth.terrarium.botarium.client.ClientHooks;
+import net.minecraft.client.model.BoatModel;
+import net.minecraft.client.model.ChestBoatModel;
+import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
@@ -28,6 +34,7 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class AdExtendraClient {
     public static void init() {
@@ -40,6 +47,8 @@ public class AdExtendraClient {
     private static void registerEntityRenderers() {
         ClientHooks.registerEntityRenderer(ModEntityTypes.FREEZE, FreezeRenderer::new);
         ClientHooks.registerEntityRenderer(ModEntityTypes.ICE_CHARGE, ThrownItemRenderer::new);
+        ClientHooks.registerEntityRenderer(ModEntityTypes.BOAT, c -> new CustomBoatRenderer(c, false));
+        ClientHooks.registerEntityRenderer(ModEntityTypes.CHEST_BOAT, c -> new CustomBoatRenderer(c, true));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_5_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_5_LAYER, CustomRocketRenderer.TIER_5_TEXTURE));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_6_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_6_LAYER, CustomRocketRenderer.TIER_6_TEXTURE));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_7_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_7_LAYER, CustomRocketRenderer.TIER_7_TEXTURE));
@@ -69,6 +78,12 @@ public class AdExtendraClient {
 
     public static void onRegisterEntityLayers(ClientPlatformUtils.LayerDefinitionRegistry consumer) {
         consumer.register(FreezeModel.LAYER_LOCATION, FreezeModel::createBodyLayer);
+
+        for (CustomBoat.Type type : CustomBoat.Type.values()) {
+            consumer.register(CustomBoatRenderer.boatTextureLocation(type), BoatModel::createBodyModel);
+            consumer.register(CustomBoatRenderer.chestBoatTextureLocation(type), ChestBoatModel::createBodyModel);
+        }
+
         CustomRocketModel.register(consumer);
     }
 

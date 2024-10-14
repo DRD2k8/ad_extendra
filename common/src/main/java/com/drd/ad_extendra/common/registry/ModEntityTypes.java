@@ -3,12 +3,13 @@ package com.drd.ad_extendra.common.registry;
 import com.drd.ad_extendra.common.AdExtendra;
 import com.drd.ad_extendra.common.entities.mobs.Freeze;
 import com.drd.ad_extendra.common.entities.projectiles.IceCharge;
+import com.drd.ad_extendra.common.entities.vehicles.CustomBoat;
+import com.drd.ad_extendra.common.entities.vehicles.CustomChestBoat;
 import com.drd.ad_extendra.common.entities.vehicles.CustomRocket;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
 import earth.terrarium.adastra.AdAstra;
-import earth.terrarium.adastra.common.entities.mob.*;
 import earth.terrarium.adastra.common.entities.vehicles.Rocket;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
@@ -30,6 +31,13 @@ public class ModEntityTypes {
     public static final RegistryEntry<EntityType<IceCharge>> ICE_CHARGE =
             ENTITY_TYPES.register("ice_charge", () -> EntityType.Builder.<IceCharge>of(IceCharge::new, MobCategory.MISC)
                     .sized(0.5f, 0.5f).build("ice_charge"));
+
+    public static final RegistryEntry<EntityType<CustomBoat>> BOAT =
+            ENTITY_TYPES.register("boat", () -> EntityType.Builder.<CustomBoat>of(CustomBoat::new, MobCategory.MISC)
+                    .sized(1.375f, 0.5625f).build("boat"));
+    public static final RegistryEntry<EntityType<CustomChestBoat>> CHEST_BOAT =
+            ENTITY_TYPES.register("chest_boat", () -> EntityType.Builder.<CustomChestBoat>of(CustomChestBoat::new, MobCategory.MISC)
+                    .sized(1.375f, 0.5625f).build("chest_boat"));
 
     public static final RegistryEntry<EntityType<Rocket>> TIER_5_ROCKET = registerRocket(5, 1.1f, 7.0f);
     public static final RegistryEntry<EntityType<Rocket>> TIER_6_ROCKET = registerRocket(6, 1.1f, 7.5f);

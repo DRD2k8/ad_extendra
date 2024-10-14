@@ -1,6 +1,8 @@
 package com.drd.ad_extendra.common.registry;
 
 import com.drd.ad_extendra.common.AdExtendra;
+import com.drd.ad_extendra.common.entities.vehicles.CustomBoat;
+import com.drd.ad_extendra.common.items.CustomBoatItem;
 import com.drd.ad_extendra.common.items.IceChargeItem;
 import com.drd.ad_extendra.common.utils.PlatformUtils;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
@@ -26,6 +28,8 @@ public class ModItems {
     public static final ResourcefulRegistry<Item> VEHICLES = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> SIGNS = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> HANGING_SIGNS = ResourcefulRegistries.create(ITEMS);
+    public static final ResourcefulRegistry<Item> BOATS = ResourcefulRegistries.create(ITEMS);
+    public static final ResourcefulRegistry<Item> CHEST_BOATS = ResourcefulRegistries.create(ITEMS);
 
     // Signs
     public static final RegistryEntry<Item> AERONOS_SIGN = registerSign("aeronos_sign", ModBlocks.AERONOS_SIGN, ModBlocks.AERONOS_WALL_SIGN);
@@ -102,6 +106,10 @@ public class ModItems {
     public static final RegistryEntry<Item> ELECTROLYTE_ENGINE = registerBasicItem("electrolyte_engine");
     public static final RegistryEntry<Item> ELECTROLYTE_TANK = registerBasicItem("electrolyte_tank");
 
+    // Glacio
+    public static final RegistryEntry<Item> GLACIAN_BOAT = registerBoat(CustomBoat.Type.GLACIAN);
+    public static final RegistryEntry<Item> GLACIAN_CHEST_BOAT = registerChestBoat(CustomBoat.Type.GLACIAN);
+
     // Spawn Eggs
     public static final RegistryEntry<Item> FREEZE_SPAWN_EGG = SPAWN_EGGS.register("freeze_spawn_egg", PlatformUtils.createSpawnEggItem(ModEntityTypes.FREEZE, 13303807, 7979472, new Item.Properties()));
 
@@ -119,5 +127,13 @@ public class ModItems {
 
     private static RegistryEntry<Item> registerHangingSign(String name, RegistryEntry<Block> hangingSign, RegistryEntry<Block> wallHangingSign) {
         return HANGING_SIGNS.register(name, () -> new HangingSignItem(hangingSign.get(), wallHangingSign.get(), new Item.Properties()));
+    }
+
+    private static RegistryEntry<Item> registerBoat(CustomBoat.Type type) {
+        return BOATS.register(type.getName() + "_boat", () -> new CustomBoatItem(false, type, (new Item.Properties()).stacksTo(1)));
+    }
+
+    private static RegistryEntry<Item> registerChestBoat(CustomBoat.Type type) {
+        return CHEST_BOATS.register(type.getName() + "_chest_boat", () -> new CustomBoatItem(true, type, (new Item.Properties()).stacksTo(1)));
     }
 }
