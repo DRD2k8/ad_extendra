@@ -1,5 +1,17 @@
 {
   "values": [
+    "ad_extendra:aeronos_sign",
+    "ad_extendra:aeronos_wall_sign",
+    "ad_extendra:aeronos_hanging_sign",
+    "ad_extendra:aeronos_wall_hanging_sign",
+    "ad_extendra:strophar_sign",
+    "ad_extendra:strophar_wall_sign",
+    "ad_extendra:strophar_hanging_sign",
+    "ad_extendra:strophar_wall_hanging_sign",
+    "ad_extendra:glacian_sign",
+    "ad_extendra:glacian_wall_sign",
+    "ad_extendra:glacian_hanging_sign",
+    "ad_extendra:glacian_wall_hanging_sign",
     "ad_extendra:ceres_globe",
     "ad_extendra:jupiter_globe",
     "ad_extendra:saturn_globe",

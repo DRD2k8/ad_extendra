@@ -9,16 +9,22 @@ import com.drd.ad_extendra.client.renderers.entities.mobs.FreezeRenderer;
 import com.drd.ad_extendra.client.renderers.entities.vehicles.CustomRocketRenderer;
 import com.drd.ad_extendra.common.AdExtendra;
 import com.drd.ad_extendra.common.registry.*;
+import com.drd.ad_extendra.common.utils.ModWoodTypes;
 import earth.terrarium.adastra.client.ClientPlatformUtils;
 import earth.terrarium.adastra.client.renderers.entities.vehicles.RocketRenderer;
 import earth.terrarium.botarium.client.ClientHooks;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.HangingSignRenderer;
+import net.minecraft.client.renderer.blockentity.SignRenderer;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.state.properties.WoodType;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -28,6 +34,7 @@ public class AdExtendraClient {
         registerEntityRenderers();
         registerBlockEntityRenderers();
         registerRenderLayers();
+        registerSheets();
     }
 
     private static void registerEntityRenderers() {
@@ -45,6 +52,8 @@ public class AdExtendraClient {
     private static void registerBlockEntityRenderers() {
         ClientHooks.registerBlockEntityRenderers(ModBlockEntityTypes.SLIDING_DOOR.get(), c -> new CustomSlidingDoorBlockEntityRenderer());
         ClientHooks.registerBlockEntityRenderers(ModBlockEntityTypes.GLOBE.get(), c -> new CustomGlobeBlockEntityRenderer());
+        ClientHooks.registerBlockEntityRenderers(ModBlockEntityTypes.SIGN.get(), SignRenderer::new);
+        ClientHooks.registerBlockEntityRenderers(ModBlockEntityTypes.HANGING_SIGN.get(), HangingSignRenderer::new);
     }
 
     public static void registerRenderLayers() {
@@ -83,5 +92,17 @@ public class AdExtendraClient {
 
     public static void onRegisterParticles(BiConsumer<ParticleType<SimpleParticleType>, ClientPlatformUtils.SpriteParticleRegistration<SimpleParticleType>> consumer) {
         consumer.accept(ModParticleTypes.WIND.get(), WindParticle.Provider::new);
+    }
+
+    private static void registerSheets() {
+        addWoodType(ModWoodTypes.AERONOS);
+        addWoodType(ModWoodTypes.STROPHAR);
+        addWoodType(ModWoodTypes.GLACIAN);
+    }
+
+    private static void addWoodType(WoodType woodType) {
+        ResourceLocation location = new ResourceLocation(woodType.name());
+        Sheets.SIGN_MATERIALS.put(woodType, new Material(Sheets.SIGN_SHEET, new ResourceLocation(AdExtendra.MOD_ID, "entity/signs/" + location.getPath())));
+        Sheets.HANGING_SIGN_MATERIALS.put(woodType, new Material(Sheets.SIGN_SHEET, new ResourceLocation(AdExtendra.MOD_ID, "entity/signs/hanging/" + location.getPath())));
     }
 }

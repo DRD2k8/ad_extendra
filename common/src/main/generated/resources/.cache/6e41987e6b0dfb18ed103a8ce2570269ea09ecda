@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-13T10:22:31.8313656	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2024-10-13T18:00:41.5187013	Tags for minecraft:block mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/blocks/glacian_logs.json
 638687f04e2d2dbaf2539622297befefda87e4dd data/ad_astra/tags/blocks/ice_shard_ores.json
 e0d3160615e467dd50bc8f80222a0ff33f4244d0 data/ad_extendra/tags/blocks/electrolyte_blocks.json
@@ -70,6 +70,7 @@ b1275e98a819ae4dbe5e2c8f3893aae53c5bf678 data/forge/tags/blocks/storage_blocks/s
 571f94cea259742345d038bf0ebb818a08aa111e data/forge/tags/blocks/storage_blocks/uranium.json
 36a9531f931b2789e111f3519b647c1cead58b0b data/minecraft/tags/blocks/beacon_base_blocks.json
 811b3ba3c6f741e9d5263aa2db3c791d9d224ce3 data/minecraft/tags/blocks/buttons.json
+e9d9557004d034d69cc6f89f6a179f495d3f294b data/minecraft/tags/blocks/ceiling_hanging_signs.json
 b3eec57f89f486049d9e916060baa65659ba059c data/minecraft/tags/blocks/coal_ores.json
 2131638da6eab9e47a51e5c58512bccb1f733dd4 data/minecraft/tags/blocks/copper_ores.json
 5b5604d133066508f4abce44b080c8feab7e9868 data/minecraft/tags/blocks/diamond_ores.json
@@ -77,7 +78,7 @@ b3eec57f89f486049d9e916060baa65659ba059c data/minecraft/tags/blocks/coal_ores.js
 d4e63d3b0fa4afbf161dcca0f8f86bc7f19e5ee6 data/minecraft/tags/blocks/gold_ores.json
 52cfbe3adbf598d304041048d29349474d173845 data/minecraft/tags/blocks/ice.json
 86f48a2e67eef3a62d0777658033cc0c46bfd386 data/minecraft/tags/blocks/iron_ores.json
-5e40ab06eba34b2edf24dad4e319360baa0efb95 data/minecraft/tags/blocks/mineable/pickaxe.json
+c70974f57b23f396a2664e5ac9bc0f88e3273ba7 data/minecraft/tags/blocks/mineable/pickaxe.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/blocks/mineable/shovel.json
 1c9e45ec364bc55134942cb07871f8309e3e5927 data/minecraft/tags/blocks/mushroom_grow_block.json
 67db2d57cfabfddec3d4631a1e72617f772acff0 data/minecraft/tags/blocks/needs_iron_tool.json
@@ -87,7 +88,10 @@ d4e63d3b0fa4afbf161dcca0f8f86bc7f19e5ee6 data/minecraft/tags/blocks/gold_ores.js
 07f80d03631cec129ca498000655807faaf79b5c data/minecraft/tags/blocks/slabs.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/blocks/smelts_to_glass.json
 e1ca800379cdb5569cf9749b9cc6650dc797df05 data/minecraft/tags/blocks/stairs.json
+8293bb1c229ada992e619a2e6debddbd0b7ff7f0 data/minecraft/tags/blocks/standing_signs.json
 9e0bb2678077541f5d4ff6f6118b91c92f8e0646 data/minecraft/tags/blocks/stone_bricks.json
 8b4bb29625552f5ee47d4b0a63a96ff3c984f079 data/minecraft/tags/blocks/walls.json
+66294a31d5ffcf4412553f1c23d08e9757e95040 data/minecraft/tags/blocks/wall_hanging_signs.json
+68909c2c09bdc9b96053a1d446e2f62ffa9ba39c data/minecraft/tags/blocks/wall_signs.json
 6952c62ba7a1ef17d2f3a3fdf7e2941605df9338 data/minecraft/tags/blocks/wooden_buttons.json
 f8e323a287cc263c3fbcc81926c14c72854449e2 data/minecraft/tags/blocks/wooden_pressure_plates.json

@@ -1,4 +1,4 @@
-// 1.20.1	2024-10-13T10:22:31.8157399	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2024-10-13T18:00:41.5187013	Tags for minecraft:item mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/items/glacian_logs.json
 c8bafddc7735e3b59034298082c028162723e283 data/ad_astra/tags/items/ice_shard_ores.json
 e0d3160615e467dd50bc8f80222a0ff33f4244d0 data/ad_extendra/tags/items/electrolyte_blocks.json
@@ -163,9 +163,11 @@ b3eec57f89f486049d9e916060baa65659ba059c data/minecraft/tags/items/coal_ores.jso
 5b5604d133066508f4abce44b080c8feab7e9868 data/minecraft/tags/items/diamond_ores.json
 55952c81e86c6faebe00ae0aad81f4f5ed3e7910 data/minecraft/tags/items/emerald_ores.json
 d4e63d3b0fa4afbf161dcca0f8f86bc7f19e5ee6 data/minecraft/tags/items/gold_ores.json
+e9d9557004d034d69cc6f89f6a179f495d3f294b data/minecraft/tags/items/hanging_signs.json
 86f48a2e67eef3a62d0777658033cc0c46bfd386 data/minecraft/tags/items/iron_ores.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/items/sand.json
 93c749cc1d256a06fa8759208638e42412b1b28c data/minecraft/tags/items/saplings.json
+8293bb1c229ada992e619a2e6debddbd0b7ff7f0 data/minecraft/tags/items/signs.json
 07f80d03631cec129ca498000655807faaf79b5c data/minecraft/tags/items/slabs.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/items/smelts_to_glass.json
 e1ca800379cdb5569cf9749b9cc6650dc797df05 data/minecraft/tags/items/stairs.json

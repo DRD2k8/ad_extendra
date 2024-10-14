@@ -85,6 +85,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
         ModBlocks.SLABS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.SLABS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
         ModBlocks.WALLS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.WALLS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
         ModBlocks.BUTTONS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.BUTTONS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
+        ModItems.SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.SIGNS).add(element(b)));
+        ModItems.HANGING_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.HANGING_SIGNS).add(element(b)));
 
         tag(ItemTags.BEACON_PAYMENT_ITEMS).add(element(ModItems.JUPERIUM_INGOT.get()));
         tag(ItemTags.BEACON_PAYMENT_ITEMS).add(element(ModItems.SATURLYTE_INGOT.get()));

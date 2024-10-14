@@ -37,10 +37,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // Moon
         metalPressurePlate(earth.terrarium.adastra.common.registry.ModItems.AERONOS_PLANKS.get(), ModBlocks.AERONOS_PRESSURE_PLATE.get(), consumer);
         metalButton(earth.terrarium.adastra.common.registry.ModItems.AERONOS_PLANKS.get(), ModBlocks.AERONOS_BUTTON.get(), consumer);
+        sign(earth.terrarium.adastra.common.registry.ModItems.AERONOS_PLANKS.get(), ModItems.AERONOS_SIGN.get(), consumer);
+        hangingSign(earth.terrarium.adastra.common.registry.ModItems.AERONOS_STEM.get(), ModItems.AERONOS_HANGING_SIGN.get(), consumer);
         metalPressurePlate(earth.terrarium.adastra.common.registry.ModItems.STROPHAR_PLANKS.get(), ModBlocks.STROPHAR_PRESSURE_PLATE.get(), consumer);
         metalButton(earth.terrarium.adastra.common.registry.ModItems.STROPHAR_PLANKS.get(), ModBlocks.STROPHAR_BUTTON.get(), consumer);
-        bark(earth.terrarium.adastra.common.registry.ModItems.GLACIAN_LOG.get(), ModBlocks.GLACIAN_WOOD.get(), consumer);
-        bark(earth.terrarium.adastra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get(), consumer);
+        sign(earth.terrarium.adastra.common.registry.ModItems.STROPHAR_PLANKS.get(), ModItems.STROPHAR_SIGN.get(), consumer);
+        hangingSign(earth.terrarium.adastra.common.registry.ModItems.STROPHAR_STEM.get(), ModItems.STROPHAR_HANGING_SIGN.get(), consumer);
 
         // Ceres
         oreSmelting(consumer, List.of(ModBlocks.CERES_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.CERES_STONE.get(), 0f, 200, "item");
@@ -846,6 +848,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(consumer, List.of(ModBlocks.B_EMERALD_ORE.get()), RecipeCategory.MISC, Items.EMERALD, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.B_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.B_REDSTONE_ORE.get()), RecipeCategory.MISC, Items.REDSTONE, 0.25f, 100, "item");
+
+        // Glacio
+        bark(earth.terrarium.adastra.common.registry.ModItems.GLACIAN_LOG.get(), ModBlocks.GLACIAN_WOOD.get(), consumer);
+        bark(earth.terrarium.adastra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get(), consumer);
+        sign(earth.terrarium.adastra.common.registry.ModItems.GLACIAN_PLANKS.get(), ModItems.GLACIAN_SIGN.get(), consumer);
+        hangingSign(earth.terrarium.adastra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get(), ModItems.GLACIAN_HANGING_SIGN.get(), consumer);
     }
 
     private void packing(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
@@ -1022,6 +1030,45 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("##")
                 .define('#', ingredient)
                 .unlockedBy(getHasName(ingredient), has(ingredient))
+                .save(consumer);
+    }
+
+    private void sign(ItemLike planks, ItemLike sign, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, sign, 3)
+                .pattern("###")
+                .pattern("###")
+                .pattern(" X ")
+                .define('#', planks)
+                .define('X', Items.STICK)
+                .unlockedBy(getHasName(planks), has(planks))
+                .save(consumer);
+    }
+
+    private void hangingSign(ItemLike strippedLog, ItemLike hangingSign, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, hangingSign, 6)
+                .pattern("X X")
+                .pattern("###")
+                .pattern("###")
+                .define('#', strippedLog)
+                .define('X', Items.CHAIN)
+                .unlockedBy(getHasName(strippedLog), has(strippedLog))
+                .save(consumer);
+    }
+
+    private void boat(ItemLike planks, ItemLike boat, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, boat)
+                .pattern("# #")
+                .pattern("###")
+                .define('#', planks)
+                .unlockedBy(getHasName(planks), has(planks))
+                .save(consumer);
+    }
+
+    private void chestBoat(ItemLike boat, ItemLike chestBoat, Consumer<FinishedRecipe> consumer) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, chestBoat)
+                .requires(boat)
+                .requires(Items.CHEST)
+                .unlockedBy(getHasName(boat), has(boat))
                 .save(consumer);
     }
 

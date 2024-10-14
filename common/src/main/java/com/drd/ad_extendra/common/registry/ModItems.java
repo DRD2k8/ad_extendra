@@ -9,7 +9,10 @@ import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
 import earth.terrarium.adastra.common.items.vehicles.RocketItem;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SignItem;
+import net.minecraft.world.level.block.Block;
 
 import java.util.function.Supplier;
 
@@ -21,7 +24,18 @@ public class ModItems {
     public static final ResourcefulRegistry<Item> GLOBES = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> SPAWN_EGGS = ResourcefulRegistries.create(ITEMS);
     public static final ResourcefulRegistry<Item> VEHICLES = ResourcefulRegistries.create(ITEMS);
+    public static final ResourcefulRegistry<Item> SIGNS = ResourcefulRegistries.create(ITEMS);
+    public static final ResourcefulRegistry<Item> HANGING_SIGNS = ResourcefulRegistries.create(ITEMS);
 
+    // Signs
+    public static final RegistryEntry<Item> AERONOS_SIGN = registerSign("aeronos_sign", ModBlocks.AERONOS_SIGN, ModBlocks.AERONOS_WALL_SIGN);
+    public static final RegistryEntry<Item> AERONOS_HANGING_SIGN = registerHangingSign("aeronos_hanging_sign", ModBlocks.AERONOS_HANGING_SIGN, ModBlocks.AERONOS_WALL_HANGING_SIGN);
+    public static final RegistryEntry<Item> STROPHAR_SIGN = registerSign("strophar_sign", ModBlocks.STROPHAR_SIGN, ModBlocks.STROPHAR_WALL_SIGN);
+    public static final RegistryEntry<Item> STROPHAR_HANGING_SIGN = registerHangingSign("strophar_hanging_sign", ModBlocks.STROPHAR_HANGING_SIGN, ModBlocks.STROPHAR_WALL_HANGING_SIGN);
+    public static final RegistryEntry<Item> GLACIAN_SIGN = registerSign("glacian_sign", ModBlocks.GLACIAN_SIGN, ModBlocks.GLACIAN_WALL_SIGN);
+    public static final RegistryEntry<Item> GLACIAN_HANGING_SIGN = registerHangingSign("glacian_hanging_sign", ModBlocks.GLACIAN_HANGING_SIGN, ModBlocks.GLACIAN_WALL_HANGING_SIGN);
+
+    // Rockets
     public static final RegistryEntry<Item> TIER_5_ROCKET = registerRocket(5, ModEntityTypes.TIER_5_ROCKET::get);
     public static final RegistryEntry<Item> TIER_6_ROCKET = registerRocket(6, ModEntityTypes.TIER_6_ROCKET::get);
     public static final RegistryEntry<Item> TIER_7_ROCKET = registerRocket(7, ModEntityTypes.TIER_7_ROCKET::get);
@@ -97,5 +111,13 @@ public class ModItems {
 
     private static RegistryEntry<Item> registerRocket(int tier, Supplier<EntityType<?>> entity) {
         return VEHICLES.register("tier_" + tier + "_rocket", () -> new RocketItem(entity, new Item.Properties().stacksTo(1).fireResistant()));
+    }
+
+    private static RegistryEntry<Item> registerSign(String name, RegistryEntry<Block> sign, RegistryEntry<Block> wallSign) {
+        return SIGNS.register(name, () -> new SignItem(new Item.Properties(), sign.get(), wallSign.get()));
+    }
+
+    private static RegistryEntry<Item> registerHangingSign(String name, RegistryEntry<Block> hangingSign, RegistryEntry<Block> wallHangingSign) {
+        return HANGING_SIGNS.register(name, () -> new HangingSignItem(hangingSign.get(), wallHangingSign.get(), new Item.Properties()));
     }
 }

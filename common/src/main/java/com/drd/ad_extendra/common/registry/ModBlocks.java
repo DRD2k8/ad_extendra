@@ -2,6 +2,7 @@ package com.drd.ad_extendra.common.registry;
 
 import com.drd.ad_extendra.common.AdExtendra;
 import com.drd.ad_extendra.common.blocks.*;
+import com.drd.ad_extendra.common.utils.ModWoodTypes;
 import com.drd.ad_extendra.worldgen.feature.ModConfiguredFeatures;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
@@ -20,6 +21,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
@@ -40,7 +42,27 @@ public class ModBlocks {
     public static final ResourcefulRegistry<Block> SLIDING_DOORS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> GLOBES = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> POTTED_BLOCKS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> SIGNS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> STANDING_SIGNS = ResourcefulRegistries.create(SIGNS);
+    public static final ResourcefulRegistry<Block> WALL_SIGNS = ResourcefulRegistries.create(SIGNS);
+    public static final ResourcefulRegistry<Block> HANGING_SIGNS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> CEILING_HANGING_SIGNS = ResourcefulRegistries.create(HANGING_SIGNS);
+    public static final ResourcefulRegistry<Block> WALL_HANGING_SIGNS = ResourcefulRegistries.create(HANGING_SIGNS);
     public static final ResourcefulRegistry<Block> OTHER = ResourcefulRegistries.create(BLOCKS);
+
+    // Signs
+    public static final RegistryEntry<Block> AERONOS_SIGN = registerStandingSign("aeronos_sign", ModWoodTypes.AERONOS);
+    public static final RegistryEntry<Block> AERONOS_WALL_SIGN = registerWallSign("aeronos_wall_sign", ModWoodTypes.AERONOS, AERONOS_SIGN);
+    public static final RegistryEntry<Block> AERONOS_HANGING_SIGN = registerCeilingHangingSign("aeronos_hanging_sign", ModWoodTypes.AERONOS);
+    public static final RegistryEntry<Block> AERONOS_WALL_HANGING_SIGN = registerWallHangingSign("aeronos_wall_hanging_sign", ModWoodTypes.AERONOS, AERONOS_HANGING_SIGN);
+    public static final RegistryEntry<Block> STROPHAR_SIGN = registerStandingSign("strophar_sign", ModWoodTypes.STROPHAR);
+    public static final RegistryEntry<Block> STROPHAR_WALL_SIGN = registerWallSign("strophar_wall_sign", ModWoodTypes.STROPHAR, STROPHAR_SIGN);
+    public static final RegistryEntry<Block> STROPHAR_HANGING_SIGN = registerCeilingHangingSign("strophar_hanging_sign", ModWoodTypes.STROPHAR);
+    public static final RegistryEntry<Block> STROPHAR_WALL_HANGING_SIGN = registerWallHangingSign("strophar_wall_hanging_sign", ModWoodTypes.STROPHAR, STROPHAR_HANGING_SIGN);
+    public static final RegistryEntry<Block> GLACIAN_SIGN = registerStandingSign("glacian_sign", ModWoodTypes.GLACIAN);
+    public static final RegistryEntry<Block> GLACIAN_WALL_SIGN = registerWallSign("glacian_wall_sign", ModWoodTypes.GLACIAN, GLACIAN_SIGN);
+    public static final RegistryEntry<Block> GLACIAN_HANGING_SIGN = registerCeilingHangingSign("glacian_hanging_sign", ModWoodTypes.GLACIAN);
+    public static final RegistryEntry<Block> GLACIAN_WALL_HANGING_SIGN = registerWallHangingSign("glacian_wall_hanging_sign", ModWoodTypes.GLACIAN, GLACIAN_HANGING_SIGN);
 
     // Globes
     public static final RegistryEntry<CustomGlobeBlock> CERES_GLOBE = registerGlobe("ceres_globe");
@@ -620,6 +642,26 @@ public class ModBlocks {
                 .noOcclusion()));
         registerGlobeItem(name, toReturn);
         return toReturn;
+    }
+
+    private static RegistryEntry<Block> registerStandingSign(String name, WoodType woodType) {
+        return STANDING_SIGNS.register(name,
+                () -> new CustomStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), woodType));
+    }
+
+    private static RegistryEntry<Block> registerWallSign(String name, WoodType woodType, RegistryEntry<Block> standingSign) {
+        return WALL_SIGNS.register(name,
+                () -> new CustomWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).dropsLike(standingSign.get()), woodType));
+    }
+
+    private static RegistryEntry<Block> registerCeilingHangingSign(String name, WoodType woodType) {
+        return CEILING_HANGING_SIGNS.register(name,
+                () -> new CustomCeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), woodType));
+    }
+
+    private static RegistryEntry<Block> registerWallHangingSign(String name, WoodType woodType, RegistryEntry<Block> ceilingHangingSign) {
+        return WALL_HANGING_SIGNS.register(name,
+                () -> new CustomWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).dropsLike(ceilingHangingSign.get()), woodType));
     }
 
     private static <T extends Block> RegistryEntry<T> registerOther(String name, Supplier<T> block) {

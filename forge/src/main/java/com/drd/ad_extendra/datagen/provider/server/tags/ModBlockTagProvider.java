@@ -83,6 +83,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         ModBlocks.WALLS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WALLS).add(element(b)));
         ModBlocks.PRESSURE_PLATES.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.PRESSURE_PLATES).add(element(b)));
         ModBlocks.BUTTONS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.BUTTONS).add(element(b)));
+        ModBlocks.STANDING_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.STANDING_SIGNS).add(element(b)));
+        ModBlocks.WALL_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WALL_SIGNS).add(element(b)));
+        ModBlocks.CEILING_HANGING_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.CEILING_HANGING_SIGNS).add(element(b)));
+        ModBlocks.WALL_HANGING_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WALL_HANGING_SIGNS).add(element(b)));
         ModBlocks.SLIDING_DOORS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.NEEDS_IRON_TOOL).add(element(b)));
 
         tag(BlockTags.BEACON_BASE_BLOCKS).add(element(ModBlocks.JUPERIUM_BLOCK.get()));

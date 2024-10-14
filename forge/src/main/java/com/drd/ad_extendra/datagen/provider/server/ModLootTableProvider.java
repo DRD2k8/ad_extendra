@@ -96,7 +96,19 @@ public class ModLootTableProvider extends LootTableProvider {
             ModBlocks.B_DIAMOND_ORE,
             ModBlocks.B_EMERALD_ORE,
             ModBlocks.B_IRON_ORE,
-            ModBlocks.B_REDSTONE_ORE
+            ModBlocks.B_REDSTONE_ORE,
+            ModBlocks.AERONOS_SIGN,
+            ModBlocks.AERONOS_WALL_SIGN,
+            ModBlocks.AERONOS_HANGING_SIGN,
+            ModBlocks.AERONOS_WALL_HANGING_SIGN,
+            ModBlocks.STROPHAR_SIGN,
+            ModBlocks.STROPHAR_WALL_SIGN,
+            ModBlocks.STROPHAR_HANGING_SIGN,
+            ModBlocks.STROPHAR_WALL_HANGING_SIGN,
+            ModBlocks.GLACIAN_SIGN,
+            ModBlocks.GLACIAN_WALL_SIGN,
+            ModBlocks.GLACIAN_HANGING_SIGN,
+            ModBlocks.GLACIAN_WALL_HANGING_SIGN
     );
 
     public static class BlockLootTables extends BlockLootSubProvider {
@@ -174,6 +186,13 @@ public class ModLootTableProvider extends LootTableProvider {
             addOreDrop(ModBlocks.B_EMERALD_ORE.get(), Items.EMERALD);
             addOreDrop(ModBlocks.B_IRON_ORE.get(), Items.RAW_IRON);
             addOreDrop(ModBlocks.B_REDSTONE_ORE.get(), Items.REDSTONE);
+
+            add(ModBlocks.AERONOS_SIGN.get(), createSingleItemTable(ModItems.AERONOS_SIGN.get()));
+            add(ModBlocks.AERONOS_HANGING_SIGN.get(), createSingleItemTable(ModItems.AERONOS_HANGING_SIGN.get()));
+            add(ModBlocks.STROPHAR_SIGN.get(), createSingleItemTable(ModItems.STROPHAR_SIGN.get()));
+            add(ModBlocks.STROPHAR_HANGING_SIGN.get(), createSingleItemTable(ModItems.STROPHAR_HANGING_SIGN.get()));
+            add(ModBlocks.GLACIAN_SIGN.get(), createSingleItemTable(ModItems.GLACIAN_SIGN.get()));
+            add(ModBlocks.GLACIAN_HANGING_SIGN.get(), createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
         }
 
         @Override

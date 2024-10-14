@@ -60,9 +60,13 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.AERONOS_MUSHROOM.get()));
         list.add(new ItemStack(ModBlocks.AERONOS_PRESSURE_PLATE.get()));
         list.add(new ItemStack(ModBlocks.AERONOS_BUTTON.get()));
+        list.add(new ItemStack(ModItems.AERONOS_SIGN.get()));
+        list.add(new ItemStack(ModItems.AERONOS_HANGING_SIGN.get()));
         list.add(new ItemStack(ModBlocks.STROPHAR_MUSHROOM.get()));
         list.add(new ItemStack(ModBlocks.STROPHAR_PRESSURE_PLATE.get()));
         list.add(new ItemStack(ModBlocks.STROPHAR_BUTTON.get()));
+        list.add(new ItemStack(ModItems.STROPHAR_SIGN.get()));
+        list.add(new ItemStack(ModItems.STROPHAR_HANGING_SIGN.get()));
 
         // Ceres
         list.add(new ItemStack(ModBlocks.CERES_SAND.get()));
@@ -549,6 +553,8 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.GLACIAN_WOOD.get()));
         list.add(new ItemStack(ModBlocks.STRIPPED_GLACIAN_WOOD.get()));
         list.add(new ItemStack(ModBlocks.GLACIAN_SAPLING.get()));
+        list.add(new ItemStack(ModItems.GLACIAN_SIGN.get()));
+        list.add(new ItemStack(ModItems.GLACIAN_HANGING_SIGN.get()));
 
         // Spawn Eggs
         list.add(new ItemStack(ModItems.FREEZE_SPAWN_EGG.get()));
