@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "techreborn"
+      ]
+    }
+  ],
+  "type": "techreborn:industrial_grinder",
+  "power": 64,
+  "time": 100,
+  "tank": {
+    "fluid": "minecraft:water",
+    "amount": 1000
+  },
+  "ingredients": [
+    {
+      "item": "ad_extendra:uranus_uranium_ore"
+    }
+  ],
+  "results": [
+    {
+      "item": "ad_extendra:raw_uranium",
+      "count": 3
+    },
+    {
+      "item": "ad_extendra:uranium_nugget",
+      "count": 3
+    }
+  ]
+}

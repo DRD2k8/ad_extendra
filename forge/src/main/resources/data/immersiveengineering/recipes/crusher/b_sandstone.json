@@ -1,0 +1,25 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "immersiveengineering"
+		}
+	],
+	"type": "immersiveengineering:crusher",
+	"energy": 3200,
+	"input": {
+		"item": "ad_extendra:b_sandstone"
+	},
+	"result": {
+		"count": 2,
+		"item": "ad_extendra:b_sand"
+	},
+	"secondaries": [
+		{
+			"chance": 0.5,
+			"output": {
+				"tag": "forge:dusts/saltpeter"
+			}
+		}
+	]
+}

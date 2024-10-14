@@ -1,0 +1,48 @@
+{
+  "ColorReference": {
+    "black": {"r": 16, "g": 16, "b": 16, "a": 255},
+    "blue": {"r": 0, "g": 0, "b": 255, "a": 255},
+    "brown": {"r": 165, "g": 42, "b": 42, "a": 255},
+    "green": {"r": 0, "g": 128, "b": 0, "a": 255},
+    "magenta": {"r": 255, "g": 0, "b": 255, "a": 255},
+    "white": {"r": 255, "g": 255, "b": 255, "a": 255},
+    "yellow": {"r": 255, "g": 255, "b": 0, "a": 255}
+  },
+  "LightBlock": [
+    {
+      "block": "ad_extendra:glowing_juperium_pillar",
+      "color": "#yellow",
+      "radius": 12
+    },
+    {
+      "block": "ad_extendra:glowing_saturlyte_pillar",
+      "color": "#magenta",
+      "radius": 12
+    },
+    {
+      "block": "ad_extendra:glowing_uranium_pillar",
+      "color": "#blue",
+      "radius": 12
+    },
+    {
+      "block": "ad_extendra:glowing_neptunium_pillar",
+      "color": "#brown",
+      "radius": 12
+    },
+    {
+      "block": "ad_extendra:glowing_radium_pillar",
+      "color": "#black",
+      "radius": 12
+    },
+    {
+      "block": "ad_extendra:glowing_plutonium_pillar",
+      "color": "#white",
+      "radius": 12
+    },
+    {
+      "block": "ad_extendra:glowing_electrolyte_pillar",
+      "color": "#green",
+      "radius": 12
+    }
+  ]
+}

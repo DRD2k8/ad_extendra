@@ -15,7 +15,7 @@ public class AdExtendraFabric implements ModInitializer {
         AdExtendra.init();
         ModEntityTypes.registerAttributes((type, builder) -> FabricDefaultAttributeRegistry.register(type.get(), builder.get()));
 
-        // ExistingStrippableLogs.register();
+        ExistingStrippableLogs.register();
         StrippableBlockRegistry.register(ModBlocks.GLACIAN_WOOD.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get());
 
         ModLootModifiers.modifyLootTables();

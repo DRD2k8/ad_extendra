@@ -1,0 +1,18 @@
+{
+	"conditions": [
+		{
+			"type": "forge:mod_loaded",
+			"modid": "mekanism"
+		}
+	],
+	"type": "mekanism:crushing",
+	"input": {
+		"ingredient": {
+			"item": "ad_extendra:b_sandstone"
+		}
+	},
+	"output": {
+		"count": 2,
+		"item": "ad_extendra:b_sand"
+	}
+}

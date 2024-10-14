@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    }
+  ],
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "tag": "ad_astra_platform:radium_ingots"
+    }
+  ],
+  "results": [
+    {
+      "item": "ad_extendra:radium_plate",
+      "count": 1
+    }
+  ]
+}

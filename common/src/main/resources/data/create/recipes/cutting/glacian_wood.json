@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "create"
+      ]
+    }
+  ],
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "ad_extendra:glacian_wood"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "item": "ad_extendra:stripped_glacian_wood"
+    }
+  ]
+}
