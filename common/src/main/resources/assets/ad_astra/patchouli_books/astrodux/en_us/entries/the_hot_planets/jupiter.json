@@ -1,0 +1,18 @@
+{
+  "name": "Jupiter",
+  "icon": "ad_extendra:/textures/environment/jupiter.png",
+  "sortnum": 1,
+  "category": "ad_astra:the_hot_planets",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Juperium",
+      "item": "ad_extendra:juperium_ingot",
+      "text": "Once you have enough Calorite to craft a complete jet suit set and all of the components of the tier four rocket, you can travel to Jupiter. The next material that you seek is Juperium (Said like superior)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Juperium is used to craft a tier 5 rocket capable of travelling to the ringed planet."
+    }
+  ]
+}

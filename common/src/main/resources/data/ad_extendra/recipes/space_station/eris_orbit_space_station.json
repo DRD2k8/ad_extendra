@@ -1,0 +1,37 @@
+{
+  "type": "ad_astra:space_station_recipe",
+  "dimension": "ad_extendra:eris_orbit",
+  "ingredients": [
+    {
+      "count": 64,
+      "ingredient": {
+        "tag": "ad_astra:steel_ingots"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:neptunium_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:radium_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:plutonium_ingots"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:plutonium_plates"
+      }
+    }
+  ],
+  "structure": "ad_astra:space_station"
+}

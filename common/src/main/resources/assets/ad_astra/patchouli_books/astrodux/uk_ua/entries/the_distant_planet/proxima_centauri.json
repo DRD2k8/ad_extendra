@@ -1,0 +1,17 @@
+{
+  "name": "Проксима Центавра",
+  "icon": "ad_astra:/textures/painting/alpha_centauri.png",
+  "sortnum": 1,
+  "category": "ad_astra:the_distant_planet",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "title": "Proxima Centauri",
+      "text": "Коли ви знайдете достатньо електроліту, щоб зробити ракету одинадцятого рівня, ви зможете залишити цю сонячну систему та увійти в нову. Перша планета, на яку ви потрапите в Proxima Centauri, — Glacio. Glacio жорстоко холодний; проте в ньому є кисень, що дозволяє вижити там без скафандра. Наступна планета — Проксима Центавра b, ще одна планета, схожа на Землю."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Це кінець розвитку Ad Astra. Дякуємо за гру в Ad Astra & Ad Extendra!"
+    }
+  ]
+}

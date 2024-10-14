@@ -1,0 +1,18 @@
+{
+  "name": "Uranus",
+  "icon": "ad_extendra:/textures/environment/uranus.png",
+  "sortnum": 0,
+  "category": "ad_astra:a_ringed_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Uranium",
+      "item": "ad_extendra:uranium_ingot",
+      "text": "Once you've gathered enough Saturlyte to craft a tier 6 rocket, you can travel to Uranus. The next material that you seek is Uranium (Element #92)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Uranium is used to craft a tier 7 rocket capable of travelling to the windy planet."
+    }
+  ]
+}

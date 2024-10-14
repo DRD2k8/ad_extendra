@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ad_extendra:ceres_globe"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.ceres.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.ceres.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ceres": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ad_extendra:ceres"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 100
+  },
+  "parent": "ad_astra:tier_3_rocket"
+}

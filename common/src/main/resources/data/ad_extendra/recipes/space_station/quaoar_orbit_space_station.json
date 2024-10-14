@@ -1,0 +1,37 @@
+{
+  "type": "ad_astra:space_station_recipe",
+  "dimension": "ad_extendra:quaoar_orbit",
+  "ingredients": [
+    {
+      "count": 64,
+      "ingredient": {
+        "tag": "ad_astra:steel_ingots"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_astra:calorite_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:uranium_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:radium_ingots"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:radium_plates"
+      }
+    }
+  ],
+  "structure": "ad_astra:space_station"
+}

@@ -1,0 +1,73 @@
+{
+  "type": "ad_astra:space_station_recipe",
+  "dimension": "ad_extendra:b_orbit",
+  "ingredients": [
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_astra:steel_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_astra:desh_ingots"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_astra:ostrum_ingots"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_astra:calorite_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:juperium_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:saturlyte_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:uranium_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:neptunium_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:radium_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:plutonium_plates"
+      }
+    },
+    {
+      "count": 32,
+      "ingredient": {
+        "tag": "ad_extendra:electrolyte_plates"
+      }
+    }
+  ],
+  "structure": "ad_astra:space_station"
+}

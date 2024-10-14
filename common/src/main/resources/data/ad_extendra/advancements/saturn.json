@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ad_extendra:saturn_globe"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.saturn.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.saturn.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "saturn": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ad_extendra:saturn"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 200
+  },
+  "parent": "ad_extendra:tier_5_rocket"
+}

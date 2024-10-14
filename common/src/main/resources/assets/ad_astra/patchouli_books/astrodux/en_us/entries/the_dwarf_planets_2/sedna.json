@@ -1,0 +1,18 @@
+{
+  "name": "Sedna",
+  "icon": "ad_extendra:/textures/environment/sedna.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_dwarf_planets_2",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Electrolyte",
+      "item": "ad_extendra:electrolyte_ingot",
+      "text": "Once you've gathered enough Plutonium to craft a tier 10 rocket, you can travel to Sedna. The final material that you seek is Electrolyte."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Electrolyte is used to craft a tier 11 rocket capable of travelling to a new solar system."
+    }
+  ]
+}

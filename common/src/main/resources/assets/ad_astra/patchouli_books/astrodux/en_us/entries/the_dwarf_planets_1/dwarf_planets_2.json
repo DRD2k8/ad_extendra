@@ -1,0 +1,18 @@
+{
+  "name": "Pluto, Gonggong, and Eris",
+  "icon": "ad_extendra:/textures/environment/pluto.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_dwarf_planets_1",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Plutonium",
+      "item": "ad_extendra:plutonium_ingot",
+      "text": "Once you've gathered enough Radium to craft a tier 9 rocket, you can travel to Pluto, Gonggong, and Eris. The next material that you seek is Plutonium (Element #94)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Plutonium is used to craft a tier 10 rocket capable of travelling to Sedna."
+    }
+  ]
+}

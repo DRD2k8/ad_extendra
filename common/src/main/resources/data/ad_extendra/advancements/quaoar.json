@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "ad_extendra:quaoar_globe"
+    },
+    "title": {
+      "translate": "advancements.ad_extendra.quaoar.title"
+    },
+    "description": {
+      "translate": "advancements.ad_extendra.quaoar.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "quaoar": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "ad_extendra:quaoar"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 400
+  },
+  "parent": "ad_extendra:tier_8_rocket"
+}
