@@ -96,6 +96,3 @@ Ad Extendra is an add-on mod, that adds more content to <a href="https://www.cur
 <ul>
 <li>Dysnomia</li>
 </ul>
-
-<h2>Mod Support</h3>
-The mod currently only supports 1.20.1 and depends on <a href="https://www.curseforge.com/minecraft/mc-mods/ad-astra/files/4894852">Ad Astra v1.15.5</a> exactly (any older or newer version of Ad Astra <b>will not work!</b>). It also depends on all the mods that Ad Astra depends on, which are: <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-lib">Resourceful Lib</a>, <a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-config">Resourceful Config</a>, and <a href="https://www.curseforge.com/minecraft/mc-mods/botarium">Botarium</a>

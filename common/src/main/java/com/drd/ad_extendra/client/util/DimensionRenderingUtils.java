@@ -18,4 +18,7 @@ public class DimensionRenderingUtils {
     public static final ResourceLocation ERIS = new ResourceLocation(AdExtendra.MOD_ID, "textures/environment/eris.png");
     public static final ResourceLocation SEDNA = new ResourceLocation(AdExtendra.MOD_ID, "textures/environment/sedna.png");
     public static final ResourceLocation B = new ResourceLocation(AdExtendra.MOD_ID, "textures/environment/b.png");
+
+    public static final ResourceLocation JUPITER_CLOUDS = new ResourceLocation(AdExtendra.MOD_ID, "textures/environment/jupiter_clouds.png");
+    public static final ResourceLocation SATURN_CLOUDS = new ResourceLocation(AdExtendra.MOD_ID, "textures/environment/saturn_clouds.png");
 }
