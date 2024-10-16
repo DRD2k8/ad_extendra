@@ -8,5 +8,7 @@
   "entity.ad_astra.tier_8_rocket": "Tier 8 Rocket",
   "entity.ad_astra.tier_9_rocket": "Tier 9 Rocket",
   "entity.ad_astra.tier_10_rocket": "Tier 10 Rocket",
-  "entity.ad_astra.tier_11_rocket": "Tier 11 Rocket"
+  "entity.ad_astra.tier_11_rocket": "Tier 11 Rocket",
+
+  "info.ad_astra.solar_panel": "Generates energy from the sun during the day. Note that the energy generated is dependent on the planet."
 }
