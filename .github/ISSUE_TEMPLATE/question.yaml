@@ -1,0 +1,12 @@
+name: Question
+description: Ask me about something
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to ask
+      placeholder: Is the next version coming soon?
+    validations:
+      required: true
