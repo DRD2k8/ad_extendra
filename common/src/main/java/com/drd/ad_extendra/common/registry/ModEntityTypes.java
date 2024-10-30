@@ -9,7 +9,6 @@ import com.drd.ad_extendra.common.entities.vehicles.CustomRocket;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
-import earth.terrarium.adastra.AdAstra;
 import earth.terrarium.adastra.common.entities.vehicles.Rocket;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
@@ -22,7 +21,6 @@ import java.util.function.Supplier;
 
 public class ModEntityTypes {
     public static final ResourcefulRegistry<EntityType<?>> ENTITY_TYPES = ResourcefulRegistries.create(BuiltInRegistries.ENTITY_TYPE, AdExtendra.MOD_ID);
-    public static final ResourcefulRegistry<EntityType<?>> ROCKETS = ResourcefulRegistries.create(BuiltInRegistries.ENTITY_TYPE, AdAstra.MOD_ID);
 
     public static final RegistryEntry<EntityType<Freeze>> FREEZE =
             ENTITY_TYPES.register("freeze", () -> EntityType.Builder.of(Freeze::new, MobCategory.MONSTER)
@@ -48,7 +46,7 @@ public class ModEntityTypes {
     public static final RegistryEntry<EntityType<Rocket>> TIER_11_ROCKET = registerRocket(11, 1.1f, 9.0f);
 
     private static RegistryEntry<EntityType<Rocket>> registerRocket(int tier, float width, float height) {
-        return ROCKETS.register("tier_" + tier + "_rocket", () ->
+        return ENTITY_TYPES.register("tier_" + tier + "_rocket", () ->
                 EntityType.Builder.<Rocket>of(CustomRocket::new, MobCategory.MISC)
                         .fireImmune()
                         .clientTrackingRange(10)
