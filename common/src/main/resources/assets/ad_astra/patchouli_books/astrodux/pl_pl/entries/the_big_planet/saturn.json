@@ -1,0 +1,18 @@
+{
+  "name": "Saturn",
+  "icon": "ad_extendra:/textures/environment/saturn.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_big_planet",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Saturlit",
+      "item": "ad_extendra:saturlyte_ingot",
+      "text": "Gdy zbierzesz wystarczającą ilość Juperium, aby wyprodukować rakietę 5 poziomu, możesz udać się na Saturna. Następnym materiałem, którego szukasz, jest Saturlyte (powiedział jak satelita)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Saturlyte służy do wytworzenia rakiety poziomu 6, która może podróżować na najzimniejszą planetę."
+    }
+  ]
+}

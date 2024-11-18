@@ -190,7 +190,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.IRON_ORES).add(element(ModBlocks.SEDNA_IRON_ORE.get()));
         tag(BlockTags.IRON_ORES).add(element(ModBlocks.B_IRON_ORE.get()));
 
-        Arrays.asList(earth.terrarium.adastra.common.registry.ModBlocks.DEEPSLATE_ICE_SHARD_ORE.get(), earth.terrarium.adastra.common.registry.ModBlocks.MOON_ICE_SHARD_ORE.get(), earth.terrarium.adastra.common.registry.ModBlocks.MARS_ICE_SHARD_ORE.get(), earth.terrarium.adastra.common.registry.ModBlocks.GLACIO_ICE_SHARD_ORE.get(), ModBlocks.URANUS_ICE_SHARD_ORE.get(), ModBlocks.NEPTUNE_ICE_SHARD_ORE.get(), ModBlocks.PLUTO_ICE_SHARD_ORE.get()).forEach(item -> add(TagKey.create(Registries.BLOCK, new ResourceLocation(AdAstra.MOD_ID, "ice_shard_ores")), item, "ice_shard_ores", "ores/ice_shard"));
+        Arrays.asList(ModBlocks.URANUS_ICE_SHARD_ORE.get(), ModBlocks.NEPTUNE_ICE_SHARD_ORE.get(), ModBlocks.PLUTO_ICE_SHARD_ORE.get()).forEach(item -> add(TagKey.create(Registries.BLOCK, new ResourceLocation(AdAstra.MOD_ID, "ice_shard_ores")), item, "ice_shard_ores", "ores/ice_shard"));
 
         tag(BlockTags.ICE).add(element(ModBlocks.SATURN_ICE.get()));
         tag(BlockTags.ICE).add(element(ModBlocks.SLUSHY_ICE.get()));

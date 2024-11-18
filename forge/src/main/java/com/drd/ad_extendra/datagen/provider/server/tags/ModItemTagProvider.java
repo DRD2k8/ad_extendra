@@ -221,7 +221,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.IRON_ORES).add(element(ModBlocks.SEDNA_IRON_ORE.get().asItem()));
         tag(ItemTags.IRON_ORES).add(element(ModBlocks.B_IRON_ORE.get().asItem()));
 
-        Arrays.asList(earth.terrarium.adastra.common.registry.ModItems.MOON_ICE_SHARD_ORE.get(), earth.terrarium.adastra.common.registry.ModItems.MARS_ICE_SHARD_ORE.get(), earth.terrarium.adastra.common.registry.ModItems.GLACIO_ICE_SHARD_ORE.get(), earth.terrarium.adastra.common.registry.ModItems.DEEPSLATE_ICE_SHARD_ORE.get(), ModBlocks.URANUS_ICE_SHARD_ORE.get().asItem(), ModBlocks.NEPTUNE_ICE_SHARD_ORE.get().asItem(), ModBlocks.PLUTO_ICE_SHARD_ORE.get().asItem()).forEach(item -> add(TagKey.create(Registries.ITEM, new ResourceLocation(AdAstra.MOD_ID, "ice_shard_ores")), item, "ice_shard_ores", "ores/ice_shard"));
+        Arrays.asList(ModBlocks.URANUS_ICE_SHARD_ORE.get().asItem(), ModBlocks.NEPTUNE_ICE_SHARD_ORE.get().asItem(), ModBlocks.PLUTO_ICE_SHARD_ORE.get().asItem()).forEach(item -> add(TagKey.create(Registries.ITEM, new ResourceLocation(AdAstra.MOD_ID, "ice_shard_ores")), item, "ice_shard_ores", "ores/ice_shard"));
 
         Arrays.asList(ModBlocks.AERONOS_PRESSURE_PLATE.get().asItem(), ModBlocks.STROPHAR_PRESSURE_PLATE.get().asItem()).forEach(item -> tag(ItemTags.WOODEN_PRESSURE_PLATES).add(element(item)));
         Arrays.asList(ModBlocks.AERONOS_BUTTON.get().asItem(), ModBlocks.STROPHAR_BUTTON.get().asItem()).forEach(item -> tag(ItemTags.WOODEN_BUTTONS).add(element(item)));

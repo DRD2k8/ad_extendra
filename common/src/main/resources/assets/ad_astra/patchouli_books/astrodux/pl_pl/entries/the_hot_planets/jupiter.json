@@ -1,0 +1,18 @@
+{
+  "name": "Jupiter",
+  "icon": "ad_extendra:/textures/environment/jupiter.png",
+  "sortnum": 1,
+  "category": "ad_astra:the_hot_planets",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Juperium",
+      "item": "ad_extendra:juperium_ingot",
+      "text": "Kiedy już zdobędziesz wystarczającą ilość Kalorytu, aby stworzyć kompletny zestaw kombinezonu odrzutowego i wszystkie elementy rakiety czwartego poziomu, możesz udać się na Jowisz. Następnym materiałem, którego szukasz, jest Juperium (mówi się, że jest lepszy)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Juperium służy do wytworzenia rakiety 5 poziomu, która może podróżować na planetę z pierścieniami."
+    }
+  ]
+}

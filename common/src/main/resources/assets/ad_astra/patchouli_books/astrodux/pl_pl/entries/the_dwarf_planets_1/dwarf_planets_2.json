@@ -1,0 +1,18 @@
+{
+  "name": "Pluton, Gonggong i Eris",
+  "icon": "ad_extendra:/textures/environment/pluto.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_dwarf_planets_1",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Pluton",
+      "item": "ad_extendra:plutonium_ingot",
+      "text": "Gdy zbierzesz wystarczającą ilość radu, aby wyprodukować rakietę poziomu 9, możesz udać się do Plutona, Gonggong i Eris. Następnym materiałem, którego szukasz, jest pluton (element nr 94)."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Pluton służy do wytworzenia rakiety 10 poziomu, która może polecieć do Sedny."
+    }
+  ]
+}

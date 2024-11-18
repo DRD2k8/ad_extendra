@@ -1,0 +1,18 @@
+{
+  "name": "Sedny",
+  "icon": "ad_extendra:/textures/environment/sedna.png",
+  "sortnum": 0,
+  "category": "ad_astra:the_dwarf_planets_2",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "title": "Elektrolit",
+      "item": "ad_extendra:electrolyte_ingot",
+      "text": "Gdy zbierzesz wystarczającą ilość plutonu, aby wyprodukować rakietę 10 poziomu, możesz udać się do Sedny. Ostatnim materiałem, którego szukasz, jest elektrolit."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Elektrolit służy do wytworzenia rakiety 11 poziomu, która może podróżować do nowego układu słonecznego."
+    }
+  ]
+}
