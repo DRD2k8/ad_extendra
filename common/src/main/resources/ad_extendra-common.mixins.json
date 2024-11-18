@@ -7,8 +7,7 @@
     "WoodTypeInvoker"
   ],
   "client": [
-    "LevelRendererMixin",
-    "PlanetsScreenMixin"
+    "LevelRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

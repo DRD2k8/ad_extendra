@@ -30,7 +30,7 @@ side = "BOTH"
 [[dependencies.ad_extendra]]
 modId = "ad_astra"
 mandatory = true
-versionRange = "[1.15.18,)"
+versionRange = "[1.15.19,)"
 ordering = "NONE"
 side = "BOTH"
 
