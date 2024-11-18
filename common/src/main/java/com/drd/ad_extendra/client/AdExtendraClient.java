@@ -12,13 +12,12 @@ import com.drd.ad_extendra.common.AdExtendra;
 import com.drd.ad_extendra.common.entities.vehicles.CustomBoat;
 import com.drd.ad_extendra.common.registry.*;
 import com.drd.ad_extendra.common.utils.ModWoodTypes;
+import earth.terrarium.adastra.api.client.events.AdAstraClientEvents;
 import earth.terrarium.adastra.client.ClientPlatformUtils;
 import earth.terrarium.adastra.client.renderers.entities.vehicles.RocketRenderer;
 import earth.terrarium.botarium.client.ClientHooks;
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
-import net.minecraft.client.model.geom.ModelLayerLocation;
-import net.minecraft.client.model.geom.builders.LayerDefinition;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
@@ -32,11 +31,14 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.properties.WoodType;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
-import java.util.function.Supplier;
 
 public class AdExtendraClient {
+    private static final List<AdAstraClientEvents.RenderSolarSystemEvent> RENDER_SOLAR_SYSTEM_LISTENERS = new ArrayList<>();
+
     public static void init() {
         registerEntityRenderers();
         registerBlockEntityRenderers();
@@ -119,5 +121,9 @@ public class AdExtendraClient {
         ResourceLocation location = new ResourceLocation(woodType.name());
         Sheets.SIGN_MATERIALS.put(woodType, new Material(Sheets.SIGN_SHEET, new ResourceLocation(AdExtendra.MOD_ID, "entity/signs/" + location.getPath())));
         Sheets.HANGING_SIGN_MATERIALS.put(woodType, new Material(Sheets.SIGN_SHEET, new ResourceLocation(AdExtendra.MOD_ID, "entity/signs/hanging/" + location.getPath())));
+    }
+
+    static void register(AdAstraClientEvents.RenderSolarSystemEvent listener) {
+        RENDER_SOLAR_SYSTEM_LISTENERS.add(listener);
     }
 }
