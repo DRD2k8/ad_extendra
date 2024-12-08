@@ -4,6 +4,7 @@
   "package": "com.drd.ad_extendra.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "compat.ad_astra_giselle_addon.FuelLoaderCompat",
     "WoodTypeInvoker"
   ],
   "client": [

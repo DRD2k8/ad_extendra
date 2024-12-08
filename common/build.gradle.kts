@@ -5,4 +5,8 @@ architectury {
 
 dependencies {
     modCompileOnly(group = "tech.thatgravyboat", name = "commonats", version = "2.0")
+
+    val adAstraGiselleAddonForgeId: String by project
+
+    modCompileOnly(group = "maven.modrinth", name = "ad-astra-giselle-addon", version = adAstraGiselleAddonForgeId)
 }
