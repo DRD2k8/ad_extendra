@@ -79,6 +79,7 @@ public class ModBlocks {
     public static final RegistryEntry<CustomGlobeBlock> ERIS_GLOBE = registerGlobe("eris_globe");
     public static final RegistryEntry<CustomGlobeBlock> SEDNA_GLOBE = registerGlobe("sedna_globe");
     public static final RegistryEntry<CustomGlobeBlock> B_GLOBE = registerGlobe("b_globe");
+    public static final RegistryEntry<CustomGlobeBlock> VICINUS_GLOBE = registerGlobe("vicinus_globe");
 
     // Moon
     public static final RegistryEntry<Block> MOON_MYCELIUM = registerOther("moon_mycelium",

@@ -54,6 +54,7 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.ERIS_GLOBE.get()));
         list.add(new ItemStack(ModBlocks.SEDNA_GLOBE.get()));
         list.add(new ItemStack(ModBlocks.B_GLOBE.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_GLOBE.get()));
 
         // Moon
         list.add(new ItemStack(ModBlocks.MOON_MYCELIUM.get()));
