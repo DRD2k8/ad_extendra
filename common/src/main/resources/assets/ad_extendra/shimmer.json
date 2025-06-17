@@ -4,6 +4,7 @@
     "blue": {"r": 0, "g": 0, "b": 255, "a": 255},
     "brown": {"r": 165, "g": 42, "b": 42, "a": 255},
     "green": {"r": 0, "g": 128, "b": 0, "a": 255},
+    "light_gray": {"r": 160, "g": 160, "b": 160, "a": 255},
     "magenta": {"r": 255, "g": 0, "b": 255, "a": 255},
     "white": {"r": 255, "g": 255, "b": 255, "a": 255},
     "yellow": {"r": 255, "g": 255, "b": 0, "a": 255}
@@ -42,6 +43,11 @@
     {
       "block": "ad_extendra:glowing_electrolyte_pillar",
       "color": "#green",
+      "radius": 12
+    },
+    {
+      "block": "ad_extendra:glowing_aurorite_pillar",
+      "color": "#light_gray",
       "radius": 12
     }
   ]

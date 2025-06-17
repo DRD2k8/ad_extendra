@@ -70,6 +70,15 @@ public class ModItemTags {
     public static final TagKey<Item> RAW_ELECTROLYTE_BLOCKS = tag("raw_electrolyte_blocks");
     public static final TagKey<Item> ELECTROLYTE_ORES =  tag("electrolyte_ores");
 
+    // Vicinus
+    public static final TagKey<Item> AURORITE_INGOTS =  tag("aurorite_ingots");
+    public static final TagKey<Item> AURORITE_NUGGETS =  tag("aurorite_nuggets");
+    public static final TagKey<Item> AURORITE_PLATES =  tag("aurorite_plates");
+    public static final TagKey<Item> RAW_AURORITE = tag("raw_aurorite");
+    public static final TagKey<Item> AURORITE_BLOCKS =  tag("aurorite_blocks");
+    public static final TagKey<Item> RAW_AURORITE_BLOCKS = tag("raw_aurorite_blocks");
+    public static final TagKey<Item> AURORITE_ORES =  tag("aurorite_ores");
+
     private static TagKey<Item> tag(String name) {
         return TagKey.create(Registries.ITEM, new ResourceLocation(AdExtendra.MOD_ID, name));
     }

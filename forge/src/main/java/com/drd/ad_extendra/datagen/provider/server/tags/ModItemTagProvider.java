@@ -80,6 +80,13 @@ public class ModItemTagProvider extends ItemTagsProvider {
         add(ModItemTags.ELECTROLYTE_BLOCKS, ModBlocks.ELECTROLYTE_BLOCK.get().asItem(), "electrolyte_blocks", "storage_blocks/electrolyte");
         add(ModItemTags.RAW_ELECTROLYTE_BLOCKS, ModBlocks.RAW_ELECTROLYTE_BLOCK.get().asItem(), "raw_electrolyte_blocks", "storage_blocks/raw_electrolyte");
         add(ModItemTags.ELECTROLYTE_ORES, ModBlocks.SEDNA_ELECTROLYTE_ORE.get().asItem(), "electrolyte_ores", "ores/electrolyte");
+        add(ModItemTags.AURORITE_INGOTS, ModItems.AURORITE_INGOT.get(), "aurorite_ingots", "ingots/aurorite");
+        add(ModItemTags.AURORITE_NUGGETS, ModItems.AURORITE_NUGGET.get(), "aurorite_nuggets", "nuggets/aurorite");
+        add(ModItemTags.AURORITE_PLATES, ModItems.AURORITE_PLATE.get(), "aurorite_plates", "plates/aurorite");
+        add(ModItemTags.RAW_AURORITE, ModItems.RAW_AURORITE.get(), "raw_aurorite_ores", "raw_materials/aurorite");
+        add(ModItemTags.AURORITE_BLOCKS, ModBlocks.AURORITE_BLOCK.get().asItem(), "aurorite_blocks", "storage_blocks/aurorite");
+        add(ModItemTags.RAW_AURORITE_BLOCKS, ModBlocks.RAW_AURORITE_BLOCK.get().asItem(), "raw_aurorite_blocks", "storage_blocks/raw_aurorite");
+        add(ModItemTags.AURORITE_ORES, ModBlocks.VICINUS_AURORITE_ORE.get().asItem(), "aurorite_ores", "ores/aurorite");
 
         ModBlocks.STAIRS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.STAIRS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
         ModBlocks.SLABS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.SLABS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
@@ -97,6 +104,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.BEACON_PAYMENT_ITEMS).add(element(ModItems.RADIUM_INGOT.get()));
         tag(ItemTags.BEACON_PAYMENT_ITEMS).add(element(ModItems.PLUTONIUM_INGOT.get()));
         tag(ItemTags.BEACON_PAYMENT_ITEMS).add(element(ModItems.ELECTROLYTE_INGOT.get()));
+        tag(ItemTags.BEACON_PAYMENT_ITEMS).add(element(ModItems.AURORITE_INGOT.get()));
 
         tag(ItemTags.SAND).add(element(ModBlocks.CERES_SAND.get().asItem()));
         tag(ItemTags.SAND).add(element(ModBlocks.JUPITER_SAND.get().asItem()));

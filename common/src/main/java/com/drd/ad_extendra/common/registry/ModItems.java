@@ -111,6 +111,14 @@ public class ModItems {
     public static final RegistryEntry<Item> GLACIAN_BOAT = registerBoat(CustomBoat.Type.GLACIAN);
     public static final RegistryEntry<Item> GLACIAN_CHEST_BOAT = registerChestBoat(CustomBoat.Type.GLACIAN);
 
+    // Vicinus
+    public static final RegistryEntry<Item> AURORITE_INGOT = registerBasicItem("aurorite_ingot");
+    public static final RegistryEntry<Item> AURORITE_NUGGET = registerBasicItem("aurorite_nugget");
+    public static final RegistryEntry<Item> AURORITE_PLATE = registerBasicItem("aurorite_plate");
+    public static final RegistryEntry<Item> RAW_AURORITE = registerBasicItem("raw_aurorite");
+    public static final RegistryEntry<Item> AURORITE_ENGINE = registerBasicItem("aurorite_engine");
+    public static final RegistryEntry<Item> AURORITE_TANK = registerBasicItem("aurorite_tank");
+
     // Spawn Eggs
     public static final RegistryEntry<Item> FREEZE_SPAWN_EGG = SPAWN_EGGS.register("freeze_spawn_egg", PlatformUtils.createSpawnEggItem(ModEntityTypes.FREEZE, 13303807, 7979472, new Item.Properties()));
 

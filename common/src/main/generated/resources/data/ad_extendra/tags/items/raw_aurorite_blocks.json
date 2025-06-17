@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:raw_aurorite_block",
+    {
+      "id": "#c:raw_aurorite_blocks",
+      "required": false
+    },
+    {
+      "id": "#forge:storage_blocks/raw_aurorite",
+      "required": false
+    }
+  ]
+}

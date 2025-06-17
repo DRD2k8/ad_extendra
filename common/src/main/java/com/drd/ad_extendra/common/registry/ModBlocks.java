@@ -558,6 +558,20 @@ public class ModBlocks {
             () -> new FlowerPotBlock(GLACIAN_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     // Proxima Centauri b
+    public static final RegistryEntry<Block> AURORITE_BLOCK = registerBlock("aurorite_block", () -> new Block(auroriteProperties()));
+    public static final RegistryEntry<Block> RAW_AURORITE_BLOCK = registerBlock("raw_aurorite_block", () -> new Block(auroriteProperties()));
+    public static final RegistryEntry<Block> AURORITE_FACTORY_BLOCK = registerCtmCube("aurorite_factory_block", () -> new Block(auroriteProperties()));
+    public static final RegistryEntry<Block> ENCASED_AURORITE_BLOCK = registerBlock("encased_aurorite_block", () -> new Block(auroriteProperties()));
+    public static final RegistryEntry<Block> AURORITE_PLATEBLOCK = registerBlock("aurorite_plateblock", () -> new Block(auroriteProperties()));
+    public static final RegistryEntry<Block> AURORITE_PANEL = registerBlock("aurorite_panel", () -> new Block(auroriteProperties()));
+    public static final RegistryEntry<Block> AURORITE_PLATING = registerBlock("aurorite_plating", () -> new Block(auroriteProperties()));
+    public static final RegistryEntry<StairBlock> AURORITE_PLATING_STAIRS = registerStairs("aurorite_plating_stairs", AURORITE_PLATING, auroriteProperties());
+    public static final RegistryEntry<SlabBlock> AURORITE_PLATING_SLAB = registerSlab("aurorite_plating_slab", auroriteProperties());
+    public static final RegistryEntry<RotatedPillarBlock> AURORITE_PILLAR = registerPillar("aurorite_pillar", auroriteProperties());
+    public static final RegistryEntry<RotatedPillarBlock> GLOWING_AURORITE_PILLAR = registerGlowingPillar("glowing_aurorite_pillar", auroriteProperties());
+    public static final RegistryEntry<ButtonBlock> AURORITE_PLATING_BUTTON = registerMetalButton("aurorite_plating_button", MapColor.DIAMOND, 48, 160, SoundType.AMETHYST);
+    public static final RegistryEntry<PressurePlateBlock> AURORITE_PLATING_PRESSURE_PLATE = registerMetalPressurePlate("aurorite_plating_pressure_plate", MapColor.DIAMOND, 48, 160, SoundType.AMETHYST);
+    public static final RegistryEntry<CustomSlidingDoorBlock> AURORITE_SLIDING_DOOR = registerSlidingDoor("aurorite_sliding_door", MapColor.DIAMOND, 48, 160, SoundType.AMETHYST);
     public static final RegistryEntry<Block> VICINUS_STONE = registerBlock("vicinus_stone", () -> new Block(vicinusStoneProperties()));
     public static final RegistryEntry<StairBlock> VICINUS_STONE_STAIRS = registerStairs("vicinus_stone_stairs", VICINUS_STONE, vicinusStoneProperties());
     public static final RegistryEntry<SlabBlock> VICINUS_STONE_SLAB = registerSlab("vicinus_stone_slab", vicinusStoneProperties());
@@ -576,6 +590,7 @@ public class ModBlocks {
     public static final RegistryEntry<StairBlock> POLISHED_VICINUS_STONE_STAIRS = registerStairs("polished_vicinus_stone_stairs", POLISHED_VICINUS_STONE, vicinusStoneProperties());
     public static final RegistryEntry<SlabBlock> POLISHED_VICINUS_STONE_SLAB = registerSlab("polished_vicinus_stone_slab", vicinusStoneProperties());
     public static final RegistryEntry<RotatedPillarBlock> VICINUS_PILLAR = registerPillar("vicinus_pillar", vicinusStoneProperties());
+    public static final RegistryEntry<Block> VICINUS_AURORITE_ORE = registerBlock("vicinus_aurorite_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).mapColor(MapColor.COLOR_MAGENTA)));
 
     private static <T extends Block> RegistryEntry<T> registerBlock(String name, Supplier<T> block) {
         RegistryEntry<T> toReturn = BASIC_BLOCKS.register(name, block);
@@ -831,6 +846,15 @@ public class ModBlocks {
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                 .requiresCorrectToolForDrops()
                 .strength(40, 128)
+                .sound(SoundType.AMETHYST);
+    }
+
+    private static BlockBehaviour.Properties auroriteProperties() {
+        return BlockBehaviour.Properties.of()
+                .mapColor(MapColor.DIAMOND)
+                .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+                .requiresCorrectToolForDrops()
+                .strength(48, 160)
                 .sound(SoundType.AMETHYST);
     }
 }

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_aurorite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ad_extendra:raw_aurorite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ad_extendra:aurorite_ingot_from_blasting_raw_aurorite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_aurorite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ad_extendra:aurorite_ingot_from_blasting_raw_aurorite"
+    ]
+  },
+  "sends_telemetry_event": false
+}

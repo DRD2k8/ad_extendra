@@ -6,6 +6,7 @@
     "ad_extendra:neptunium_block",
     "ad_extendra:radium_block",
     "ad_extendra:plutonium_block",
-    "ad_extendra:electrolyte_block"
+    "ad_extendra:electrolyte_block",
+    "ad_extendra:aurorite_block"
   ]
 }

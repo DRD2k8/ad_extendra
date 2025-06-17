@@ -6,6 +6,7 @@
     "ad_extendra:neptunium_sliding_door",
     "ad_extendra:radium_sliding_door",
     "ad_extendra:plutonium_sliding_door",
-    "ad_extendra:electrolyte_sliding_door"
+    "ad_extendra:electrolyte_sliding_door",
+    "ad_extendra:aurorite_sliding_door"
   ]
 }

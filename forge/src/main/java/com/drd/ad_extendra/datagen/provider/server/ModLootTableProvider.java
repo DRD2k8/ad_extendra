@@ -109,7 +109,8 @@ public class ModLootTableProvider extends LootTableProvider {
             ModBlocks.GLACIAN_SIGN,
             ModBlocks.GLACIAN_WALL_SIGN,
             ModBlocks.GLACIAN_HANGING_SIGN,
-            ModBlocks.GLACIAN_WALL_HANGING_SIGN
+            ModBlocks.GLACIAN_WALL_HANGING_SIGN,
+            ModBlocks.VICINUS_AURORITE_ORE
     );
 
     public static class BlockLootTables extends BlockLootSubProvider {
@@ -188,6 +189,7 @@ public class ModLootTableProvider extends LootTableProvider {
             addOreDrop(ModBlocks.B_EMERALD_ORE.get(), Items.EMERALD);
             addOreDrop(ModBlocks.B_IRON_ORE.get(), Items.RAW_IRON);
             addOreDrop(ModBlocks.B_REDSTONE_ORE.get(), Items.REDSTONE);
+            addOreDrop(ModBlocks.VICINUS_AURORITE_ORE.get(), ModItems.RAW_AURORITE.get());
 
             add(ModBlocks.AERONOS_SIGN.get(), createSingleItemTable(ModItems.AERONOS_SIGN.get()));
             add(ModBlocks.AERONOS_HANGING_SIGN.get(), createSingleItemTable(ModItems.AERONOS_HANGING_SIGN.get()));

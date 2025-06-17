@@ -27,6 +27,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final List<ItemLike> RADIUM_SMELTABLES = List.of(ModItems.RAW_RADIUM.get(), ModBlocks.ORCUS_RADIUM_ORE.get());
     private static final List<ItemLike> PLUTONIUM_SMELTABLES = List.of(ModItems.RAW_PLUTONIUM.get(), ModBlocks.PLUTO_PLUTONIUM_ORE.get());
     private static final List<ItemLike> ELECTROLYTE_SMELTABLES = List.of(ModItems.RAW_ELECTROLYTE.get(), ModBlocks.SEDNA_ELECTROLYTE_ORE.get());
+    private static final List<ItemLike> AURORITE_SMELTABLES = List.of(ModItems.RAW_AURORITE.get(), ModBlocks.VICINUS_AURORITE_ORE.get());
 
     public ModRecipeProvider(PackOutput output) {
         super(output);
@@ -858,6 +859,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         chestBoat(ModItems.GLACIAN_BOAT.get(), ModItems.GLACIAN_CHEST_BOAT.get(), consumer);
 
         // Vicinus
+        packing(ModItems.AURORITE_INGOT.get(), ModBlocks.AURORITE_BLOCK.get(), consumer);
+        unpacking(ModBlocks.AURORITE_BLOCK.get(), ModItems.AURORITE_INGOT.get(), consumer);
+        packing(ModItems.AURORITE_NUGGET.get(), ModItems.AURORITE_INGOT.get(), "from_nuggets", consumer);
+        unpacking(ModItems.AURORITE_INGOT.get(), ModItems.AURORITE_NUGGET.get(), consumer);
+        packing(ModItems.RAW_AURORITE.get(), ModBlocks.RAW_AURORITE_BLOCK.get(), consumer);
+        unpacking(ModBlocks.RAW_AURORITE_BLOCK.get(), ModItems.RAW_AURORITE.get(), consumer);
+        factoryBlock(ModItemTags.AURORITE_PLATES, ModItemTags.AURORITE_INGOTS, ModItems.AURORITE_INGOT.get(), ModBlocks.AURORITE_FACTORY_BLOCK.get(), consumer);
+        plateblock(ModItemTags.AURORITE_PLATES, ModItems.AURORITE_PLATE.get(), ModBlocks.AURORITE_PLATEBLOCK.get(), consumer);
+        encasedBlock(ModItemTags.AURORITE_PLATES, ModBlocks.ENCASED_AURORITE_BLOCK.get(), consumer);
+        panel(ModItemTags.AURORITE_PLATES, ModItemTags.AURORITE_INGOTS, ModItems.AURORITE_INGOT.get(), ModBlocks.AURORITE_PANEL.get(), consumer);
+        plating(ModItemTags.AURORITE_PLATES, ModItems.AURORITE_PLATE.get(), ModBlocks.AURORITE_PLATING.get(), consumer);
+        stairs(ModBlocks.AURORITE_PLATING.get(), ModBlocks.AURORITE_PLATING_STAIRS.get(), consumer);
+        slab(ModBlocks.AURORITE_PLATING.get(), ModBlocks.AURORITE_PLATING_SLAB.get(), consumer);
+        pillar(ModBlocks.AURORITE_PLATING.get(), ModBlocks.AURORITE_PILLAR.get(), consumer);
+        glowingPillar(ModBlocks.AURORITE_PILLAR.get(), ModBlocks.GLOWING_AURORITE_PILLAR.get(), consumer);
+        metalButton(ModBlocks.AURORITE_PLATING.get(), ModBlocks.AURORITE_PLATING_BUTTON.get(), consumer);
+        metalPressurePlate(ModBlocks.AURORITE_PLATING.get(), ModBlocks.AURORITE_PLATING_PRESSURE_PLATE.get(), consumer);
+        slidingDoor(ModItemTags.AURORITE_BLOCKS, ModItemTags.AURORITE_PLATES, ModItems.AURORITE_PLATE.get(), ModBlocks.AURORITE_SLIDING_DOOR.get(), consumer);
+        engine(ModItemTags.AURORITE_PLATES, ModItems.PLUTONIUM_ENGINE.get(), ModItems.AURORITE_ENGINE.get(), consumer);
+        tank(ModItemTags.AURORITE_PLATES, ModItems.PLUTONIUM_TANK.get(), ModItems.AURORITE_TANK.get(), consumer);
         oreSmelting(consumer, List.of(ModBlocks.VICINUS_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), 0f, 200, "item");
         stairs(ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_STAIRS.get(), consumer);
         slab(ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_SLAB.get(), consumer);
@@ -895,6 +916,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get(), ModBlocks.CHISELED_VICINUS_STONE_SLAB.get(), 2);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE_STAIRS.get(), 1);
         stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE_SLAB.get(), 2);
+        oreSmelting(consumer, AURORITE_SMELTABLES, RecipeCategory.MISC, ModItems.AURORITE_INGOT.get(), 0.25f, 200, "item");
+        oreBlasting(consumer, AURORITE_SMELTABLES, RecipeCategory.MISC, ModItems.AURORITE_INGOT.get(), 0.25f, 100, "item");
     }
 
     private void packing(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {

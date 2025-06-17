@@ -6,6 +6,7 @@
     "#forge:ingots/neptunium",
     "#forge:ingots/radium",
     "#forge:ingots/plutonium",
-    "#forge:ingots/electrolyte"
+    "#forge:ingots/electrolyte",
+    "#forge:ingots/aurorite"
   ]
 }

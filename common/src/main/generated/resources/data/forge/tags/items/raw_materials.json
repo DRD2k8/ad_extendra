@@ -6,6 +6,7 @@
     "#forge:raw_materials/neptunium",
     "#forge:raw_materials/radium",
     "#forge:raw_materials/plutonium",
-    "#forge:raw_materials/electrolyte"
+    "#forge:raw_materials/electrolyte",
+    "#forge:raw_materials/aurorite"
   ]
 }

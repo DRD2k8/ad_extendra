@@ -1,6 +1,8 @@
-// 1.20.1	2025-06-16T20:02:52.9667374	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2025-06-17T11:35:23.1000917	Tags for minecraft:block mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/blocks/glacian_logs.json
 91ec74a30f04323acf41c52a67176a6e3d7f7619 data/ad_astra/tags/blocks/ice_shard_ores.json
+b7972a78a6449ed76bd2ee4e8a426d11522b72d0 data/ad_extendra/tags/blocks/aurorite_blocks.json
+642b2ac7d1d23a58acb431a2043dfe3bfa120e49 data/ad_extendra/tags/blocks/aurorite_ores.json
 e0d3160615e467dd50bc8f80222a0ff33f4244d0 data/ad_extendra/tags/blocks/electrolyte_blocks.json
 1a3fe7334a4075a97a78c0d1f90152a1f88908c3 data/ad_extendra/tags/blocks/electrolyte_ores.json
 0730b308085075f801cc3d805dc019a8c1c65fd6 data/ad_extendra/tags/blocks/juperium_blocks.json
@@ -11,6 +13,7 @@ fdc6b99b3e47ec61ce77155e41569bf1d748e206 data/ad_extendra/tags/blocks/plutonium_
 0ea5d165b18faa3cc6460d961027afcde5cb172f data/ad_extendra/tags/blocks/plutonium_ores.json
 e20fd37a2a7347756a209a6639e7610e9e095f97 data/ad_extendra/tags/blocks/radium_blocks.json
 42632d901ba1916624bfe3840f9e41b2b40b07d0 data/ad_extendra/tags/blocks/radium_ores.json
+d93bb023f97c2fe6621dbe17d0709d5c0e2799ba data/ad_extendra/tags/blocks/raw_aurorite_blocks.json
 1d40255f271ef55f148db33d3da48b4a176defb0 data/ad_extendra/tags/blocks/raw_electrolyte_blocks.json
 33211a0c1bd2cbf40921d76e5e594ef49d9d28bd data/ad_extendra/tags/blocks/raw_juperium_blocks.json
 15ff8d0f4fa17e27ba4d622f92ec0442a5478745 data/ad_extendra/tags/blocks/raw_neptunium_blocks.json
@@ -22,6 +25,8 @@ f54b6b3d1bc13d6fd184f19e640b632b62d9fe53 data/ad_extendra/tags/blocks/raw_uraniu
 e5fb6b195286b35ae67581b9dc8d2975bc446b58 data/ad_extendra/tags/blocks/saturlyte_ores.json
 828030c8081ec5880148046d6492c049a7fd9fa3 data/ad_extendra/tags/blocks/uranium_blocks.json
 5257f31fd5622ededc989d665409f9a8ae7ba258 data/ad_extendra/tags/blocks/uranium_ores.json
+3bc77f0aec2574199bbdc95bbec2870d9d6b501b data/c/tags/blocks/aurorite_blocks.json
+8e04e9e0c19da5e8b08c1e7aa9e44932219a66cd data/c/tags/blocks/aurorite_ores.json
 5eb7266cee46a904ae693a53ab503d5331de918d data/c/tags/blocks/electrolyte_blocks.json
 2baf1e673df33af2fadd3044af0e75c5952c195d data/c/tags/blocks/electrolyte_ores.json
 8e472a1f7c348126fcd3bb8b6b4af96e80d3e518 data/c/tags/blocks/ice_shard_ores.json
@@ -33,6 +38,7 @@ eee73a7e0629647b8d8996f67be6ed1d7478d6b7 data/c/tags/blocks/neptunium_ores.json
 b9deb1ef0b899cf75ad8db84a07d75604acde093 data/c/tags/blocks/plutonium_ores.json
 3c863c70b4000170128206fb7f2388eb4640292c data/c/tags/blocks/radium_blocks.json
 08763f24cdd918a5297f4bc85b90577fba0f1a4d data/c/tags/blocks/radium_ores.json
+f015695efc2a93e077c82ce33053d0d2037baf1e data/c/tags/blocks/raw_aurorite_blocks.json
 be5846f08372952fa4ba13fcee395b2d8950f8e0 data/c/tags/blocks/raw_electrolyte_blocks.json
 20134eccda7658ffc12ec49502460b5d6896ad1f data/c/tags/blocks/raw_juperium_blocks.json
 db3dd13b36c86559acef0be69c3bf3344567be78 data/c/tags/blocks/raw_neptunium_blocks.json
@@ -44,7 +50,8 @@ b1275e98a819ae4dbe5e2c8f3893aae53c5bf678 data/c/tags/blocks/saturlyte_blocks.jso
 3d6b0a5be6cd7bb864e41d6691f6072884e96926 data/c/tags/blocks/saturlyte_ores.json
 571f94cea259742345d038bf0ebb818a08aa111e data/c/tags/blocks/uranium_blocks.json
 d5829db6e763d6da357fa405557ad58f28ade945 data/c/tags/blocks/uranium_ores.json
-a9bedd54746ae14a9e1beab8fd9288ebe6a0a123 data/forge/tags/blocks/ores.json
+f6a38773caf2cab417c95aba045f69654769f511 data/forge/tags/blocks/ores.json
+8e04e9e0c19da5e8b08c1e7aa9e44932219a66cd data/forge/tags/blocks/ores/aurorite.json
 2baf1e673df33af2fadd3044af0e75c5952c195d data/forge/tags/blocks/ores/electrolyte.json
 8e472a1f7c348126fcd3bb8b6b4af96e80d3e518 data/forge/tags/blocks/ores/ice_shard.json
 e448c069b0326bd9514f936719f20c5756a90d91 data/forge/tags/blocks/ores/juperium.json
@@ -53,12 +60,14 @@ b9deb1ef0b899cf75ad8db84a07d75604acde093 data/forge/tags/blocks/ores/plutonium.j
 08763f24cdd918a5297f4bc85b90577fba0f1a4d data/forge/tags/blocks/ores/radium.json
 3d6b0a5be6cd7bb864e41d6691f6072884e96926 data/forge/tags/blocks/ores/saturlyte.json
 d5829db6e763d6da357fa405557ad58f28ade945 data/forge/tags/blocks/ores/uranium.json
-742c4678062ee9bd32dfd614e77d0d0b7b666c3c data/forge/tags/blocks/storage_blocks.json
+4c767ece7f04e1d645e6fa4d16050d22ecd3db32 data/forge/tags/blocks/storage_blocks.json
+3bc77f0aec2574199bbdc95bbec2870d9d6b501b data/forge/tags/blocks/storage_blocks/aurorite.json
 5eb7266cee46a904ae693a53ab503d5331de918d data/forge/tags/blocks/storage_blocks/electrolyte.json
 b5c5e031ffc0a8dcf02e447b4177af5915988326 data/forge/tags/blocks/storage_blocks/juperium.json
 2e1b42216cee89b02e74cac27e216f76d16fce18 data/forge/tags/blocks/storage_blocks/neptunium.json
 251c099b72b5a350a862f6db5adef5e01de93ed1 data/forge/tags/blocks/storage_blocks/plutonium.json
 3c863c70b4000170128206fb7f2388eb4640292c data/forge/tags/blocks/storage_blocks/radium.json
+f015695efc2a93e077c82ce33053d0d2037baf1e data/forge/tags/blocks/storage_blocks/raw_aurorite.json
 be5846f08372952fa4ba13fcee395b2d8950f8e0 data/forge/tags/blocks/storage_blocks/raw_electrolyte.json
 20134eccda7658ffc12ec49502460b5d6896ad1f data/forge/tags/blocks/storage_blocks/raw_juperium.json
 db3dd13b36c86559acef0be69c3bf3344567be78 data/forge/tags/blocks/storage_blocks/raw_neptunium.json
@@ -68,8 +77,8 @@ db3dd13b36c86559acef0be69c3bf3344567be78 data/forge/tags/blocks/storage_blocks/r
 f55e56aa9cc7c6f3eedbe4be52d0951b40ba9dfc data/forge/tags/blocks/storage_blocks/raw_uranium.json
 b1275e98a819ae4dbe5e2c8f3893aae53c5bf678 data/forge/tags/blocks/storage_blocks/saturlyte.json
 571f94cea259742345d038bf0ebb818a08aa111e data/forge/tags/blocks/storage_blocks/uranium.json
-36a9531f931b2789e111f3519b647c1cead58b0b data/minecraft/tags/blocks/beacon_base_blocks.json
-811b3ba3c6f741e9d5263aa2db3c791d9d224ce3 data/minecraft/tags/blocks/buttons.json
+ac1e4d97e60c01a63536ee6f5ea5186a4aae4a7b data/minecraft/tags/blocks/beacon_base_blocks.json
+ceef004bf00aa5ce0761b309c15bafbd70a48d44 data/minecraft/tags/blocks/buttons.json
 e9d9557004d034d69cc6f89f6a179f495d3f294b data/minecraft/tags/blocks/ceiling_hanging_signs.json
 b3eec57f89f486049d9e916060baa65659ba059c data/minecraft/tags/blocks/coal_ores.json
 2131638da6eab9e47a51e5c58512bccb1f733dd4 data/minecraft/tags/blocks/copper_ores.json
@@ -78,16 +87,16 @@ b3eec57f89f486049d9e916060baa65659ba059c data/minecraft/tags/blocks/coal_ores.js
 d4e63d3b0fa4afbf161dcca0f8f86bc7f19e5ee6 data/minecraft/tags/blocks/gold_ores.json
 52cfbe3adbf598d304041048d29349474d173845 data/minecraft/tags/blocks/ice.json
 86f48a2e67eef3a62d0777658033cc0c46bfd386 data/minecraft/tags/blocks/iron_ores.json
-45825b613acb6edce07cbe7d4aef88a84c22ec02 data/minecraft/tags/blocks/mineable/pickaxe.json
+1b14d2b06cf575368d926b34a5ab1b41db231ba4 data/minecraft/tags/blocks/mineable/pickaxe.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/blocks/mineable/shovel.json
 1c9e45ec364bc55134942cb07871f8309e3e5927 data/minecraft/tags/blocks/mushroom_grow_block.json
-67db2d57cfabfddec3d4631a1e72617f772acff0 data/minecraft/tags/blocks/needs_iron_tool.json
-21ea71f0de331ae551f2c4b3ad621aab02852269 data/minecraft/tags/blocks/pressure_plates.json
+2a215ddfb62841d73c7d63f813726bf0bcc65ce8 data/minecraft/tags/blocks/needs_iron_tool.json
+b01945bb981442d52617eaaeea3bb7a6222bef0e data/minecraft/tags/blocks/pressure_plates.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/blocks/sand.json
 93c749cc1d256a06fa8759208638e42412b1b28c data/minecraft/tags/blocks/saplings.json
-6899372f426c65435b682bf3e25d82dd9f919d9b data/minecraft/tags/blocks/slabs.json
+c1dec385bb7b392f71a22f91af93c90205c88666 data/minecraft/tags/blocks/slabs.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/blocks/smelts_to_glass.json
-d75e97c755cc5763b81b0c001d0cd94cc45114d1 data/minecraft/tags/blocks/stairs.json
+8d714a50e13fc69ceabc8a668ffd020374dc9e3a data/minecraft/tags/blocks/stairs.json
 8293bb1c229ada992e619a2e6debddbd0b7ff7f0 data/minecraft/tags/blocks/standing_signs.json
 d20f3effd2bc2fb6fe56db64aa24dcd65f196824 data/minecraft/tags/blocks/stone_bricks.json
 7c5d3ce48faeebe17c296b85bf61db2fb57f4a86 data/minecraft/tags/blocks/walls.json

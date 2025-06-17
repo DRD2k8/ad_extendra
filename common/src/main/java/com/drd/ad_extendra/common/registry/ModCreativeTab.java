@@ -562,6 +562,26 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModItems.GLACIAN_CHEST_BOAT.get()));
 
         // Vicinus
+        list.add(new ItemStack(ModItems.AURORITE_INGOT.get()));
+        list.add(new ItemStack(ModItems.AURORITE_NUGGET.get()));
+        list.add(new ItemStack(ModItems.AURORITE_PLATE.get()));
+        list.add(new ItemStack(ModItems.RAW_AURORITE.get()));
+        list.add(new ItemStack(ModItems.AURORITE_ENGINE.get()));
+        list.add(new ItemStack(ModItems.AURORITE_TANK.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_BLOCK.get()));
+        list.add(new ItemStack(ModBlocks.RAW_AURORITE_BLOCK.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_FACTORY_BLOCK.get()));
+        list.add(new ItemStack(ModBlocks.ENCASED_AURORITE_BLOCK.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_PLATEBLOCK.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_PANEL.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_PLATING.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_PLATING_STAIRS.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_PLATING_SLAB.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.GLOWING_AURORITE_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_PLATING_BUTTON.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_PLATING_PRESSURE_PLATE.get()));
+        list.add(new ItemStack(ModBlocks.AURORITE_SLIDING_DOOR.get()));
         list.add(new ItemStack(ModBlocks.VICINUS_STONE.get()));
         list.add(new ItemStack(ModBlocks.VICINUS_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.VICINUS_STONE_SLAB.get()));
@@ -580,6 +600,7 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.POLISHED_VICINUS_STONE_STAIRS.get()));
         list.add(new ItemStack(ModBlocks.POLISHED_VICINUS_STONE_SLAB.get()));
         list.add(new ItemStack(ModBlocks.VICINUS_PILLAR.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_AURORITE_ORE.get()));
 
         // Spawn Eggs
         list.add(new ItemStack(ModItems.FREEZE_SPAWN_EGG.get()));

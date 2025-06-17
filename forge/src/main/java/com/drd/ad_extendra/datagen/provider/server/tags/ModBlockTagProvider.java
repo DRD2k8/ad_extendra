@@ -77,6 +77,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         add(ModBlockTags.ELECTROLYTE_BLOCKS, ModBlocks.ELECTROLYTE_BLOCK.get(), "electrolyte_blocks", "storage_blocks/electrolyte");
         add(ModBlockTags.RAW_ELECTROLYTE_BLOCKS, ModBlocks.RAW_ELECTROLYTE_BLOCK.get(), "raw_electrolyte_blocks", "storage_blocks/raw_electrolyte");
         add(ModBlockTags.ELECTROLYTE_ORES, ModBlocks.SEDNA_ELECTROLYTE_ORE.get(), "electrolyte_ores", "ores/electrolyte");
+        add(ModBlockTags.AURORITE_BLOCKS, ModBlocks.AURORITE_BLOCK.get(), "aurorite_blocks", "storage_blocks/aurorite");
+        add(ModBlockTags.RAW_AURORITE_BLOCKS, ModBlocks.RAW_AURORITE_BLOCK.get(), "raw_aurorite_blocks", "storage_blocks/raw_aurorite");
+        add(ModBlockTags.AURORITE_ORES, ModBlocks.VICINUS_AURORITE_ORE.get(), "aurorite_ores", "ores/aurorite");
 
         ModBlocks.STAIRS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.STAIRS).add(element(b)));
         ModBlocks.SLABS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.SLABS).add(element(b)));
@@ -96,6 +99,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.BEACON_BASE_BLOCKS).add(element(ModBlocks.RADIUM_BLOCK.get()));
         tag(BlockTags.BEACON_BASE_BLOCKS).add(element(ModBlocks.PLUTONIUM_BLOCK.get()));
         tag(BlockTags.BEACON_BASE_BLOCKS).add(element(ModBlocks.ELECTROLYTE_BLOCK.get()));
+        tag(BlockTags.BEACON_BASE_BLOCKS).add(element(ModBlocks.AURORITE_BLOCK.get()));
 
         tag(BlockTags.SAND).add(element(ModBlocks.CERES_SAND.get()));
         tag(BlockTags.SAND).add(element(ModBlocks.JUPITER_SAND.get()));

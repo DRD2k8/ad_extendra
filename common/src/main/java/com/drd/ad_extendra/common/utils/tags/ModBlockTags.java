@@ -42,6 +42,11 @@ public class ModBlockTags {
     public static final TagKey<Block> RAW_ELECTROLYTE_BLOCKS = tag("raw_electrolyte_blocks");
     public static final TagKey<Block> ELECTROLYTE_ORES =  tag("electrolyte_ores");
 
+    // Vicinus
+    public static final TagKey<Block> AURORITE_BLOCKS =  tag("aurorite_blocks");
+    public static final TagKey<Block> RAW_AURORITE_BLOCKS = tag("raw_aurorite_blocks");
+    public static final TagKey<Block> AURORITE_ORES =  tag("aurorite_ores");
+
     private static TagKey<Block> tag(String name) {
         return TagKey.create(Registries.BLOCK, new ResourceLocation(AdExtendra.MOD_ID, name));
     }

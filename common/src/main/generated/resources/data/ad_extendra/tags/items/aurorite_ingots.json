@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:aurorite_ingot",
+    {
+      "id": "#c:aurorite_ingots",
+      "required": false
+    },
+    {
+      "id": "#forge:ingots/aurorite",
+      "required": false
+    }
+  ]
+}

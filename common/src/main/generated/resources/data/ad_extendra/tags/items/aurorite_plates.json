@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:aurorite_plate",
+    {
+      "id": "#c:aurorite_plates",
+      "required": false
+    },
+    {
+      "id": "#forge:plates/aurorite",
+      "required": false
+    }
+  ]
+}

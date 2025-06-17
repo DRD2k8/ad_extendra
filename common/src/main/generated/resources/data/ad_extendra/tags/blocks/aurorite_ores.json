@@ -1,0 +1,13 @@
+{
+  "values": [
+    "ad_extendra:vicinus_aurorite_ore",
+    {
+      "id": "#c:aurorite_ores",
+      "required": false
+    },
+    {
+      "id": "#forge:ores/aurorite",
+      "required": false
+    }
+  ]
+}

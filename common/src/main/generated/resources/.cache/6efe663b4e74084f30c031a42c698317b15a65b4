@@ -1,4 +1,9 @@
-// 1.20.1	2024-10-12T18:46:53.9011722	Item Models: ad_extendra
+// 1.20.1	2025-06-17T11:35:23.0770856	Item Models: ad_extendra
+09a9a90327173b28b818252a09039ff41181d2b5 assets/ad_extendra/models/item/aurorite_engine.json
+b9e58d337ef7d3fb215d2ed88150354b2f27ff71 assets/ad_extendra/models/item/aurorite_ingot.json
+60531ce8aabf5f56570aab0a02f17d467ea74afd assets/ad_extendra/models/item/aurorite_nugget.json
+e3c5808d9ab1635575e34c6a199e5c1f790ad574 assets/ad_extendra/models/item/aurorite_plate.json
+4fbcc0854d77a7099f5620455f18af4c7d3a8b0e assets/ad_extendra/models/item/aurorite_tank.json
 a0316529f0e440afd23aa315499ebe39b09e9809 assets/ad_extendra/models/item/electrolyte_engine.json
 fdc6d48f92d6c3297ff8c186a340538fa10406ab assets/ad_extendra/models/item/electrolyte_ingot.json
 5e0b63e490d0dbd138626bfc94bdb9646a9708e7 assets/ad_extendra/models/item/electrolyte_nugget.json
@@ -27,6 +32,7 @@ b8c326e3b9d7289b6e893135f29219421556011b assets/ad_extendra/models/item/plutoniu
 eea6eb571b3f710f00044e476899a3a40b091f3e assets/ad_extendra/models/item/radium_nugget.json
 563d3ec48813d60b29732ab935196e6f110f822e assets/ad_extendra/models/item/radium_plate.json
 076d956fcfd927c393fa0282335ff89cff91f780 assets/ad_extendra/models/item/radium_tank.json
+726ea501dc758ad39fa70e4f9761442d3f9d7d8e assets/ad_extendra/models/item/raw_aurorite.json
 8c7ca7e67892b6ad45eb5541ebd99ff8567cb84b assets/ad_extendra/models/item/raw_electrolyte.json
 1b90bfea36e06adf47e05d29994116dfc5aee34c assets/ad_extendra/models/item/raw_juperium.json
 67e99eb389908ac46ac101b5ba5b642d37407e93 assets/ad_extendra/models/item/raw_neptunium.json

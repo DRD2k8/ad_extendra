@@ -6,6 +6,7 @@
     "ad_extendra:neptunium_plating_pressure_plate",
     "ad_extendra:radium_plating_pressure_plate",
     "ad_extendra:plutonium_plating_pressure_plate",
-    "ad_extendra:electrolyte_plating_pressure_plate"
+    "ad_extendra:electrolyte_plating_pressure_plate",
+    "ad_extendra:aurorite_plating_pressure_plate"
   ]
 }

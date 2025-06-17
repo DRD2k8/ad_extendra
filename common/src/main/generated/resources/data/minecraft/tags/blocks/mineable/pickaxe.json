@@ -26,6 +26,7 @@
     "ad_extendra:eris_globe",
     "ad_extendra:sedna_globe",
     "ad_extendra:b_globe",
+    "ad_extendra:vicinus_globe",
     "ad_extendra:moon_mycelium",
     "ad_extendra:ceres_stone",
     "ad_extendra:ceres_stone_stairs",
@@ -431,6 +432,20 @@
     "ad_extendra:b_emerald_ore",
     "ad_extendra:b_iron_ore",
     "ad_extendra:b_redstone_ore",
+    "ad_extendra:aurorite_block",
+    "ad_extendra:raw_aurorite_block",
+    "ad_extendra:aurorite_factory_block",
+    "ad_extendra:encased_aurorite_block",
+    "ad_extendra:aurorite_plateblock",
+    "ad_extendra:aurorite_panel",
+    "ad_extendra:aurorite_plating",
+    "ad_extendra:aurorite_plating_stairs",
+    "ad_extendra:aurorite_plating_slab",
+    "ad_extendra:aurorite_pillar",
+    "ad_extendra:glowing_aurorite_pillar",
+    "ad_extendra:aurorite_plating_button",
+    "ad_extendra:aurorite_plating_pressure_plate",
+    "ad_extendra:aurorite_sliding_door",
     "ad_extendra:vicinus_stone",
     "ad_extendra:vicinus_stone_stairs",
     "ad_extendra:vicinus_stone_slab",
@@ -448,6 +463,7 @@
     "ad_extendra:polished_vicinus_stone",
     "ad_extendra:polished_vicinus_stone_stairs",
     "ad_extendra:polished_vicinus_stone_slab",
-    "ad_extendra:vicinus_pillar"
+    "ad_extendra:vicinus_pillar",
+    "ad_extendra:vicinus_aurorite_ore"
   ]
 }
