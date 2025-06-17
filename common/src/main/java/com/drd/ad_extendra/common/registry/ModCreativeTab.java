@@ -558,6 +558,26 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModItems.GLACIAN_BOAT.get()));
         list.add(new ItemStack(ModItems.GLACIAN_CHEST_BOAT.get()));
 
+        // Vicinus
+        list.add(new ItemStack(ModBlocks.VICINUS_STONE.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_STONE_STAIRS.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_STONE_SLAB.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_COBBLESTONE.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_COBBLESTONE_STAIRS.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_COBBLESTONE_SLAB.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_STONE_BRICKS.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_STONE_BRICK_STAIRS.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_STONE_BRICK_SLAB.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_STONE_BRICK_WALL.get()));
+        list.add(new ItemStack(ModBlocks.CRACKED_VICINUS_STONE_BRICKS.get()));
+        list.add(new ItemStack(ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get()));
+        list.add(new ItemStack(ModBlocks.CHISELED_VICINUS_STONE_STAIRS.get()));
+        list.add(new ItemStack(ModBlocks.CHISELED_VICINUS_STONE_SLAB.get()));
+        list.add(new ItemStack(ModBlocks.POLISHED_VICINUS_STONE.get()));
+        list.add(new ItemStack(ModBlocks.POLISHED_VICINUS_STONE_STAIRS.get()));
+        list.add(new ItemStack(ModBlocks.POLISHED_VICINUS_STONE_SLAB.get()));
+        list.add(new ItemStack(ModBlocks.VICINUS_PILLAR.get()));
+
         // Spawn Eggs
         list.add(new ItemStack(ModItems.FREEZE_SPAWN_EGG.get()));
 

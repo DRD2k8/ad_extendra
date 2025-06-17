@@ -430,6 +430,24 @@
     "ad_extendra:b_diamond_ore",
     "ad_extendra:b_emerald_ore",
     "ad_extendra:b_iron_ore",
-    "ad_extendra:b_redstone_ore"
+    "ad_extendra:b_redstone_ore",
+    "ad_extendra:vicinus_stone",
+    "ad_extendra:vicinus_stone_stairs",
+    "ad_extendra:vicinus_stone_slab",
+    "ad_extendra:vicinus_cobblestone",
+    "ad_extendra:vicinus_cobblestone_stairs",
+    "ad_extendra:vicinus_cobblestone_slab",
+    "ad_extendra:vicinus_stone_bricks",
+    "ad_extendra:vicinus_stone_brick_stairs",
+    "ad_extendra:vicinus_stone_brick_slab",
+    "ad_extendra:vicinus_stone_brick_wall",
+    "ad_extendra:cracked_vicinus_stone_bricks",
+    "ad_extendra:chiseled_vicinus_stone_bricks",
+    "ad_extendra:chiseled_vicinus_stone_stairs",
+    "ad_extendra:chiseled_vicinus_stone_slab",
+    "ad_extendra:polished_vicinus_stone",
+    "ad_extendra:polished_vicinus_stone_stairs",
+    "ad_extendra:polished_vicinus_stone_slab",
+    "ad_extendra:vicinus_pillar"
   ]
 }

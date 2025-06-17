@@ -53,6 +53,7 @@ public class ModLootTableProvider extends LootTableProvider {
             ModBlocks.ERIS_STONE,
             ModBlocks.SEDNA_STONE,
             ModBlocks.B_STONE,
+            ModBlocks.VICINUS_STONE,
             ModBlocks.CERES_COPPER_ORE,
             ModBlocks.CERES_IRON_ORE,
             ModBlocks.JUPITER_JUPERIUM_ORE,
@@ -141,6 +142,7 @@ public class ModLootTableProvider extends LootTableProvider {
             addStoneDrop(ModBlocks.ERIS_STONE.get(), ModBlocks.ERIS_COBBLESTONE.get());
             addStoneDrop(ModBlocks.SEDNA_STONE.get(), ModBlocks.SEDNA_COBBLESTONE.get());
             addStoneDrop(ModBlocks.B_STONE.get(), ModBlocks.B_COBBLESTONE.get());
+            addStoneDrop(ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_COBBLESTONE.get());
 
             addOreDrop(ModBlocks.CERES_COPPER_ORE.get(), Items.RAW_COPPER);
             addOreDrop(ModBlocks.CERES_IRON_ORE.get(), Items.RAW_IRON);

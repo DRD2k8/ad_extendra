@@ -151,6 +151,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.STONE_BRICKS).add(element(ModBlocks.B_STONE_BRICKS.get()));
         tag(BlockTags.STONE_BRICKS).add(element(ModBlocks.CRACKED_B_STONE_BRICKS.get()));
         tag(BlockTags.STONE_BRICKS).add(element(ModBlocks.CHISELED_B_STONE_BRICKS.get()));
+        tag(BlockTags.STONE_BRICKS).add(element(ModBlocks.VICINUS_STONE_BRICKS.get()));
+        tag(BlockTags.STONE_BRICKS).add(element(ModBlocks.CRACKED_VICINUS_STONE_BRICKS.get()));
+        tag(BlockTags.STONE_BRICKS).add(element(ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get()));
 
         tag(BlockTags.COAL_ORES).add(element(ModBlocks.JUPITER_COAL_ORE.get()));
         tag(BlockTags.COAL_ORES).add(element(ModBlocks.SATURN_COAL_ORE.get()));

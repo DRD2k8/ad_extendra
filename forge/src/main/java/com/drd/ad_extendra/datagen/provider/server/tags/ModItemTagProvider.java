@@ -182,6 +182,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.STONE_BRICKS).add(element(ModBlocks.B_STONE_BRICKS.get().asItem()));
         tag(ItemTags.STONE_BRICKS).add(element(ModBlocks.CRACKED_B_STONE_BRICKS.get().asItem()));
         tag(ItemTags.STONE_BRICKS).add(element(ModBlocks.CHISELED_B_STONE_BRICKS.get().asItem()));
+        tag(ItemTags.STONE_BRICKS).add(element(ModBlocks.VICINUS_STONE_BRICKS.get().asItem()));
+        tag(ItemTags.STONE_BRICKS).add(element(ModBlocks.CRACKED_VICINUS_STONE_BRICKS.get().asItem()));
+        tag(ItemTags.STONE_BRICKS).add(element(ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get().asItem()));
 
         tag(ItemTags.COAL_ORES).add(element(ModBlocks.JUPITER_COAL_ORE.get().asItem()));
         tag(ItemTags.COAL_ORES).add(element(ModBlocks.SATURN_COAL_ORE.get().asItem()));

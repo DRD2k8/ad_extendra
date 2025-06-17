@@ -77,6 +77,11 @@
     "ad_extendra:b_cobblestone_stairs",
     "ad_extendra:b_stone_brick_stairs",
     "ad_extendra:chiseled_b_stone_stairs",
-    "ad_extendra:polished_b_stone_stairs"
+    "ad_extendra:polished_b_stone_stairs",
+    "ad_extendra:vicinus_stone_stairs",
+    "ad_extendra:vicinus_cobblestone_stairs",
+    "ad_extendra:vicinus_stone_brick_stairs",
+    "ad_extendra:chiseled_vicinus_stone_stairs",
+    "ad_extendra:polished_vicinus_stone_stairs"
   ]
 }

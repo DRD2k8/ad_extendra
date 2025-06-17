@@ -556,6 +556,26 @@ public class ModBlocks {
     public static final RegistryEntry<Block> POTTED_GLACIAN_SAPLING = POTTED_BLOCKS.register("potted_glacian_sapling",
             () -> new FlowerPotBlock(GLACIAN_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
+    // Proxima Centauri b
+    public static final RegistryEntry<Block> VICINUS_STONE = registerBlock("vicinus_stone", () -> new Block(vicinusStoneProperties()));
+    public static final RegistryEntry<StairBlock> VICINUS_STONE_STAIRS = registerStairs("vicinus_stone_stairs", VICINUS_STONE, vicinusStoneProperties());
+    public static final RegistryEntry<SlabBlock> VICINUS_STONE_SLAB = registerSlab("vicinus_stone_slab", vicinusStoneProperties());
+    public static final RegistryEntry<Block> VICINUS_COBBLESTONE = registerBlock("vicinus_cobblestone", () -> new Block(vicinusStoneProperties().strength(2, 6)));
+    public static final RegistryEntry<StairBlock> VICINUS_COBBLESTONE_STAIRS = registerStairs("vicinus_cobblestone_stairs", VICINUS_COBBLESTONE, vicinusStoneProperties().strength(2, 6));
+    public static final RegistryEntry<SlabBlock> VICINUS_COBBLESTONE_SLAB = registerSlab("vicinus_cobblestone_slab", vicinusStoneProperties().strength(2, 6));
+    public static final RegistryEntry<Block> VICINUS_STONE_BRICKS = registerBlock("vicinus_stone_bricks", () -> new Block(vicinusStoneProperties()));
+    public static final RegistryEntry<StairBlock> VICINUS_STONE_BRICK_STAIRS = registerStairs("vicinus_stone_brick_stairs", VICINUS_STONE_BRICKS, vicinusStoneProperties());
+    public static final RegistryEntry<SlabBlock> VICINUS_STONE_BRICK_SLAB = registerSlab("vicinus_stone_brick_slab", vicinusStoneProperties());
+    public static final RegistryEntry<WallBlock> VICINUS_STONE_BRICK_WALL = registerWall("vicinus_stone_brick_wall", vicinusStoneProperties());
+    public static final RegistryEntry<Block> CRACKED_VICINUS_STONE_BRICKS = registerBlock("cracked_vicinus_stone_bricks", () -> new Block(vicinusStoneProperties()));
+    public static final RegistryEntry<Block> CHISELED_VICINUS_STONE_BRICKS = registerBlock("chiseled_vicinus_stone_bricks", () -> new Block(vicinusStoneProperties()));
+    public static final RegistryEntry<StairBlock> CHISELED_VICINUS_STONE_STAIRS = registerStairs("chiseled_vicinus_stone_stairs", CHISELED_VICINUS_STONE_BRICKS, vicinusStoneProperties());
+    public static final RegistryEntry<SlabBlock> CHISELED_VICINUS_STONE_SLAB = registerSlab("chiseled_vicinus_stone_slab", vicinusStoneProperties());
+    public static final RegistryEntry<Block> POLISHED_VICINUS_STONE = registerBlock("polished_vicinus_stone", () -> new Block(vicinusStoneProperties()));
+    public static final RegistryEntry<StairBlock> POLISHED_VICINUS_STONE_STAIRS = registerStairs("polished_vicinus_stone_stairs", POLISHED_VICINUS_STONE, vicinusStoneProperties());
+    public static final RegistryEntry<SlabBlock> POLISHED_VICINUS_STONE_SLAB = registerSlab("polished_vicinus_stone_slab", vicinusStoneProperties());
+    public static final RegistryEntry<RotatedPillarBlock> VICINUS_PILLAR = registerPillar("vicinus_pillar", vicinusStoneProperties());
+
     private static <T extends Block> RegistryEntry<T> registerBlock(String name, Supplier<T> block) {
         RegistryEntry<T> toReturn = BASIC_BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
@@ -744,6 +764,10 @@ public class ModBlocks {
 
     private static BlockBehaviour.Properties proximaCentauriBStoneProperties() {
         return BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.TERRACOTTA_ORANGE);
+    }
+
+    private static BlockBehaviour.Properties vicinusStoneProperties() {
+        return BlockBehaviour.Properties.copy(Blocks.STONE).mapColor(MapColor.COLOR_MAGENTA);
     }
 
     private static BlockBehaviour.Properties juperiumProperties() {

@@ -856,6 +856,45 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         hangingSign(earth.terrarium.adastra.common.registry.ModItems.STRIPPED_GLACIAN_LOG.get(), ModItems.GLACIAN_HANGING_SIGN.get(), consumer);
         boat(earth.terrarium.adastra.common.registry.ModItems.GLACIAN_PLANKS.get(), ModItems.GLACIAN_BOAT.get(), consumer);
         chestBoat(ModItems.GLACIAN_BOAT.get(), ModItems.GLACIAN_CHEST_BOAT.get(), consumer);
+
+        // Vicinus
+        oreSmelting(consumer, List.of(ModBlocks.VICINUS_COBBLESTONE.get()), RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), 0f, 200, "item");
+        stairs(ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_STAIRS.get(), consumer);
+        slab(ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_SLAB.get(), consumer);
+        stairs(ModBlocks.VICINUS_COBBLESTONE.get(), ModBlocks.VICINUS_COBBLESTONE_STAIRS.get(), consumer);
+        slab(ModBlocks.VICINUS_COBBLESTONE.get(), ModBlocks.VICINUS_COBBLESTONE_SLAB.get(), consumer);
+        bricks(ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_BRICKS.get(), consumer);
+        stairs(ModBlocks.VICINUS_STONE_BRICKS.get(), ModBlocks.VICINUS_STONE_BRICK_STAIRS.get(), consumer);
+        slab(ModBlocks.VICINUS_STONE_BRICKS.get(), ModBlocks.VICINUS_STONE_BRICK_SLAB.get(), consumer);
+        wall(ModBlocks.VICINUS_STONE_BRICKS.get(), ModBlocks.VICINUS_STONE_BRICK_WALL.get(), consumer);
+        oreSmelting(consumer, List.of(ModBlocks.VICINUS_STONE_BRICKS.get()), RecipeCategory.MISC, ModBlocks.CRACKED_VICINUS_STONE_BRICKS.get(), 0f, 200, "item");
+        chiseledBricks(ModBlocks.VICINUS_STONE_BRICK_SLAB.get(), ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get(), consumer);
+        stairs(ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get(), ModBlocks.CHISELED_VICINUS_STONE_STAIRS.get(), consumer);
+        slab(ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get(), ModBlocks.CHISELED_VICINUS_STONE_SLAB.get(), consumer);
+        polishedStone(ModBlocks.VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE.get(), consumer);
+        stairs(ModBlocks.POLISHED_VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE_STAIRS.get(), consumer);
+        slab(ModBlocks.POLISHED_VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE_SLAB.get(), consumer);
+        pillar(ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_PILLAR.get(), consumer);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_BRICK_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.VICINUS_STONE_BRICK_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.CHISELED_VICINUS_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.CHISELED_VICINUS_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_COBBLESTONE.get(), ModBlocks.VICINUS_COBBLESTONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_COBBLESTONE.get(), ModBlocks.VICINUS_COBBLESTONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE_BRICKS.get(), ModBlocks.VICINUS_STONE_BRICK_WALL.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE_BRICKS.get(), ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.VICINUS_STONE_BRICKS.get(), ModBlocks.VICINUS_PILLAR.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get(), ModBlocks.CHISELED_VICINUS_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.CHISELED_VICINUS_STONE_BRICKS.get(), ModBlocks.CHISELED_VICINUS_STONE_SLAB.get(), 2);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE_STAIRS.get(), 1);
+        stonecutting(consumer, RecipeCategory.MISC, ModBlocks.POLISHED_VICINUS_STONE.get(), ModBlocks.POLISHED_VICINUS_STONE_SLAB.get(), 2);
     }
 
     private void packing(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {

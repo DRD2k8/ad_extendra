@@ -1,4 +1,4 @@
-// 1.20.1	2024-11-17T20:14:17.5289561	Tags for minecraft:item mod id ad_extendra
+// 1.20.1	2025-06-16T20:02:52.7876981	Tags for minecraft:item mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/items/glacian_logs.json
 91ec74a30f04323acf41c52a67176a6e3d7f7619 data/ad_astra/tags/items/ice_shard_ores.json
 e0d3160615e467dd50bc8f80222a0ff33f4244d0 data/ad_extendra/tags/items/electrolyte_blocks.json
@@ -170,12 +170,12 @@ e9d9557004d034d69cc6f89f6a179f495d3f294b data/minecraft/tags/items/hanging_signs
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/items/sand.json
 93c749cc1d256a06fa8759208638e42412b1b28c data/minecraft/tags/items/saplings.json
 8293bb1c229ada992e619a2e6debddbd0b7ff7f0 data/minecraft/tags/items/signs.json
-07f80d03631cec129ca498000655807faaf79b5c data/minecraft/tags/items/slabs.json
+6899372f426c65435b682bf3e25d82dd9f919d9b data/minecraft/tags/items/slabs.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/items/smelts_to_glass.json
-e1ca800379cdb5569cf9749b9cc6650dc797df05 data/minecraft/tags/items/stairs.json
-9e0bb2678077541f5d4ff6f6118b91c92f8e0646 data/minecraft/tags/items/stone_bricks.json
+d75e97c755cc5763b81b0c001d0cd94cc45114d1 data/minecraft/tags/items/stairs.json
+d20f3effd2bc2fb6fe56db64aa24dcd65f196824 data/minecraft/tags/items/stone_bricks.json
 a9cab0cab023b76d9536e85185737608e1f8988a data/minecraft/tags/items/stone_crafting_materials.json
 a9cab0cab023b76d9536e85185737608e1f8988a data/minecraft/tags/items/stone_tool_materials.json
-8b4bb29625552f5ee47d4b0a63a96ff3c984f079 data/minecraft/tags/items/walls.json
+7c5d3ce48faeebe17c296b85bf61db2fb57f4a86 data/minecraft/tags/items/walls.json
 6952c62ba7a1ef17d2f3a3fdf7e2941605df9338 data/minecraft/tags/items/wooden_buttons.json
 f8e323a287cc263c3fbcc81926c14c72854449e2 data/minecraft/tags/items/wooden_pressure_plates.json
