@@ -17,6 +17,7 @@ public class CustomRocket extends Rocket {
     private static final RocketProperties TIER_9_PROPERTIES = new RocketProperties(9, ModItems.TIER_9_ROCKET.get(), 1.7f, ModFluidTags.TIER_9_ROCKET_FUEL);
     private static final RocketProperties TIER_10_PROPERTIES = new RocketProperties(10, ModItems.TIER_10_ROCKET.get(), 2.2f, ModFluidTags.TIER_10_ROCKET_FUEL);
     private static final RocketProperties TIER_11_PROPERTIES = new RocketProperties(11, ModItems.TIER_11_ROCKET.get(), 2.2f, ModFluidTags.TIER_11_ROCKET_FUEL);
+    private static final RocketProperties TIER_12_PROPERTIES = new RocketProperties(12, ModItems.TIER_12_ROCKET.get(), 2.2f, ModFluidTags.TIER_12_ROCKET_FUEL);
 
     public static final Map<EntityType<?>, RocketProperties> AD_EXTENDRA_ROCKET_PROPERTIES = Map.of(
             ModEntityTypes.TIER_5_ROCKET.get(), TIER_5_PROPERTIES,
@@ -25,7 +26,8 @@ public class CustomRocket extends Rocket {
             ModEntityTypes.TIER_8_ROCKET.get(), TIER_8_PROPERTIES,
             ModEntityTypes.TIER_9_ROCKET.get(), TIER_9_PROPERTIES,
             ModEntityTypes.TIER_10_ROCKET.get(), TIER_10_PROPERTIES,
-            ModEntityTypes.TIER_11_ROCKET.get(), TIER_11_PROPERTIES);
+            ModEntityTypes.TIER_11_ROCKET.get(), TIER_11_PROPERTIES,
+            ModEntityTypes.TIER_12_ROCKET.get(), TIER_12_PROPERTIES);
 
     public CustomRocket(EntityType<?> type, Level level) {
         super(type, level, AD_EXTENDRA_ROCKET_PROPERTIES.get(type));

@@ -30,6 +30,7 @@ public class ModCreativeTab {
         list.add(FluidUtils.fluidFilledItem(ModItems.TIER_9_ROCKET, ModFluids.FUEL));
         list.add(FluidUtils.fluidFilledItem(ModItems.TIER_10_ROCKET, ModFluids.FUEL));
         list.add(FluidUtils.fluidFilledItem(ModItems.TIER_11_ROCKET, ModFluids.FUEL));
+        list.add(FluidUtils.fluidFilledItem(ModItems.TIER_12_ROCKET, ModFluids.FUEL));
 
         list.add(new ItemStack(ModItems.TIER_5_ROCKET.get()));
         list.add(new ItemStack(ModItems.TIER_6_ROCKET.get()));
@@ -38,6 +39,7 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModItems.TIER_9_ROCKET.get()));
         list.add(new ItemStack(ModItems.TIER_10_ROCKET.get()));
         list.add(new ItemStack(ModItems.TIER_11_ROCKET.get()));
+        list.add(new ItemStack(ModItems.TIER_12_ROCKET.get()));
 
         // Globes
         list.add(new ItemStack(ModBlocks.CERES_GLOBE.get()));

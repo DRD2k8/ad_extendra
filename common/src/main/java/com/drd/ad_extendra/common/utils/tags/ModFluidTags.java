@@ -14,6 +14,7 @@ public class ModFluidTags {
     public static final TagKey<Fluid> TIER_9_ROCKET_FUEL = tag("tier_9_rocket_fuel");
     public static final TagKey<Fluid> TIER_10_ROCKET_FUEL = tag("tier_10_rocket_fuel");
     public static final TagKey<Fluid> TIER_11_ROCKET_FUEL = tag("tier_11_rocket_fuel");
+    public static final TagKey<Fluid> TIER_12_ROCKET_FUEL = tag("tier_12_rocket_fuel");
 
     private static TagKey<Fluid> tag(String name) {
         return TagKey.create(Registries.FLUID, new ResourceLocation(AdExtendra.MOD_ID, name));

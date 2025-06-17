@@ -11,4 +11,5 @@ public class CustomRocketRenderer {
     public static final ResourceLocation TIER_9_TEXTURE = new ResourceLocation(AdExtendra.MOD_ID, "textures/entity/rocket/tier_9_rocket.png");
     public static final ResourceLocation TIER_10_TEXTURE = new ResourceLocation(AdExtendra.MOD_ID, "textures/entity/rocket/tier_10_rocket.png");
     public static final ResourceLocation TIER_11_TEXTURE = new ResourceLocation(AdExtendra.MOD_ID, "textures/entity/rocket/tier_11_rocket.png");
+    public static final ResourceLocation TIER_12_TEXTURE = new ResourceLocation(AdExtendra.MOD_ID, "textures/entity/rocket/tier_12_rocket.png");
 }

@@ -47,6 +47,7 @@ public class ModItems {
     public static final RegistryEntry<Item> TIER_9_ROCKET = registerRocket(9, ModEntityTypes.TIER_9_ROCKET::get);
     public static final RegistryEntry<Item> TIER_10_ROCKET = registerRocket(10, ModEntityTypes.TIER_10_ROCKET::get);
     public static final RegistryEntry<Item> TIER_11_ROCKET = registerRocket(11, ModEntityTypes.TIER_11_ROCKET::get);
+    public static final RegistryEntry<Item> TIER_12_ROCKET = registerRocket(12, ModEntityTypes.TIER_12_ROCKET::get);
 
     // Jupiter
     public static final RegistryEntry<Item> JUPERIUM_INGOT = registerBasicItem("juperium_ingot");

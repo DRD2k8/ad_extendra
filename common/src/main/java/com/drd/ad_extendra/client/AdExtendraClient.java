@@ -58,6 +58,7 @@ public class AdExtendraClient {
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_9_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_9_LAYER, CustomRocketRenderer.TIER_9_TEXTURE));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_10_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_10_LAYER, CustomRocketRenderer.TIER_10_TEXTURE));
         ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_11_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_11_LAYER, CustomRocketRenderer.TIER_11_TEXTURE));
+        ClientHooks.registerEntityRenderer(ModEntityTypes.TIER_12_ROCKET, c -> new RocketRenderer(c, CustomRocketModel.TIER_12_LAYER, CustomRocketRenderer.TIER_12_TEXTURE));
     }
 
     private static void registerBlockEntityRenderers() {
@@ -102,6 +103,7 @@ public class AdExtendraClient {
         consumer.accept(ModItems.TIER_9_ROCKET.get(), new RocketRenderer.ItemRenderer(CustomRocketModel.TIER_9_LAYER, CustomRocketRenderer.TIER_9_TEXTURE));
         consumer.accept(ModItems.TIER_10_ROCKET.get(), new RocketRenderer.ItemRenderer(CustomRocketModel.TIER_10_LAYER, CustomRocketRenderer.TIER_10_TEXTURE));
         consumer.accept(ModItems.TIER_11_ROCKET.get(), new RocketRenderer.ItemRenderer(CustomRocketModel.TIER_11_LAYER, CustomRocketRenderer.TIER_11_TEXTURE));
+        consumer.accept(ModItems.TIER_12_ROCKET.get(), new RocketRenderer.ItemRenderer(CustomRocketModel.TIER_12_LAYER, CustomRocketRenderer.TIER_12_TEXTURE));
 
         // Globes
         ModItems.GLOBES.stream().forEach(item -> consumer.accept(item.get(), new CustomGlobeBlockEntityRenderer.ItemRenderer()));

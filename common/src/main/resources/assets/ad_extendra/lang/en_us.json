@@ -60,6 +60,7 @@
   "item.ad_extendra.tier_9_rocket": "Tier 9 Rocket",
   "item.ad_extendra.tier_10_rocket": "Tier 10 Rocket",
   "item.ad_extendra.tier_11_rocket": "Tier 11 Rocket",
+  "item.ad_extendra.tier_12_rocket": "Tier 12 Rocket",
 
   "item.ad_extendra.freeze_spawn_egg": "Freeze Spawn Egg",
 
@@ -560,11 +561,16 @@
   "entity.ad_extendra.tier_9_rocket": "Tier 9 Rocket",
   "entity.ad_extendra.tier_10_rocket": "Tier 10 Rocket",
   "entity.ad_extendra.tier_11_rocket": "Tier 11 Rocket",
+  "entity.ad_extendra.tier_12_rocket": "Tier 12 Rocket",
 
   "itemGroup.ad_extendra.main": "Ad Extendra",
 
-  "advancements.ad_extendra.all_planets.title": "The Ultimate Astronomer!",
+  "advancements.ad_extendra.all_planets.title": "Planetary Leader",
   "advancements.ad_extendra.all_planets.description": "Land on all the planets",
+  "advancements.ad_extendra.all_moons.title": "Moonwalker",
+  "advancements.ad_extendra.all_moons.description": "Land on all the moons",
+  "advancements.ad_extendra.all_planets_and_moons.title": "The Ultimate Astronomer!",
+  "advancements.ad_extendra.all_planets_and_moons.description": "Land on all the planets and moons",
   "advancements.ad_extendra.ceres.title": "The Asteroid Belt",
   "advancements.ad_extendra.ceres.description": "Land on Ceres",
   "advancements.ad_extendra.jupiter.title": "One giant leap",
@@ -593,6 +599,8 @@
   "advancements.ad_extendra.sedna.description": "Land on Sedna",
   "advancements.ad_extendra.b.title": "Another earth?",
   "advancements.ad_extendra.b.description": "Land on Proxima Centauri b",
+  "advancements.ad_extendra.vicinus.title": "The purple moon",
+  "advancements.ad_extendra.vicinus.description": "Land on Vicinus",
   "advancements.ad_extendra.tier_5_rocket.title": "Enough space for everyone",
   "advancements.ad_extendra.tier_5_rocket.description": "Construct a Tier 5 Rocket",
   "advancements.ad_extendra.tier_6_rocket.title": "A freezing journey",
@@ -607,6 +615,8 @@
   "advancements.ad_extendra.tier_10_rocket.description": "Construct a Tier 10 Rocket",
   "advancements.ad_extendra.tier_11_rocket.title": "The next generation",
   "advancements.ad_extendra.tier_11_rocket.description": "Construct a Tier 11 Rocket",
+  "advancements.ad_extendra.tier_12_rocket.title": "Timewarp",
+  "advancements.ad_extendra.tier_12_rocket.description": "Construct a Tier 12 Rocket",
   "advancements.ad_extendra.challenger.title": "Challenger",
   "advancements.ad_extendra.challenger.description": "Collect every globe",
 

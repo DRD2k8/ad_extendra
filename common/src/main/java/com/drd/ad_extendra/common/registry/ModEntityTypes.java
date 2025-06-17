@@ -44,6 +44,7 @@ public class ModEntityTypes {
     public static final RegistryEntry<EntityType<Rocket>> TIER_9_ROCKET = registerRocket(9, 1.1f, 8.5f);
     public static final RegistryEntry<EntityType<Rocket>> TIER_10_ROCKET = registerRocket(10, 1.1f, 9.0f);
     public static final RegistryEntry<EntityType<Rocket>> TIER_11_ROCKET = registerRocket(11, 1.1f, 9.0f);
+    public static final RegistryEntry<EntityType<Rocket>> TIER_12_ROCKET = registerRocket(12, 1.1f, 9.0f);
 
     private static RegistryEntry<EntityType<Rocket>> registerRocket(int tier, float width, float height) {
         return ENTITY_TYPES.register("tier_" + tier + "_rocket", () ->
