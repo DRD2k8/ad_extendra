@@ -11,6 +11,10 @@
     },
     {
       "type": "patchouli:text",
+      "text": "There is a moon in Glacio named Vicinus. The next material you encounter is Aurorite."
+    },
+    {
+      "type": "patchouli:text",
       "text": "This is the end of the Ad Astra progression. Thanks for playing Ad Astra & Ad Extendra!"
     }
   ]

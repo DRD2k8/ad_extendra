@@ -37,4 +37,7 @@ public class ModPaintingVariants {
     public static final RegistryEntry<PaintingVariant> B = PAINTING_VARIANTS.register("b", () -> {
         return new PaintingVariant(32, 32);
     });
+    public static final RegistryEntry<PaintingVariant> VICINUS = PAINTING_VARIANTS.register("vicinus", () -> {
+        return new PaintingVariant(32, 32);
+    });
 }
