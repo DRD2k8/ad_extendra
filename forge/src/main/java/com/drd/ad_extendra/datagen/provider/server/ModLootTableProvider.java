@@ -197,7 +197,7 @@ public class ModLootTableProvider extends LootTableProvider {
             add(ModBlocks.STROPHAR_HANGING_SIGN.get(), createSingleItemTable(ModItems.STROPHAR_HANGING_SIGN.get()));
             add(ModBlocks.GLACIAN_SIGN.get(), createSingleItemTable(ModItems.GLACIAN_SIGN.get()));
             add(ModBlocks.GLACIAN_HANGING_SIGN.get(), createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
-            // add(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), createOakLeavesDrops(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), ModBlocks.CENTAURIAN_OAK_SAPLING.get()));
+            add(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), createOakLeavesDrops(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), ModBlocks.CENTAURIAN_OAK_SAPLING.get()));
         }
 
         @Override
