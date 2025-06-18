@@ -36,6 +36,8 @@ public class ModItems {
     public static final RegistryEntry<Item> AERONOS_HANGING_SIGN = registerHangingSign("aeronos_hanging_sign", ModBlocks.AERONOS_HANGING_SIGN, ModBlocks.AERONOS_WALL_HANGING_SIGN);
     public static final RegistryEntry<Item> STROPHAR_SIGN = registerSign("strophar_sign", ModBlocks.STROPHAR_SIGN, ModBlocks.STROPHAR_WALL_SIGN);
     public static final RegistryEntry<Item> STROPHAR_HANGING_SIGN = registerHangingSign("strophar_hanging_sign", ModBlocks.STROPHAR_HANGING_SIGN, ModBlocks.STROPHAR_WALL_HANGING_SIGN);
+    public static final RegistryEntry<Item> CENTAURIAN_OAK_SIGN = registerSign("centaurian_oak_sign", ModBlocks.CENTAURIAN_OAK_SIGN, ModBlocks.CENTAURIAN_OAK_WALL_SIGN);
+    public static final RegistryEntry<Item> CENTAURIAN_OAK_HANGING_SIGN = registerHangingSign("centaurian_oak_hanging_sign", ModBlocks.CENTAURIAN_OAK_HANGING_SIGN, ModBlocks.CENTAURIAN_OAK_WALL_HANGING_SIGN);
     public static final RegistryEntry<Item> GLACIAN_SIGN = registerSign("glacian_sign", ModBlocks.GLACIAN_SIGN, ModBlocks.GLACIAN_WALL_SIGN);
     public static final RegistryEntry<Item> GLACIAN_HANGING_SIGN = registerHangingSign("glacian_hanging_sign", ModBlocks.GLACIAN_HANGING_SIGN, ModBlocks.GLACIAN_WALL_HANGING_SIGN);
 
@@ -106,6 +108,10 @@ public class ModItems {
     public static final RegistryEntry<Item> RAW_ELECTROLYTE = registerBasicItem("raw_electrolyte");
     public static final RegistryEntry<Item> ELECTROLYTE_ENGINE = registerBasicItem("electrolyte_engine");
     public static final RegistryEntry<Item> ELECTROLYTE_TANK = registerBasicItem("electrolyte_tank");
+
+    // Proxima Centauri b
+    public static final RegistryEntry<Item> CENTAURIAN_OAK_BOAT = registerBoat(CustomBoat.Type.CENTAURIAN_OAK);
+    public static final RegistryEntry<Item> CENTAURIAN_OAK_CHEST_BOAT = registerChestBoat(CustomBoat.Type.CENTAURIAN_OAK);
 
     // Glacio
     public static final RegistryEntry<Item> GLACIAN_BOAT = registerBoat(CustomBoat.Type.GLACIAN);

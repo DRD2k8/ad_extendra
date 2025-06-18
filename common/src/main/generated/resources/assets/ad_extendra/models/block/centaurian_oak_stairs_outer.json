@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "ad_extendra:block/centaurian_oak_planks",
+    "side": "ad_extendra:block/centaurian_oak_planks",
+    "top": "ad_extendra:block/centaurian_oak_planks"
+  }
+}

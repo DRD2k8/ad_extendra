@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "ad_extendra:centaurian_oak_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "ad_extendra:centaurian_oak_planks"
+  }
+}

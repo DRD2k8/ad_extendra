@@ -72,6 +72,8 @@ public class AdExtendraClient {
         ClientHooks.setRenderLayer(ModBlocks.SATURN_ICE.get(), RenderType.translucent());
         ClientHooks.setRenderLayer(ModBlocks.SLUSHY_ICE.get(), RenderType.translucent());
         ClientHooks.setRenderLayer(ModBlocks.ICICLE.get(), RenderType.cutoutMipped());
+        ClientHooks.setRenderLayer(ModBlocks.CENTAURIAN_OAK_SAPLING.get(), RenderType.cutoutMipped());
+        ClientHooks.setRenderLayer(ModBlocks.POTTED_CENTAURIAN_OAK_SAPLING.get(), RenderType.cutoutMipped());
         ClientHooks.setRenderLayer(ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
         ClientHooks.setRenderLayer(ModBlocks.POTTED_GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
         ModBlocks.GLOBES.stream().forEach((block) -> {
@@ -117,6 +119,7 @@ public class AdExtendraClient {
         addWoodType(ModWoodTypes.AERONOS);
         addWoodType(ModWoodTypes.STROPHAR);
         addWoodType(ModWoodTypes.GLACIAN);
+        addWoodType(ModWoodTypes.CENTAURIAN_OAK);
     }
 
     private static void addWoodType(WoodType woodType) {

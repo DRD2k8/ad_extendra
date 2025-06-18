@@ -36,7 +36,9 @@
   },
   "features": [
     [],
-    [],
+    [
+      "ad_extendra:b/centaurian_oak_sapling"
+    ],
     [
       "ad_extendra:b/iron_ore",
       "ad_extendra:b/redstone_ore",

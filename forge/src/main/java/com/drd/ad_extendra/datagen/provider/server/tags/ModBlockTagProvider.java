@@ -83,9 +83,15 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         ModBlocks.STAIRS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.STAIRS).add(element(b)));
         ModBlocks.SLABS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.SLABS).add(element(b)));
+        ModBlocks.FENCES.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.FENCES).add(element(b)));
+        ModBlocks.FENCE_GATES.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.FENCE_GATES).add(element(b)));
         ModBlocks.WALLS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WALLS).add(element(b)));
+        ModBlocks.DOORS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WOODEN_DOORS).add(element(b)));
+        ModBlocks.TRAPDOORS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WOODEN_TRAPDOORS).add(element(b)));
         ModBlocks.PRESSURE_PLATES.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.PRESSURE_PLATES).add(element(b)));
+        ModBlocks.WOODEN_PRESSURE_PLATES.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WOODEN_PRESSURE_PLATES).add(element(b)));
         ModBlocks.BUTTONS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.BUTTONS).add(element(b)));
+        ModBlocks.WOODEN_BUTTONS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WOODEN_BUTTONS).add(element(b)));
         ModBlocks.STANDING_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.STANDING_SIGNS).add(element(b)));
         ModBlocks.WALL_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.WALL_SIGNS).add(element(b)));
         ModBlocks.CEILING_HANGING_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(BlockTags.CEILING_HANGING_SIGNS).add(element(b)));
@@ -205,6 +211,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         Arrays.asList(ModBlocks.AERONOS_PRESSURE_PLATE.get(), ModBlocks.STROPHAR_PRESSURE_PLATE.get()).forEach(item -> tag(BlockTags.WOODEN_PRESSURE_PLATES).add(element(item)));
         Arrays.asList(ModBlocks.AERONOS_BUTTON.get(), ModBlocks.STROPHAR_BUTTON.get()).forEach(item -> tag(BlockTags.WOODEN_BUTTONS).add(element(item)));
         Arrays.asList(ModBlocks.GLACIAN_WOOD.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get()).forEach(item -> tag(earth.terrarium.adastra.common.tags.ModBlockTags.GLACIAN_LOGS).add(element(item)));
+        Arrays.asList(ModBlocks.CENTAURIAN_OAK_LOG.get(), ModBlocks.CENTAURIAN_OAK_WOOD.get(), ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get(), ModBlocks.STRIPPED_CENTAURIAN_OAK_WOOD.get()).forEach(item -> tag(ModBlockTags.CENTAURIAN_OAK_LOGS).add(element(item)));
 
         tag(BlockTags.SAPLINGS).add(element(ModBlocks.GLACIAN_SAPLING.get()));
 

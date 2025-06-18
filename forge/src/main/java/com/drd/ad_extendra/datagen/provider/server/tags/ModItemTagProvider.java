@@ -90,8 +90,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         ModBlocks.STAIRS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.STAIRS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
         ModBlocks.SLABS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.SLABS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
+        ModBlocks.FENCES.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.FENCES).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
+        ModBlocks.FENCE_GATES.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.FENCE_GATES).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
         ModBlocks.WALLS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.WALLS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
+        ModBlocks.DOORS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.WOODEN_DOORS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
+        ModBlocks.TRAPDOORS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.WOODEN_TRAPDOORS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
         ModBlocks.BUTTONS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.BUTTONS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
+        ModBlocks.WOODEN_BUTTONS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.WOODEN_BUTTONS).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
+        ModBlocks.WOODEN_PRESSURE_PLATES.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.WOODEN_PRESSURE_PLATES).add(TagEntry.element(BuiltInRegistries.BLOCK.getKey(b))));
         ModItems.SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.SIGNS).add(element(b)));
         ModItems.HANGING_SIGNS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.HANGING_SIGNS).add(element(b)));
         ModItems.BOATS.stream().map(RegistryEntry::get).forEach(b -> tag(ItemTags.BOATS).add(element(b)));
@@ -237,6 +243,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         Arrays.asList(ModBlocks.AERONOS_PRESSURE_PLATE.get().asItem(), ModBlocks.STROPHAR_PRESSURE_PLATE.get().asItem()).forEach(item -> tag(ItemTags.WOODEN_PRESSURE_PLATES).add(element(item)));
         Arrays.asList(ModBlocks.AERONOS_BUTTON.get().asItem(), ModBlocks.STROPHAR_BUTTON.get().asItem()).forEach(item -> tag(ItemTags.WOODEN_BUTTONS).add(element(item)));
         Arrays.asList(ModBlocks.GLACIAN_WOOD.get().asItem(), ModBlocks.STRIPPED_GLACIAN_WOOD.get().asItem()).forEach(item -> tag(earth.terrarium.adastra.common.tags.ModItemTags.GLACIAN_LOGS).add(element(item)));
+        Arrays.asList(ModBlocks.CENTAURIAN_OAK_LOG.get().asItem(), ModBlocks.CENTAURIAN_OAK_WOOD.get().asItem(), ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get().asItem(), ModBlocks.STRIPPED_CENTAURIAN_OAK_WOOD.get().asItem()).forEach(item -> tag(ModItemTags.CENTAURIAN_OAK_LOGS).add(element(item)));
 
         tag(ItemTags.SAPLINGS).add(element(ModBlocks.GLACIAN_SAPLING.get().asItem()));
     }

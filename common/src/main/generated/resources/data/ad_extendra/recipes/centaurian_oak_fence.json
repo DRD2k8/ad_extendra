@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "ad_extendra:centaurian_oak_planks"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "#X#",
+    "#X#"
+  ],
+  "result": {
+    "count": 3,
+    "item": "ad_extendra:centaurian_oak_fence"
+  },
+  "show_notification": true
+}

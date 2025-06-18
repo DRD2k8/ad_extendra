@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ad_extendra:centaurian_oak_planks"
+    }
+  ],
+  "result": {
+    "item": "ad_extendra:centaurian_oak_button"
+  }
+}

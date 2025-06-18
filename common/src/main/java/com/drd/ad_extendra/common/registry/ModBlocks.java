@@ -4,11 +4,13 @@ import com.drd.ad_extendra.common.AdExtendra;
 import com.drd.ad_extendra.common.blocks.*;
 import com.drd.ad_extendra.common.utils.ModWoodTypes;
 import com.drd.ad_extendra.worldgen.feature.ModConfiguredFeatures;
+import com.drd.ad_extendra.worldgen.tree.CentaurianOakTreeGrower;
 import com.teamresourceful.resourcefullib.common.registry.RegistryEntry;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistries;
 import com.teamresourceful.resourcefullib.common.registry.ResourcefulRegistry;
 import earth.terrarium.adastra.common.items.rendered.RenderedBlockItem;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.entity.EntityType;
@@ -32,12 +34,18 @@ public class ModBlocks {
     public static final ResourcefulRegistry<Block> BASIC_BLOCKS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> STAIRS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> SLABS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> FENCES = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> FENCE_GATES = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> WALLS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> PILLARS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> DOORS = ResourcefulRegistries.create(BLOCKS);
+    public static final ResourcefulRegistry<Block> TRAPDOORS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> BUTTONS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> METAL_BUTTONS = ResourcefulRegistries.create(BUTTONS);
+    public static final ResourcefulRegistry<Block> WOODEN_BUTTONS = ResourcefulRegistries.create(BUTTONS);
     public static final ResourcefulRegistry<Block> PRESSURE_PLATES = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> METAL_PRESSURE_PLATES = ResourcefulRegistries.create(PRESSURE_PLATES);
+    public static final ResourcefulRegistry<Block> WOODEN_PRESSURE_PLATES = ResourcefulRegistries.create(PRESSURE_PLATES);
     public static final ResourcefulRegistry<Block> CTM_CUBES = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> SLIDING_DOORS = ResourcefulRegistries.create(BLOCKS);
     public static final ResourcefulRegistry<Block> GLOBES = ResourcefulRegistries.create(BLOCKS);
@@ -59,6 +67,10 @@ public class ModBlocks {
     public static final RegistryEntry<Block> STROPHAR_WALL_SIGN = registerWallSign("strophar_wall_sign", ModWoodTypes.STROPHAR, STROPHAR_SIGN);
     public static final RegistryEntry<Block> STROPHAR_HANGING_SIGN = registerCeilingHangingSign("strophar_hanging_sign", ModWoodTypes.STROPHAR);
     public static final RegistryEntry<Block> STROPHAR_WALL_HANGING_SIGN = registerWallHangingSign("strophar_wall_hanging_sign", ModWoodTypes.STROPHAR, STROPHAR_HANGING_SIGN);
+    public static final RegistryEntry<Block> CENTAURIAN_OAK_SIGN = registerStandingSign("centaurian_oak_sign", ModWoodTypes.CENTAURIAN_OAK);
+    public static final RegistryEntry<Block> CENTAURIAN_OAK_WALL_SIGN = registerWallSign("centaurian_oak_wall_sign", ModWoodTypes.CENTAURIAN_OAK, CENTAURIAN_OAK_SIGN);
+    public static final RegistryEntry<Block> CENTAURIAN_OAK_HANGING_SIGN = registerCeilingHangingSign("centaurian_oak_hanging_sign", ModWoodTypes.CENTAURIAN_OAK);
+    public static final RegistryEntry<Block> CENTAURIAN_OAK_WALL_HANGING_SIGN = registerWallHangingSign("centaurian_oak_wall_hanging_sign", ModWoodTypes.CENTAURIAN_OAK, CENTAURIAN_OAK_HANGING_SIGN);
     public static final RegistryEntry<Block> GLACIAN_SIGN = registerStandingSign("glacian_sign", ModWoodTypes.GLACIAN);
     public static final RegistryEntry<Block> GLACIAN_WALL_SIGN = registerWallSign("glacian_wall_sign", ModWoodTypes.GLACIAN, GLACIAN_SIGN);
     public static final RegistryEntry<Block> GLACIAN_HANGING_SIGN = registerCeilingHangingSign("glacian_hanging_sign", ModWoodTypes.GLACIAN);
@@ -546,6 +558,24 @@ public class ModBlocks {
     public static final RegistryEntry<Block> B_EMERALD_ORE = registerBlock("b_emerald_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_ORE).mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final RegistryEntry<Block> B_IRON_ORE = registerBlock("b_iron_ore", () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).mapColor(MapColor.TERRACOTTA_ORANGE)));
     public static final RegistryEntry<Block> B_REDSTONE_ORE = registerBlock("b_redstone_ore", () -> new RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE).mapColor(MapColor.TERRACOTTA_ORANGE)));
+    public static final RegistryEntry<RotatedPillarBlock> CENTAURIAN_OAK_LOG = registerPillar("centaurian_oak_log", logProperties(MapColor.COLOR_ORANGE, MapColor.PODZOL));
+    public static final RegistryEntry<RotatedPillarBlock> CENTAURIAN_OAK_WOOD = registerOther("centaurian_oak_wood", () -> new RotatedPillarBlock(woodProperties(MapColor.PODZOL)));
+    public static final RegistryEntry<RotatedPillarBlock> STRIPPED_CENTAURIAN_OAK_LOG = registerPillar("stripped_centaurian_oak_log", logProperties(MapColor.COLOR_ORANGE, MapColor.COLOR_ORANGE));
+    public static final RegistryEntry<RotatedPillarBlock> STRIPPED_CENTAURIAN_OAK_WOOD = registerOther("stripped_centaurian_oak_wood", () -> new RotatedPillarBlock(woodProperties(MapColor.COLOR_ORANGE)));
+    public static final RegistryEntry<Block> CENTAURIAN_OAK_LEAVES = registerBlock("centaurian_oak_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.WARPED_NYLIUM)));
+    public static final RegistryEntry<Block> CENTAURIAN_OAK_PLANKS = registerBlock("centaurian_oak_planks", () -> new Block(centaurianWoodProperties()));
+    public static final RegistryEntry<StairBlock> CENTAURIAN_OAK_STAIRS = registerStairs("centaurian_oak_stairs", CENTAURIAN_OAK_PLANKS, centaurianWoodProperties());
+    public static final RegistryEntry<SlabBlock> CENTAURIAN_OAK_SLAB = registerSlab("centaurian_oak_slab", centaurianWoodProperties());
+    public static final RegistryEntry<FenceBlock> CENTAURIAN_OAK_FENCE = registerFence("centaurian_oak_fence", centaurianWoodProperties());
+    public static final RegistryEntry<FenceGateBlock> CENTAURIAN_OAK_FENCE_GATE = registerFenceGate("centaurian_oak_fence_gate", centaurianWoodProperties());
+    public static final RegistryEntry<DoorBlock> CENTAURIAN_OAK_DOOR = registerDoor("centaurian_oak_door", centaurianWoodProperties());
+    public static final RegistryEntry<TrapDoorBlock> CENTAURIAN_OAK_TRAPDOOR = registerTrapdoor("centaurian_oak_trapdoor", centaurianWoodProperties());
+    public static final RegistryEntry<ButtonBlock> CENTAURIAN_OAK_BUTTON = registerWoodenButton("centaurian_oak_button", centaurianWoodProperties());
+    public static final RegistryEntry<PressurePlateBlock> CENTAURIAN_OAK_PRESSURE_PLATE = registerWoodenPressurePlate("centaurian_oak_pressure_plate", centaurianWoodProperties());
+    public static final RegistryEntry<Block> CENTAURIAN_OAK_SAPLING = registerOther("centaurian_oak_sapling",
+            () -> new SaplingBlock(new CentaurianOakTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+    public static final RegistryEntry<Block> POTTED_CENTAURIAN_OAK_SAPLING = POTTED_BLOCKS.register("potted_centaurian_oak_sapling",
+            () -> new FlowerPotBlock(CENTAURIAN_OAK_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
     // Glacio
     public static final RegistryEntry<Block> GLACIAN_WOOD = registerOther("glacian_wood",
@@ -610,6 +640,18 @@ public class ModBlocks {
         return toReturn;
     }
 
+    private static RegistryEntry<FenceBlock> registerFence(String name, BlockBehaviour.Properties properties) {
+        RegistryEntry<FenceBlock> toReturn = FENCES.register(name, () -> new FenceBlock(properties));
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+    private static RegistryEntry<FenceGateBlock> registerFenceGate(String name, BlockBehaviour.Properties properties) {
+        RegistryEntry<FenceGateBlock> toReturn = FENCE_GATES.register(name, () -> new FenceGateBlock(properties, WoodType.OAK));
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
     private static RegistryEntry<WallBlock> registerWall(String name, BlockBehaviour.Properties properties) {
         RegistryEntry<WallBlock> toReturn = WALLS.register(name, () -> new WallBlock(properties));
         registerBlockItem(name, toReturn);
@@ -630,6 +672,18 @@ public class ModBlocks {
         return toReturn;
     }
 
+    private static RegistryEntry<DoorBlock> registerDoor(String name, BlockBehaviour.Properties properties) {
+        RegistryEntry<DoorBlock> toReturn = DOORS.register(name, () -> new DoorBlock(properties, BlockSetType.OAK));
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+    private static RegistryEntry<TrapDoorBlock> registerTrapdoor(String name, BlockBehaviour.Properties properties) {
+        RegistryEntry<TrapDoorBlock> toReturn = TRAPDOORS.register(name, () -> new TrapDoorBlock(properties, BlockSetType.OAK));
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
     private static RegistryEntry<ButtonBlock> registerMetalButton(String name, MapColor mapColor, int hardness, int resistance, SoundType sound) {
         RegistryEntry<ButtonBlock> toReturn = METAL_BUTTONS.register(name, () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON)
                 .mapColor(mapColor)
@@ -641,12 +695,24 @@ public class ModBlocks {
         return toReturn;
     }
 
+    private static RegistryEntry<ButtonBlock> registerWoodenButton(String name, BlockBehaviour.Properties properties) {
+        RegistryEntry<ButtonBlock> toReturn = WOODEN_BUTTONS.register(name, () -> new ButtonBlock(properties, BlockSetType.OAK, 30, true));
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
     private static RegistryEntry<PressurePlateBlock> registerMetalPressurePlate(String name, MapColor mapColor, int hardness, int resistance, SoundType sound) {
         RegistryEntry<PressurePlateBlock> toReturn = METAL_PRESSURE_PLATES.register(name, () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.STONE_PRESSURE_PLATE).mapColor(mapColor)
                 .instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                 .requiresCorrectToolForDrops()
                 .strength(hardness, resistance)
                 .sound(sound), BlockSetType.IRON));
+        registerBlockItem(name, toReturn);
+        return toReturn;
+    }
+
+    private static RegistryEntry<PressurePlateBlock> registerWoodenPressurePlate(String name, BlockBehaviour.Properties properties) {
+        RegistryEntry<PressurePlateBlock> toReturn = WOODEN_PRESSURE_PLATES.register(name, () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, properties, BlockSetType.OAK));
         registerBlockItem(name, toReturn);
         return toReturn;
     }
@@ -856,5 +922,21 @@ public class ModBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(48, 160)
                 .sound(SoundType.AMETHYST);
+    }
+
+    private static BlockBehaviour.Properties logProperties(MapColor topMapColor, MapColor sideMapColor) {
+        return BlockBehaviour.Properties.copy(Blocks.OAK_LOG).mapColor((blockState) -> {
+            return blockState.getValue(RotatedPillarBlock.AXIS) == Direction.Axis.Y ? topMapColor : sideMapColor;
+        });
+    }
+
+    private static BlockBehaviour.Properties woodProperties(MapColor mapColor) {
+        return BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).mapColor((blockState) -> {
+            return mapColor;
+        });
+    }
+
+    private static BlockBehaviour.Properties centaurianWoodProperties() {
+        return BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).mapColor(MapColor.COLOR_ORANGE);
     }
 }

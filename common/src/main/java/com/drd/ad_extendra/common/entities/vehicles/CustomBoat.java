@@ -36,6 +36,7 @@ public class CustomBoat extends Boat {
     public Item getDropItem() {
         return switch (getModVariant()) {
             case GLACIAN -> ModItems.GLACIAN_BOAT.get();
+            case CENTAURIAN_OAK -> ModItems.CENTAURIAN_OAK_BOAT.get();
         };
     }
 
@@ -63,7 +64,8 @@ public class CustomBoat extends Boat {
     }
 
     public static enum Type implements StringRepresentable {
-        GLACIAN(Blocks.OAK_PLANKS, "glacian");
+        GLACIAN(Blocks.OAK_PLANKS, "glacian"),
+        CENTAURIAN_OAK(Blocks.OAK_PLANKS, "centaurian_oak");
 
         private final String name;
         private final Block planks;

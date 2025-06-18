@@ -551,6 +551,25 @@ public class ModCreativeTab {
         list.add(new ItemStack(ModBlocks.B_EMERALD_ORE.get()));
         list.add(new ItemStack(ModBlocks.B_IRON_ORE.get()));
         list.add(new ItemStack(ModBlocks.B_REDSTONE_ORE.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_LOG.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_WOOD.get()));
+        list.add(new ItemStack(ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get()));
+        list.add(new ItemStack(ModBlocks.STRIPPED_CENTAURIAN_OAK_WOOD.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_LEAVES.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_PLANKS.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_STAIRS.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_SLAB.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_FENCE.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_FENCE_GATE.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_DOOR.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_TRAPDOOR.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_BUTTON.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_PRESSURE_PLATE.get()));
+        list.add(new ItemStack(ModBlocks.CENTAURIAN_OAK_SAPLING.get()));
+        list.add(new ItemStack(ModItems.CENTAURIAN_OAK_SIGN.get()));
+        list.add(new ItemStack(ModItems.CENTAURIAN_OAK_HANGING_SIGN.get()));
+        list.add(new ItemStack(ModItems.CENTAURIAN_OAK_BOAT.get()));
+        list.add(new ItemStack(ModItems.CENTAURIAN_OAK_CHEST_BOAT.get()));
 
         // Glacio
         list.add(new ItemStack(ModBlocks.GLACIAN_WOOD.get()));

@@ -10,6 +10,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> GLACIAN_SAPLING = registerKey("glacio/glacian_sapling");
     public static final ResourceKey<ConfiguredFeature<?, ?>> AERONOS_MUSHROOM = registerKey("moon/aeronos_mushroom");
     public static final ResourceKey<ConfiguredFeature<?, ?>> STROPHAR_MUSHROOM = registerKey("moon/strophar_mushroom");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CENTAURIAN_OAK_SAPLING = registerKey("b/centaurian_oak_sapling");
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation(AdExtendra.MOD_ID, name));

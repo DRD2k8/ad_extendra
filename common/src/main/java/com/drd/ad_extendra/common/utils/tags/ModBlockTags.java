@@ -42,6 +42,9 @@ public class ModBlockTags {
     public static final TagKey<Block> RAW_ELECTROLYTE_BLOCKS = tag("raw_electrolyte_blocks");
     public static final TagKey<Block> ELECTROLYTE_ORES =  tag("electrolyte_ores");
 
+    // Proxima Centauri b
+    public static TagKey<Block> CENTAURIAN_OAK_LOGS = tag("centaurian_oak_logs");
+
     // Vicinus
     public static final TagKey<Block> AURORITE_BLOCKS =  tag("aurorite_blocks");
     public static final TagKey<Block> RAW_AURORITE_BLOCKS = tag("raw_aurorite_blocks");

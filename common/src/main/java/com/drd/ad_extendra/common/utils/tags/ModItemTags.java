@@ -70,6 +70,9 @@ public class ModItemTags {
     public static final TagKey<Item> RAW_ELECTROLYTE_BLOCKS = tag("raw_electrolyte_blocks");
     public static final TagKey<Item> ELECTROLYTE_ORES =  tag("electrolyte_ores");
 
+    // Proxima Centauri b
+    public static final TagKey<Item> CENTAURIAN_OAK_LOGS = tag("centaurian_oak_logs");
+
     // Vicinus
     public static final TagKey<Item> AURORITE_INGOTS =  tag("aurorite_ingots");
     public static final TagKey<Item> AURORITE_NUGGETS =  tag("aurorite_nuggets");

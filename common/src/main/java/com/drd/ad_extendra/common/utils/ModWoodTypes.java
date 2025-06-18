@@ -9,6 +9,7 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 public class ModWoodTypes {
     public static final WoodType AERONOS = registerWoodType("aeronos");
     public static final WoodType STROPHAR = registerWoodType("strophar");
+    public static final WoodType CENTAURIAN_OAK = registerWoodType("centaurian_oak");
     public static final WoodType GLACIAN = registerWoodType("glacian");
 
     private static WoodType registerWoodType(String name) {

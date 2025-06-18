@@ -33,6 +33,9 @@ public class CustomChestBoat extends ChestBoat {
             case GLACIAN -> {
                 return ModItems.GLACIAN_CHEST_BOAT.get();
             }
+            case CENTAURIAN_OAK -> {
+                return ModItems.CENTAURIAN_OAK_CHEST_BOAT.get();
+            }
         }
         return super.getDropItem();
     }

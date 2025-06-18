@@ -849,6 +849,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(consumer, List.of(ModBlocks.B_EMERALD_ORE.get()), RecipeCategory.MISC, Items.EMERALD, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.B_IRON_ORE.get()), RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "item");
         oreBlasting(consumer, List.of(ModBlocks.B_REDSTONE_ORE.get()), RecipeCategory.MISC, Items.REDSTONE, 0.25f, 100, "item");
+        planks(ModItemTags.CENTAURIAN_OAK_LOGS, ModBlocks.CENTAURIAN_OAK_PLANKS.get(), consumer);
+        bark(ModBlocks.CENTAURIAN_OAK_LOG.get(), ModBlocks.CENTAURIAN_OAK_WOOD.get(), consumer);
+        bark(ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get(), ModBlocks.STRIPPED_CENTAURIAN_OAK_WOOD.get(), consumer);
+        stairs(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModBlocks.CENTAURIAN_OAK_STAIRS.get(), consumer);
+        slab(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModBlocks.CENTAURIAN_OAK_SLAB.get(), consumer);
+        fence(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModBlocks.CENTAURIAN_OAK_FENCE.get(), consumer);
+        fenceGate(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModBlocks.CENTAURIAN_OAK_FENCE_GATE.get(), consumer);
+        woodenDoor(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModBlocks.CENTAURIAN_OAK_DOOR.get(), consumer);
+        woodenTrapdoor(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModBlocks.CENTAURIAN_OAK_TRAPDOOR.get(), consumer);
+        metalButton(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModBlocks.CENTAURIAN_OAK_BUTTON.get(), consumer);
+        metalPressurePlate(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModBlocks.CENTAURIAN_OAK_PRESSURE_PLATE.get(), consumer);
+        sign(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModItems.CENTAURIAN_OAK_SIGN.get(), consumer);
+        hangingSign(ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get(), ModItems.CENTAURIAN_OAK_HANGING_SIGN.get(), consumer);
+        boat(ModBlocks.CENTAURIAN_OAK_PLANKS.get(), ModItems.CENTAURIAN_OAK_BOAT.get(), consumer);
+        chestBoat(ModItems.CENTAURIAN_OAK_BOAT.get(), ModItems.CENTAURIAN_OAK_CHEST_BOAT.get(), consumer);
 
         // Glacio
         bark(earth.terrarium.adastra.common.registry.ModItems.GLACIAN_LOG.get(), ModBlocks.GLACIAN_WOOD.get(), consumer);
@@ -975,6 +990,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(consumer);
     }
 
+    private void planks(TagKey<Item> ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, result, 4)
+                .requires(ingredient)
+                .unlockedBy("has_log", has(ingredient))
+                .save(consumer);
+    }
+
     private void chiseledBricks(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result)
                 .pattern("#")
@@ -998,6 +1020,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 6)
                 .pattern("###")
                 .define('#', ingredient)
+                .unlockedBy(getHasName(ingredient), has(ingredient))
+                .save(consumer);
+    }
+
+    private void fence(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 3)
+                .pattern("#X#")
+                .pattern("#X#")
+                .define('#', ingredient)
+                .define('X', Items.STICK)
+                .unlockedBy(getHasName(ingredient), has(ingredient))
+                .save(consumer);
+    }
+
+    private void fenceGate(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result)
+                .pattern("X#X")
+                .pattern("X#X")
+                .define('#', ingredient)
+                .define('X', Items.STICK)
                 .unlockedBy(getHasName(ingredient), has(ingredient))
                 .save(consumer);
     }
@@ -1079,6 +1121,25 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('#', plates)
                 .define('X', ingots)
                 .unlockedBy(getHasName(mainIngot), has(ingots))
+                .save(consumer);
+    }
+
+    private void woodenDoor(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 3)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .define('#', ingredient)
+                .unlockedBy(getHasName(ingredient), has(ingredient))
+                .save(consumer);
+    }
+
+    private void woodenTrapdoor(ItemLike ingredient, ItemLike result, Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, result, 2)
+                .pattern("###")
+                .pattern("###")
+                .define('#', ingredient)
+                .unlockedBy(getHasName(ingredient), has(ingredient))
                 .save(consumer);
     }
 

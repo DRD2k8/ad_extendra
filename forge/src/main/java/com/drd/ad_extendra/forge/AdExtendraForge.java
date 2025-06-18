@@ -37,6 +37,8 @@ public class AdExtendraForge {
     }
 
     public static void commonSetup(FMLCommonSetupEvent event) {
+        registerStrippedLog(ModBlocks.CENTAURIAN_OAK_LOG.get(), ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get());
+        registerStrippedLog(ModBlocks.CENTAURIAN_OAK_WOOD.get(), ModBlocks.STRIPPED_CENTAURIAN_OAK_WOOD.get());
         registerStrippedLog(earth.terrarium.adastra.common.registry.ModBlocks.GLACIAN_LOG.get(), earth.terrarium.adastra.common.registry.ModBlocks.STRIPPED_GLACIAN_LOG.get());
         registerStrippedLog(ModBlocks.GLACIAN_WOOD.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get());
     }

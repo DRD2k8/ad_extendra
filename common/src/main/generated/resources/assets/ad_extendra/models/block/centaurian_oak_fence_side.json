@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_side",
+  "textures": {
+    "texture": "ad_extendra:block/centaurian_oak_planks"
+  }
+}

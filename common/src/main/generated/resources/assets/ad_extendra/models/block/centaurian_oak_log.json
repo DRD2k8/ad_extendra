@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "ad_extendra:block/centaurian_oak_log_top",
+    "side": "ad_extendra:block/centaurian_oak_log"
+  }
+}
