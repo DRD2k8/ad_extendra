@@ -12,7 +12,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagEntry;
 import net.minecraft.tags.TagKey;
@@ -245,7 +244,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
         Arrays.asList(ModBlocks.GLACIAN_WOOD.get().asItem(), ModBlocks.STRIPPED_GLACIAN_WOOD.get().asItem()).forEach(item -> tag(earth.terrarium.adastra.common.tags.ModItemTags.GLACIAN_LOGS).add(element(item)));
         Arrays.asList(ModBlocks.CENTAURIAN_OAK_LOG.get().asItem(), ModBlocks.CENTAURIAN_OAK_WOOD.get().asItem(), ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get().asItem(), ModBlocks.STRIPPED_CENTAURIAN_OAK_WOOD.get().asItem()).forEach(item -> tag(ModItemTags.CENTAURIAN_OAK_LOGS).add(element(item)));
 
-        tag(ItemTags.SAPLINGS).add(element(ModBlocks.GLACIAN_SAPLING.get().asItem()));
+        tag(ItemTags.PLANKS).add(element(ModBlocks.CENTAURIAN_OAK_PLANKS.get().asItem()));
+        tag(ItemTags.WOODEN_STAIRS).add(element(ModBlocks.CENTAURIAN_OAK_STAIRS.get().asItem()));
+        tag(ItemTags.WOODEN_SLABS).add(element(ModBlocks.CENTAURIAN_OAK_SLAB.get().asItem()));
+        tag(ItemTags.WOODEN_FENCES).add(element(ModBlocks.CENTAURIAN_OAK_FENCE.get().asItem()));
+
+        Arrays.asList(ModBlocks.CENTAURIAN_OAK_SAPLING.get().asItem(), ModBlocks.GLACIAN_SAPLING.get().asItem()).forEach(item -> tag(ItemTags.SAPLINGS).add(element(item)));
     }
 
     private void add(TagKey<Item> tag, Item item) {

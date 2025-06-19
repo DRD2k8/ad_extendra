@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-18T16:56:59.0096132	Tags for minecraft:block mod id ad_extendra
+// 1.20.1	2025-06-18T20:34:52.9457595	Tags for minecraft:block mod id ad_extendra
 adc8d2866f485a856f41e0d149878a291bfa5482 data/ad_astra/tags/blocks/glacian_logs.json
 91ec74a30f04323acf41c52a67176a6e3d7f7619 data/ad_astra/tags/blocks/ice_shard_ores.json
 b7972a78a6449ed76bd2ee4e8a426d11522b72d0 data/ad_extendra/tags/blocks/aurorite_blocks.json
@@ -94,9 +94,10 @@ d4e63d3b0fa4afbf161dcca0f8f86bc7f19e5ee6 data/minecraft/tags/blocks/gold_ores.js
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/blocks/mineable/shovel.json
 1c9e45ec364bc55134942cb07871f8309e3e5927 data/minecraft/tags/blocks/mushroom_grow_block.json
 2a215ddfb62841d73c7d63f813726bf0bcc65ce8 data/minecraft/tags/blocks/needs_iron_tool.json
+0a01844583feb004b362c370d6f01ff087e12598 data/minecraft/tags/blocks/planks.json
 4611370142f29fa159b102e6d0f6f71fa1aae7f0 data/minecraft/tags/blocks/pressure_plates.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/blocks/sand.json
-93c749cc1d256a06fa8759208638e42412b1b28c data/minecraft/tags/blocks/saplings.json
+d77aa985af1930ece0e3e11373457a150bda54df data/minecraft/tags/blocks/saplings.json
 e336ecae4b466c28f8c019bb6f8dd6c9f2977043 data/minecraft/tags/blocks/slabs.json
 5d295208686c6269d05ab921255ba8ced6b7915d data/minecraft/tags/blocks/smelts_to_glass.json
 84cb31e013c2ce637e9101fe9d00b008aa9377b6 data/minecraft/tags/blocks/stairs.json
@@ -107,5 +108,8 @@ d20f3effd2bc2fb6fe56db64aa24dcd65f196824 data/minecraft/tags/blocks/stone_bricks
 a0326b7bff42fb514f123d4a8155a1077ca86792 data/minecraft/tags/blocks/wall_signs.json
 faa6b4cc0d9a9653acf7e3989a10c9711fddf68e data/minecraft/tags/blocks/wooden_buttons.json
 d23a4c81474a7a3d4331a74167526febf43d8715 data/minecraft/tags/blocks/wooden_doors.json
+31fc31e0408ab69c0985e4913adacc8f3ce695d4 data/minecraft/tags/blocks/wooden_fences.json
 622ea2a5c1153419f31b1c64ea1f36ddd72d0e63 data/minecraft/tags/blocks/wooden_pressure_plates.json
+42c94b1b60c48249ff4cb1f8787077b1bcfe4573 data/minecraft/tags/blocks/wooden_slabs.json
+9cf1fcfda0eb1231c6b7080c42637d374f2f4719 data/minecraft/tags/blocks/wooden_stairs.json
 e7b2b9176153c659c22a1608c95cfa6d169f0219 data/minecraft/tags/blocks/wooden_trapdoors.json

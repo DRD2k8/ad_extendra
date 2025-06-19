@@ -213,7 +213,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         Arrays.asList(ModBlocks.GLACIAN_WOOD.get(), ModBlocks.STRIPPED_GLACIAN_WOOD.get()).forEach(item -> tag(earth.terrarium.adastra.common.tags.ModBlockTags.GLACIAN_LOGS).add(element(item)));
         Arrays.asList(ModBlocks.CENTAURIAN_OAK_LOG.get(), ModBlocks.CENTAURIAN_OAK_WOOD.get(), ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get(), ModBlocks.STRIPPED_CENTAURIAN_OAK_WOOD.get()).forEach(item -> tag(ModBlockTags.CENTAURIAN_OAK_LOGS).add(element(item)));
 
-        tag(BlockTags.SAPLINGS).add(element(ModBlocks.GLACIAN_SAPLING.get()));
+        tag(BlockTags.PLANKS).add(element(ModBlocks.CENTAURIAN_OAK_PLANKS.get()));
+        tag(BlockTags.WOODEN_STAIRS).add(element(ModBlocks.CENTAURIAN_OAK_STAIRS.get()));
+        tag(BlockTags.WOODEN_SLABS).add(element(ModBlocks.CENTAURIAN_OAK_SLAB.get()));
+        tag(BlockTags.WOODEN_FENCES).add(element(ModBlocks.CENTAURIAN_OAK_FENCE.get()));
+
+        Arrays.asList(ModBlocks.CENTAURIAN_OAK_SAPLING.get(), ModBlocks.GLACIAN_SAPLING.get()).forEach(item -> tag(BlockTags.SAPLINGS).add(element(item)));
 
         tag(BlockTags.MUSHROOM_GROW_BLOCK).add(element(ModBlocks.MOON_MYCELIUM.get()));
 
