@@ -98,6 +98,7 @@ public class ModLootTableProvider extends LootTableProvider {
             ModBlocks.B_EMERALD_ORE,
             ModBlocks.B_IRON_ORE,
             ModBlocks.B_REDSTONE_ORE,
+            ModBlocks.CENTAURIAN_OAK_LEAVES,
             ModBlocks.AERONOS_SIGN,
             ModBlocks.AERONOS_WALL_SIGN,
             ModBlocks.AERONOS_HANGING_SIGN,
@@ -106,6 +107,10 @@ public class ModLootTableProvider extends LootTableProvider {
             ModBlocks.STROPHAR_WALL_SIGN,
             ModBlocks.STROPHAR_HANGING_SIGN,
             ModBlocks.STROPHAR_WALL_HANGING_SIGN,
+            ModBlocks.CENTAURIAN_OAK_SIGN,
+            ModBlocks.CENTAURIAN_OAK_WALL_SIGN,
+            ModBlocks.CENTAURIAN_OAK_HANGING_SIGN,
+            ModBlocks.CENTAURIAN_OAK_WALL_HANGING_SIGN,
             ModBlocks.GLACIAN_SIGN,
             ModBlocks.GLACIAN_WALL_SIGN,
             ModBlocks.GLACIAN_HANGING_SIGN,
@@ -195,6 +200,8 @@ public class ModLootTableProvider extends LootTableProvider {
             add(ModBlocks.AERONOS_HANGING_SIGN.get(), createSingleItemTable(ModItems.AERONOS_HANGING_SIGN.get()));
             add(ModBlocks.STROPHAR_SIGN.get(), createSingleItemTable(ModItems.STROPHAR_SIGN.get()));
             add(ModBlocks.STROPHAR_HANGING_SIGN.get(), createSingleItemTable(ModItems.STROPHAR_HANGING_SIGN.get()));
+            add(ModBlocks.CENTAURIAN_OAK_SIGN.get(), createSingleItemTable(ModItems.CENTAURIAN_OAK_SIGN.get()));
+            add(ModBlocks.CENTAURIAN_OAK_HANGING_SIGN.get(), createSingleItemTable(ModItems.CENTAURIAN_OAK_HANGING_SIGN.get()));
             add(ModBlocks.GLACIAN_SIGN.get(), createSingleItemTable(ModItems.GLACIAN_SIGN.get()));
             add(ModBlocks.GLACIAN_HANGING_SIGN.get(), createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
             add(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), createOakLeavesDrops(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), ModBlocks.CENTAURIAN_OAK_SAPLING.get()));
