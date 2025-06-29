@@ -76,6 +76,7 @@ public class AdExtendraClient {
         ClientHooks.setRenderLayer(ModBlocks.POTTED_CENTAURIAN_OAK_SAPLING.get(), RenderType.cutoutMipped());
         ClientHooks.setRenderLayer(ModBlocks.GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
         ClientHooks.setRenderLayer(ModBlocks.POTTED_GLACIAN_SAPLING.get(), RenderType.cutoutMipped());
+        ClientHooks.setRenderLayer(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), RenderType.cutoutMipped());
         ModBlocks.GLOBES.stream().forEach((block) -> {
             ClientHooks.setRenderLayer(block.get(), RenderType.cutout());
         });

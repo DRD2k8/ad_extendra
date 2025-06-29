@@ -23,6 +23,8 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Supplier;
 
+import static net.minecraft.tags.BlockTags.MINEABLE_WITH_HOE;
+
 public class ModBlockTagProvider extends BlockTagsProvider {
     private static final List<Supplier<Block>> MINEABLE_WITH_SHOVEL = List.of(
             ModBlocks.CERES_SAND,
@@ -39,6 +41,10 @@ public class ModBlockTagProvider extends BlockTagsProvider {
             ModBlocks.STROPHAR_BUTTON,
             ModBlocks.GLACIAN_WOOD,
             ModBlocks.STRIPPED_GLACIAN_WOOD
+    );
+
+    private static final List<Supplier<Block>> MINEABLE_WITH_HOE = List.of(
+            ModBlocks.CENTAURIAN_OAK_LEAVES
     );
 
     private static final List<Supplier<Block>> NOT_MINED_WITH_PICKAXE = List.of(
@@ -218,14 +224,36 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.WOODEN_SLABS).add(element(ModBlocks.CENTAURIAN_OAK_SLAB.get()));
         tag(BlockTags.WOODEN_FENCES).add(element(ModBlocks.CENTAURIAN_OAK_FENCE.get()));
 
+        tag(BlockTags.MINEABLE_WITH_HOE).add(element(ModBlocks.CENTAURIAN_OAK_LEAVES.get()));
+
+        Arrays.asList(ModBlocks.CENTAURIAN_OAK_LOG.get(),
+                ModBlocks.STRIPPED_CENTAURIAN_OAK_LOG.get(),
+                ModBlocks.CENTAURIAN_OAK_WOOD.get(),
+                ModBlocks.STRIPPED_CENTAURIAN_OAK_WOOD.get(),
+                ModBlocks.CENTAURIAN_OAK_PLANKS.get(),
+                ModBlocks.CENTAURIAN_OAK_STAIRS.get(),
+                ModBlocks.CENTAURIAN_OAK_SLAB.get(),
+                ModBlocks.CENTAURIAN_OAK_FENCE.get(),
+                ModBlocks.CENTAURIAN_OAK_FENCE_GATE.get(),
+                ModBlocks.CENTAURIAN_OAK_DOOR.get(),
+                ModBlocks.CENTAURIAN_OAK_TRAPDOOR.get(),
+                ModBlocks.CENTAURIAN_OAK_BUTTON.get(),
+                ModBlocks.CENTAURIAN_OAK_PRESSURE_PLATE.get(),
+                ModBlocks.CENTAURIAN_OAK_SIGN.get(),
+                ModBlocks.CENTAURIAN_OAK_WALL_SIGN.get(),
+                ModBlocks.CENTAURIAN_OAK_HANGING_SIGN.get(),
+                ModBlocks.CENTAURIAN_OAK_WALL_HANGING_SIGN.get())
+                .forEach(item -> tag(BlockTags.MINEABLE_WITH_AXE).add(element(item)));
+
         Arrays.asList(ModBlocks.CENTAURIAN_OAK_SAPLING.get(), ModBlocks.GLACIAN_SAPLING.get()).forEach(item -> tag(BlockTags.SAPLINGS).add(element(item)));
 
         tag(BlockTags.MUSHROOM_GROW_BLOCK).add(element(ModBlocks.MOON_MYCELIUM.get()));
 
         MINEABLE_WITH_SHOVEL.stream().map(Supplier::get).forEach(b -> tag(BlockTags.MINEABLE_WITH_SHOVEL).add(element(b)));
+        MINEABLE_WITH_HOE.stream().map(Supplier::get).forEach(b -> tag(BlockTags.MINEABLE_WITH_HOE).add(element(b)));
 
         ModBlocks.BLOCKS.stream()
-                .filter(b -> !MINEABLE_WITH_SHOVEL.contains(b) && !MINEABLE_WITH_AXE.contains(b) && !NOT_MINED_WITH_PICKAXE.contains(b))
+                .filter(b -> !MINEABLE_WITH_SHOVEL.contains(b) && !MINEABLE_WITH_AXE.contains(b) && !MINEABLE_WITH_HOE.contains(b) && !NOT_MINED_WITH_PICKAXE.contains(b))
                 .map(RegistryEntry::get)
                 .forEach(b -> tag(BlockTags.MINEABLE_WITH_PICKAXE).add(element(b)));
     }

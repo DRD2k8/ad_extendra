@@ -562,7 +562,7 @@ public class ModBlocks {
     public static final RegistryEntry<RotatedPillarBlock> CENTAURIAN_OAK_WOOD = registerOther("centaurian_oak_wood", () -> new RotatedPillarBlock(woodProperties(MapColor.PODZOL)));
     public static final RegistryEntry<RotatedPillarBlock> STRIPPED_CENTAURIAN_OAK_LOG = registerPillar("stripped_centaurian_oak_log", logProperties(MapColor.COLOR_ORANGE, MapColor.COLOR_ORANGE));
     public static final RegistryEntry<RotatedPillarBlock> STRIPPED_CENTAURIAN_OAK_WOOD = registerOther("stripped_centaurian_oak_wood", () -> new RotatedPillarBlock(woodProperties(MapColor.COLOR_ORANGE)));
-    public static final RegistryEntry<Block> CENTAURIAN_OAK_LEAVES = registerBlock("centaurian_oak_leaves", () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.WARPED_NYLIUM)));
+    public static final RegistryEntry<Block> CENTAURIAN_OAK_LEAVES = registerBlock("centaurian_oak_leaves", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).mapColor(MapColor.WARPED_NYLIUM)));
     public static final RegistryEntry<Block> CENTAURIAN_OAK_PLANKS = registerBlock("centaurian_oak_planks", () -> new Block(centaurianWoodProperties()));
     public static final RegistryEntry<StairBlock> CENTAURIAN_OAK_STAIRS = registerStairs("centaurian_oak_stairs", CENTAURIAN_OAK_PLANKS, centaurianWoodProperties());
     public static final RegistryEntry<SlabBlock> CENTAURIAN_OAK_SLAB = registerSlab("centaurian_oak_slab", centaurianWoodProperties());

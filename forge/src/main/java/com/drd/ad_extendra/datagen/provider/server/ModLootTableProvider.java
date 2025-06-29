@@ -14,6 +14,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
@@ -21,6 +22,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceWithLootingCondition;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
@@ -98,7 +100,6 @@ public class ModLootTableProvider extends LootTableProvider {
             ModBlocks.B_EMERALD_ORE,
             ModBlocks.B_IRON_ORE,
             ModBlocks.B_REDSTONE_ORE,
-            ModBlocks.CENTAURIAN_OAK_LEAVES,
             ModBlocks.AERONOS_SIGN,
             ModBlocks.AERONOS_WALL_SIGN,
             ModBlocks.AERONOS_HANGING_SIGN,
@@ -204,7 +205,7 @@ public class ModLootTableProvider extends LootTableProvider {
             add(ModBlocks.CENTAURIAN_OAK_HANGING_SIGN.get(), createSingleItemTable(ModItems.CENTAURIAN_OAK_HANGING_SIGN.get()));
             add(ModBlocks.GLACIAN_SIGN.get(), createSingleItemTable(ModItems.GLACIAN_SIGN.get()));
             add(ModBlocks.GLACIAN_HANGING_SIGN.get(), createSingleItemTable(ModItems.GLACIAN_HANGING_SIGN.get()));
-            add(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), createOakLeavesDrops(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), ModBlocks.CENTAURIAN_OAK_SAPLING.get()));
+            add(ModBlocks.CENTAURIAN_OAK_LEAVES.get(), createSaplingItemTable(ModBlocks.CENTAURIAN_OAK_SAPLING.get()));
         }
 
         @Override
@@ -218,6 +219,10 @@ public class ModLootTableProvider extends LootTableProvider {
 
         private void addOreDrop(Block ore, Item rawOre) {
             add(ore, createOreDrop(ore, rawOre));
+        }
+
+        public LootTable.Builder createSaplingItemTable(ItemLike item) {
+            return LootTable.lootTable().withPool((LootPool.Builder)this.applyExplosionCondition(item, LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F)).add(LootItem.lootTableItem(item).when(LootItemRandomChanceCondition.randomChance(0.35F)))));
         }
     }
 
